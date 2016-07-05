@@ -39,7 +39,7 @@ Plug 'jlanzarotta/bufexplorer'
 "
 "Plug ''
 
-let g:dotvim_ycm_build_command = get(g:, 'dotvim_ycm_build_command', './install.py')
+let g:dotvim_ycm_build_command = get(g:, 'dotvim_ycm_build_command', './install.py --all')
 Plug 'Valloric/YouCompleteMe', { 'do': dotvim_ycm_build_command}
 
 call plug#end()
