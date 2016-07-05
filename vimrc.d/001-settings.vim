@@ -28,7 +28,7 @@ set sm                   " show matching braces, somewhat annoying...
 set mouse=a
 set ttymouse=xterm2
 set history=500          " larger history
-set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+"set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set timeout ttimeoutlen=50
 
 set splitright           " Splits to the right
