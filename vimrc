@@ -2,7 +2,7 @@
 " ==================================================
 " actions to be done prior for configuration
 " ==================================================
-for f in split('~/.vim/pre_configrc.d/*.vim', '\n')
+for f in split(glob('~/.vim/pre_configrc.d/*.vim'), '\n')
   exec 'source' f
 endfor
 
