@@ -33,6 +33,8 @@ Plug 'scrooloose/nerdtree'
 
 " Fuzzy file, buffer, mru, tag, etc finder
 Plug 'ctrlpvim/ctrlp.vim'
+" BufExplorer Plugin for Vim
+Plug 'jlanzarotta/bufexplorer'
 
 "
 "Plug ''
