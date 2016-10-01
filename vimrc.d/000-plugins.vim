@@ -46,6 +46,9 @@ Plug 'tpope/vim-bundler'
 " golang support
 Plug 'fatih/vim-go'
 
+" pairs of handy bracket mappings
+Plug 'tpope/vim-unimpaired'
+
 " airline status plugins
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
