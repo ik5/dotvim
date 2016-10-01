@@ -46,6 +46,10 @@ Plug 'tpope/vim-bundler'
 " golang support
 Plug 'fatih/vim-go'
 
+" airline status plugins
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 "
 "Plug ''
 
