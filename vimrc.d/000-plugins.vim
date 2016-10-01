@@ -50,6 +50,9 @@ Plug 'fatih/vim-go'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Do completion using tab key
+Plug 'ervandew/supertab'
+
 "
 "Plug ''
 
