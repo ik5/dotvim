@@ -1,3 +1,6 @@
+" define the leader to be explicitly \ char
+let mapleader="\\"
+
 " ================================
 " vimrc handling
 " ================================
