@@ -30,6 +30,7 @@ set ttymouse=xterm2
 set history=500          " larger history
 "set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set timeout ttimeoutlen=50
+set selection=inclusive 
 
 set splitright           " Splits to the right
 
