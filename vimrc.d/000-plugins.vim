@@ -59,6 +59,11 @@ Plug 'ervandew/supertab'
 " Tagbar - show tags of a project
 Plug 'majutsushi/tagbar'
 
+" Track the engine.
+Plug 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
+
 "
 "Plug ''
 
