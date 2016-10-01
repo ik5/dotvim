@@ -43,6 +43,9 @@ Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
 
+" golang support
+Plug 'fatih/vim-go'
+
 "
 "Plug ''
 
