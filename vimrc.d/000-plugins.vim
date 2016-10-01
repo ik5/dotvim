@@ -53,6 +53,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Do completion using tab key
 Plug 'ervandew/supertab'
 
+" Tagbar - show tags of a project
+Plug 'majutsushi/tagbar'
+
 "
 "Plug ''
 
