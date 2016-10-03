@@ -16,7 +16,7 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
 
 " Comments support
-Plug 'tomtom/tcomment_vim'
+"Plug 'tomtom/tcomment_vim'
 Plug 'scrooloose/nerdcommenter'
 
 " Multi-Cursor support
