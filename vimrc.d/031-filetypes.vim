@@ -56,5 +56,4 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
 \ }
 
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
-autocmd FileType go autocmd BufWritePre <buffer> 
+
