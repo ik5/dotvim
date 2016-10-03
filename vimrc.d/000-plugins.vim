@@ -70,6 +70,9 @@ Plug 'powerman/vim-plugin-viewdoc'
 " support for rust
 Plug 'rust-lang/rust.vim'
 
+" rust racer syntax checking
+Plug 'racer-rust/vim-racer'
+
 let g:dotvim_ycm_build_command = get(g:, 'dotvim_ycm_build_command', './install.py --all')
 Plug 'Valloric/YouCompleteMe', { 'do': dotvim_ycm_build_command}
 
