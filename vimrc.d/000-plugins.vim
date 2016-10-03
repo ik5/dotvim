@@ -36,9 +36,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 " BufExplorer Plugin for Vim
 Plug 'jlanzarotta/bufexplorer'
 
-" Vim plugin for the Perl module / CLI script 'ack' 
-Plug 'mileszs/ack.vim'
-
 " Rails and bundler
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
