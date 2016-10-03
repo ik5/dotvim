@@ -5,6 +5,7 @@ call plug#begin()
 
 " colorscheme
 Plug 'tomasr/molokai'
+Plug 'sjl/badwolf' " TODO: Check and configure it
 
 " Over 70 language packs
 Plug 'sheerun/vim-polyglot'
