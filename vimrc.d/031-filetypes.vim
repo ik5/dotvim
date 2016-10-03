@@ -22,7 +22,10 @@ autocmd Filetype xhtml setlocal ts=2 sw=2 expandtab
 autocmd Filetype xml setlocal ts=2 sw=2 expandtab
 autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype less setlocal ts=2 sw=2 expandtab
-autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab 
+autocmd FileType ruby compiler ruby
+autocmd FileType ruby let b:dispatch = 'ruby -w %'
+
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
 
 let g:tagbar_type_go = {
