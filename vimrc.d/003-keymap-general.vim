@@ -72,3 +72,7 @@ while c <= 'z'
   let c = nr2char(1+char2nr(c))
 endw
 
+" exec async compiler
+map <C-F9> <Esc>:Dispatch<CR>
+imap <C-F9> <Esc>:Dispatch<CR>a
+
