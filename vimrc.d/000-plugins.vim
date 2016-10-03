@@ -71,6 +71,9 @@ Plug 'rust-lang/rust.vim'
 " rust racer syntax checking
 Plug 'racer-rust/vim-racer'
 
+" visual undo graph
+Plug 'sjl/gundo.vim'
+
 let g:dotvim_ycm_build_command = get(g:, 'dotvim_ycm_build_command', './install.py --all')
 Plug 'Valloric/YouCompleteMe', { 'do': dotvim_ycm_build_command}
 
