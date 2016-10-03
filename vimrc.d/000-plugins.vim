@@ -67,8 +67,8 @@ Plug 'honza/vim-snippets'
 " Vim plugin: flexible viewer for any documentation
 Plug 'powerman/vim-plugin-viewdoc'
 
-"
-"Plug ''
+" support for rust
+Plug 'rust-lang/rust.vim'
 
 let g:dotvim_ycm_build_command = get(g:, 'dotvim_ycm_build_command', './install.py --all')
 Plug 'Valloric/YouCompleteMe', { 'do': dotvim_ycm_build_command}
