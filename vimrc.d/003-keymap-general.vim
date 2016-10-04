@@ -83,3 +83,54 @@ map k gk
 " NerdTree toggle
 map <F3> :NERDTreeToggle<CR>
 imap <F3> <Esc>:NERDTreeToggle<CR>
+
+" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+nmap <M-j> mz:m+<cr>`z
+nmap <M-k> mz:m-2<cr>`z
+vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+if has("mac") || has("macunix")
+  nmap <D-j> <M-j>
+  nmap <D-k> <M-k>
+  vmap <D-j> <M-j>
+  vmap <D-k> <M-k>
+endif
+
+" ====================================================
+" spell settings
+" ====================================================
+map <S-F7> :setlocal spell!<CR>
+" move to next spelling word
+map <leader>sn ]s 
+" move to prev spelling word
+map <leader>sp [s
+" add word under cursor
+map <leader>sa zg
+" suggestion window 
+map <leader>s? z=
+
+
+" =======================================================
+" Misc
+" =======================================================
+" toggle paste
+map <c-P> :set paste!<CR>
+
+"remove the Windows ^M - when the encodings gets messed up
+noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
+" witch between the last two files
+nnoremap <leader><leader> <C-^>
+
+" Allow to copy/paste between VIM instances
+"copy the current visual selection to ~/.vbuf
+vmap <leader>y :w! ~/tmp/.vbuf<cr>
+
+"copy the current line to the buffer file if no visual selection
+nmap <leader>y :.w! ~/tmp/.vbuf<cr>
+
+"paste the contents of the buffer file
+nmap <leader>p :r ~/tmp/.vbuf<cr>
+
+

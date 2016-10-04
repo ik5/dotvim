@@ -2,13 +2,18 @@
 " Basic Settings
 " ==================================================
 
-set textwidth=80         " Try this out to see how textwidth helps
+set nocompatible         " This is VIM!!!
+set encoding=utf8        " utf8 is the default
+set ffs=unix,dos,mac     " file end of line -> unix!
+set textwidth=120        " Try this out to see how textwidth helps
+set linebreak            " break the line after the amount of textwidth
 set ch=2                 " Make command line two lines high
 set ls=2                 " allways show status line
 set scrolloff=3          " keep 3 lines when scrolling
 set cursorline           " have a line indicate the cursor location
 set cindent              " cindent
 set autoindent           " always set autoindenting on
+set smartindent          " smart indentation
 set showcmd              " display incomplete commands
 set ruler                " show the cursor position all the time
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
@@ -27,7 +32,7 @@ set matchtime=3
 set sm                   " show matching braces, somewhat annoying...
 set mouse=a
 set ttymouse=xterm2
-set history=500          " larger history
+set history=1500          " larger history
 "set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set timeout ttimeoutlen=50
 set selection=inclusive 
@@ -35,7 +40,7 @@ set selection=inclusive
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
 
-"set splitright           " Splits to the right
+set splitright           " Splits to the right
 
 set wildmenu                      " show list instead of just completing
 set wildmode=list:longest,full    " command <Tab> completion, list matches, then longest common part, then all.
@@ -64,6 +69,8 @@ set tabstop=2            " numbers of spaces of tab character
 set shiftwidth=2         " numbers of spaces to (auto)indent
 set expandtab            " Tab to spaces by default
 set softtabstop=2
+set smarttab
+set shiftround           " Round indent to multiple of 'shiftwidth' for > and < commands
 
 " ==================================================
 " Search settings
@@ -75,7 +82,7 @@ set smartcase            " if searching and search contains upper case, make cas
 set magic                " For regular expressions turn magic on
 set showmatch            " show matching brakets when text is over them
 set mat=2                " and blink for two seconds
-
+set nrformats=octal,hex,alpha " Enable Ctrl-A/Ctrl-X to work on octal and hex numbers, as well as characters
 
 " ==================================================
 " No modlines for security
@@ -90,6 +97,10 @@ set nomodeline
 " Highlight end of line whitespace.
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
+autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
+autocmd InsertEnter * match WhitespaceEOL /\s\+\%#\@<!$/
+autocmd InsertLeave * match WhitespaceEOL /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 
 " =================================================
 " Restore Position when repopening a file
@@ -100,4 +111,29 @@ endif
 
 " override YouCompleteMe
 let g:dotvim_ycm_build_command='./install.py --clang-completer --gocode-completer --tern-completer --racer-completer'
+
+" ================================================
+" Folding configuration
+" ================================================
+" Make sure that extra margin on left is removed
+set foldcolumn=0
+
+" ================================================
+" Sessions
+" ================================================
+ " Define what to save with :mksession
+ " blank - empty windows
+ " buffers - all buffers not only ones in a window
+ " curdir - the current directory
+ " folds - including manually created ones
+ " help - the help window
+ " options - all options and mapping
+ " winsize - window sizes
+ " tabpages - all tab pages
+set sessionoptions=blank,buffers,curdir,folds,help,options,winsize,tabpages
+
+
+
+
+
 
