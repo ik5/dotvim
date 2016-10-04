@@ -56,6 +56,7 @@ Plug 'tpope/vim-unimpaired'
 " airline status plugins
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'powerline/fonts'
 
 " Do completion using tab key
 Plug 'ervandew/supertab'
