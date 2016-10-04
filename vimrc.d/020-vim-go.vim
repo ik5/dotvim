@@ -3,6 +3,7 @@
 " ============================================
 
 let g:go_fmt_command = 'goimports'
+"let g:go_fmt_command = 'gofmt'
 let g:go_list_type = 'quickfix'
 
 " do not create an Hello World template
@@ -28,6 +29,7 @@ let g:go_highlight_build_constraints = 1
 " auto linter on save
 let g:go_metalinter_autosave = 1
 
+
 " Show a list of interfaces which is implemented by the type under your cursor
 au FileType go nmap <Leader>s <Plug>(go-implements)
 
@@ -46,3 +48,6 @@ au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
+
+"autocmd FileType go autocmd BufWritePre <buffer> GoFmt
+
