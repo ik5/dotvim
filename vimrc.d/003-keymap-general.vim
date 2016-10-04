@@ -110,6 +110,16 @@ map <leader>sa zg
 " suggestion window 
 map <leader>s? z=
 
+" =======================================================
+" Gitv
+" =======================================================
+nmap <leader>gv :Gitv --all<cr>
+nmap <leader>gV :Gitv! --all<cr>
+vmap <leader>gV :Gitv! --all<cr>
+nmap <leader>gD :call Gitv_OpenGitCommand("diff --no-color", 'new')<CR>
+vmap <leader>gD :call Gitv_OpenGitCommand("diff --no-color", 'new')<CR>
+"nmap <leader>Gd :call Gitv_OpenGitCommand("diff --no-color --cached", 'vnew')<CR>
+"vmap <leader>Gd :call Gitv_OpenGitCommand("diff --no-color --cached", 'vnew')<CR>
 
 " =======================================================
 " Misc
