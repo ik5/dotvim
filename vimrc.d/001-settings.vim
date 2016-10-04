@@ -32,11 +32,15 @@ set history=500          " larger history
 set timeout ttimeoutlen=50
 set selection=inclusive 
 
-set splitright           " Splits to the right
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
 
-set wildmenu                    " show list instead of just completing
-set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
-set completeopt=menu            " Just show the menu upon completion (faster)
+"set splitright           " Splits to the right
+
+set wildmenu                      " show list instead of just completing
+set wildmode=list:longest,full    " command <Tab> completion, list matches, then longest common part, then all.
+set completeopt=longest,menuone   " Just show the menu upon completion (faster)
+set infercase                     " Allow smarter completion by infering the case
 
 set directory=~/tmp      " Keep swap files out of the working dir, Adjust if needed in another dir
 
@@ -68,6 +72,9 @@ set hlsearch             " highlight searches
 set incsearch            " do incremental searching
 set ignorecase           " ignore case when searching
 set smartcase            " if searching and search contains upper case, make case sensitive search
+set magic                " For regular expressions turn magic on
+set showmatch            " show matching brakets when text is over them
+set mat=2                " and blink for two seconds
 
 
 " ==================================================
@@ -93,3 +100,4 @@ endif
 
 " override YouCompleteMe
 let g:dotvim_ycm_build_command='./install.py --clang-completer --gocode-completer --tern-completer --racer-completer'
+

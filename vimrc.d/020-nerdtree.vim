@@ -3,4 +3,3 @@
 " ==================================================
 
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$', '\.o', '\.a']
-map <F3> :NERDTreeToggle<CR>

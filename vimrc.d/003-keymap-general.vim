@@ -76,3 +76,10 @@ endw
 map <C-F9> <Esc>:Dispatch<CR>
 imap <C-F9> <Esc>:Dispatch<CR>a
 
+" treat long lines as break lines (when moving around in them)
+map j gj
+map k gk
+
+" NerdTree toggle
+map <F3> :NERDTreeToggle<CR>
+imap <F3> <Esc>:NERDTreeToggle<CR>
