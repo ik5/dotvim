@@ -42,10 +42,15 @@ set iskeyword-=.                    " '.' is an end of word designator
 set iskeyword-=#                    " '#' is an end of word designator
 set iskeyword-=-                    " '-' is an end of word designator
 
+set undofile                " So is persistent undo ...
+set undolevels=10000        " Maximum number of changes that can be undone
+set undoreload=10000        " Maximum number lines to save for undo on a buffer reload
+
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
 
-set splitright           " Splits to the right
+set splitright           " vSplits to the right
+set splitbelow           " Puts new split windows to the bottom of the current
 
 set wildmenu                      " show list instead of just completing
 set wildmode=list:longest,full    " command <Tab> completion, list matches, then longest common part, then all.
@@ -84,6 +89,7 @@ set expandtab            " Tab to spaces by default
 set softtabstop=2
 set smarttab
 set shiftround           " Round indent to multiple of 'shiftwidth' for > and < commands
+set nojoinspaces         " Prevents inserting two spaces after punctuation on a join (J)
 
 " ==================================================
 " Search settings
@@ -145,8 +151,10 @@ set foldcolumn=0
  " tabpages - all tab pages
 set sessionoptions=blank,buffers,curdir,folds,help,options,winsize,tabpages
 
-
-
+" ================================================
+" Vim's Tabs
+" ================================================
+set tabpagemax=15 " 15 tabs that can be displaied
 
 
 
