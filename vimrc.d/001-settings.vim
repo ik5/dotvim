@@ -36,6 +36,11 @@ set history=1500          " larger history
 "set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set timeout ttimeoutlen=50
 set selection=inclusive 
+set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
+set virtualedit=onemore             " Allow for cursor beyond last character
+set iskeyword-=.                    " '.' is an end of word designator
+set iskeyword-=#                    " '#' is an end of word designator
+set iskeyword-=-                    " '-' is an end of word designator
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
@@ -48,6 +53,14 @@ set completeopt=longest,menuone   " Just show the menu upon completion (faster)
 set infercase                     " Allow smarter completion by infering the case
 
 set directory=~/tmp      " Keep swap files out of the working dir, Adjust if needed in another dir
+
+if has('clipboard')
+  if has('unnamedplus')  " When possible use + register for copy-paste
+    set clipboard=unnamed,unnamedplus
+  else                   " On mac and Windows, use * register for copy-paste
+    set clipboard=unnamed
+  endif
+endif
 
 syntax on
 filetype plugin on
