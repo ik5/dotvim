@@ -122,6 +122,15 @@ vmap <leader>gD :call Gitv_OpenGitCommand("diff --no-color", 'new')<CR>
 "vmap <leader>Gd :call Gitv_OpenGitCommand("diff --no-color --cached", 'vnew')<CR>
 
 " =======================================================
+" vim gitgutter
+" =======================================================
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
+nmap <Leader>hs <Plug>GitGutterStageHunk
+nmap <Leader>hu <Plug>GitGutterUndoHunk
+nmap <Leader>hv <Plug>GitGutterPreviewHunk
+
+" =======================================================
 " Misc
 " =======================================================
 " toggle paste

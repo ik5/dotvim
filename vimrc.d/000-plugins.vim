@@ -17,6 +17,8 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
 " visualise git
 Plug 'gregsexton/gitv'
+" A Vim plugin which shows a git diff in the gutter 
+Plug 'airblade/vim-gitgutter'
 
 " Comments support
 "Plug 'tomtom/tcomment_vim'
