@@ -15,6 +15,8 @@ Plug 'scrooloose/syntastic'
 
 " VCS (git)
 Plug 'tpope/vim-fugitive'
+" visualise git
+Plug 'gregsexton/gitv'
 
 " Comments support
 "Plug 'tomtom/tcomment_vim'
