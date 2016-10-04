@@ -10,6 +10,10 @@ map <leader>r :sp ~/vimrc<CR><C-W>_
 " activating changes (after save) - <leader>R
 map <silent> <leader>R :source ~/.vimrc<CR>:filetype detect<CR>:exec ":echo 'vimrc reloaded'"<CR>
 
+if &term[:4] == "xterm" || &term[:5] == 'screen' || &term[:3] == 'rxvt'
+  inoremap <silent> <C-[>OC <RIGHT>
+endif
+
 " Fast saving
 nmap <leader>w :w!<cr>
 
