@@ -44,6 +44,8 @@ Plug 'jlanzarotta/bufexplorer'
 " Rails and bundler
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
+" endwith ruby 
+Plug 'tpope/vim-endwise'
 
 " golang support
 Plug 'fatih/vim-go'

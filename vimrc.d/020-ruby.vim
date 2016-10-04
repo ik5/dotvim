@@ -23,4 +23,9 @@ let g:rubycomplete_load_gemfile = 1
 " use Gemfile of bundler
 let g:rubycomplete_use_bundler = 1
 
+" indetation type
+let g:ruby_indent_access_modifier_style = 'outdent'
+
+" indent of commands after do
+let g:ruby_indent_block_style = 'do'
 
