@@ -17,9 +17,10 @@ endif
 " Fast saving
 nmap <leader>w :w!<cr>
 
-" :W sudo saves the file 
+" sudo saves the file 
 " (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null
+command! W !sudo tee % > /dev/null
+
 
 " ==================================================
 " Window navigation
@@ -122,6 +123,12 @@ map <leader>sa zg
 map <leader>s? z=
 
 " =======================================================
+" VCS/Git Merge stuff
+" =======================================================
+" Find merge conflict markers
+map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR> 
+
+" =======================================================
 " Gitv
 " =======================================================
 nmap <leader>gv :Gitv --all<cr>
@@ -140,6 +147,21 @@ nmap [h <Plug>GitGutterPrevHunk
 nmap <Leader>hs <Plug>GitGutterStageHunk
 nmap <Leader>hu <Plug>GitGutterUndoHunk
 nmap <Leader>hv <Plug>GitGutterPreviewHunk
+
+
+" =======================================================
+" Code folding options
+" =======================================================
+nmap <leader>f0 :set foldlevel=0<CR>
+nmap <leader>f1 :set foldlevel=1<CR>
+nmap <leader>f2 :set foldlevel=2<CR>
+nmap <leader>f3 :set foldlevel=3<CR>
+nmap <leader>f4 :set foldlevel=4<CR>
+nmap <leader>f5 :set foldlevel=5<CR>
+nmap <leader>f6 :set foldlevel=6<CR>
+nmap <leader>f7 :set foldlevel=7<CR>
+nmap <leader>f8 :set foldlevel=8<CR>
+nmap <leader>f9 :set foldlevel=9<CR>
 
 " =======================================================
 " Misc
@@ -162,5 +184,12 @@ nmap <leader>y :.w! ~/tmp/.vbuf<cr>
 
 "paste the contents of the buffer file
 nmap <leader>p :r ~/tmp/.vbuf<cr>
+
+" Yank from the cursor to the end of the line, to be consistent with C and D.
+nnoremap Y y$
+
+"" Map <Leader>ff to display all lines with keyword under cursor
+" and ask which one to jump to
+nmap <leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
 
