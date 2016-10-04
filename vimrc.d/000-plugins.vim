@@ -84,6 +84,9 @@ Plug 'sjl/gundo.vim'
 " surrond changing things based on syntax, such as ', ", [, ] etc..
 Plug 'tpope/vim-surround'
 
+" Web API
+Plug 'mattn/webapi-vim'
+
 let g:dotvim_ycm_build_command = get(g:, 'dotvim_ycm_build_command', './install.py --all')
 Plug 'Valloric/YouCompleteMe', { 'do': dotvim_ycm_build_command}
 
