@@ -1,9 +1,9 @@
 " Enable autocompletion
 set omnifunc=syntaxcomplete#Complete
-autocmd FileType python set omnifunc=python3complete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-
+autocmd FileType python setlocal omnifunc=python3complete#Complete
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
 
