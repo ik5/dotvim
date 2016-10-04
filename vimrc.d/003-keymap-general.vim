@@ -10,6 +10,13 @@ map <leader>r :sp ~/vimrc<CR><C-W>_
 " activating changes (after save) - <leader>R
 map <silent> <leader>R :source ~/.vimrc<CR>:filetype detect<CR>:exec ":echo 'vimrc reloaded'"<CR>
 
+" Fast saving
+nmap <leader>w :w!<cr>
+
+" :W sudo saves the file 
+" (useful for handling the permission-denied error)
+command W w !sudo tee % > /dev/null
+
 " ==================================================
 " Window navigation
 " ==================================================
