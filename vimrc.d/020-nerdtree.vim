@@ -2,7 +2,7 @@
 " NERDTree
 " ==================================================
 
-let NERDTreeIgnore = ['\.pyc$', '\.pyo$', '\.o', '\.a']
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$', '\.o', '\.a', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']
 let NERDTreeDirArrows=1
 let NERDTreeMinimalUI=0
 let NERDTreeWinSize = 35
