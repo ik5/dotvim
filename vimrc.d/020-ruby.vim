@@ -1,6 +1,6 @@
 
 " do not execute code for evaluating 
-let g:rubycomplete_buffer_loading=0 
+let g:rubycomplete_buffer_loading=1
 
 " evaluate classes and objects
 let g:rubycomplete_classes_in_global = 1
@@ -16,5 +16,11 @@ let ruby_space_errors = 1
 
 " spellcheck a string
 let ruby_spellcheck_strings = 1
+
+" parse gemfile
+let g:rubycomplete_load_gemfile = 1
+
+" use Gemfile of bundler
+let g:rubycomplete_use_bundler = 1
 
 
