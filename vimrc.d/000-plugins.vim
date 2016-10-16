@@ -17,7 +17,7 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
 " visualise git
 Plug 'gregsexton/gitv'
-" A Vim plugin which shows a git diff in the gutter 
+" A Vim plugin which shows a git diff in the gutter
 Plug 'airblade/vim-gitgutter'
 
 " Comments support
@@ -44,8 +44,9 @@ Plug 'jlanzarotta/bufexplorer'
 " Rails and bundler
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
-" endwith ruby 
+" endwith ruby
 Plug 'tpope/vim-endwise'
+Plug 'vim-ruby/vim-ruby'
 
 " golang support
 Plug 'fatih/vim-go'
@@ -87,7 +88,8 @@ Plug 'tpope/vim-surround'
 " Web API
 Plug 'mattn/webapi-vim'
 
-let g:dotvim_ycm_build_command = get(g:, 'dotvim_ycm_build_command', './install.py --all')
-Plug 'Valloric/YouCompleteMe', { 'do': dotvim_ycm_build_command}
+Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
 
 call plug#end()
