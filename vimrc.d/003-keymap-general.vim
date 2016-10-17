@@ -17,7 +17,7 @@ endif
 " Fast saving
 nmap <leader>w :w!<cr>
 
-" sudo saves the file 
+" sudo saves the file
 " (useful for handling the permission-denied error)
 command! W !sudo tee % > /dev/null
 
@@ -114,19 +114,19 @@ endif
 " ====================================================
 map <S-F7> :setlocal spell!<CR>
 " move to next spelling word
-map <leader>sn ]s 
+map <leader>sn ]s
 " move to prev spelling word
 map <leader>sp [s
 " add word under cursor
 map <leader>sa zg
-" suggestion window 
+" suggestion window
 map <leader>s? z=
 
 " =======================================================
 " VCS/Git Merge stuff
 " =======================================================
 " Find merge conflict markers
-map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR> 
+map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>
 
 " =======================================================
 " Gitv
