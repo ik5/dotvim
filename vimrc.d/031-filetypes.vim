@@ -25,6 +25,7 @@ autocmd Filetype less setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab 
 autocmd FileType ruby compiler ruby
 autocmd FileType ruby let b:dispatch = 'ruby -c -w %'
+autocmd FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
 
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
 
