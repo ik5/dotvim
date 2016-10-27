@@ -1,6 +1,11 @@
 " define the leader to be explicitly \ char
 let mapleader="\\"
 
+" use jj as escape
+ino jj <esc>
+cno jj <c-c>
+vno v <esc>
+
 " ================================
 " vimrc handling
 " ================================

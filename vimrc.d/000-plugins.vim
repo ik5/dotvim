@@ -33,6 +33,9 @@ Plug 'tpope/vim-dispatch'
 " Test functions from cache
 Plug 'MarcWeber/vim-addon-mw-utils'
 
+" tlib dependencies
+Plug 'tomtom/tlib_vim'
+
 " better file explorer for vim
 Plug 'scrooloose/nerdtree'
 
@@ -47,12 +50,16 @@ Plug 'tpope/vim-bundler'
 " endwith ruby
 Plug 'tpope/vim-endwise'
 Plug 'vim-ruby/vim-ruby'
+" Ruby tests
+Plug 'janko-m/vim-test'
 
 " golang support
 Plug 'fatih/vim-go'
 
 " pairs of handy bracket mappings
 Plug 'tpope/vim-unimpaired'
+" Every one should have a pair (Autogenerate pairs for "{[( )
+Plug 'jiangmiao/auto-pairs'
 
 " airline status plugins
 Plug 'vim-airline/vim-airline'
@@ -69,6 +76,8 @@ Plug 'majutsushi/tagbar'
 Plug 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plug 'honza/vim-snippets'
+" snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
+Plug 'garbas/vim-snipmate'
 
 " Vim plugin: flexible viewer for any documentation
 Plug 'powerman/vim-plugin-viewdoc'
@@ -88,8 +97,7 @@ Plug 'tpope/vim-surround'
 " Web API
 Plug 'mattn/webapi-vim'
 
-Plug 'Shougo/neocomplete.vim'
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
+" new complete library
+Plug 'lifepillar/vim-mucomplete'
 
 call plug#end()

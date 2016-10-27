@@ -23,7 +23,7 @@ set number               " show line numbers
 set title                " show title in console title bar
 set ttyfast              " smoother changes
 set modeline             " last lines in document sets vim mode
-set shortmess=atI        " Abbreviate messages
+set shortmess=atIc       " Abbreviate messages
 set nostartofline        " don't jump to first character when paging
 set backspace=indent,eol,start
 set matchpairs+=<:>      " show matching <> (html mainly) as well
@@ -35,29 +35,26 @@ set ttymouse=xterm2
 set history=1500          " larger history
 "set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set timeout ttimeoutlen=50
-set selection=inclusive 
+set selection=inclusive
 set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
 set virtualedit=onemore             " Allow for cursor beyond last character
 set iskeyword-=.                    " '.' is an end of word designator
 set iskeyword-=#                    " '#' is an end of word designator
 set iskeyword-=-                    " '-' is an end of word designator
 
-set undofile                " So is persistent undo ...
-set undolevels=10000        " Maximum number of changes that can be undone
-set undoreload=10000        " Maximum number lines to save for undo on a buffer reload
-
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
 
-set splitright           " vSplits to the right
-set splitbelow           " Puts new split windows to the bottom of the current
+set splitright           " Splits to the right
 
 set wildmenu                      " show list instead of just completing
 set wildmode=list:longest,full    " command <Tab> completion, list matches, then longest common part, then all.
-set completeopt=longest,menuone   " Just show the menu upon completion (faster)
+set completeopt=menu,menuone   " Just show the menu upon completion (faster)
+set completeopt+=preview
 set infercase                     " Allow smarter completion by infering the case
 
 set directory=~/tmp      " Keep swap files out of the working dir, Adjust if needed in another dir
+set tags=./tags;         " Set tags directory
 
 if has('clipboard')
   if has('unnamedplus')  " When possible use + register for copy-paste
@@ -72,12 +69,12 @@ filetype plugin on
 filetype indent plugin on
 
 if version >= 703        " Columns and lines, only from vim >= 7.3
-	set colorcolumn=80
+  set colorcolumn=80
 endif
 
 if has("gui_running")
-	set lines=75
-	set columns=180
+  set lines=75
+  set columns=180
 endif
 
 " ==================================================
@@ -89,7 +86,6 @@ set expandtab            " Tab to spaces by default
 set softtabstop=2
 set smarttab
 set shiftround           " Round indent to multiple of 'shiftwidth' for > and < commands
-set nojoinspaces         " Prevents inserting two spaces after punctuation on a join (J)
 
 " ==================================================
 " Search settings
@@ -116,10 +112,11 @@ set nomodeline
 " Highlight end of line whitespace.
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
-autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
-autocmd InsertEnter * match WhitespaceEOL /\s\+\%#\@<!$/
-autocmd InsertLeave * match WhitespaceEOL /\s\+$/
-autocmd BufWinLeave * call clearmatches()
+" autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
+" autocmd InsertEnter * match WhitespaceEOL /\s\+\%#\@<!$/
+" autocmd InsertLeave * match WhitespaceEOL /\s\+$/
+" autocmd BufWinLeave * call clearmatches()
+autocmd Syntax      * syn match WhitespaceEOL /\s\+$\| \+\ze\\t/
 
 " =================================================
 " Restore Position when repopening a file
@@ -151,10 +148,8 @@ set foldcolumn=0
  " tabpages - all tab pages
 set sessionoptions=blank,buffers,curdir,folds,help,options,winsize,tabpages
 
-" ================================================
-" Vim's Tabs
-" ================================================
-set tabpagemax=15 " 15 tabs that can be displaied
+
+
 
 
 
