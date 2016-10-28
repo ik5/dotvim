@@ -4,7 +4,6 @@
 
 let g:rehash256 = 1 " molokai looks for it, so placing it first
 
-colorscheme molokai
 set background=dark
 
 if has("gui_running")
@@ -14,4 +13,11 @@ else
     set t_Co=256
 endif
 
+colorscheme molokai
+
+" ==================================================
+" Trailing whitespace handling
+" ==================================================
+highlight WhitespaceEOL ctermbg=red guibg=red
+match WhitespaceEOL /\s\+$/
 

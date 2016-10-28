@@ -105,18 +105,6 @@ set nrformats=octal,hex,alpha " Enable Ctrl-A/Ctrl-X to work on octal and hex nu
 set modelines=0
 set nomodeline
 
-" ==================================================
-" Trailing whitespace handling
-" ==================================================
-
-" Highlight end of line whitespace.
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
-" autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
-" autocmd InsertEnter * match WhitespaceEOL /\s\+\%#\@<!$/
-" autocmd InsertLeave * match WhitespaceEOL /\s\+$/
-" autocmd BufWinLeave * call clearmatches()
-autocmd Syntax      * syn match WhitespaceEOL /\s\+$\| \+\ze\\t/
 
 " =================================================
 " Restore Position when repopening a file
