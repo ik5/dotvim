@@ -110,4 +110,7 @@ Plug 'lifepillar/vim-mucomplete'
 " Helps editing xml and (x)html files
 Plug 'othree/xml.vim'
 
+" A vim plugin that simplifies the transition between multiline and single-line code
+Plug 'AndrewRadev/splitjoin.vim'
+
 call plug#end()
