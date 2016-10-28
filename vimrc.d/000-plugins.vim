@@ -113,7 +113,10 @@ Plug 'othree/xml.vim'
 " A vim plugin that simplifies the transition between multiline and single-line code
 Plug 'AndrewRadev/splitjoin.vim'
 
-" Ascii drawing plugin: lines, ellipses, arrows, fills, and more!
+" ASCII drawing plugin: lines, ellipses, arrows, fills, and more!
 Plug 'vim-scripts/DrawIt'
+
+" An aggregated list for TODO, FIXME and XXX 
+Plug 'vim-scripts/TaskList.vim'
 
 call plug#end()
