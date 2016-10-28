@@ -116,7 +116,10 @@ Plug 'AndrewRadev/splitjoin.vim'
 " ASCII drawing plugin: lines, ellipses, arrows, fills, and more!
 Plug 'vim-scripts/DrawIt'
 
-" An aggregated list for TODO, FIXME and XXX 
+" An aggregated list for TODO, FIXME and XXX
 Plug 'vim-scripts/TaskList.vim'
+
+" Vim script for text filtering and alignment
+Plug 'godlygeek/tabular'
 
 call plug#end()
