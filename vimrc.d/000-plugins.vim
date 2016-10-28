@@ -55,6 +55,8 @@ Plug 'janko-m/vim-test'
 
 " golang support
 Plug 'fatih/vim-go'
+" Go Explorer is Vim plugin for exploring Go code
+Plug 'garyburd/go-explorer'
 
 " pairs of handy bracket mappings
 Plug 'tpope/vim-unimpaired'
@@ -94,10 +96,16 @@ Plug 'sjl/gundo.vim'
 " surrond changing things based on syntax, such as ', ", [, ] etc..
 Plug 'tpope/vim-surround'
 
+" repeat.vim: enable repeating supported plugin maps with '.'
+Plug 'tpope/vim-repeat'
+
 " Web API
 Plug 'mattn/webapi-vim'
 
 " new complete library
 Plug 'lifepillar/vim-mucomplete'
+
+" Helps editing xml and (x)html files
+Plug 'othree/xml.vim'
 
 call plug#end()
