@@ -112,12 +112,7 @@ set nomodeline
 " Highlight end of line whitespace.
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
-" autocmd BufWinEnter * match WhitespaceEOL /\s\+$/
-" autocmd InsertEnter * match WhitespaceEOL /\s\+\%#\@<!$/
-" autocmd InsertLeave * match WhitespaceEOL /\s\+$/
-" autocmd BufWinLeave * call clearmatches()
-autocmd Syntax      * syn match WhitespaceEOL /\s\+$\| \+\ze\\t/
-
+ 
 " =================================================
 " Restore Position when repopening a file
 " =================================================
