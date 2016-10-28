@@ -44,34 +44,34 @@ ln -s ~/.vim/vimrc ~/.vimrc
 cd ~/.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-       ```
+```
 
-       Install plugins from the command line:
+Install plugins from the command line:
 
-       ```
-       vim +PlugUpdate +qa
-       ```
+```
+vim +PlugUpdate +qa
+```
 
-       To add or override settings, place them in ``~/.vim/vimrc.local``.
+To add or override settings, place them in ``~/.vim/vimrc.local``.
 
-       To update submodules in the future, when you have vim running, source vimrc to make sure plugins list is updated (or
-           restart vim):
+To update submodules in the future, when you have vim running, source vimrc to make sure plugins list is updated (or
+restart vim):
 
-         ```
-         :PlugUpdate
-         ```
+```
+:PlugUpdate
+```
 
 ### Upgrading
          In case you're updating from previous Vundle based to vim-plug, remove the bundle directory as it's not needed anymore,
          get vim-plug and install the plugins:
 
-         ```
-         cd ~/.vim
-         rm -rf bundle
-         curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-           https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-           vim +PlugUpdate +qa
-           ```
+```
+cd ~/.vim
+rm -rf bundle
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugUpdate +qa
+```
 
 ## Plugins
 
