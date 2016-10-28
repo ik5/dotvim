@@ -62,7 +62,7 @@ Plug 'garyburd/go-explorer'
 Plug 'tpope/vim-unimpaired'
 " Every one should have a pair (Autogenerate pairs for "{[( )
 Plug 'jiangmiao/auto-pairs'
-"The matchit.vim script allows you to configure % to match more than just single characters. 
+"The matchit.vim script allows you to configure % to match more than just single characters.
 Plug 'vim-scripts/matchit.zip'
 
 " airline status plugins
@@ -112,5 +112,8 @@ Plug 'othree/xml.vim'
 
 " A vim plugin that simplifies the transition between multiline and single-line code
 Plug 'AndrewRadev/splitjoin.vim'
+
+" Ascii drawing plugin: lines, ellipses, arrows, fills, and more!
+Plug 'vim-scripts/DrawIt'
 
 call plug#end()
