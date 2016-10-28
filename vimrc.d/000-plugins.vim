@@ -62,6 +62,8 @@ Plug 'garyburd/go-explorer'
 Plug 'tpope/vim-unimpaired'
 " Every one should have a pair (Autogenerate pairs for "{[( )
 Plug 'jiangmiao/auto-pairs'
+"The matchit.vim script allows you to configure % to match more than just single characters. 
+Plug 'vim-scripts/matchit.zip'
 
 " airline status plugins
 Plug 'vim-airline/vim-airline'
