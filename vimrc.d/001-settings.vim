@@ -53,6 +53,7 @@ set completeopt=menu,menuone   " Just show the menu upon completion (faster)
 set completeopt+=preview
 set infercase                     " Allow smarter completion by infering the case
 
+set updatetime 4000       " 4 seconds of no key press the swap file will be written
 set directory=~/tmp      " Keep swap files out of the working dir, Adjust if needed in another dir
 set tags=./tags;         " Set tags directory
 
@@ -137,7 +138,10 @@ set foldcolumn=0
 set sessionoptions=blank,buffers,curdir,folds,help,options,winsize,tabpages
 
 
-
-
+" ================================================
+" Auto reload files
+" ================================================
+set autoread
+au CursorHold * checktime " Check every 4 seconds (based on updatetime) of no key press in normal mode
 
 
