@@ -53,7 +53,7 @@ set completeopt=menu,menuone   " Just show the menu upon completion (faster)
 set completeopt+=preview
 set infercase                     " Allow smarter completion by infering the case
 
-set updatetime 4000       " 4 seconds of no key press the swap file will be written
+set updatetime=4000       " 4 seconds of no key press the swap file will be written
 set directory=~/tmp      " Keep swap files out of the working dir, Adjust if needed in another dir
 set tags=./tags;         " Set tags directory
 
