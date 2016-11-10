@@ -124,4 +124,7 @@ Plug 'vim-scripts/TaskList.vim'
 " Vim script for text filtering and alignment
 Plug 'godlygeek/tabular'
 
+" Drawing tables usin VIM
+Plug 'dhruvasagar/vim-table-mode'
+
 call plug#end()
