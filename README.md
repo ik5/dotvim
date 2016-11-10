@@ -26,7 +26,7 @@ Making my VIM to be close to an IDE setup for the following languages:
  - Snippets
  - Quotes, parenthesis pairs, etc
  - Extended pair matching with %
- - ASCII drawing
+ - ASCII and table drawing
  - Fuzzy file, buffer, MRU, tag, etc finder
  - Task list
  - Git support
@@ -40,17 +40,17 @@ Making my VIM to be close to an IDE setup for the following languages:
 The following commands will clone the repo, symlink ~/.vimrc and update the bundles:
 
 ```
-  git clone https://github.com/ik5/dotvim.git ~/.vim
-  ln -s ~/.vim/vimrc ~/.vimrc
-  cd ~/.vim
-  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+git clone https://github.com/ik5/dotvim.git ~/.vim
+ln -s ~/.vim/vimrc ~/.vimrc
+cd ~/.vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 Install plugins from the command line:
 
 ```
-  vim +PlugUpdate +qa
+vim +PlugUpdate +qa
 ```
 
 To add or override settings, place them in ``~/.vim/vimrc.local``.
@@ -59,7 +59,7 @@ To update submodules in the future, when you have vim running, source vimrc to m
 restart vim):
 
 ```
-  :PlugUpdate
+:PlugUpdate
 ```
 
 ### Upgrading
@@ -68,11 +68,11 @@ In case you're updating from previous Vundle based to vim-plug, remove the bundl
 get vim-plug and install the plugins:
 
 ```
-  cd ~/.vim
-  rm -rf bundle
-  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  vim +PlugUpdate +qa
+cd ~/.vim
+rm -rf bundle
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugUpdate +qa
 ```
 
 ## Plugins
