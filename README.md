@@ -78,7 +78,7 @@ get vim-plug and install the plugins:
 ## Plugins
 
 | Name                                                                    | Description                                                              |
-| :------------------------------------------------:                      | :-----------------------:                                                |
+| ------------------------------------------------                      | -----------------------                                                |
 | [molokai](https://github.com/tomasr/molokai)                            | The monokai theme for VIM                                                |
 | [badwolf](https://github.com/sjl/badwold)                               | Inspired by Doctor Who Rose Tailor theme :)                              |
 | [vim-polyglot](https://github.com/sheerun/vim-polyglot)                 | Over 70 language pack support for vim                                    |
