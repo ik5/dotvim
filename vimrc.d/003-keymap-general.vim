@@ -197,4 +197,5 @@ nnoremap Y y$
 " and ask which one to jump to
 nmap <leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
-
+" tabular resize on insert mode
+" inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
