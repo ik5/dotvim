@@ -128,6 +128,7 @@ vim +PlugUpdate +qa
 | [tabular](https://github.com/godlygeek/tabular)                         | Vim script for text filtering and alignment                                                             |
 | [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)         | Drawing table using vim                                                                                 |
 | [tern for vim](https://github.com/ternjs/tern_for_vim)                  | Using [turn](http://ternjs.net/) to do anaylze code connected to analyze javascript                     |
+| [vim-eunuch](https://github.com/tpope/vim-eunuch)                       | https://github.com/tpope/vim-eunuch                                                                     |
 
 ## Shortcuts
 

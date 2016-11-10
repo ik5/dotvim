@@ -131,4 +131,7 @@ Plug 'dhruvasagar/vim-table-mode'
 " Tern plugin for Vim
 Plug 'ternjs/tern_for_vim'
 
+" eunuch.vim: helpers for UNIX
+Plug 'tpope/vim-eunuch'
+
 call plug#end()
