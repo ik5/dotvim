@@ -76,4 +76,9 @@ vim +PlugUpdate +qa
 
 ## Plugins
 
+| Name                                               | Description               |
+| :------------------------------------------------: | :-----------------------: |
+| [molokai](https://www.github.com/tomasr/molokai)   | The monokai theme for VIM |
+
+## Shortcuts
 
