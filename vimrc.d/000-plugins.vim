@@ -128,4 +128,7 @@ Plug 'godlygeek/tabular'
 " Drawing tables usin VIM
 Plug 'dhruvasagar/vim-table-mode'
 
+" Tern plugin for Vim
+Plug 'ternjs/tern_for_vim'
+
 call plug#end()
