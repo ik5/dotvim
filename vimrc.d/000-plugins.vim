@@ -44,7 +44,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 " BufExplorer Plugin for Vim
 Plug 'jlanzarotta/bufexplorer'
 
-" Rails and bundler
+" Ruby, Rails, Sinatra and bundler
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
 " endwith ruby
@@ -52,6 +52,8 @@ Plug 'tpope/vim-endwise'
 Plug 'vim-ruby/vim-ruby'
 " Ruby tests
 Plug 'janko-m/vim-test'
+" Sinatra
+Plug 'hallison/vim-ruby-sinatra'
 
 " golang support
 Plug 'fatih/vim-go'
