@@ -137,4 +137,7 @@ Plug 'tpope/vim-eunuch'
 " Handles bracketed-paste-mode in vim (aka. automatic `:set paste`)
 Plug 'ConradIrwin/vim-bracketed-paste'
 
+" Lightning fast left-right movement in Vim
+Plug 'unblevable/quick-scope'
+
 call plug#end()

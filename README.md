@@ -130,6 +130,7 @@ vim +PlugUpdate +qa
 | [tern for vim](https://github.com/ternjs/tern_for_vim)                    | Using [turn](http://ternjs.net/) to do anaylze code connected to analyze javascript                     |
 | [vim-eunuch](https://github.com/tpope/vim-eunuch)                         | eunuch.vim: helpers for UNIX                                                                            |
 | [vim-bracketed-paste](https://github.com/ConradIrwin/vim-bracketed-paste) | Handles bracketed-paste-mode in vim (aka automatic ``:set paste``)                                      |
+| [quick-scope](https://github.com/unblevable/quick-scope)                  | Lightning fast left-right movement in Vim                                                               |
 
 ## Shortcuts
 
