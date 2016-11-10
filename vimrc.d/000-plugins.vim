@@ -56,6 +56,7 @@ Plug 'janko-m/vim-test'
 Plug 'hallison/vim-ruby-sinatra'
 
 " golang support
+" https://github.com/fatih/vim-go-tutorial
 Plug 'fatih/vim-go'
 " Go Explorer is Vim plugin for exploring Go code
 Plug 'garyburd/go-explorer'
