@@ -134,4 +134,7 @@ Plug 'ternjs/tern_for_vim'
 " eunuch.vim: helpers for UNIX
 Plug 'tpope/vim-eunuch'
 
+" Handles bracketed-paste-mode in vim (aka. automatic `:set paste`)
+Plug 'ConradIrwin/vim-bracketed-paste'
+
 call plug#end()
