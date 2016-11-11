@@ -245,7 +245,7 @@ nmap <leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<C
 
 " Error window (a.k.a. quick fix window)
 map <leader>e :cn<CR>
-map <leader><s-e> :cp<CR>
+map <leader>E :cp<CR>
 map <leader><c-e> :cclose<CR>
 
 " Close all windows except the active one
