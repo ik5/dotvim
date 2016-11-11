@@ -62,8 +62,11 @@ map <m-.> <C-W><
 " F2 close current split (window)
 noremap <F2> <Esc>:close<CR><Esc>
 
+" delete current buffer
+nmap <leader>d :bd<CR>
+
 " Deleter buffer, keep the split (switch to prev buf, delete now prev buf)
-nmap <leader>d :b#<bar>bd#<CR>
+nmap <leader>D :b#<bar>bd#<CR>
 
 " ==================================================
 " Clean all end of line whitespace with <Leader>S
