@@ -135,7 +135,17 @@ vim +PlugUpdate +qa
 
 ## Shortcuts
 
-| Key   | Description   |
-| ----- | ------------- |
-| ``<leader>`` | The leader key is set to `\` |
+| Key           | Description                                       |
+| -----         | -------------                                     |
+| ``<leader>``  | The leader key is set to ``\``                    |
+| ``jj``        | The keys are set to be a fast escape key          |
+| ``<leader>r`` | Reload vimrc                                      |
+| ``<leader>R`` | Reload and activate vimrc changes                 |
+| ``<leader>w`` | Fast saving (``:w!``)                             |
+| ``:W``        | Do a sudo to try and save the file, as a command! |
+| ``Ctrl+j``    | Go to the window bellow                           |
+| ``Ctrl+k``    | Go to the window above                            |
+| ``Ctrl+h``    | Go to the window on the left                      |
+| ``Ctrl+l``    | Go to the window on the right                     |
+
 
