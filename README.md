@@ -198,7 +198,7 @@ vim +PlugUpdate +qa
 | ``F11``                             | Show BufExplorer                                                                         |
 | ``Shift+F11``                       | Toggle BufExplorer                                                                       |
 | ``Alt+F11``                         | Show BufExplorer in a Horizontal window                                                  |
-| ``Ctrl+F11``                        | Shoe BufExplorer in a Vertical window                                                    |
+| ``Ctrl+F11``                        | Show BufExplorer in a Vertical window                                                    |
 
 
 
