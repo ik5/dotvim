@@ -195,5 +195,10 @@ vim +PlugUpdate +qa
 | ``<leader>Ctrl+w``                  | Exit diff mode                                                                           |
 | ``F8``                              | Toggle Reverse insertion - For visual order editing                                      |
 | ``F9``                              | Toggle direction mapping - for logical order editing                                     |
+| ``F11``                             | Show BufExplorer                                                                         |
+| ``Shift+F11``                       | Toggle BufExplorer                                                                       |
+| ``Alt+F11``                         | Show BufExplorer in a Horizontal window                                                  |
+| ``Ctrl+F11``                        | Shoe BufExplorer in a Vertical window                                                    |
+
 
 
