@@ -169,6 +169,10 @@ nnoremap <leader>gvd :Gvdiff<CR>
 vnoremap <leader>g/ :Ggrep<space>
 nnoremap <leader>g/ :Ggrep<space>
 
+" push
+vnoremap <leader>gp :Gpush<CR>
+nnoremap <leader>gp :Gpush<CR>
+
 
 
 
