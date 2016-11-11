@@ -86,6 +86,10 @@ noremap <F5> :set hlsearch! hlsearch?<CR>
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
+" center line when moving up and down half a screen
+noremap <C-d> <C-d>zz
+noremap <C-u> <C-u>zz
+
 " ==================================================
 " Fix meta key in terminal
 " fix meta-keys which generate <Esc>a .. <Esc>z
