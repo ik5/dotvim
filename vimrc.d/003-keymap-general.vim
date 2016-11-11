@@ -220,7 +220,7 @@ map <c-P> :set paste!<CR>
 "remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
-" witch between the last two files
+" switch between the last two files
 nnoremap <leader><leader> <C-^>
 
 " Allow to copy/paste between VIM instances
