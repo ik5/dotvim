@@ -205,3 +205,6 @@ map <leader>e :cn<CR>
 map <leader><s-e> :cp<CR>
 map <leader><c-e> :cclose<CR>
 
+" Close all windows except the active one
+nnoremap <leader>q :only<CR>
+
