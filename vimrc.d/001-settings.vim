@@ -17,11 +17,10 @@ set smartindent          " smart indentation
 set showcmd              " display incomplete commands
 set ruler                " show the cursor position all the time
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
-set visualbell
+set visualbell           " Visual bell instead of nosie, or no indication at all
 set nobackup             " do not keep a backup file
 set number               " show line numbers
 set title                " show title in console title bar
-set ttyfast              " smoother changes
 set modeline             " last lines in document sets vim mode
 set shortmess=atIc       " Abbreviate messages
 set nostartofline        " don't jump to first character when paging
@@ -32,8 +31,10 @@ set matchtime=3
 set sm                   " show matching braces, somewhat annoying...
 set mouse=a
 set ttymouse=xterm2
+set ttyscroll=3           " number of lines to scroll before redraw
+set ttyfast              " smoother changes
 set history=1500          " larger history
-"set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set timeout ttimeoutlen=50
 set selection=inclusive
 set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
@@ -46,12 +47,14 @@ set iskeyword-=-                    " '-' is an end of word designator
 set lazyredraw
 
 set splitright           " Splits to the right
+set splitbelow           " split below me
 
 set wildmenu                      " show list instead of just completing
 set wildmode=list:longest,full    " command <Tab> completion, list matches, then longest common part, then all.
 set completeopt=menu,menuone   " Just show the menu upon completion (faster)
 set completeopt+=preview
 set infercase                     " Allow smarter completion by infering the case
+set pumheight=15               " The maximum height of a completion menu
 
 set updatetime=4000       " 4 seconds of no key press the swap file will be written
 set directory=~/tmp      " Keep swap files out of the working dir, Adjust if needed in another dir
@@ -65,7 +68,20 @@ if has('clipboard')
   endif
 endif
 
-syntax on
+" use persistent_undo -> saving to a file the changes on exit
+" if that is available
+if has('persistent_undo')
+  set undofile
+  set undodir=~/tmp/undo/
+endif
+
+
+if has('!nvim')
+  syntax on
+  set t_Co=256
+  set term=ansi
+endif
+
 filetype plugin on
 filetype indent plugin on
 

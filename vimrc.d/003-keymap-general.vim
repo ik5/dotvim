@@ -199,3 +199,9 @@ nmap <leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<C
 
 " tabular resize on insert mode
 " inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+
+" Error window (a.k.a. quick fix window)
+map <leader>e :cn<CR>
+map <leader><s-e> :cp<CR>
+map <leader><c-e> :cclose<CR>
+

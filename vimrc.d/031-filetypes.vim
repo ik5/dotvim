@@ -22,10 +22,15 @@ autocmd Filetype xhtml setlocal ts=2 sw=2 expandtab
 autocmd Filetype xml setlocal ts=2 sw=2 expandtab
 autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype less setlocal ts=2 sw=2 expandtab
-autocmd Filetype ruby setlocal ts=2 sw=2 expandtab 
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd FileType ruby compiler ruby
 autocmd FileType ruby let b:dispatch = 'ruby -c -w %'
 autocmd FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
+autocmd FileType go setlocal noexpandtab tabstop=2 shiftwidth=2
+autocmd FileType txt setlocal noet ts=2 sw=2
+autocmd FileType md setlocal noet ts=2 sw=2
+autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=2
+
 
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
 
@@ -33,3 +38,5 @@ autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
 " set it to the first line when editing a git commit message
 au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 
+" put quickfix window always to the bottom
+autocmd FileType qf wincmd J
