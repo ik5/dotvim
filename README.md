@@ -135,49 +135,63 @@ vim +PlugUpdate +qa
 
 ## Shortcuts
 
-| Key                     | Description                                                              |
-| -----                   | -------------                                                            |
-| ``<leader>``            | The leader key is set to ``\``                                           |
-| ``jj``                  | The keys are set to be a fast escape key                                 |
-| ``<leader>r``           | Reload vimrc                                                             |
-| ``<leader>R``           | Reload and activate vimrc changes                                        |
-| ``<leader>w``           | Fast saving (``:w!``)                                                    |
-| ``:W``                  | Do a sudo to try and save the file, as a command!                        |
-| ``Ctrl+j``              | Go to the window bellow                                                  |
-| ``Ctrl+k``              | Go to the window above                                                   |
-| ``Ctrl+h``              | Go to the window on the left                                             |
-| ``Ctrl+l``              | Go to the window on the right                                            |
-| ``Ctrl+w``              | In insert mode, allows the window moving to work the same                |
-| ``-`` and ``+``         | Resize horizontal window                                                 |
-| ``Alt+,`` and ``Alt+.`` | Resize vertical window                                                   |
-| ``F2``                  | Close current window (do not remove the buffer)                          |
-| ``<leader>d``           | Delete current buffer                                                    |
-| ``<leader>D``           | Delete current buffer, keep split and switch to another buffer if found  |
-| ``<leader>S``           | Clean all of annoying white spaces in the end of a line                  |
-| ``F5``                  | Toggle highlight search                                                  |
-| ``CtrlF9``              | Execute async compiler                                                   |
-| ``F3``                  | Toggle NerdTree                                                          |
-| ``Alt+j``               | Move current line down                                                   |
-| ``Alt+k``               | Move current line up                                                     |
-| ``Shift+F7 ``           | Toggle spell checking                                                    |
-| ``<leader>sn``          | Move to the next misspelled word                                         |
-| ``<leader>sp``          | Move to the previous misspelled word                                     |
-| ``<leader>sa``          | Add current word under the cursor to the dictionary                      |
-| ``<leader>s?``          | Show suggestion window                                                   |
-| ``<leader>fc``          | Find git merge conflict markers                                          |
-| ``<leader>g?``          | Show git status                                                          |
-| ``<leader>gb``          | Show git blame                                                           |
-| ``<leader>gc``          | Do git commit                                                            |
-| ``<leader>gvd``         | Show vertical git diff                                                   |
-| ``<leader>g/``          | Do git grep                                                              |
-| ``<leader>gp``          | Do git push                                                              |
-| ``<leader>gv``          | See git in history changes (log) in new tab                              |
-| ``<leader>gV``          | See git in history changes (log) in new windows                          |
-| ``<leader>gD``          | See current git diff in a new window                                     |
-| ``]h``                  | Go to the next group of changes in the current file from last commit     |
-| ``[h``                  | Go to the previous group of changed in the current file from last commit |
-| ``<leader>hs``          | Stage the current chunk of changes                                       |
-| ``<leader>hu``          | Undo last stage of changes                                               |
-| ``<leader>hv``          | Preview current stage of changes                                         |
+| Key                                 | Description                                                              |
+| -----                               | -------------                                                            |
+| ``<leader>``                        | The leader key is set to ``\``                                           |
+| ``jj``                              | The keys are set to be a fast escape key                                 |
+| ``<leader>r``                       | Reload vimrc                                                             |
+| ``<leader>R``                       | Reload and activate vimrc changes                                        |
+| ``<leader>w``                       | Fast saving (``:w!``)                                                    |
+| ``:W``                              | Do a sudo to try and save the file, as a command!                        |
+| ``Ctrl+j``                          | Go to the window bellow                                                  |
+| ``Ctrl+k``                          | Go to the window above                                                   |
+| ``Ctrl+h``                          | Go to the window on the left                                             |
+| ``Ctrl+l``                          | Go to the window on the right                                            |
+| ``Ctrl+w``                          | In insert mode, allows the window moving to work the same                |
+| ``-`` and ``+``                     | Resize horizontal window                                                 |
+| ``Alt+,`` and ``Alt+.``             | Resize vertical window                                                   |
+| ``F2``                              | Close current window (do not remove the buffer)                          |
+| ``<leader>d``                       | Delete current buffer                                                    |
+| ``<leader>D``                       | Delete current buffer, keep split and switch to another buffer if found  |
+| ``<leader>S``                       | Clean all of annoying white spaces in the end of a line                  |
+| ``F5``                              | Toggle highlight search                                                  |
+| ``CtrlF9``                          | Execute async compiler                                                   |
+| ``F3``                              | Toggle NerdTree                                                          |
+| ``Alt+j``                           | Move current line down                                                   |
+| ``Alt+k``                           | Move current line up                                                     |
+| ``Shift+F7 ``                       | Toggle spell checking                                                    |
+| ``<leader>sn``                      | Move to the next misspelled word                                         |
+| ``<leader>sp``                      | Move to the previous misspelled word                                     |
+| ``<leader>sa``                      | Add current word under the cursor to the dictionary                      |
+| ``<leader>s?``                      | Show suggestion window                                                   |
+| ``<leader>fc``                      | Find git merge conflict markers                                          |
+| ``<leader>g?``                      | Show git status                                                          |
+| ``<leader>gb``                      | Show git blame                                                           |
+| ``<leader>gc``                      | Do git commit                                                            |
+| ``<leader>gvd``                     | Show vertical git diff                                                   |
+| ``<leader>g/``                      | Do git grep                                                              |
+| ``<leader>gp``                      | Do git push                                                              |
+| ``<leader>gv``                      | See git in history changes (log) in new tab                              |
+| ``<leader>gV``                      | See git in history changes (log) in new windows                          |
+| ``<leader>gD``                      | See current git diff in a new window                                     |
+| ``]h``                              | Go to the next group of changes in the current file from last commit     |
+| ``[h``                              | Go to the previous group of changed in the current file from last commit |
+| ``<leader>hs``                      | Stage the current chunk of changes                                       |
+| ``<leader>hu``                      | Undo last stage of changes                                               |
+| ``<leader>hv``                      | Preview current stage of changes                                         |
+| ``<leader>f0`` up to ``<leader>f0`` | Set code folding levels                                                  |
+| ``Ctrl+p`` | Toggle paste |
+| ``<leader>m`` | Remove the annoying Windows EOF of ^M |
+| ``<leader><leader>`` | Switch between the last two files |
+| ``<leader>y`` | Copy the current line/visual selection to ``~/tmp/.vbuf`` file |
+| ``<leader>p`` | Paste the content from ``~/tmp/.vbuf`` file |
+| ``Y``         | Yank the current line (to be consistent with ``D`` and ``C``) |
+| ``<leader>ff`` | Display all of the lines with a keyword under the cursor and ask where to go at the list |
+| ``<leader>e`` | Display the next error from the quickfix window |
+| ``<leader>E`` | Display the previous error from the quickfix window |
+| ``<leader>Ctrl+e`` | Close quickfix window |
+| ``<leader>q`` | Close all open windows except of the current one |
+| ``Ctrl+f`` | Print the full path we are at |
+| ``<leader>Ctrl+w`` | Exit diff mode |
 
 
