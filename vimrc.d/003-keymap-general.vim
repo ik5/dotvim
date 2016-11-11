@@ -145,6 +145,33 @@ map <leader>s? z=
 " Find merge conflict markers
 map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>
 
+" ======================================================
+" Fugitive
+" =====================================================
+
+" Status
+vnoremap <leader>g? :Gstatus<CR>
+nnoremap <leader>g? :Gstatus<CR>
+
+" Blame
+vnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gb :Gblame<CR>
+
+" Commit
+vnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gc :Gcommit<CR>
+
+" vdiff
+vnoremap <leader>gvd :Gvdiff<CR>
+nnoremap <leader>gvd :Gvdiff<CR>
+
+" git grep
+vnoremap <leader>g/ :Ggrep<space>
+nnoremap <leader>g/ :Ggrep<space>
+
+
+
+
 " =======================================================
 " Gitv
 " =======================================================
@@ -222,4 +249,9 @@ nnoremap <leader>q :only<CR>
 
 " Print full path
 map <C-f> :echo expand("%:p")<cr>
+
+" Exit diff mode
+noremap <leader><c-w> :windo diffoff<CR>
+
+
 
