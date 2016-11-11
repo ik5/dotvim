@@ -135,3 +135,7 @@ vim +PlugUpdate +qa
 
 ## Shortcuts
 
+| Key   | Description   |
+| ----- | ------------- |
+| ``<leader>`` | The leader key is set to `\` |
+
