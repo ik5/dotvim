@@ -153,12 +153,15 @@ vim +PlugUpdate +qa
 | ``F2``                  | Close current window (do not remove the buffer)                         |
 | ``<leader>d``           | Delete current buffer                                                   |
 | ``<leader>D``           | Delete current buffer, keep split and switch to another buffer if found |
-| ``<leader>S``           | Clean all of annoying white spaces in the end of a line |
-| ``F5``                  | Toggle highlight search |
-| ``CtrlF9`` | Execute async compiler |
-| ``F3`` | Toggle NerdTree |
-| ``Alt+j`` | Move current line down |
-| ``Alt+k`` | Move current line up |
-
-
+| ``<leader>S``           | Clean all of annoying white spaces in the end of a line                 |
+| ``F5``                  | Toggle highlight search                                                 |
+| ``CtrlF9``              | Execute async compiler                                                  |
+| ``F3``                  | Toggle NerdTree                                                         |
+| ``Alt+j``               | Move current line down                                                  |
+| ``Alt+k``               | Move current line up                                                    |
+| ``Shift+F7 ``           | Toggle spell checking                                                   |
+| ``<leader>sn``          | Move to the next misspelled word                                        |
+| ``<leader>sp``          | Move to the previous misspelled word                                    |
+| ``<leader>sa``          | Add current word under the cursor to the dictionary                     |
+| ``<leader>s?``          | Show suggestion window                                                  |
 
