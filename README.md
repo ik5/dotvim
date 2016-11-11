@@ -24,7 +24,7 @@ Making my VIM to be close to an IDE setup for the following languages:
  - Highlight current row and color column 80
  - Syntax checking
  - Snippets
- - Quotes, parenthesis pairs, etc
+ - Completion Quotes, parenthesis pairs, etc
  - Extended pair matching with %
  - ASCII and table drawing
  - Fuzzy file, buffer, MRU, tag, etc finder
@@ -32,7 +32,7 @@ Making my VIM to be close to an IDE setup for the following languages:
  - Git support
  - Tab Completion
  - Commenting
- - History management
+ - History management, including persistent undo
  - Additional documentation support
  - Reload file when changed from outside
  - Working with error window (a.k.a. quickfix)
