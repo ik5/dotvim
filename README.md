@@ -35,6 +35,7 @@ Making my VIM to be close to an IDE setup for the following languages:
  - History management
  - Additional documentation support
  - Reload file when changed from outside
+ - Working with error window (a.k.a. quickfix)
 
 ## Installation
 The following commands will clone the repo, symlink ~/.vimrc and update the bundles:
