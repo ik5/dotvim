@@ -200,6 +200,8 @@ vim +PlugUpdate +qa
 | ``Shift+F11``                       | Toggle BufExplorer                                                                       |
 | ``Alt+F11``                         | Show BufExplorer in a Horizontal window                                                  |
 | ``Ctrl+F11``                        | Show BufExplorer in a Vertical window                                                    |
-
+| ``<leader>hc``                      | Toggle view of hidden chars                                                              |
+| ``<leader>wrp``                     | Toggle word wrap                                                                         |
+| ``<leader>srt``                     | Sort numbers in paragraph based on the external sort command                             |
 
 

@@ -257,5 +257,16 @@ map <C-f> :echo expand("%:p")<cr>
 " Exit diff mode
 noremap <leader><c-w> :windo diffoff<CR>
 
+" Toggle view of hidden chars
+map <leader>hc :set list!<CR>
+imap <leader>hc <ESC>:set list!<CR>a
+
+" Toggle word wrap
+map <leader>wrp :set wrap!<CR>
+imap <leader>wrp <ESC>:set wrap!<CR>a
+
+" sort numbers in paragraph
+map <leader>srt {V}k:!sort<CR>
+vmap <leader>srt {V}k:!sort<CR>
 
 
