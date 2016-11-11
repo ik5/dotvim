@@ -80,7 +80,12 @@ nmap <leader>D :b#<bar>bd#<CR>
 " Probably would be better to use unimapaired's coh
 " ==================================================
 noremap <F5> :set hlsearch! hlsearch?<CR>
-"
+
+" Search mappings: These will make it so that going to the next one in a
+" search will center on the line it's found in.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
 " ==================================================
 " Fix meta key in terminal
 " fix meta-keys which generate <Esc>a .. <Esc>z
@@ -210,4 +215,7 @@ map <leader><c-e> :cclose<CR>
 
 " Close all windows except the active one
 nnoremap <leader>q :only<CR>
+
+" Print full path
+map <C-f> :echo expand("%:p")<cr>
 
