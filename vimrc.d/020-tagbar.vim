@@ -32,5 +32,14 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
 \ }
 
-
+let g:tagbar_type_html = {
+      \ 'ctagstype' : 'html',
+      \ 'kinds' : [
+      \ 'a:anchors',
+      \ 't:tag',
+      \ 'i:identifiers',
+      \ 'c:classes',
+      \ 'h:header',
+      \ ],
+      \ }
 
