@@ -135,17 +135,30 @@ vim +PlugUpdate +qa
 
 ## Shortcuts
 
-| Key           | Description                                       |
-| -----         | -------------                                     |
-| ``<leader>``  | The leader key is set to ``\``                    |
-| ``jj``        | The keys are set to be a fast escape key          |
-| ``<leader>r`` | Reload vimrc                                      |
-| ``<leader>R`` | Reload and activate vimrc changes                 |
-| ``<leader>w`` | Fast saving (``:w!``)                             |
-| ``:W``        | Do a sudo to try and save the file, as a command! |
-| ``Ctrl+j``    | Go to the window bellow                           |
-| ``Ctrl+k``    | Go to the window above                            |
-| ``Ctrl+h``    | Go to the window on the left                      |
-| ``Ctrl+l``    | Go to the window on the right                     |
+| Key                     | Description                                                             |
+| -----                   | -------------                                                           |
+| ``<leader>``            | The leader key is set to ``\``                                          |
+| ``jj``                  | The keys are set to be a fast escape key                                |
+| ``<leader>r``           | Reload vimrc                                                            |
+| ``<leader>R``           | Reload and activate vimrc changes                                       |
+| ``<leader>w``           | Fast saving (``:w!``)                                                   |
+| ``:W``                  | Do a sudo to try and save the file, as a command!                       |
+| ``Ctrl+j``              | Go to the window bellow                                                 |
+| ``Ctrl+k``              | Go to the window above                                                  |
+| ``Ctrl+h``              | Go to the window on the left                                            |
+| ``Ctrl+l``              | Go to the window on the right                                           |
+| ``Ctrl+w``              | In insert mode, allows the window moving to work the same               |
+| ``-`` and ``+``         | Resize horizontal window                                                |
+| ``Alt+,`` and ``Alt+.`` | Resize vertical window                                                  |
+| ``F2``                  | Close current window (do not remove the buffer)                         |
+| ``<leader>d``           | Delete current buffer                                                   |
+| ``<leader>D``           | Delete current buffer, keep split and switch to another buffer if found |
+| ``<leader>S``           | Clean all of annoying white spaces in the end of a line |
+| ``F5``                  | Toggle highlight search |
+| ``CtrlF9`` | Execute async compiler |
+| ``F3`` | Toggle NerdTree |
+| ``Alt+j`` | Move current line down |
+| ``Alt+k`` | Move current line up |
+
 
 
