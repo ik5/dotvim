@@ -217,6 +217,10 @@ nmap <leader>f9 :set foldlevel=9<CR>
 " toggle paste
 map <c-P> :set paste!<CR>
 
+" paste while keeping the current indent
+nnoremap <leader>p p`[v`]=
+nnoremap <leader>P P`[v`]=
+
 "remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
