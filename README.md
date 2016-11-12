@@ -133,6 +133,7 @@ vim +PlugUpdate +qa
 | [vim-bracketed-paste](https://github.com/ConradIrwin/vim-bracketed-paste) | Handles bracketed-paste-mode in vim (aka automatic ``:set paste``)                                                  |
 | [quick-scope](https://github.com/unblevable/quick-scope)                  | Lightning fast left-right movement in Vim                                                                           |
 | [emmet-vim](https://github.com/mattn/emmet-vim/)                          | emmet-vim is a vim plug-in which provides support for expanding abbreviations similar to [emmet](http://emmet.io/). |
+| [vim-css-color](https://github.com/gp/vim-css-color)                      | Coloring the CSS color text                                                                                         |
 
 ## Shortcuts
 
