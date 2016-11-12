@@ -142,4 +142,7 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 " Lightning fast left-right movement in Vim
 Plug 'unblevable/quick-scope'
 
+" Css Coloring
+Plug 'ap/vim-css-color'
+
 call plug#end()
