@@ -117,7 +117,7 @@ vim +PlugUpdate +qa
 | [vim-plugin-viewdoc](https://github.com/powerman/vim-plugin-viewdoc)      | Vim plugin: flexible viewer for any documentation                                                                   |
 | [rust.vim](https://github.com/rust-lang/rust.vim)                         | [Rust](https://www.rust-lang.org/) support for vim                                                                  |
 | [vim-racer](https://github.com/racer-rust)                                | Rust [racer](https://github.com/phildawes/racer) Syntax checking                                                    |
-| [gundo](https://github.com/sjl/gundo.vim)                                 | Visual undo graph                                                                                                   |
+| [undotree](https://github.com/mbbill/undotree)                            | Visual undo graph                                                                                                   |
 | [vim-surround](https://github.com/tpope/vim-surround)                     | surrond changing things based on syntax, such as ', ", \[, ] etc..                                                  |
 | [vim-repeat](https://github.com/tpope/vim-repeat)                         | Enable repeating supported plugin maps with '.'                                                                     |
 | [webapi-vim](https://github.com/mattn/webapi-vim)                         | Web API for other plugins                                                                                           |
