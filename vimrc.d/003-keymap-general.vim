@@ -273,4 +273,8 @@ imap <leader>wrp <ESC>:set wrap!<CR>a
 map <leader>srt {V}k:!sort<CR>
 vmap <leader>srt {V}k:!sort<CR>
 
-
+"For navigating tabs like gui applications
+nnoremap <C-PageDown> gt
+nnoremap <C-PageUp> gT
+nnoremap <C-O> :tabnew <Space>
+nnoremap <C-T> :tabnew <Space>
