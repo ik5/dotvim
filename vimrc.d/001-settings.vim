@@ -42,6 +42,7 @@ set virtualedit=onemore             " Allow for cursor beyond last character
 set iskeyword-=.                    " '.' is an end of word designator
 set iskeyword-=#                    " '#' is an end of word designator
 set iskeyword-=-                    " '-' is an end of word designator
+set shell=zsh                       " I'm using zsh
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
@@ -51,6 +52,17 @@ set splitbelow           " split below me
 
 set wildmenu                      " show list instead of just completing
 set wildmode=list:longest,full    " command <Tab> completion, list matches, then longest common part, then all.
+set wildignore+=.hg,.git,.svn                    " Version control
+set wildignore+=_build                           " Sphinx build dir
+set wildignore+=*.aux,*.out,*.toc                " LaTeX intermediate files
+set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg   " binary images
+set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest " compiled object files
+set wildignore+=*.pyc                            " Python byte code
+set wildignore+=*.spl                            " compiled spelling word lists
+set wildignore+=*.sw?                            " Vim swap files
+set wildignore+=*.DS_Store
+set wildignore+=*.rdb                            " Redis database file
+
 set completeopt=menu,menuone   " Just show the menu upon completion (faster)
 set completeopt+=preview
 set infercase                     " Allow smarter completion by infering the case
@@ -72,7 +84,7 @@ endif
 " if that is available
 if has('persistent_undo')
   set undofile
-  set undodir=~/tmp/undo/
+  set undodir=~/tmp/vim_undo//
 endif
 
 
@@ -103,7 +115,7 @@ if !has('gui_running')
   augroup FastEscape
     autocmd!
     au InsertEnter * set timeoutlen=0
-    au InsertLeave * set timeoutlen=5000
+    au InsertLeave * set timeoutlen=1000
   augroup END
 endif
 
