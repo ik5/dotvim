@@ -96,7 +96,8 @@ Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
 " visual undo graph
-Plug 'sjl/gundo.vim'
+"Plug 'sjl/gundo.vim'
+Plug 'mbbill/undotree'
 
 " surrond changing things based on syntax, such as ', ", [, ] etc..
 Plug 'tpope/vim-surround'
