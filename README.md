@@ -10,6 +10,7 @@ Making my VIM to be close to an IDE setup for the following languages:
  - Javascript
  - XML
  - Rust
+ - C
 
 ## Features
 
