@@ -43,3 +43,23 @@ let g:tagbar_type_html = {
       \ ],
       \ }
 
+let g:tagbar_type_c = {
+      \ 'ctagstype' : 'c',
+      \ 'kinds': [
+      \ 'c:classes',
+      \ 'd:macro definitions',
+      \ 'e:enumerators',
+      \ 'f:function definitions',
+      \ 'g:enumeration names',
+      \ 'l:local variables',
+      \ 'm:members',
+      \ 'n:namespaces',
+      \ 'p:function prototypes',
+      \ 's:structure names',
+      \ 't:typedefs',
+      \ 'u:union names',
+      \ 'v:variable definitions',
+      \ 'x:external and forward variable declarations',
+      \ 'h:headers',
+      \],
+      \ }

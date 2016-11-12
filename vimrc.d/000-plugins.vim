@@ -113,7 +113,7 @@ Plug 'lifepillar/vim-mucomplete'
 " Helps editing xml and (x)html files
 Plug 'othree/xml.vim'
 " HTML abbrivation tool
-Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim', { 'for': ['html', 'xhtml', 'css', 'xml'] }
 
 " A vim plugin that simplifies the transition between multiline and single-line code
 Plug 'AndrewRadev/splitjoin.vim'
@@ -144,5 +144,8 @@ Plug 'unblevable/quick-scope'
 
 " Css Coloring
 Plug 'ap/vim-css-color'
+
+" Use of Clang for completing C, C++, Objective-C and Objective-C++
+Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
 
 call plug#end()
