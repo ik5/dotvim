@@ -134,6 +134,7 @@ vim +PlugUpdate +qa
 | [quick-scope](https://github.com/unblevable/quick-scope)                  | Lightning fast left-right movement in Vim                                                                           |
 | [emmet-vim](https://github.com/mattn/emmet-vim/)                          | emmet-vim is a vim plug-in which provides support for expanding abbreviations similar to [emmet](http://emmet.io/). |
 | [vim-css-color](https://github.com/gp/vim-css-color)                      | Coloring the CSS color text                                                                                         |
+| [clang_complete](https://github.com/Rip-Rip/clang_complete)               | Use clang for completing C, C++ etc..                                                                               |
 
 ## Shortcuts
 
