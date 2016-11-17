@@ -94,6 +94,7 @@ if has('!nvim')
   set term=ansi
 endif
 
+filetype on
 filetype plugin on
 filetype indent plugin on
 
