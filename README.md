@@ -111,7 +111,7 @@ vim +PlugUpdate +qa
 | [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)   | A collection of themes for vim-airline                                                                              |
 | [powerline fonts](https://github.com/powerline/fonts)                     | Patched fonts for Powerline users                                                                                   |
 | [supertab](https://github.com/ervandew/supertab)                          | Complete using the TAB key                                                                                          |
-| [tagbar](https://github.com/majutsushi/tagbar)                            | Using [ctags](ctags.sourceforge.net/) to show tags of a project                                                     |
+| [tagbar](https://github.com/majutsushi/tagbar)                            | Using [ctags](ctags.sourceforge.net/) to show tags of a project [My dotfiles](https://github.com/ik5/dotfiles)      |
 | [ultisnips](https://github.com/SirVer/ultisnips)                          | The ultimate snippet solution for Vim                                                                               |
 | [vim-snippets](https://github.com/honza/vim-snippets)                     | vim-snipmate default snippets                                                                                       |
 | [vim-snipmate](https://github.com/garbas/vim-snipmate)                    | nipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim             |
