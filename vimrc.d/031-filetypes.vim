@@ -17,12 +17,12 @@ au! BufRead,BufNewFile *.json set filetype=json
 " jquery
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
-autocmd Filetype xhtml setlocal ts=2 sw=2 expandtab
-autocmd Filetype xml setlocal ts=2 sw=2 expandtab
-autocmd Filetype css setlocal ts=2 sw=2 expandtab
-autocmd Filetype less setlocal ts=2 sw=2 expandtab
-autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=2 sw=2 noexpandtab
+autocmd Filetype xhtml setlocal ts=2 sw=2 noexpandtab
+autocmd Filetype xml setlocal ts=2 sw=2 noexpandtab
+autocmd Filetype css setlocal ts=2 sw=2 noexpandtab
+autocmd Filetype less setlocal ts=2 sw=2 noexpandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 noexpandtab
 autocmd FileType ruby compiler ruby
 autocmd FileType ruby let b:dispatch = 'ruby -c -w %'
 autocmd FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
@@ -30,7 +30,7 @@ autocmd FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
 autocmd FileType go setlocal noexpandtab tabstop=2 shiftwidth=8
 autocmd FileType txt setlocal noet ts=2 sw=2
 autocmd FileType md setlocal noet ts=2 sw=2
-autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType vim setlocal noexpandtab shiftwidth=2 tabstop=2
 
 
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
