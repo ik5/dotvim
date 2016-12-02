@@ -27,7 +27,7 @@ autocmd FileType ruby compiler ruby
 autocmd FileType ruby let b:dispatch = 'ruby -c -w %'
 autocmd FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
 " display it as 2 tabs like I like, but make it 8 as Go likes
-autocmd FileType go setlocal noexpandtab tabstop=2 shiftwidth=8
+autocmd FileType go setlocal noexpandtab tabstop=2 shiftwidth=8 norelativenumber
 autocmd FileType txt setlocal noet ts=2 sw=2
 autocmd FileType md setlocal noet ts=2 sw=2
 autocmd FileType vim setlocal noexpandtab shiftwidth=2 tabstop=2
