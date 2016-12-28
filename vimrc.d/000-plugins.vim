@@ -114,6 +114,8 @@ Plug 'lifepillar/vim-mucomplete'
 Plug 'othree/xml.vim'
 " HTML abbrivation tool
 Plug 'mattn/emmet-vim', { 'for': ['html', 'xhtml', 'css', 'xml'] }
+" support for vue.js
+Plug 'posva/vim-vue'
 
 " A vim plugin that simplifies the transition between multiline and single-line code
 Plug 'AndrewRadev/splitjoin.vim'
