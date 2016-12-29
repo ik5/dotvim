@@ -113,7 +113,7 @@ Plug 'lifepillar/vim-mucomplete'
 " Helps editing xml and (x)html files
 Plug 'othree/xml.vim'
 " HTML abbrivation tool
-Plug 'mattn/emmet-vim', { 'for': ['html', 'xhtml', 'css', 'xml'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'xhtml', 'css', 'xml', 'erb'] }
 " support for vue.js
 Plug 'posva/vim-vue'
 
