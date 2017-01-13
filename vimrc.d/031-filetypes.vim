@@ -17,20 +17,20 @@ au! BufRead,BufNewFile *.json set filetype=json
 " jquery
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
-autocmd Filetype html setlocal ts=2 sw=2 noexpandtab
-autocmd Filetype xhtml setlocal ts=2 sw=2 noexpandtab
-autocmd Filetype xml setlocal ts=2 sw=2 noexpandtab
-autocmd Filetype css setlocal ts=2 sw=2 noexpandtab
-autocmd Filetype less setlocal ts=2 sw=2 noexpandtab
-autocmd Filetype ruby setlocal ts=2 sw=2 noexpandtab
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype xhtml setlocal ts=2 sw=2 expandtab
+autocmd Filetype xml setlocal ts=2 sw=2 expandtab
+autocmd Filetype css setlocal ts=2 sw=2 expandtab
+autocmd Filetype less setlocal ts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd FileType ruby compiler ruby
 autocmd FileType ruby let b:dispatch = 'ruby -c -w %'
 autocmd FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
 " display it as 2 tabs like I like, but make it 8 as Go likes
-autocmd FileType go setlocal noexpandtab tabstop=2 shiftwidth=8 norelativenumber
+autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4 norelativenumber
 autocmd FileType txt setlocal noet ts=2 sw=2
 autocmd FileType md setlocal noet ts=2 sw=2
-autocmd FileType vim setlocal noexpandtab shiftwidth=2 tabstop=2
+autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=2
 
 
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
@@ -51,14 +51,14 @@ function! CSettings()
 
      " nnoremap <buffer> <silent> <leader>A :GNOMEAlignArguments<CR>
      " nnoremap <buffer> <silent> <leader>gq [[=a}:GNOMEAlignArguments<CR>
-     
+
      " TODO: need a new mapping for this one
      " nnoremap <buffer> <silent> <leader>gD [[}O
      " nnoremap <buffer> <silent> <leader>gd [{}O
      nnoremap <buffer> <silent> <leader>gi ?^#include<CR>:nohlsearch<CR>
      let b:surround_105 = "#if 0\n\r\n#endif"
  endfunction
- 
+
 au FileType c,h,cpp,gobject call CSettings()
 au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ) :call search('(\\|)\\|{\\|}\\|\[\\|\]')<CR>
 au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ( :call search('(\\|)\\|{\\|}\\|\[\\|\]', 'b')<CR>
