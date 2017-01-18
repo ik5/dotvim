@@ -278,3 +278,8 @@ nnoremap <C-PageDown> gt
 nnoremap <C-PageUp> gT
 nnoremap <C-O> :tabnew <Space>
 nnoremap <C-T> :tabnew <Space>
+
+map <S-Tab> :retab<CR>
+imap <S-Tab> <ESC>:retab<CR>i
+vmap <S-Tab> :retab<CR>
+
