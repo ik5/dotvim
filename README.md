@@ -206,5 +206,6 @@ vim +PlugUpdate +qa
 | ``<leader>hc``                      | Toggle view of hidden chars                                                              |
 | ``<leader>wrp``                     | Toggle word wrap                                                                         |
 | ``<leader>srt``                     | Sort numbers in paragraph based on the external sort command                             |
+| ``Shift+Tab``                       | Execute :retab, to fix mixed spaces/tabs rules                                           |
 
 
