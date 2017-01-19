@@ -11,6 +11,7 @@ Making my VIM to be close to an IDE setup for the following languages:
  - XML
  - Rust
  - C
+ - Python
 
 ## Features
 
@@ -136,6 +137,9 @@ vim +PlugUpdate +qa
 | [emmet-vim](https://github.com/mattn/emmet-vim/)                          | emmet-vim is a vim plug-in which provides support for expanding abbreviations similar to [emmet](http://emmet.io/). |
 | [vim-css-color](https://github.com/gp/vim-css-color)                      | Coloring the CSS color text                                                                                         |
 | [clang_complete](https://github.com/Rip-Rip/clang_complete)               | Use clang for completing C, C++ etc..                                                                               |
+| [vim-vue](https://github.com/posva/vim-vue)                               | Syntax Highligth for Vue.js components                                                                              |
+
+
 
 ## Shortcuts
 
