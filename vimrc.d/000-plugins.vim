@@ -150,4 +150,7 @@ Plug 'ap/vim-css-color'
 " Use of Clang for completing C, C++, Objective-C and Objective-C++
 Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
 
+" Support for python programming
+Plug 'python-mode/python-mode'
+
 call plug#end()

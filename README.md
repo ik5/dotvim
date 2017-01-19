@@ -138,6 +138,7 @@ vim +PlugUpdate +qa
 | [vim-css-color](https://github.com/gp/vim-css-color)                      | Coloring the CSS color text                                                                                         |
 | [clang_complete](https://github.com/Rip-Rip/clang_complete)               | Use clang for completing C, C++ etc..                                                                               |
 | [vim-vue](https://github.com/posva/vim-vue)                               | Syntax Highligth for Vue.js components                                                                              |
+| [python-mode](https://github.com/python-mode/python-mode)                 |  Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.                                                        |
 
 
 
