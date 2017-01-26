@@ -116,6 +116,15 @@ Plug 'othree/xml.vim'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'xhtml', 'css', 'xml', 'erb'] }
 " support for vue.js
 Plug 'posva/vim-vue'
+" vim-jsx
+Plug 'mxw/vim-jsx'
+" Syntax for JavaScript libraries
+Plug 'othree/javascript-libraries-syntax.vim'
+" ES.Next syntax for Vim - This syntax file is for ES7 and future syntax
+Plug 'othree/es.next.syntax.vim'
+" Enhanced javascript syntax file for Vim
+Plug 'jelera/vim-javascript-syntax'
+
 
 " A vim plugin that simplifies the transition between multiline and single-line code
 Plug 'AndrewRadev/splitjoin.vim'
