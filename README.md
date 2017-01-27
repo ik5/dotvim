@@ -145,7 +145,7 @@ vim +PlugUpdate +qa
 | [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax)          | Enhanced javascript syntax file for Vim                                                                                                   |
 | [vim-json](https://github.com/elzr/vim-json)                                      | A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly. |
 | [jsdoc-syntax](https://github.com/othree/jsdoc-syntax.vim)                        | Standalone JSDoc syntax for vim                                                                                                           |
-| [vim-babel](https://github.com/jbgutierrez/vim-babel)                             | Wrapper around babel.js (ES2015, React, ...)  Wrapper around babel.js (ES2015, React, ...)                                                |
+| [vim-babel](https://github.com/jbgutierrez/vim-babel)                             | Wrapper around babel.js (ES2015, React, ...)                                                                                              |
 
 ## Shortcuts
 
