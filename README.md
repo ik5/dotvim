@@ -169,7 +169,7 @@ vim +PlugUpdate +qa
 | ``<leader>D``                       | Delete current buffer, keep split and switch to another buffer if found                  |
 | ``<leader>S``                       | Clean all of annoying white spaces in the end of a line                                  |
 | ``F5``                              | Toggle highlight search                                                                  |
-| ``CtrlF9``                          | Execute async compiler                                                                   |
+| ``Ctrl+F9``                         | Execute async compiler                                                                   |
 | ``F3``                              | Toggle NerdTree                                                                          |
 | ``Alt+j``                           | Move current line down                                                                   |
 | ``Alt+k``                           | Move current line up                                                                     |
