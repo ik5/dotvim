@@ -140,7 +140,10 @@ Plug 'jbgutierrez/vim-babel'
 Plug 'pangloss/vim-javascript'
 " React JSX syntax pretty highlighting for vim.
 Plug 'maxmellon/vim-jsx-pretty'
-
+" Next generation JavaScript and React snippets for Vim
+Plug 'alnjxn/babel-vim-snippets'
+" vim snippets for react.
+Plug 'BerkeleyTrue/berkeleys-snippet-emporium'
 " ----------------------
 " End of Web Development
 " ----------------------
