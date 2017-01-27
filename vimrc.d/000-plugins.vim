@@ -91,7 +91,6 @@ Plug 'powerman/vim-plugin-viewdoc'
 
 " support for rust
 Plug 'rust-lang/rust.vim'
-
 " rust racer syntax checking
 Plug 'racer-rust/vim-racer'
 
@@ -110,6 +109,8 @@ Plug 'mattn/webapi-vim'
 " new complete library
 Plug 'lifepillar/vim-mucomplete'
 
+" Web Development
+" ---------------
 " Helps editing xml and (x)html files
 Plug 'othree/xml.vim'
 " HTML abbrivation tool
@@ -124,7 +125,15 @@ Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'othree/es.next.syntax.vim'
 " Enhanced javascript syntax file for Vim
 Plug 'jelera/vim-javascript-syntax'
-
+" Tern plugin for Vim
+Plug 'ternjs/tern_for_vim'
+" Css Coloring
+Plug 'ap/vim-css-color'
+" A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
+Plug 'elzr/vim-json'
+" Standalone JSDoc syntax for vim
+Plug 'othree/jsdoc-syntax.vim'
+" End of Web Development
 
 " A vim plugin that simplifies the transition between multiline and single-line code
 Plug 'AndrewRadev/splitjoin.vim'
@@ -141,9 +150,6 @@ Plug 'godlygeek/tabular'
 " Drawing tables usin VIM
 Plug 'dhruvasagar/vim-table-mode'
 
-" Tern plugin for Vim
-Plug 'ternjs/tern_for_vim'
-
 " eunuch.vim: helpers for UNIX
 Plug 'tpope/vim-eunuch'
 
@@ -153,8 +159,6 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 " Lightning fast left-right movement in Vim
 Plug 'unblevable/quick-scope'
 
-" Css Coloring
-Plug 'ap/vim-css-color'
 
 " Use of Clang for completing C, C++, Objective-C and Objective-C++
 Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
@@ -162,7 +166,5 @@ Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
 " Support for python programming
 Plug 'python-mode/python-mode'
 
-" A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
-Plug 'elzr/vim-json'
 
 call plug#end()
