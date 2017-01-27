@@ -42,6 +42,10 @@ let g:go_auto_type_info = 1
 
 "autocmd FileType go autocmd BufWritePre <buffer> GoFmt
 
+" Support Syntastic
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
 " create a go doc comment based on the word under the cursor
 function! s:create_go_doc_comment()
   norm "zyiw
@@ -88,6 +92,9 @@ augroup go
   au FileType go nmap <leader>r  <Plug>(go-run)
   au FileType go nmap <leader>e  <Plug>(go-install)
   au FileType go nmap <leader>c <Plug>(go-coverage)
+
+  " Run all possible linters from go
+  au FileType go nmap <c-l> :GoMetaLinter<CR>
 augroup END
 
 
