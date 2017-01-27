@@ -146,6 +146,8 @@ vim +PlugUpdate +qa
 | [vim-json](https://github.com/elzr/vim-json)                                      | A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly. |
 | [jsdoc-syntax](https://github.com/othree/jsdoc-syntax.vim)                        | Standalone JSDoc syntax for vim                                                                                                           |
 | [vim-babel](https://github.com/jbgutierrez/vim-babel)                             | Wrapper around babel.js (ES2015, React, ...)                                                                                              |
+| [vim-javascript](https://github.com/pangloss/vim-javascript)                      | Vastly improved Javascript indentation and syntax support in Vim.                                                                         |
+| [vim-jsx-pretty](https://github.com/maxmellon/vim-jsx-pretty)                     | React JSX syntax pretty highlighting for vim                                                                                              |
 
 ## Shortcuts
 

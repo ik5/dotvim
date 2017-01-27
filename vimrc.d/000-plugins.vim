@@ -136,6 +136,11 @@ Plug 'elzr/vim-json'
 Plug 'othree/jsdoc-syntax.vim'
 " Wrapper around babel.js (ES2015, React, ...)  Wrapper around babel.js (ES2015, React, ...)
 Plug 'jbgutierrez/vim-babel'
+" Vastly improved Javascript indentation and syntax support in Vim.
+Plug 'pangloss/vim-javascript'
+" React JSX syntax pretty highlighting for vim.
+Plug 'maxmellon/vim-jsx-pretty'
+
 " ----------------------
 " End of Web Development
 " ----------------------
