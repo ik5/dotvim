@@ -109,6 +109,7 @@ Plug 'mattn/webapi-vim'
 " new complete library
 Plug 'lifepillar/vim-mucomplete'
 
+" ---------------
 " Web Development
 " ---------------
 " Helps editing xml and (x)html files
@@ -126,14 +127,18 @@ Plug 'othree/es.next.syntax.vim'
 " Enhanced javascript syntax file for Vim
 Plug 'jelera/vim-javascript-syntax'
 " Tern plugin for Vim
-Plug 'ternjs/tern_for_vim'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 " Css Coloring
 Plug 'ap/vim-css-color'
 " A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
 Plug 'elzr/vim-json'
 " Standalone JSDoc syntax for vim
 Plug 'othree/jsdoc-syntax.vim'
+" Wrapper around babel.js (ES2015, React, ...)  Wrapper around babel.js (ES2015, React, ...)
+Plug 'jbgutierrez/vim-babel'
+" ----------------------
 " End of Web Development
+" ----------------------
 
 " A vim plugin that simplifies the transition between multiline and single-line code
 Plug 'AndrewRadev/splitjoin.vim'
