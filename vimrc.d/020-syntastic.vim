@@ -20,3 +20,4 @@ let g:syntastic_html_tidy_exec = 'tidy'
 let g:syntastic_ruby_exec = 'ruby'
 let g:syntastic_ruby_rubocop_exec='rubocop'
 
+let g:syntastic_javascript_checkers = ['eslint']
