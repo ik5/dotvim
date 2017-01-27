@@ -162,4 +162,7 @@ Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
 " Support for python programming
 Plug 'python-mode/python-mode'
 
+" A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
+Plug 'elzr/vim-json'
+
 call plug#end()
