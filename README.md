@@ -7,7 +7,7 @@ Making my VIM to be close to an IDE setup for the following languages:
  - Go
  - HTML
  - CSS
- - Javascript
+ - Javascript (React/JSX, Vue, es6, es7, babel)
  - XML
  - Rust
  - C
