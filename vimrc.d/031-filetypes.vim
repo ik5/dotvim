@@ -32,6 +32,7 @@ autocmd FileType txt setlocal noet ts=2 sw=2
 autocmd FileType md setlocal noet ts=2 sw=2
 autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=2
 
+autocmd Filetype python let g:jedi#popup_on_dot = 0
 
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
 
