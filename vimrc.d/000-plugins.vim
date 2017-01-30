@@ -178,6 +178,7 @@ Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
 
 " Support for python programming
 Plug 'python-mode/python-mode'
-
+" Using the jedi autocompletion library for VIM for Python
+Plug 'davidhalter/jedi-vim'
 
 call plug#end()

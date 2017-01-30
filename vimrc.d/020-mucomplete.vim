@@ -17,3 +17,8 @@ let g:mucomplete#can_complete = {
 let g:mucomplete_chains = {
     \ 'default' : ['file', 'omni', 'keyn', 'dict']
     \ }
+
+" alternative pattern: '\h\w*\|[^. \t]\.\w*'
+"let g:neocomplete#force_omni_input_patterns.python = '\%([^. \t]\.\|^\s*@\|^\s*from\s.\+import \|^\s*from \|^\s*import \)\w*'
+
+

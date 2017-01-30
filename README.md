@@ -150,6 +150,7 @@ vim +PlugUpdate +qa
 | [vim-jsx-pretty](https://github.com/maxmellon/vim-jsx-pretty)                            | React JSX syntax pretty highlighting for vim                                                                                              |
 | [babel-vim-snippets](https://github.com/alnjxn/babel-vim-snippets)                       | Next generation JavaScript and React snippets for Vim                                                                                     |
 | [berkeleys-snippet-emporium](https://github.com/BerkeleyTrue/berkeleys-snippet-emporium) | vim snippets for react.                                                                                                                   |
+| [jedi-vim](https://github.com/davidhalter/jedi-vim)                                      | Using the jedi autocompletion library for VIM for Python                                                                                  |
 
 ## Shortcuts
 
