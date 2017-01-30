@@ -151,6 +151,8 @@ vim +PlugUpdate +qa
 | [babel-vim-snippets](https://github.com/alnjxn/babel-vim-snippets)                       | Next generation JavaScript and React snippets for Vim                                                                                     |
 | [berkeleys-snippet-emporium](https://github.com/BerkeleyTrue/berkeleys-snippet-emporium) | vim snippets for react.                                                                                                                   |
 | [jedi-vim](https://github.com/davidhalter/jedi-vim)                                      | Using the jedi autocompletion library for VIM for Python                                                                                  |
+| [vimproc](https://github.com/Shougo/vimproc.vim)                                         | Interactive command execution in Vim.                                                                                                     |
+
 
 ## Shortcuts
 

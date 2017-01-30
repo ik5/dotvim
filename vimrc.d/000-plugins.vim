@@ -29,6 +29,8 @@ Plug 'terryma/vim-multiple-cursors'
 
 " Execute compiler async
 Plug 'tpope/vim-dispatch'
+" Interactive command execution in Vim.
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 " Test functions from cache
 Plug 'MarcWeber/vim-addon-mw-utils'
