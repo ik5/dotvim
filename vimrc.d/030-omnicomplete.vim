@@ -1,6 +1,7 @@
 " Enable autocompletion
 set omnifunc=syntaxcomplete#Complete
-au FileType python setlocal omnifunc=python3complete#Complete
+au Filetype python setlocal omnifunc=jedi#completions
+"au FileType python setlocal omnifunc=python3complete#Complete
 au FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 au FileType html setlocal omnifunc=htmlcomplete#CompleteTags
 "au FileType html setlocal omnifunc=emmet#completeTag

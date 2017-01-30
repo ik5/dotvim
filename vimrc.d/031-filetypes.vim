@@ -35,7 +35,7 @@ autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=2
 
 au Filetype python let g:jedi#popup_on_dot = 0
 au Filetype python setlocal ts=4 sts=4 sw=4 et ai
-au Filetype python setlocal omnifunc=jedi#completions
+au Filetype python setlocal commentstring=#%s define=^\s*\\(def\\\\|class\\)
 
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
 
