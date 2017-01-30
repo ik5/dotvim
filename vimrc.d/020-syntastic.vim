@@ -21,3 +21,5 @@ let g:syntastic_ruby_exec = 'ruby'
 let g:syntastic_ruby_rubocop_exec='rubocop'
 
 let g:syntastic_javascript_checkers = ['eslint']
+
+let g:syntastic_python_checkers = ['flake8']
