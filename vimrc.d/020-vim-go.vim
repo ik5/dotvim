@@ -46,6 +46,8 @@ let g:go_auto_type_info = 1
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
+let g:go_auto_sameids=1
+
 " create a go doc comment based on the word under the cursor
 function! s:create_go_doc_comment()
   norm "zyiw
