@@ -2,6 +2,7 @@
 " Color scheme and fonts
 " ==================================================
 
+"set termguicolors " true colors
 let g:rehash256 = 1 " molokai looks for it, so placing it first
 
 set background=dark
@@ -13,7 +14,11 @@ else
     set t_Co=256
 endif
 
-colorscheme molokai
+"colorscheme molokai
+
+
+let g:monokai_term_italic = 1
+let g:monokai_gui_italic = 1
 
 " ==================================================
 " Trailing whitespace handling
@@ -31,3 +36,8 @@ let g:badwolf_tabline = 3
 let g:badwolf_html_link_underline = 0
 " Turn on CSS properties highlighting
 let g:badwolf_css_props_highlight = 1
+
+" code-dark
+let g:codedark_conservative = 0 " be colorful, thank you :)
+
+colorscheme codedark
