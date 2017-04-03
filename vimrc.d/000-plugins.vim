@@ -5,7 +5,9 @@ call plug#begin()
 
 " colorscheme
 Plug 'tomasr/molokai'
+"Plug 'crusoexia/vim-monokai'
 Plug 'sjl/badwolf' " TODO: Check and configure it
+Plug 'tomasiser/vim-code-dark'
 
 " Over 70 language packs
 Plug 'sheerun/vim-polyglot'
@@ -40,6 +42,8 @@ Plug 'tomtom/tlib_vim'
 
 " better file explorer for vim
 Plug 'scrooloose/nerdtree'
+" Support git changes for code
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Fuzzy file, buffer, mru, tag, etc finder
 Plug 'ctrlpvim/ctrlp.vim'
