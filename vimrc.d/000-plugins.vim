@@ -66,6 +66,8 @@ Plug 'hallison/vim-ruby-sinatra'
 Plug 'fatih/vim-go'
 " Go Explorer is Vim plugin for exploring Go code
 Plug 'garyburd/go-explorer'
+" debug using delve
+Plug 'jodosha/vim-godebug'
 
 " pairs of handy bracket mappings
 Plug 'tpope/vim-unimpaired'
