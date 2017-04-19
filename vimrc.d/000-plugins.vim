@@ -187,4 +187,9 @@ Plug 'python-mode/python-mode'
 " Using the jedi autocompletion library for VIM for Python
 Plug 'davidhalter/jedi-vim'
 
+" HasiCorp
+Plug 'hashivim/vim-terraform'
+
+" GraphQL
+Plug 'jparise/vim-graphql'
 call plug#end()
