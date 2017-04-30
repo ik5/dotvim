@@ -191,6 +191,8 @@ Plug 'davidhalter/jedi-vim'
 
 " HasiCorp
 Plug 'hashivim/vim-terraform'
+" Terraform complete
+Plug 'juliosueiras/vim-terraform-completion'
 
 " GraphQL
 Plug 'jparise/vim-graphql'
