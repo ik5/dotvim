@@ -10,7 +10,7 @@ function! g:UltiSnips_Complete()
     else
       call UltiSnips#JumpForwards()
       if g:ulti_jump_forwards_res == 0
-        return "\<TAB>"
+        return "\<C-TAB>"
       endif
     endif
   endif
@@ -28,7 +28,7 @@ endfunction
 
 
 if !exists("g:UltiSnipsJumpForwardTrigger")
-  let g:UltiSnipsJumpForwardTrigger = "<tab>"
+  let g:UltiSnipsJumpForwardTrigger = "<c-tab>"
 endif
 
 if !exists("g:UltiSnipsJumpBackwardTrigger")
@@ -40,6 +40,6 @@ endif
 
 let g:UltiSnipsEditSplit = 'horizontal'
 
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
