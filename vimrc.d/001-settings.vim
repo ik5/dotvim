@@ -30,8 +30,10 @@ set showmatch
 set matchtime=3
 set sm                   " show matching braces, somewhat annoying...
 set mouse=a
-set ttymouse=xterm2
-set ttyscroll=3           " number of lines to scroll before redraw
+if !has('nvim')
+  set ttymouse=xterm2
+  set ttyscroll=3           " number of lines to scroll before redraw
+endif
 set ttyfast              " smoother changes
 set history=1500          " larger history
 set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)

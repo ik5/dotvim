@@ -90,16 +90,18 @@ nnoremap N Nzzzv
 noremap <C-d> <C-d>zz
 noremap <C-u> <C-u>zz
 
+if ! has("nvim")
 " ==================================================
 " Fix meta key in terminal
 " fix meta-keys which generate <Esc>a .. <Esc>z
 " ==================================================
-let c='a'
-while c <= 'z'
-  exec "set <A-".c.">=\e".c
-  exec "imap \e".c." <A-".c.">"
-  let c = nr2char(1+char2nr(c))
-endw
+  let c='a'
+  while c <= 'z'
+    exec "set <A-".c.">=\e".c
+    exec "imap \e".c." <A-".c.">"
+    let c = nr2char(1+char2nr(c))
+  endw
+endif
 
 " exec async compiler
 map <C-F9> <Esc>:Dispatch<CR>
