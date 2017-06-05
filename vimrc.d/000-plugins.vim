@@ -66,9 +66,10 @@ Plug 'hallison/vim-ruby-sinatra'
 Plug 'fatih/vim-go'
 " Go Explorer is Vim plugin for exploring Go code
 Plug 'garyburd/go-explorer'
-" debug using delve
-Plug 'jodosha/vim-godebug'
-
+if has("nvim")
+  " debug using delve
+  Plug 'jodosha/vim-godebug'
+endif
 " pairs of handy bracket mappings
 Plug 'tpope/vim-unimpaired'
 " Every one should have a pair (Autogenerate pairs for "{[( )
@@ -88,11 +89,11 @@ Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
 
 " Track the engine.
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
-Plug 'honza/vim-snippets'
+"Plug 'honza/vim-snippets'
 " snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
-Plug 'garbas/vim-snipmate'
+"Plug 'garbas/vim-snipmate'
 
 " Vim plugin: flexible viewer for any documentation
 Plug 'powerman/vim-plugin-viewdoc'
@@ -149,9 +150,9 @@ Plug 'pangloss/vim-javascript'
 " React JSX syntax pretty highlighting for vim.
 Plug 'maxmellon/vim-jsx-pretty'
 " Next generation JavaScript and React snippets for Vim
-Plug 'alnjxn/babel-vim-snippets'
+"Plug 'alnjxn/babel-vim-snippets'
 " vim snippets for react.
-Plug 'BerkeleyTrue/berkeleys-snippet-emporium'
+"Plug 'BerkeleyTrue/berkeleys-snippet-emporium'
 " ----------------------
 " End of Web Development
 " ----------------------
