@@ -115,8 +115,17 @@ Plug 'tpope/vim-repeat'
 " Web API
 Plug 'mattn/webapi-vim'
 
-" new complete library
-Plug 'lifepillar/vim-mucomplete'
+if !has("nvim")
+  " new complete library
+  Plug 'lifepillar/vim-mucomplete'
+else
+  " Dark powered asynchronous completion framework for neovim
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  " Go complete
+  Plug 'zchee/deoplete-go', { 'do': 'make'}
+  " python complete
+  Plug 'zchee/deoplete-jedi'
+endif
 
 " ---------------
 " Web Development
