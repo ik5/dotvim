@@ -24,8 +24,4 @@ let g:deoplete#sources#go#cgo#std = 'c11'
 " Python jedi
 " Show docstring in a preview window
 let g:deoplete#sources#jedi#show_docstring = 1
-" python2 support
-let g:python_host_prog = '/usr/lib/python2.7/site-packages/neovim'
-" python3 support
-let g:python3_host_prog = '/usr/lib/python3.6/site-packages/neovim'
 
