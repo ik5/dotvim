@@ -35,6 +35,7 @@ if !has('nvim')
   set ttyscroll=3           " number of lines to scroll before redraw
 endif
 set ttyfast              " smoother changes
+set termguicolors " enable 24 bit colors
 set history=1500          " larger history
 set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set timeout ttimeoutlen=50
