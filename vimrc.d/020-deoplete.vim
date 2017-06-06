@@ -25,3 +25,4 @@ let g:deoplete#sources#go#cgo#std = 'c11'
 " Show docstring in a preview window
 let g:deoplete#sources#jedi#show_docstring = 1
 
+
