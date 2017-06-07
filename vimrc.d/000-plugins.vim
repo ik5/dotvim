@@ -12,8 +12,10 @@ Plug 'tomasiser/vim-code-dark'
 " Over 70 language packs
 Plug 'sheerun/vim-polyglot'
 
+" ale - Asynchronous Lint Engine
+Plug 'w0rp/ale'
 " syntax checking
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 
 " VCS (git)
 Plug 'tpope/vim-fugitive'
