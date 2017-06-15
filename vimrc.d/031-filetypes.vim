@@ -67,4 +67,4 @@ au FileType c,h,cpp,gobject call CSettings()
 au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ) :call search('(\\|)\\|{\\|}\\|\[\\|\]')<CR>
 au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ( :call search('(\\|)\\|{\\|}\\|\[\\|\]', 'b')<CR>
 
-au BufRead,BufNewFile *.jsx set ft=javascript syntax=jsx
+au BufRead,BufNewFile *.jsx set ft=javascript syntax=javascript
