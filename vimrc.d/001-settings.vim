@@ -4,8 +4,6 @@
 
 set nocompatible         " This is VIM!!!
 set encoding=utf8        " utf8 is the default
-set bomb                 " if there is a BOM then remove it while edit, but restore when saving
-                         " this will not work with binary option
 set ffs=unix,dos,mac     " file end of line -> unix!
 set textwidth=120        " Try this out to see how textwidth helps
 set linebreak            " break the line after the amount of textwidth
