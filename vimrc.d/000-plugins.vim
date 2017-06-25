@@ -166,6 +166,8 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'alnjxn/babel-vim-snippets'
 " vim snippets for react.
 Plug 'BerkeleyTrue/berkeleys-snippet-emporium'
+" auto fix your javascript using fixmyjs 
+Plug 'ruanyl/vim-fixmyjs'
 " ----------------------
 " End of Web Development
 " ----------------------
@@ -210,4 +212,11 @@ Plug 'juliosueiras/vim-terraform-completion'
 
 " GraphQL
 Plug 'jparise/vim-graphql'
+
+"  A vim plugin to display the indention levels with thin vertical lines
+Plug 'Yggdroot/indentLine'
+
+" async formatting for neovim and vim8
+Plug 'sbdchd/neoformat'
+
 call plug#end()

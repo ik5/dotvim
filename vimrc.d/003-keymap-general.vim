@@ -1,4 +1,4 @@
-" define the leader to be explicitly \ char
+﻿" define the leader to be explicitly \ char
 let mapleader="\\"
 
 " use jj as escape
@@ -242,6 +242,12 @@ nmap <leader>p :r ~/tmp/.vbuf<cr>
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 
+if has('macunix')
+  " pbcopy for OSX copy/paste
+  vmap <C-x> :!pbcopy<CR>
+  vmap <C-c> :w !pbcopy<CR><CR>
+endif
+
 "" Map <Leader>ff to display all lines with keyword under cursor
 " and ask which one to jump to
 nmap <leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
@@ -285,3 +291,6 @@ map <S-Tab> :retab<CR>
 imap <S-Tab> <ESC>:retab<CR>i
 vmap <S-Tab> :retab<CR>
 
+if has("nvim")
+  map <leader>T :terminal<CR>
+endif

@@ -1,9 +1,11 @@
-" ==================================================
+﻿" ==================================================
 " Basic Settings
 " ==================================================
 
 set nocompatible         " This is VIM!!!
 set encoding=utf8        " utf8 is the default
+set bomb                 " if there is a BOM then remove it while edit, but restore when saving
+                         " this will not work with binary option
 set ffs=unix,dos,mac     " file end of line -> unix!
 set textwidth=120        " Try this out to see how textwidth helps
 set linebreak            " break the line after the amount of textwidth
@@ -21,6 +23,8 @@ set visualbell           " Visual bell instead of nosie, or no indication at all
 set nobackup             " do not keep a backup file
 set number               " show line numbers
 set title                " show title in console title bar
+set titleold="Terminal"
+set titlestring=" %F "
 set modeline             " last lines in document sets vim mode
 set shortmess=atIc       " Abbreviate messages
 set nostartofline        " don't jump to first character when paging
@@ -45,7 +49,7 @@ set virtualedit=onemore             " Allow for cursor beyond last character
 set iskeyword-=.                    " '.' is an end of word designator
 set iskeyword-=#                    " '#' is an end of word designator
 set iskeyword-=-                    " '-' is an end of word designator
-set shell=zsh                       " I'm using zsh
+set shell=/bin/zsh                       " I'm using zsh
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
@@ -65,6 +69,7 @@ set wildignore+=*.spl                            " compiled spelling word lists
 set wildignore+=*.sw?                            " Vim swap files
 set wildignore+=*.DS_Store
 set wildignore+=*.rdb                            " Redis database file
+set wildignore+=*/tmp/*,*.so,*.zip,*.db,*.sqlite*
 
 set completeopt=menu,menuone   " Just show the menu upon completion (faster)
 set completeopt+=preview
@@ -87,7 +92,7 @@ endif
 " if that is available
 if has('persistent_undo')
   set undofile
-  set undodir=~/tmp/vim_undo//
+  set undodir=~/tmp/vim_undo/
 endif
 
 
@@ -143,6 +148,9 @@ set smartcase            " if searching and search contains upper case, make cas
 set magic                " For regular expressions turn magic on
 set showmatch            " show matching brakets when text is over them
 set mat=2                " and blink for two seconds
+if has("nvim")
+  set inccommand=split     " nvim live %s/../
+endif 
 set nrformats=octal,hex,alpha " Enable Ctrl-A/Ctrl-X to work on octal and hex numbers, as well as characters
 
 " ==================================================
@@ -160,7 +168,7 @@ if has("autocmd")
 endif
 
 " override YouCompleteMe
-let g:dotvim_ycm_build_command='./install.py --clang-completer --gocode-completer --tern-completer --racer-completer'
+" let g:dotvim_ycm_build_command='./install.py --clang-completer --gocode-completer --tern-completer --racer-completer'
 
 " ================================================
 " Folding configuration
@@ -189,4 +197,6 @@ set sessionoptions=blank,buffers,curdir,folds,help,options,winsize,tabpages
 set autoread
 au CursorHold * checktime " Check every 4 seconds (based on updatetime) of no key press in normal mode
 
+
+set hidden " Enable hidden buffers (top bar with buffers)
 
