@@ -6,7 +6,12 @@ set nocompatible         " This is VIM!!!
 set encoding=utf8        " utf8 is the default
 set ffs=unix,dos,mac     " file end of line -> unix!
 set textwidth=120        " Try this out to see how textwidth helps
-set linebreak            " break the line after the amount of textwidth
+if has('linebreak')      " Break indent wrapped lines
+  set linebreak            " break the line after the amount of textwidth
+  set breakindent
+  let &showbreak = '↳ '
+  set cpo+=n
+end
 set ch=2                 " Make command line two lines high
 set ls=2                 " allways show status line
 set scrolloff=3          " keep 3 lines when scrolling
@@ -23,7 +28,8 @@ set number               " show line numbers
 set title                " show title in console title bar
 set titleold="Terminal"
 set titlestring=" %F "
-set modeline             " last lines in document sets vim mode
+set modelines=0
+set nomodeline          " no vim mode execution for security
 set shortmess=atIc       " Abbreviate messages
 set nostartofline        " don't jump to first character when paging
 set backspace=indent,eol,start
@@ -54,6 +60,7 @@ set lazyredraw
 
 set splitright           " Splits to the right
 set splitbelow           " split below me
+autocmd VimResized * wincmd =   " Automatically equalize splits when Vim is resized
 
 set wildmenu                      " show list instead of just completing
 set wildmode=list:longest,full    " command <Tab> completion, list matches, then longest common part, then all.

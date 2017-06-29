@@ -22,10 +22,12 @@ autocmd Filetype xhtml setlocal ts=2 sw=2 expandtab
 autocmd Filetype xml setlocal ts=2 sw=2 expandtab
 autocmd Filetype css setlocal ts=2 sw=2 expandtab
 autocmd Filetype less setlocal ts=2 sw=2 expandtab
+autocmd Filetype scss setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd FileType ruby compiler ruby
 autocmd FileType ruby let b:dispatch = 'ruby -c -w %'
 autocmd FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
+autocmd FileType vue syntax sync fromstart
 
 " display it as 2 tabs like I like, but make it 8 as Go likes
 autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4 norelativenumber
@@ -37,7 +39,7 @@ au Filetype python let g:jedi#popup_on_dot = 0
 au Filetype python setlocal ts=4 sts=4 sw=4 et ai
 au Filetype python setlocal commentstring=#%s define=^\s*\\(def\\\\|class\\)
 
-autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
 
 " Instead of reverting the cursor to the last position in the buffer, we
 " set it to the first line when editing a git commit message
@@ -68,3 +70,14 @@ au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ) :call search('(
 au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ( :call search('(\\|)\\|{\\|}\\|\[\\|\]', 'b')<CR>
 
 au BufRead,BufNewFile *.jsx set ft=javascript syntax=javascript
+
+augroup VimCSS3Syntax
+  autocmd!
+
+  autocmd FileType css setlocal iskeyword+=-
+  autocmd FileType scss setlocal iskeyword+=-
+augroup END
+
+
+au BufRead,BufNewFile *.scss set filetype=scss.css
+

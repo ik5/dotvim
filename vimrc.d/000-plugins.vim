@@ -11,6 +11,8 @@ Plug 'tomasiser/vim-code-dark'
 
 " Over 70 language packs
 Plug 'sheerun/vim-polyglot'
+" style configuration
+Plug 'editorconfig/editorconfig-vim'
 
 " ale - Asynchronous Lint Engine
 Plug 'w0rp/ale'
@@ -23,6 +25,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'gregsexton/gitv'
 " A Vim plugin which shows a git diff in the gutter
 Plug 'airblade/vim-gitgutter'
+" Mercurial 
+Plug 'ludovicchabant/vim-lawrencium'
 
 " Comments support
 "Plug 'tomtom/tcomment_vim'
@@ -78,17 +82,24 @@ Plug 'tpope/vim-unimpaired'
 Plug 'jiangmiao/auto-pairs'
 "The matchit.vim script allows you to configure % to match more than just single characters.
 Plug 'vim-scripts/matchit.zip'
+" match tag always -> tag xml/html elements starting and ending
+Plug 'Valloric/MatchTagAlways'
+
 
 " airline status plugins
+Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'powerline/fonts'
+Plug 'edkolev/tmuxline.vim'
 
 " Do completion using tab key
 Plug 'ervandew/supertab'
 
 " Tagbar - show tags of a project
 Plug 'majutsushi/tagbar'
+" javascript tags for tagbar
+Plug 'hushicai/tagbar-javascript.vim', { 'do': 'npm install esctags' }
 
 " Track the engine.
 Plug 'SirVer/ultisnips'
@@ -168,6 +179,13 @@ Plug 'alnjxn/babel-vim-snippets'
 Plug 'BerkeleyTrue/berkeleys-snippet-emporium'
 " auto fix your javascript using fixmyjs 
 Plug 'ruanyl/vim-fixmyjs'
+" CSS3 syntax (and syntax defined in some foreign specifications) support for Vim's built-in syntax/css.vim
+Plug 'hail2u/vim-css3-syntax'
+" Vim syntax file for scss (Sassy CSS)
+Plug 'cakebaker/scss-syntax.vim'
+" vim syntax for LESS (dynamic CSS)
+Plug 'groenewege/vim-less'
+
 " ----------------------
 " End of Web Development
 " ----------------------
