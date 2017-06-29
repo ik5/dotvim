@@ -17,6 +17,9 @@ au! BufRead,BufNewFile *.json set filetype=json
 " jquery
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
+" vuejs
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
+
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype xhtml setlocal ts=2 sw=2 expandtab
 autocmd Filetype xml setlocal ts=2 sw=2 expandtab
