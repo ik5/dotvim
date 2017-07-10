@@ -108,6 +108,7 @@ Plug 'honza/vim-snippets'
 " snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
 Plug 'garbas/vim-snipmate'
 
+
 " Vim plugin: flexible viewer for any documentation
 Plug 'powerman/vim-plugin-viewdoc'
 
