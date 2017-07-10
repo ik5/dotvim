@@ -42,9 +42,11 @@ let g:go_auto_type_info = 1
 
 "autocmd FileType go autocmd BufWritePre <buffer> GoFmt
 
-" Support Syntastic
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+if !has("nvim")
+  " Support Syntastic
+  let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+  let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+endif
 
 let g:go_auto_sameids=1
 
@@ -77,11 +79,14 @@ augroup go
   au FileType go nmap <Leader>i <Plug>(go-info)
 
   " Open the relevant Godoc for the word under the cursor
-  au FileType go nmap <Leader>gd <Plug>(go-doc)
-  au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
+  au FileType go nmap <Leader>god <Plug>(go-doc)
+  au FileType go nmap <Leader>gov <Plug>(go-doc-vertical)
 
   " Open the Godoc in browser
-  au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
+  au FileType go nmap <Leader>gobd <Plug>(go-doc-browser)
+
+  " Alternate between test and file
+  au FileType go nmap <Leader>goa :GoAlternate<cr>
 
   au FileType go nmap <Leader>v <Plug>(go-def-vertical)
   au FileType go nmap <Leader>s <Plug>(go-def-split)
