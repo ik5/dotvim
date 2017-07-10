@@ -152,12 +152,14 @@ Plug 'othree/xml.vim'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'xhtml', 'css', 'xml', 'erb'] }
 " support for vue.js
 Plug 'posva/vim-vue'
+" YAJS.vim: Yet Another JavaScript Syntax for Vim 
+" Plug 'othree/yajs.vim'
 " vim-jsx
 Plug 'mxw/vim-jsx'
 " Syntax for JavaScript libraries
 Plug 'othree/javascript-libraries-syntax.vim'
 " ES.Next syntax for Vim - This syntax file is for ES7 and future syntax
-Plug 'othree/es.next.syntax.vim'
+" Plug 'othree/es.next.syntax.vim'
 " Enhanced javascript syntax file for Vim
 Plug 'jelera/vim-javascript-syntax'
 " Tern plugin for Vim
@@ -186,7 +188,10 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
 " vim syntax for LESS (dynamic CSS)
 Plug 'groenewege/vim-less'
-
+" List of JavaScript ES6 snippets and syntax highlighting for vim
+Plug 'isRuslan/vim-es6'
+"A vim plugin that wraps `jscs -x` into a `:Format` command
+Plug 'mklabs/jscs.vim', { 'do': 'npm i jscs -g'  }
 " ----------------------
 " End of Web Development
 " ----------------------

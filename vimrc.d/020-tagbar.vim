@@ -70,3 +70,16 @@ let g:tagbar_type_make = {
       \ 't:targets'
       \ ]
       \}
+
+" let g:tagbar_type_javascript = {
+      " \ 'ctagtype': 'js',
+      " \ 'kinds': [
+      " \ 'o:object',
+      " \ 'f:function',
+      " \ 's:string',
+      " \ 'a:array',
+      " \ 'b:boolean',
+      " \ 'n:number',
+      " \ 'v,variable'
+      " \]
+      " \}
