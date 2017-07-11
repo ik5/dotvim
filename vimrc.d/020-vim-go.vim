@@ -88,8 +88,8 @@ augroup go
   " Alternate between test and file
   au FileType go nmap <Leader>goa :GoAlternate<cr>
 
-  au FileType go nmap <Leader>got :ToAddTags<cr>
-  au FileType go nmap <Leader>goT :ToAddTags
+  au FileType go nmap <Leader>got :GoToAddTags<cr>
+  au FileType go nmap <Leader>goT :GoToAddTags
 
   au FileType go nmap <Leader>v <Plug>(go-def-vertical)
   au FileType go nmap <Leader>s <Plug>(go-def-split)
