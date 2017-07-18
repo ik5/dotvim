@@ -90,6 +90,8 @@ augroup go
 
   au FileType go nmap <Leader>got :GoAddTags<cr>
   au FileType go nmap <Leader>goT :GoAddTags
+  au FileType go vmap <Leader>got :GoAddTags<cr>
+  au FileType go vmap <Leader>goT :GoAddTags
 
   au FileType go nmap <Leader>v <Plug>(go-def-vertical)
   au FileType go nmap <Leader>s <Plug>(go-def-split)
