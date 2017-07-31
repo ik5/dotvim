@@ -27,6 +27,8 @@ Plug 'gregsexton/gitv'
 Plug 'airblade/vim-gitgutter'
 " Mercurial 
 Plug 'ludovicchabant/vim-lawrencium'
+" Fugitive extension to manage and merge Git branches 
+Plug 'idanarye/vim-merginal'
 
 " Comments support
 "Plug 'tomtom/tcomment_vim'
@@ -230,6 +232,8 @@ Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
 Plug 'python-mode/python-mode'
 " Using the jedi autocompletion library for VIM for Python
 Plug 'davidhalter/jedi-vim'
+" Vim plugin for working with python virtualenvs
+Plug 'jmcantrell/vim-virtualenv'
 
 " HasiCorp
 Plug 'hashivim/vim-terraform'
