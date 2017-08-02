@@ -107,9 +107,13 @@ if has('!nvim')
   set term=ansi
 endif
 
-filetype on
-filetype plugin on
-filetype indent plugin on
+if exists("g:did_load_filetypes")
+	filetype off
+	filetype plugin indent off
+endif
+set rtp+=~/.vim/godoctor.vim
+filetype plugin indent on
+syntax on
 
 if version >= 703        " Columns and lines, only from vim >= 7.3
   set colorcolumn=80

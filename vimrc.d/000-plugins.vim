@@ -86,6 +86,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-scripts/matchit.zip'
 " match tag always -> tag xml/html elements starting and ending
 Plug 'Valloric/MatchTagAlways'
+" Vim plugin for the godoctor
+Plug 'godoctor/godoctor.vim'
 
 
 " airline status plugins
