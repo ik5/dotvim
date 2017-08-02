@@ -143,7 +143,6 @@ else
   Plug 'zchee/deoplete-jedi'
   " javascript complete
   Plug 'carlitux/deoplete-ternjs'
-  "  Language Server Protocol support for neovim.
 endif
 
 " ---------------
