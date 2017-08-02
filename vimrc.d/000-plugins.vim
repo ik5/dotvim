@@ -144,7 +144,6 @@ else
   " javascript complete
   Plug 'carlitux/deoplete-ternjs'
   "  Language Server Protocol support for neovim.
-  Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
 endif
 
 " ---------------
