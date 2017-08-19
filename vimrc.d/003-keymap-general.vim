@@ -24,7 +24,7 @@ nmap <leader>w :w!<cr>
 
 " sudo saves the file
 " (useful for handling the permission-denied error)
-command! W !sudo tee % > /dev/null
+command! Wr !sudo tee % > /dev/null
 
 
 " ==================================================
