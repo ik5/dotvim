@@ -2,7 +2,7 @@
 " Color scheme and fonts
 " ==================================================
 
-"set termguicolors " true colors
+set termguicolors " true colors
 let g:rehash256 = 1 " molokai looks for it, so placing it first
 
 set background=dark
@@ -14,7 +14,6 @@ else
     set t_Co=256
 endif
 
-"colorscheme molokai
 
 
 let g:monokai_term_italic = 1
@@ -40,4 +39,6 @@ let g:badwolf_css_props_highlight = 1
 " code-dark
 let g:codedark_conservative = 0 " be colorful, thank you :)
 
-colorscheme codedark
+colorscheme molokai
+" colorscheme codedark
+" colorscheme badwolf
