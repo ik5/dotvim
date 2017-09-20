@@ -1,5 +1,7 @@
 " start deoplete at startup
 let g:deoplete#enable_at_startup = 1
+" If starts with capital, then do not ignore case
+let g:deoplete#enable_smart_case = 1
 
 " go deoplete
 " location of gocode
