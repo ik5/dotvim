@@ -85,3 +85,5 @@ augroup END
 
 au BufRead,BufNewFile *.scss set filetype=scss.css
 
+" Make sure that .babelrc file is json
+au BufRead,BufNewFile .babelrc set filetype=json
