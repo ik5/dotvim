@@ -15,8 +15,8 @@ let g:jedi#use_splits_not_buffers = "right"
 " use my default settings, not pymode default settings
 let g:pymode_options = 0
 
-" python v3 by default
-let g:pymode_python = 'python3'
+" python v2 by default
+let g:pymode_python = 'python'
 
 " Enable PEP8 identation
 let g:pymode_indent = 1

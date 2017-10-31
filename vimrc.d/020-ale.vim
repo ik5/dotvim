@@ -38,6 +38,9 @@ let g:ale_javascript_eslint_use_global = 0
 
 let g:ale_fixers = { 'javascript': ['eslint'] }
 
-let g:ale_linters = {'jsx': ['eslint'] }
+let g:ale_python_flake8_executable = 'flake8-python2'
+
+let g:ale_linters = {'jsx': ['eslint']}
 let g:ale_linter_aliases = {'jsx': 'css'}
+
 
