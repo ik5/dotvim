@@ -249,4 +249,7 @@ Plug 'Yggdroot/indentLine'
 " async formatting for neovim and vim8
 Plug 'sbdchd/neoformat'
 
+" vim plugin for highlighting columns in csv/tsv files and executing SELECT and UPDATE queries in SQL-like language 
+Plug 'mechatroner/rainbow_csv'
+
 call plug#end()
