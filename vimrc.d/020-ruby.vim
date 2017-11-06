@@ -29,3 +29,18 @@ let g:ruby_indent_access_modifier_style = 'outdent'
 " indent of commands after do
 let g:ruby_indent_block_style = 'do'
 
+" Assignment indent style "hanging":
+let g:ruby_indent_assignment_style = 'hanging'
+
+" operator like methods in different colors
+let ruby_operators = 1
+
+" whitespace errors highlighted
+let ruby_space_errors = 1
+
+" enable fold
+let ruby_fold = 1
+
+" foldable blocks
+let ruby_foldable_groups = 'ALL'
+
