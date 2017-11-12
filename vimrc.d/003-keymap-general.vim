@@ -294,3 +294,7 @@ vmap <S-Tab> :retab<CR>
 if has("nvim")
   map <leader>T :terminal<CR>
 endif
+
+" add support for toggle relative numbers
+map <leader>rel :set rnu!<CR>
+imap <leader>rel <ESC>:set rnu!<CR>a
