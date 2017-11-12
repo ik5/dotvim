@@ -17,10 +17,6 @@ au! BufRead,BufNewFile *.json set filetype=json
 " jquery
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
-" vuejs
-" autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
-autocmd FileType vue syntax sync fromstart
-
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype xhtml setlocal ts=2 sw=2 expandtab
 autocmd Filetype xml setlocal ts=2 sw=2 expandtab
@@ -36,7 +32,7 @@ autocmd FileType vue syntax sync fromstart
 autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
 
 " display it as 2 tabs like I like, but make it 8 as Go likes
-autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4 norelativenumber
+autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4
 autocmd FileType txt setlocal noet ts=2 sw=2
 autocmd FileType md setlocal noet ts=2 sw=2
 autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=2
@@ -89,3 +85,6 @@ au BufRead,BufNewFile *.scss set filetype=scss.css
 
 " Make sure that .babelrc file is json
 au BufRead,BufNewFile .babelrc set filetype=json
+
+" remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
