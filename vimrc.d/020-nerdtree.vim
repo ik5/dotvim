@@ -4,8 +4,8 @@
 
 let g:NERDTreeIgnore = [
       \ '\.rbc$', '\~$', '\.db$', '\.sqlite$',
-      \ '\.pyc$', '\.pyo$','__pycache__', 
-      \ '\.o', '\.a', '\~$', '\.swo$', '\.swp$', 
+      \ '\.pyc$', '\.pyo$','__pycache__',
+      \ '\.o', '\.a', '\~$', '\.swo$', '\.swp$',
       \ '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$'
       \]
 let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
@@ -23,3 +23,18 @@ let NERDTreeRespectWildIgnore=1
 let NERDTreeBookmanrs = '~/.vim/.NERDTreeBookmanrs'
 let NERDTreeShowBookmarks = 1
 let NERDTreeShowHidden = 1
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
+
+
