@@ -25,9 +25,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'gregsexton/gitv'
 " A Vim plugin which shows a git diff in the gutter
 Plug 'airblade/vim-gitgutter'
-" Mercurial 
+" Mercurial
 Plug 'ludovicchabant/vim-lawrencium'
-" Fugitive extension to manage and merge Git branches 
+" Fugitive extension to manage and merge Git branches
 Plug 'idanarye/vim-merginal'
 
 " Comments support
@@ -68,6 +68,8 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'janko-m/vim-test'
 " Sinatra
 Plug 'hallison/vim-ruby-sinatra'
+" ruby refactoring
+Plug 'ecomba/vim-ruby-refactoring'
 
 " golang support
 " https://github.com/fatih/vim-go-tutorial
@@ -156,7 +158,7 @@ Plug 'othree/xml.vim'
 Plug 'mattn/emmet-vim', { 'for': ['html', 'xhtml', 'css', 'xml', 'erb'] }
 " support for vue.js
 Plug 'posva/vim-vue'
-" YAJS.vim: Yet Another JavaScript Syntax for Vim 
+" YAJS.vim: Yet Another JavaScript Syntax for Vim
 " Plug 'othree/yajs.vim'
 " vim-jsx
 Plug 'mxw/vim-jsx'
@@ -184,7 +186,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'alnjxn/babel-vim-snippets'
 " vim snippets for react.
 Plug 'BerkeleyTrue/berkeleys-snippet-emporium'
-" auto fix your javascript using fixmyjs 
+" auto fix your javascript using fixmyjs
 Plug 'ruanyl/vim-fixmyjs'
 " CSS3 syntax (and syntax defined in some foreign specifications) support for Vim's built-in syntax/css.vim
 Plug 'hail2u/vim-css3-syntax'
@@ -249,7 +251,7 @@ Plug 'Yggdroot/indentLine'
 " async formatting for neovim and vim8
 Plug 'sbdchd/neoformat'
 
-" vim plugin for highlighting columns in csv/tsv files and executing SELECT and UPDATE queries in SQL-like language 
+" vim plugin for highlighting columns in csv/tsv files and executing SELECT and UPDATE queries in SQL-like language
 Plug 'mechatroner/rainbow_csv'
 
 call plug#end()
