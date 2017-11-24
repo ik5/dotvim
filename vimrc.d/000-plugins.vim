@@ -22,13 +22,15 @@ Plug 'w0rp/ale'
 " VCS (git)
 Plug 'tpope/vim-fugitive'
 " visualise git
-Plug 'gregsexton/gitv'
+" Plug 'gregsexton/gitv'
 " A Vim plugin which shows a git diff in the gutter
 Plug 'airblade/vim-gitgutter'
 " Mercurial
 Plug 'ludovicchabant/vim-lawrencium'
 " Fugitive extension to manage and merge Git branches
 Plug 'idanarye/vim-merginal'
+" A git commit browser
+Plug 'junegunn/gv.vim'
 
 " Comments support
 "Plug 'tomtom/tcomment_vim'
@@ -59,17 +61,21 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jlanzarotta/bufexplorer'
 
 " Ruby, Rails, Sinatra and bundler
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }
+Plug 'tpope/vim-bundler', { 'for': ['ruby'] }
 " endwith ruby
 Plug 'tpope/vim-endwise'
-Plug 'vim-ruby/vim-ruby'
+Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
 " Ruby tests
-Plug 'janko-m/vim-test'
+Plug 'janko-m/vim-test', { 'for': ['ruby', 'haml', 'eruby'] }
 " Sinatra
-Plug 'hallison/vim-ruby-sinatra'
+Plug 'hallison/vim-ruby-sinatra', { 'for': ['ruby', 'haml', 'eruby'] }
 " ruby refactoring
-Plug 'ecomba/vim-ruby-refactoring'
+Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'haml', 'eruby'] }
+" A custom text object for selecting ruby blocks
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'kana/vim-textobj-user' " requirement by vim-textobj-user
+
 
 " golang support
 " https://github.com/fatih/vim-go-tutorial
@@ -147,6 +153,12 @@ else
   Plug 'zchee/deoplete-jedi'
   " javascript complete
   Plug 'carlitux/deoplete-ternjs'
+  " Deoplete sources for ruby language
+  Plug 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
+  " A neocomplcache plugin for English, using look command
+  Plug 'ujihisa/neco-look'
+  " better spirce scanning
+  Plug 'Shougo/neco-syntax'
 endif
 
 " ---------------
@@ -159,13 +171,13 @@ Plug 'mattn/emmet-vim', { 'for': ['html', 'xhtml', 'css', 'xml', 'erb'] }
 " support for vue.js
 Plug 'posva/vim-vue'
 " YAJS.vim: Yet Another JavaScript Syntax for Vim
-" Plug 'othree/yajs.vim'
+Plug 'othree/yajs.vim'
 " vim-jsx
-Plug 'mxw/vim-jsx'
+Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 " Syntax for JavaScript libraries
 Plug 'othree/javascript-libraries-syntax.vim'
 " ES.Next syntax for Vim - This syntax file is for ES7 and future syntax
-" Plug 'othree/es.next.syntax.vim'
+Plug 'othree/es.next.syntax.vim'
 " Enhanced javascript syntax file for Vim
 Plug 'jelera/vim-javascript-syntax'
 " Tern plugin for Vim
@@ -198,6 +210,10 @@ Plug 'groenewege/vim-less'
 Plug 'isRuslan/vim-es6'
 "A vim plugin that wraps `jscs -x` into a `:Format` command
 Plug 'mklabs/jscs.vim', { 'do': 'npm i jscs -g'  }
+"  HTML5 omnicomplete and syntax
+Plug 'othree/html5.vim'
+" JavaScript Parameter Complete
+Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx'] }
 " ----------------------
 " End of Web Development
 " ----------------------
