@@ -270,4 +270,8 @@ Plug 'sbdchd/neoformat'
 " vim plugin for highlighting columns in csv/tsv files and executing SELECT and UPDATE queries in SQL-like language
 Plug 'mechatroner/rainbow_csv'
 
+"Elm
+Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
+
+
 call plug#end()
