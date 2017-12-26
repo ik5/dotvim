@@ -273,5 +273,8 @@ Plug 'mechatroner/rainbow_csv'
 "Elm
 Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
 
+" vim kotlin
+Plug 'udalov/kotlin-vim'
+
 
 call plug#end()
