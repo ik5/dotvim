@@ -32,7 +32,7 @@ autocmd FileType vue syntax sync fromstart
 autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
 
 " display it as 2 tabs like I like, but make it 8 as Go likes
-autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4
+autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4 norelativenumber
 autocmd FileType txt setlocal noet ts=2 sw=2
 autocmd FileType md setlocal noet ts=2 sw=2
 autocmd FileType vim setlocal expandtab shiftwidth=2 tabstop=2
@@ -83,8 +83,9 @@ augroup END
 
 au BufRead,BufNewFile *.scss set filetype=scss.css
 
-" Make sure that .babelrc file is json
+" Make sure that .babelrc, and eslintrc files set as json
 au BufRead,BufNewFile .babelrc set filetype=json
+au BufRead,BufNewFile .eslintrc set filetype=json
 
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e

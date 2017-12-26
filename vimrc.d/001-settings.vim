@@ -25,6 +25,7 @@ set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
 set visualbell           " Visual bell instead of nosie, or no indication at all
 set nobackup             " do not keep a backup file
 set number               " show line numbers
+set norelativenumber     " default is not to have a relative number
 set title                " show title in console title bar
 set titleold="Terminal"
 set titlestring=" %F "
@@ -159,7 +160,7 @@ set showmatch            " show matching brakets when text is over them
 set mat=2                " and blink for two seconds
 if has("nvim")
   set inccommand=split     " nvim live %s/../
-endif 
+endif
 set nrformats=octal,hex,alpha " Enable Ctrl-A/Ctrl-X to work on octal and hex numbers, as well as characters
 
 " ==================================================
