@@ -276,5 +276,7 @@ Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
 " vim kotlin
 Plug 'udalov/kotlin-vim'
 
+" Make the yanked region apparent!
+Plug 'machakann/vim-highlightedyank'
 
 call plug#end()
