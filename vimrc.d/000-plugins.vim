@@ -282,5 +282,7 @@ Plug 'udalov/kotlin-vim'
 
 " Make the yanked region apparent!
 Plug 'machakann/vim-highlightedyank'
+" Semantic Highlighting for Vim
+Plug 'jaxbot/semantic-highlight.vim'
 
 call plug#end()
