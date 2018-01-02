@@ -139,6 +139,8 @@ Plug 'tpope/vim-surround'
 
 " repeat.vim: enable repeating supported plugin maps with '.'
 Plug 'tpope/vim-repeat'
+" abolish.vim: easily search for, substitute, and abbreviate multiple variants of a word
+Plug 'tpope/vim-abolish'
 
 " Web API
 Plug 'mattn/webapi-vim'
