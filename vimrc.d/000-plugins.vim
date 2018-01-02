@@ -80,12 +80,15 @@ Plug 'kana/vim-textobj-user' " requirement by vim-textobj-user
 " golang support
 " https://github.com/fatih/vim-go-tutorial
 Plug 'fatih/vim-go'
+" Vim plugin for the godoctor
+Plug 'godoctor/godoctor.vim'
 " Go Explorer is Vim plugin for exploring Go code
 Plug 'garyburd/go-explorer'
 if has("nvim")
   " debug using delve
   Plug 'jodosha/vim-godebug'
 endif
+
 " pairs of handy bracket mappings
 Plug 'tpope/vim-unimpaired'
 " Every one should have a pair (Autogenerate pairs for "{[( )
@@ -94,8 +97,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-scripts/matchit.zip'
 " match tag always -> tag xml/html elements starting and ending
 Plug 'Valloric/MatchTagAlways'
-" Vim plugin for the godoctor
-Plug 'godoctor/godoctor.vim'
 
 
 " airline status plugins
