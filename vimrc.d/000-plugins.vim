@@ -123,6 +123,8 @@ Plug 'garbas/vim-snipmate'
 
 " Vim plugin: flexible viewer for any documentation
 Plug 'powerman/vim-plugin-viewdoc'
+" usage of zeal in vim
+Plug 'KabbAmine/zeavim.vim'
 
 " support for rust
 Plug 'rust-lang/rust.vim'
