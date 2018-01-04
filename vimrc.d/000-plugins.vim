@@ -244,10 +244,6 @@ Plug 'tpope/vim-eunuch'
 " Handles bracketed-paste-mode in vim (aka. automatic `:set paste`)
 Plug 'ConradIrwin/vim-bracketed-paste'
 
-" Lightning fast left-right movement in Vim
-Plug 'unblevable/quick-scope'
-
-
 " Use of Clang for completing C, C++, Objective-C and Objective-C++
 Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
 
@@ -285,5 +281,7 @@ Plug 'udalov/kotlin-vim'
 Plug 'machakann/vim-highlightedyank'
 " Semantic Highlighting for Vim
 Plug 'jaxbot/semantic-highlight.vim'
+" Multi-language Thesaurus Query and Replacement plugin for Vim/NeoVim
+Plug 'ron89/thesaurus_query.vim'
 
 call plug#end()
