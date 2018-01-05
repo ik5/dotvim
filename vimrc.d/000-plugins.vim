@@ -281,7 +281,5 @@ Plug 'udalov/kotlin-vim'
 Plug 'machakann/vim-highlightedyank'
 " Semantic Highlighting for Vim
 Plug 'jaxbot/semantic-highlight.vim'
-" Multi-language Thesaurus Query and Replacement plugin for Vim/NeoVim
-Plug 'ron89/thesaurus_query.vim'
 
 call plug#end()
