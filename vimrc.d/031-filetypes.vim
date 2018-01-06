@@ -46,6 +46,9 @@ autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
 " Instead of reverting the cursor to the last position in the buffer, we
 " set it to the first line when editing a git commit message
 au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
+" set gitconfig file also as gitconfig and not only .gitconfig
+au BufRead,BufNewFile gitconfig setlocal filetype=gitconfig
+au BufRead,BufNewFile *gitconfig setlocal filetype=gitconfig
 
 " put quickfix window always to the bottom
 autocmd FileType qf wincmd J
