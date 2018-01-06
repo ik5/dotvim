@@ -1,3 +1,4 @@
+" TODO muve to a good group
 if has('nvim')
   " Exit terminal mode
   tnoremap <Esc> <C-\><C-n>
@@ -26,4 +27,9 @@ if has('nvim')
   inoremap <C-Left> <Esc> <C-W>h
   inoremap <C-Right> <Esc> <C-W>l
 
+  au TermOpen * setlocal list
+  au TermOpen * setlocal wrap
+
+  command! -nargs=* HTerm split term:///bin/zsh
+  command! -nargs=* VTerm vsplit term:///bin/zsh
 endif
