@@ -145,59 +145,7 @@ map <leader>s? z=
 " VCS/Git Merge stuff
 " =======================================================
 " Find merge conflict markers
-map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>
-
-" ======================================================
-" Fugitive
-" =====================================================
-
-" Status
-vnoremap <leader>g? :Gstatus<CR>
-nnoremap <leader>g? :Gstatus<CR>
-
-" Blame
-vnoremap <leader>gb :Gblame<CR>
-nnoremap <leader>gb :Gblame<CR>
-
-" Commit
-vnoremap <leader>gc :Gcommit<CR>
-nnoremap <leader>gc :Gcommit<CR>
-
-" vdiff
-vnoremap <leader>gvd :Gvdiff<CR>
-nnoremap <leader>gvd :Gvdiff<CR>
-
-" git grep
-vnoremap <leader>g/ :Ggrep<space>
-nnoremap <leader>g/ :Ggrep<space>
-
-" push
-vnoremap <leader>gp :Gpush<CR>
-nnoremap <leader>gp :Gpush<CR>
-
-
-
-
-" =======================================================
-" Gitv
-" =======================================================
-nmap <leader>gv :Gitv --all<cr>
-nmap <leader>gV :Gitv! --all<cr>
-vmap <leader>gV :Gitv! --all<cr>
-nmap <leader>gD :call Gitv_OpenGitCommand("diff --no-color", 'new')<CR>
-vmap <leader>gD :call Gitv_OpenGitCommand("diff --no-color", 'new')<CR>
-"nmap <leader>Gd :call Gitv_OpenGitCommand("diff --no-color --cached", 'vnew')<CR>
-"vmap <leader>Gd :call Gitv_OpenGitCommand("diff --no-color --cached", 'vnew')<CR>
-
-" =======================================================
-" vim gitgutter
-" =======================================================
-nmap ]h <Plug>GitGutterNextHunk
-nmap [h <Plug>GitGutterPrevHunk
-nmap <Leader>hs <Plug>GitGutterStageHunk
-nmap <Leader>hu <Plug>GitGutterUndoHunk
-nmap <Leader>hv <Plug>GitGutterPreviewHunk
-
+map <leader>vcsfc /\v^[<\|=>]{7}( .*\|$)<CR>
 
 " =======================================================
 " Code folding options
