@@ -170,7 +170,7 @@ else
   " python complete
   Plug 'zchee/deoplete-jedi'
   " javascript complete
-  Plug 'carlitux/deoplete-ternjs'
+  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install' }
   " Deoplete sources for ruby language
   Plug 'fishbullet/deoplete-ruby'
   " deoplete rcodetools source for Ruby
