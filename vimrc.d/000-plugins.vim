@@ -36,6 +36,8 @@ Plug 'ludovicchabant/vim-lawrencium'
 Plug 'idanarye/vim-merginal'
 " A git commit browser
 Plug 'junegunn/gv.vim'
+" Git branch management
+Plug 'sodapopcan/vim-twiggy'
 
 " Comments support
 "Plug 'tomtom/tcomment_vim'
