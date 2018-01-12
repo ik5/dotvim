@@ -13,6 +13,11 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'sheerun/vim-polyglot'
 " style configuration
 Plug 'editorconfig/editorconfig-vim'
+" Language Server Protocol (LSP) support for vim and neovim
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 
 " ale - Asynchronous Lint Engine
 Plug 'w0rp/ale'
@@ -59,6 +64,12 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 " BufExplorer Plugin for Vim
 Plug 'jlanzarotta/bufexplorer'
+" A command-line fuzzy finder
+Plug 'junegunn/fzf'
+" Dark powered asynchronous unite all interfaces for Neovim/Vim8
+Plug 'Shougo/denite.nvim'
+" Extended f, F, t and T key mappings for Vim
+Plug 'rhysd/clever-f.vim'
 
 " Ruby, Rails, Sinatra and bundler
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }
@@ -164,6 +175,11 @@ else
   Plug 'ujihisa/neco-look'
   " better spirce scanning
   Plug 'Shougo/neco-syntax'
+
+  " Fast, Extensible, Async Completion Framework for Neovim
+  Plug 'roxma/nvim-completion-manager'
+  " Ruby completion
+  Plug 'roxma/ncm-rct-complete'
 endif
 
 " ---------------
