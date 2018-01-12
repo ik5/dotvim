@@ -97,7 +97,7 @@ Plug 'fatih/vim-go'
 Plug 'godoctor/godoctor.vim'
 " Go Explorer is Vim plugin for exploring Go code
 Plug 'garyburd/go-explorer'
-if has("nvim")
+if has('nvim')
   " debug using delve
   Plug 'jodosha/vim-godebug'
 endif
@@ -159,7 +159,7 @@ Plug 'tpope/vim-abolish'
 " Web API
 Plug 'mattn/webapi-vim'
 
-if !has("nvim")
+if !has('nvim')
   " new complete library
   Plug 'lifepillar/vim-mucomplete'
 else
@@ -172,17 +172,24 @@ else
   " javascript complete
   Plug 'carlitux/deoplete-ternjs'
   " Deoplete sources for ruby language
-  Plug 'fishbullet/deoplete-ruby', { 'for': 'ruby' }
+  Plug 'fishbullet/deoplete-ruby'
+  " deoplete rcodetools source for Ruby
+  Plug 'Shougo/deoplete-rct'
   " A neocomplcache plugin for English, using look command
   Plug 'ujihisa/neco-look'
   " better spirce scanning
   Plug 'Shougo/neco-syntax'
-
-  " Fast, Extensible, Async Completion Framework for Neovim
-  Plug 'roxma/nvim-completion-manager'
-  " Ruby completion
-  Plug 'roxma/ncm-rct-complete'
+  " vim syntax complete
+  Plug 'Shougo/neco-vim'
+  " deoplete.nvim source for C/C++/Obj-C/Obj-C++ with clang-python3
+  Plug 'zchee/deoplete-clang'
+  " Zsh completion for deoplete.nvim
+  Plug 'zchee/deoplete-zsh'
+  " Deoplete source for emoji codes
+  Plug 'fszymanski/deoplete-emoji'
 endif
+" Update the bult-in CSS complete function to latest CSS standard
+Plug 'othree/csscomplete.vim'
 
 " ---------------
 " Web Development

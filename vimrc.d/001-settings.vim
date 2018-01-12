@@ -77,7 +77,7 @@ set wildignore+=*.DS_Store
 set wildignore+=*.rdb                            " Redis database file
 set wildignore+=*/tmp/*,*.so,*.zip,*.db,*.sqlite*
 
-set completeopt=menu,menuone   " Just show the menu upon completion (faster)
+set completeopt=longest,menu,menuone,preview   " Just show the menu upon completion (faster)
 set completeopt+=preview
 set infercase                     " Allow smarter completion by infering the case
 set pumheight=15               " The maximum height of a completion menu
