@@ -88,6 +88,16 @@ Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'haml', 'eruby'] }
 " A custom text object for selecting ruby blocks
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'kana/vim-textobj-user' " requirement by vim-textobj-user
+" Projectionist provides granular project configuration using 'projections'
+Plug 'tpope/vim-projectionist'
+" it's like rails.vim without the rails
+Plug 'tpope/vim-rake'
+" Switch Ruby versions from inside Vim
+Plug 'tpope/vim-rvm'
+" Minimal rbenv support
+Plug 'tpope/vim-rbenv'
+" Automatically generate ctags for rbenv Ruby stdlibs
+Plug 'tpope/rbenv-ctags'
 
 
 " golang support
