@@ -317,4 +317,9 @@ Plug 'machakann/vim-highlightedyank'
 " Semantic Highlighting for Vim
 Plug 'jaxbot/semantic-highlight.vim'
 
+" A powerful grammar checker for Vim using LanguageTool
+Plug 'rhysd/vim-grammarous'
+" A Vim plugin for looking up words in an online thesaurus
+Plug 'beloglazov/vim-online-thesaurus'
+
 call plug#end()
