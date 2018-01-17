@@ -143,7 +143,8 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
 Plug 'garbas/vim-snipmate'
-
+" Adaptation of one-light and one-dark colorschemes for Vim
+Plug 'rakr/vim-one'
 
 " Vim plugin: flexible viewer for any documentation
 Plug 'powerman/vim-plugin-viewdoc'
