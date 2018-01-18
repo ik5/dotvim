@@ -21,8 +21,6 @@ Plug 'autozimu/LanguageClient-neovim', {
 
 " ale - Asynchronous Lint Engine
 Plug 'w0rp/ale'
-" syntax checking
-" Plug 'scrooloose/syntastic'
 
 " VCS (git)
 Plug 'tpope/vim-fugitive'
