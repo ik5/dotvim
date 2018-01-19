@@ -20,7 +20,7 @@ if &term[:4] == "xterm" || &term[:5] == 'screen' || &term[:3] == 'rxvt'
 endif
 
 " Fast saving
-nmap <leader>w :w!<cr>
+nmap <leader>w :w!<cr><cr>
 
 " sudo saves the file
 " (useful for handling the permission-denied error)
@@ -103,17 +103,9 @@ if ! has("nvim")
   endw
 endif
 
-" exec async compiler
-map <C-F9> <Esc>:Dispatch<CR>
-imap <C-F9> <Esc>:Dispatch<CR>a
-
 " treat long lines as break lines (when moving around in them)
 map j gj
 map k gk
-
-" NerdTree toggle
-map <F3> :NERDTreeToggle<CR>
-imap <F3> <Esc>:NERDTreeToggle<CR>
 
 " Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
 nmap <M-j> mz:m+<cr>`z

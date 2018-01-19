@@ -37,4 +37,7 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
+" NerdTree toggle
+map <F3> :NERDTreeToggle<CR>
+imap <F3> <Esc>:NERDTreeToggle<CR>
 
