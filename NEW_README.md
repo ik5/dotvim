@@ -169,11 +169,12 @@ vim +PlugUpdate +qa
 | ----------------- | --------------------------- |
 | ``<leader>vcsfc`` | Find merge conflict markers |
 
-###
+### ALE
 
-| Key | Description |
-| --- | ----------- |
-| | |
+| Key       | Description                        |
+| ---       | -----------                        |
+| ``<c-j>`` | Go to next error reported by `ALE` |
+| ``<c-k>`` | Go to prev error reported by `ALE` |
 
 ###
 
