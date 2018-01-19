@@ -55,7 +55,7 @@ git clone https://github.com/ik5/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 cd ~/.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 Install plugins from the command line:
@@ -86,71 +86,80 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 vim +PlugUpdate +qa
 ```
 
+## Commands
+
+TODO:
+
 ## Shortcuts
 
 ### General
 
-| Key | Description |
-| --- | ----------- |
-| ``\\`` | `<Leader>` (as a default) |
-| ``jj`` | ``<ESC>`` on insert mode |
-| ``<leader>+r`` | Load .vimrc |
-| ``<leader>+R`` | Reload vim |
-| ``K`` | Show documentation under the cursor |
-| ``<leader>w`` | Fast save current file (will not work on a buffer without file name) |
-| ``<c-J>`` / ``<c-Down>`` | Navigate window / terminal - go down down |
-| ``<c-K>`` / ``<c-Up>`` | Navigate window / terminal- go up |
-| ``<c-H>`` / ``<c-Left>`` | Navigate window / terminal- go left |
-| ``<c-L>`` / ``<c-Right>`` | Navigate window / terminal- go right |
-| ``<c-W>`` | Window functions on insert mode as well |
-| ``-`` / ``+`` | Resize horizontal splits |
-| ``<alt-,>`` / ``<alt-.>`` | Rezie vertical splits |
-| ``<F2>`` | Close (but not delete) current buffer |
-| ``<leader-d>`` | Delete current buffer |
-| ``<leader-D>`` | Delete current buffer, but keep the split (switch to prev buffer) |
-| ``<leaderS>`` | Delete trailling whitespace |
-| ``<F5>`` | Toggle hlsearch |
-| ``<c-d>`` / ``<c-u>`` | Center line when moving up and down half a screen |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
+| Key                             | Description                                                             |
+| ---                             | -----------                                                             |
+| ``\\``                          | `<Leader>` (as a default)                                               |
+| ``jj``                          | ``<ESC>`` on insert mode                                                |
+| ``<leader>+r``                  | Load .vimrc                                                             |
+| ``<leader>+R``                  | Reload vim                                                              |
+| ``K``                           | Show documentation under the cursor                                     |
+| ``<leader>w``                   | Fast save current file (will not work on a buffer without file name)    |
+| ``<c-J>`` / ``<c-Down>``        | Navigate window / terminal - go down down                               |
+| ``<c-K>`` / ``<c-Up>``          | Navigate window / terminal- go up                                       |
+| ``<c-H>`` / ``<c-Left>``        | Navigate window / terminal- go left                                     |
+| ``<c-L>`` / ``<c-Right>``       | Navigate window / terminal- go right                                    |
+| ``<c-W>``                       | Window functions on insert mode as well                                 |
+| ``-`` / ``+``                   | Resize horizontal splits                                                |
+| ``<alt-,>`` / ``<alt-.>``       | Rezie vertical splits                                                   |
+| ``<F2>``                        | Close (but not delete) current buffer                                   |
+| ``<leader-d>``                  | Delete current buffer                                                   |
+| ``<leader-D>``                  | Delete current buffer, but keep the split (switch to prev buffer)       |
+| ``<leaderS>``                   | Delete trailling whitespace                                             |
+| ``<F5>``                        | Toggle hlsearch                                                         |
+| ``<c-d>`` / ``<c-u>``           | Center line when moving up and down half a screen                       |
+| ``<Alt-j>``                     | Move current line down                                                  |
+| ``<Alt-k>``                     | Move current line up                                                    |
+| ``SPT``                         | Toggle spelling mode                                                    |
+| ``<leader>sn``                  | Move to the next misspelled word                                        |
+| ``<leader>sp``                  | Move to the previous misspelled word                                    |
+| ``<leader>sa``                  | Add misspelled word under the cursor                                    |
+| ``<leader>s?``                  | Open suggestion window                                                  |
+| ``<leader>f1`` - ``<leader>f9`` | Set fold level between 1 and 9                                          |
+| ``<c-p>``                       | Toggle paste mode                                                       |
+| ``<leader>m``                   | Remove ^M when encoding is messed up (windows)                          |
+| ``<leader><leader>``            | Toggle between last two files                                           |
+| ``<leader>y``                   | Copy the current visual selection or current line to `~/tmp/.vbuf` file |
+| ``<leader>p``                   | Paste the content of the buffer to `~/tmp/.vbuf` file                   |
+| ``Y``                           | Copy from cursor to the end of the line                                 |
+| ``<leader>ff``                  | Display all keywords under the cursor and prompt to go for one of them  |
+| ``<leader>e``                   | Go to next error message                                                |
+| ``<leader>E``                   | Go to prev error message                                                |
+| ``<leader><c-e>``               | Close quickfix error window                                             |
+| ``<leader>q``                   | Close all windows except active one                                     |
+| ``<c-f>``                       | Print full path                                                         |
+| ``<leader><c-w>``               | Exit diff mode                                                          |
+| ``<leader>hc``                  | Toggle view of hidden chars                                             |
+| ``<leader>wrp``                 | Toggle wrap mode                                                        |
+| ``<leader>srt``                 | Sort numbers in paragraph/selection                                     |
+| ``<c-PageDown>``                | Go to next tab                                                          |
+| ``<c-PageUp>``                  | Go to prev tab                                                          |
+| ``<C-O>``                       | Set :tabnew command and wait for a name to be placed                    |
+| ``<C-T>``                       | Open new tab                                                            |
+| ``<S-Tab>``                     | Execute :retab to set thw whole buffer at the same whitespace type      |
+| ``<leader>T``                   | Open new terminal in NeoVim                                             |
+| ``<leader>rel``                 | Toggle between normal and relative numbers                              |
 
-###
+### Hebrew/Bidi
 
 | Key | Description |
 | --- | ----------- |
 | | |
+
+
+
+### VCS
+
+| Key               | Description |
+| ----------------- | --------------------------- |
+| ``<leader>vcsfc`` | Find merge conflict markers |
 
 ###
 
@@ -222,7 +231,7 @@ vim +PlugUpdate +qa
 ## Plugins
 
 | Name | Description |
-| | |
+|------|-------------|
 | [](https://github.com/) | |
 | [](https://github.com/) | |
 | [](https://github.com/) | |

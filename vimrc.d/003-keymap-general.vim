@@ -1,5 +1,5 @@
 ﻿" define the leader to be explicitly \ char
-let mapleader="\\"
+let mapleader='\\'
 
 " use jj as escape
 ino jj <esc>
@@ -15,7 +15,7 @@ map <leader>r :sp ~/vimrc<CR><C-W>_
 " activating changes (after save) - <leader>R
 map <silent> <leader>R :source ~/.vimrc<CR>:filetype detect<CR>:exec ":echo 'vimrc reloaded'"<CR>
 
-if &term[:4] == "xterm" || &term[:5] == 'screen' || &term[:3] == 'rxvt'
+if &term[:4] ==? 'xterm' || &term[:5] ==? 'screen' || &term[:3] ==? 'rxvt'
   inoremap <silent> <C-[>OC <RIGHT>
 endif
 
@@ -90,15 +90,15 @@ nnoremap N Nzzzv
 noremap <C-d> <C-d>zz
 noremap <C-u> <C-u>zz
 
-if ! has("nvim")
-" ==================================================
-" Fix meta key in terminal
-" fix meta-keys which generate <Esc>a .. <Esc>z
-" ==================================================
+if ! has('nvim')
+  " ==================================================
+  " Fix meta key in terminal
+  " fix meta-keys which generate <Esc>a .. <Esc>z
+  " ==================================================
   let c='a'
   while c <= 'z'
-    exec "set <A-".c.">=\e".c
-    exec "imap \e".c." <A-".c.">"
+    exec 'set <A-'.c.'>=\e'.c
+    exec 'imap \e'.c.' <A-'.c.'>'
     let c = nr2char(1+char2nr(c))
   endw
 endif
@@ -113,7 +113,7 @@ nmap <M-k> mz:m-2<cr>`z
 vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
-if has("mac") || has("macunix")
+if has('mac') || has('macunix')
   nmap <D-j> <M-j>
   nmap <D-k> <M-k>
   vmap <D-j> <M-j>
@@ -123,7 +123,9 @@ endif
 " ====================================================
 " spell settings
 " ====================================================
-map <S-F7> :setlocal spell!<CR>
+map  SPT :set spell!<CR>
+nmap SPT :set spell!<CR>
+vmap SPT :set spell!<CR>
 " move to next spelling word
 map <leader>sn ]s
 " move to prev spelling word
@@ -157,7 +159,7 @@ nmap <leader>f9 :set foldlevel=9<CR>
 " Misc
 " =======================================================
 " toggle paste
-map <c-P> :set paste!<CR>
+map <c-p> :set paste!<CR>
 
 " paste while keeping the current indent
 nnoremap <leader>p p`[v`]=
@@ -190,15 +192,15 @@ endif
 
 "" Map <Leader>ff to display all lines with keyword under cursor
 " and ask which one to jump to
-nmap <leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
+nmap <leader>ff [I:let nr = input('Which one: ')<Bar>exe 'normal ' . nr .'[\t'<CR>
 
 " tabular resize on insert mode
 " inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
 " Error window (a.k.a. quick fix window)
-map <leader>e :cn<CR>
-map <leader>E :cp<CR>
-map <leader><c-e> :cclose<CR>
+nmap <leader>e :cn<CR>
+nmap <leader>E :cp<CR>
+nmap <leader><c-e> :cclose<CR>
 
 " Close all windows except the active one
 nnoremap <leader>q :only<CR>
@@ -225,13 +227,13 @@ vmap <leader>srt {V}k:!sort<CR>
 nnoremap <C-PageDown> gt
 nnoremap <C-PageUp> gT
 nnoremap <C-O> :tabnew <Space>
-nnoremap <C-T> :tabnew <Space>
+nnoremap <C-T> :tabnew<CR>
 
 map <S-Tab> :retab<CR>
 imap <S-Tab> <ESC>:retab<CR>i
 vmap <S-Tab> :retab<CR>
 
-if has("nvim")
+if has('nvim')
   map <leader>T :terminal<CR>
 endif
 
