@@ -90,11 +90,11 @@ vim +PlugUpdate +qa
 
 ### General
 
-| Command   | Description                                                                         |
-| -------   | -----------                                                                         |
-| ``Wr``    | Save current buffer using `sudo`, does not function well, please do not use for now |
-| ``HTem``  | Open Horizontal terminal in NeoVim                                                  |
-| ``VTerm`` | Open Vertical terminal in NeoVim                                                    |
+| Command   | Description                                                                             |
+| -------   | -----------                                                                             |
+| ``Wr``    | Save current buffer using `sudo`, does not function well, **please do not use for now** |
+| ``HTem``  | Open Horizontal terminal in NeoVim                                                      |
+| ``VTerm`` | Open Vertical terminal in NeoVim                                                        |
 
 ###
 
