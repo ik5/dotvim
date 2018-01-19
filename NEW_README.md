@@ -118,9 +118,9 @@ vim +PlugUpdate +qa
 | ``-`` / ``+``                   | Resize horizontal splits                                                |
 | ``<alt-,>`` / ``<alt-.>``       | Rezie vertical splits                                                   |
 | ``<F2>``                        | Close (but not delete) current buffer                                   |
-| ``<leader-d>``                  | Delete current buffer                                                   |
-| ``<leader-D>``                  | Delete current buffer, but keep the split (switch to prev buffer)       |
-| ``<leaderS>``                   | Delete trailling whitespace                                             |
+| ``<leader>d``                   | Delete current buffer                                                   |
+| ``<leader>D``                   | Delete current buffer, but keep the split (switch to prev buffer)       |
+| ``<leader>S``                   | Delete trailling whitespace                                             |
 | ``<F5>``                        | Toggle hlsearch                                                         |
 | ``<c-d>`` / ``<c-u>``           | Center line when moving up and down half a screen                       |
 | ``<Alt-j>``                     | Move current line down                                                  |
