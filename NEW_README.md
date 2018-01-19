@@ -176,11 +176,11 @@ vim +PlugUpdate +qa
 | ``<c-j>`` | Go to next error reported by `ALE` |
 | ``<c-k>`` | Go to prev error reported by `ALE` |
 
-###
+### BuffExplorer
 
-| Key | Description |
-| --- | ----------- |
-| | |
+| Key         | Description           |
+| ---         | -----------           |
+| ``<m-F11>`` | Toggle `BuffExplorer` |
 
 ###
 
