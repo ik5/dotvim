@@ -323,4 +323,7 @@ Plug 'rhysd/vim-grammarous'
 " A Vim plugin for looking up words in an online thesaurus
 Plug 'beloglazov/vim-online-thesaurus'
 
+" Vim Markdown runtime files
+Plug 'tpope/vim-markdown'
+
 call plug#end()

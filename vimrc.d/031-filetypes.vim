@@ -30,6 +30,7 @@ autocmd FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
 autocmd FileType ruby compiler ruby
 autocmd FileType vue syntax sync fromstart
 autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " display it as 2 tabs like I like, but make it 8 as Go likes
 autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4 norelativenumber

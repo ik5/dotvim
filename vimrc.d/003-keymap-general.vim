@@ -159,7 +159,8 @@ nmap <leader>f9 :set foldlevel=9<CR>
 " Misc
 " =======================================================
 " toggle paste
-map <c-p> :set paste!<CR>
+" nmap <c-s-p> :set paste!<CR>
+" map <c-s-p> :set paste!<CR>
 
 " paste while keeping the current indent
 nnoremap <leader>p p`[v`]=
@@ -240,3 +241,7 @@ endif
 " add support for toggle relative numbers
 map <leader>rel :set rnu!<CR>
 imap <leader>rel <ESC>:set rnu!<CR>a
+
+" Move back and forth through commits while staying on the same line
+nnoremap <A-right> :call GlogForward()<CR>
+nnoremap <A-left> :call GlogBackward()<CR>

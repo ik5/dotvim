@@ -131,7 +131,6 @@ vim +PlugUpdate +qa
 | ``<leader>sa``                  | Add misspelled word under the cursor                                    |
 | ``<leader>s?``                  | Open suggestion window                                                  |
 | ``<leader>f1`` - ``<leader>f9`` | Set fold level between 1 and 9                                          |
-| ``<c-p>``                       | Toggle paste mode                                                       |
 | ``<leader>m``                   | Remove ^M when encoding is messed up (windows)                          |
 | ``<leader><leader>``            | Toggle between last two files                                           |
 | ``<leader>y``                   | Copy the current visual selection or current line to `~/tmp/.vbuf` file |
@@ -182,10 +181,14 @@ vim +PlugUpdate +qa
 | ---         | -----------          |
 | ``<m-F11>`` | Toggle `BufExplorer` |
 
-###
+### CtrlP
 
 | Key | Description |
 | --- | ----------- |
+| ``<c-p>`` | Invoke `CtrlP` |
+| ``gr`` | Fuzzy tag finding in buffer |
+| | |
+| | |
 | | |
 
 ###
