@@ -147,12 +147,12 @@ TODO:
 | ``<leader>T``                   | Open new terminal in NeoVim                                             |
 | ``<leader>rel``                 | Toggle between normal and relative numbers                              |
 
-### Hebrew/Bidi
+### Right To Left
 
-| Key | Description |
-| --- | ----------- |
-| | |
-
+| Key      | Description                  |
+| ---      | -----------                  |
+| ``<F8>`` | Toggle visual order editing  |
+| ``<F9>`` | Toggle logical order editing |
 
 
 ### VCS
