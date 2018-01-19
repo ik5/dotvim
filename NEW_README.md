@@ -163,7 +163,7 @@ vim +PlugUpdate +qa
 | ``<F9>`` | Toggle logical order editing |
 
 
-### VCS
+### VCS (General)
 
 | Key               | Description |
 | ----------------- | --------------------------- |
