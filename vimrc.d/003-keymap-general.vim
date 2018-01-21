@@ -1,5 +1,5 @@
 ﻿" define the leader to be explicitly \ char
-let mapleader='\\'
+let mapleader='\'
 
 " use jj as escape
 ino jj <esc>
