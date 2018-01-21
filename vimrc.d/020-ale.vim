@@ -40,7 +40,8 @@ let g:ale_fixers = { 'javascript': ['eslint'] }
 
 let g:ale_python_flake8_executable = 'flake8-python2'
 
-let g:ale_linters = {'jsx': ['eslint'], 'ruby': ['rubocup', 'reek'] }
+let g:ale_linters = {'jsx': ['eslint'], 'ruby': ['rubocop', 'reek'] }
+let g:ale_ruby_rubocop_executable = 'rubocop'
 let g:ale_linter_aliases = {'jsx': 'css'}
 
 
