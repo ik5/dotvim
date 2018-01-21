@@ -110,7 +110,7 @@ vim +PlugUpdate +qa
 | ``<leader>+R``                  | Reload vim                                                              |
 | ``K``                           | Show documentation under the cursor                                     |
 | ``<leader>w``                   | Fast save current file (will not work on a buffer without file name)    |
-| ``<c-J>`` / ``<c-Down>``        | Navigate window / terminal - go down down                               |
+| ``<c-J>`` / ``<c-Down>``        | Navigate window / terminal - go down                                    |
 | ``<c-K>`` / ``<c-Up>``          | Navigate window / terminal- go up                                       |
 | ``<c-H>`` / ``<c-Left>``        | Navigate window / terminal- go left                                     |
 | ``<c-L>`` / ``<c-Right>``       | Navigate window / terminal- go right                                    |

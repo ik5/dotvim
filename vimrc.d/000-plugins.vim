@@ -36,6 +36,8 @@ Plug 'idanarye/vim-merginal'
 Plug 'junegunn/gv.vim'
 " Git branch management
 Plug 'sodapopcan/vim-twiggy'
+" GitHub extension for fugitive.vim
+Plug 'tpope/vim-rhubarb'
 
 " Comments support
 "Plug 'tomtom/tcomment_vim'
