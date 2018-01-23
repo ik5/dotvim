@@ -6,7 +6,8 @@ let g:NERDTreeIgnore = [
       \ '\.rbc$', '\~$', '\.db$', '\.sqlite$',
       \ '\.pyc$', '\.pyo$','__pycache__',
       \ '\.o', '\.a', '\~$', '\.swo$', '\.swp$',
-      \ '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$'
+      \ '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$',
+      \ '.jsc'
       \]
 let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
 let NERDTreeDirArrows=1
