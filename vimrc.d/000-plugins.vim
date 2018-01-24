@@ -74,6 +74,8 @@ Plug 'junegunn/fzf'
 Plug 'Shougo/denite.nvim'
 " Extended f, F, t and T key mappings for Vim
 Plug 'rhysd/clever-f.vim'
+" Discoverable & searchable shortcuts for (Neo)Vim
+Plug 'sunaku/vim-shortcut'
 
 " Ruby, Rails, Sinatra and bundler
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }
@@ -100,7 +102,8 @@ Plug 'tpope/vim-rvm'
 Plug 'tpope/vim-rbenv'
 " Automatically generate ctags for rbenv Ruby stdlibs
 Plug 'tpope/rbenv-ctags'
-
+" Vim highlighting & completion for MiniTest
+Plug 'sunaku/vim-ruby-minitest'
 
 " golang support
 " https://github.com/fatih/vim-go-tutorial
