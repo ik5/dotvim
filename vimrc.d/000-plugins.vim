@@ -104,6 +104,8 @@ Plug 'tpope/vim-rbenv'
 Plug 'tpope/rbenv-ctags'
 " Vim highlighting & completion for MiniTest
 Plug 'sunaku/vim-ruby-minitest'
+" Vim plugin for ruby editing. Quick jump to method, class, module defenitions in buffers
+Plug 'xmisao/rubyjump.vim'
 
 " golang support
 " https://github.com/fatih/vim-go-tutorial
