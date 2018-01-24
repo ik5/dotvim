@@ -131,7 +131,7 @@ Plug 'Valloric/MatchTagAlways'
 " Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'powerline/fonts'
+Plug 'powerline/fonts', { 'do': './install.sh' }
 Plug 'edkolev/tmuxline.vim'
 
 " Do completion using tab key
