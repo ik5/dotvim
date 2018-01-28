@@ -25,7 +25,7 @@ Plug 'w0rp/ale'
 " VCS (git)
 Plug 'tpope/vim-fugitive'
 " visualise git
-" Plug 'gregsexton/gitv'
+Plug 'gregsexton/gitv'
 " A Vim plugin which shows a git diff in the gutter
 Plug 'airblade/vim-gitgutter'
 " Mercurial

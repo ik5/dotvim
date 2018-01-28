@@ -2,8 +2,7 @@
 
 The following (Neo)Vim configuration is to help me work with programming.
 
-The reason for it, is that I work with many technologies, sometimes changes per
-projects.
+The reason for it, is that I work with number of technologies.
 
 The main technologies that I'm placing emphases on are:
 
@@ -22,9 +21,9 @@ The main technologies that I'm placing emphases on are:
 
  - ``vimrc`` handling
  - Incremental and smart case search
- - Sublime like text editing of multiple cursors
- - Information regarding trailing whitespaces, including cleaning shortcuts
- - Logical and Visual layout (for Right-To-Left lanaguegs) editing
+ - Sublime like text editing for "multiple cursors"
+ - Information on trailing whitespace, including cleaning shortcuts
+ - Logical and Visual layout (for Right-To-Left languages) editing
  - Tabs expanded to 2 spaces by default, except for Python
  - Keeping the ``<Leader>`` key as Backspace
  - Adding ``jj`` in edit mode to become alias to the ``<ESC>`` key
@@ -40,7 +39,8 @@ The main technologies that I'm placing emphases on are:
  - Tab Completion
  - Commenting
  - History management, including persistent undo
- - Additional documentation support
+ - Support documentation for programming languages, based on the original (neo)vim documentation engine
+ - Support for external documentation using Zeal
  - Reload file when changed from outside
  - Working with error window (a.k.a. quickfix)
  - In-line documentation
@@ -66,7 +66,7 @@ vim +PlugUpdate +qa
 
 To add or override settings, place them in ``~/.vim/vimrc.local``.
 
-To update submodules in the future, when you have vim running, source vimrc to make sure plugins list is updated (or
+To update submodules in the future, when you have vim running, source vimrc to make sure plugins list are updated (or
 restart vim):
 
 ```
@@ -116,11 +116,11 @@ vim +PlugUpdate +qa
 | ``<c-L>`` / ``<c-Right>``       | Navigate window / terminal- go right                                    |
 | ``<c-W>``                       | Window functions on insert mode as well                                 |
 | ``-`` / ``+``                   | Resize horizontal splits                                                |
-| ``<alt-,>`` / ``<alt-.>``       | Rezie vertical splits                                                   |
+| ``<alt-,>`` / ``<alt-.>``       | Resize vertical splits                                                  |
 | ``<F2>``                        | Close (but not delete) current buffer                                   |
 | ``<leader>d``                   | Delete current buffer                                                   |
 | ``<leader>D``                   | Delete current buffer, but keep the split (switch to prev buffer)       |
-| ``<leader>S``                   | Delete trailling whitespace                                             |
+| ``<leader>S``                   | Delete trailing whitespace                                              |
 | ``<F5>``                        | Toggle hlsearch                                                         |
 | ``<c-d>`` / ``<c-u>``           | Center line when moving up and down half a screen                       |
 | ``<Alt-j>``                     | Move current line down                                                  |
@@ -187,27 +187,34 @@ vim +PlugUpdate +qa
 | --- | ----------- |
 | ``<c-p>`` | Invoke `CtrlP` |
 | ``gr`` | Fuzzy tag finding in buffer |
-| | |
-| | |
-| | |
 
-###
+### Fugitive
 
-| Key | Description |
-| --- | ----------- |
-| | |
+| Key               | Description       |
+| ---               | -----------       |
+| ``<leader>gitb``  | git blame         |
+| ``<leader>gitc``  | git commit        |
+| ``<leader>gitvd`` | vertical git diff |
+| ``<leader>git/``  | git grep          |
+| ``<leader>git?``  | git status        |
 
-###
+### gitgutter
 
-| Key | Description |
-| --- | ----------- |
-| | |
+| Key               | Description                               |
+| ---               | -----------                               |
+| ``]h``            | Next gutter change under cursor           |
+| ``[h``            | Prev gutter change under cursor           |
+| ``<leader>giths`` | Gutter set stage under cursor             |
+| ``<leader>githu`` | Gutter undo non staged lines under cursor |
+| ``<leader>githv`` | Gutter Preview changes under cursor       |
 
-###
+### gitv
 
-| Key | Description |
-| --- | ----------- |
-| | |
+| Key              | Description                  |
+| ---              | -----------                  |
+| ``<leader>gitv`` | Display changes in new tab   |
+| ``<leader>gitV`` | Display changes on new split |
+| ``<leader>gitD`` | Display git diff             |
 
 ###
 
