@@ -33,10 +33,8 @@ let g:pymode_lint_message = 0
 " Enable rope
 let g:pymode_rope = 1
 " Auto complete (ctrl-space)
-let g:pymode_rope_completion = 1
 
 let g:pymode_rope_goto_definition_cmd = 'new'
-
 
 " Enable all synax highlights
 let g:pymode_syntax_all = 1
