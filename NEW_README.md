@@ -216,6 +216,41 @@ vim +PlugUpdate +qa
 | ``<leader>gitV`` | Display changes on new split |
 | ``<leader>gitD`` | Display git diff             |
 
+### Emmet
+
+| Key        | Description                                                                                             |
+| ---        | -----------                                                                                             |
+| ``<c-y>,`` | Complete (current tags and snippets)[https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL] |
+
+### NerdTree
+
+| Key      | Description     |
+| ---      | -----------     |
+| ``<F3>`` | Toggle NerdTree |
+
+### Python mode
+
+| Key                       | Description                                                                                                                                                                                                                                                                                                    |
+| ---                       | -----------                                                                                                                                                                                                                                                                                                    |
+| ``[[``                    | Jump to previous class or function (normal, visual, operator modes)                                                                                                                                                                                                                                            |
+| ``]]``                    | Jump to next class or function (normal, visual, operator modes)                                                                                                                                                                                                                                                |
+| ``[M``                    | Jump to previous class or method (normal, visual, operator modes)                                                                                                                                                                                                                                              |
+| ``]M``                    | Jump to next class or method (normal, visual, operator modes)                                                                                                                                                                                                                                                  |
+| ``aC``                    | Select a class. Ex: vaC, daC, yaC, caC (normal, operator modes)                                                                                                                                                                                                                                                |
+| ``iC``                    | Select inner class. Ex: viC, diC, yiC, ciC (normal, operator modes)                                                                                                                                                                                                                                            |
+| ``aM``                    | Select a function or method. Ex: vaM, daM, yaM, caM (normal, operator modes)                                                                                                                                                                                                                                   |
+| ``iM``                    | Select inner function or method. Ex: viM, diM, yiM, ciM (normal, operator modes)                                                                                                                                                                                                                               |
+| ``<C-C>g``                | Go to object definition                                                                                                                                                                                                                                                                                        |
+| ``<C-c>rr``               | Rename classes, functions, modules, packages, methods, variables and keyword arguments                                                                                                                                                                                                                         |
+| ``<C-c>r1r``              | Rename current module                                                                                                                                                                                                                                                                                          |
+| ``<C-c>ro``               | Organize imports sorts imports, too. It does that according to PEP8. Unused imports will be dropped.                                                                                                                                                                                                           |
+| ``<C-c>ra``               | Insert import for current word under cursor                                                                                                                                                                                                                                                                    |
+| ``<C-c>r1p``              | Convert current module to package                                                                                                                                                                                                                                                                              |
+| ``<C-c>rm`` / ``<C-c>rl`` | Extract method/variable from selected lines.                                                                                                                                                                                                                                                                   |
+| ``<C-c>ru``               | Try to find the places in which a function can be used and changes the code to call it instead                                                                                                                                                                                                                 |
+| ``<C-c>rv``               | When a refactoring needed for methods of a class. In this refactoring, a method of a class is moved to the class of one of its attributes. The old method will call the new method. If you want to change all of the occurrences of the old method to use the new method you can inline it afterwards. |
+| ``<C-c>rs``               | Change function signature                                                                                                                                                                                                                                                                                      |
+
 ###
 
 | Key | Description |
