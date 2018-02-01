@@ -123,11 +123,12 @@ endif
 Plug 'tpope/vim-unimpaired'
 " Every one should have a pair (Autogenerate pairs for "{[( )
 Plug 'jiangmiao/auto-pairs'
+" vim match-up: even better % 👊 navigate and highlight matching words
+Plug 'andymass/vim-matchup'
 "The matchit.vim script allows you to configure % to match more than just single characters.
-Plug 'vim-scripts/matchit.zip'
+" Plug 'vim-scripts/matchit.zip'
 " match tag always -> tag xml/html elements starting and ending
 Plug 'Valloric/MatchTagAlways'
-
 
 " airline status plugins
 " Plug 'ryanoasis/vim-devicons'
@@ -157,6 +158,8 @@ Plug 'rakr/vim-one'
 Plug 'powerman/vim-plugin-viewdoc'
 " usage of zeal in vim
 Plug 'KabbAmine/zeavim.vim'
+" Displays function signatures from completions in the command line
+Plug 'Shougo/echodoc.vim'
 
 " support for rust
 Plug 'rust-lang/rust.vim'
