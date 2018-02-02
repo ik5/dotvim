@@ -316,6 +316,8 @@ Plug 'sbdchd/neoformat'
 
 " vim plugin for highlighting columns in csv/tsv files and executing SELECT and UPDATE queries in SQL-like language
 Plug 'mechatroner/rainbow_csv'
+" The best PostgreSQL plugin for Vim!
+Plug 'lifepillar/pgsql.vim'
 
 "Elm
 Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
