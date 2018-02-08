@@ -194,8 +194,8 @@ else
   Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install' }
   " Deoplete sources for ruby language
   Plug 'fishbullet/deoplete-ruby'
-  " deoplete rcodetools source for Ruby
-  Plug 'Shougo/deoplete-rct'
+  " deoplete source for Ruby with solargraph -> IDE tools for Ruby
+  Plug 'uplus/deoplete-solargraph'
   " A neocomplcache plugin for English, using look command
   Plug 'ujihisa/neco-look'
   " better spirce scanning
