@@ -42,19 +42,13 @@ let g:go_auto_type_info = 1
 
 "autocmd FileType go autocmd BufWritePre <buffer> GoFmt
 
-if !has("nvim")
-  " Support Syntastic
-  let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
-  let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
-endif
-
 let g:go_auto_sameids=1
 
 " create a go doc comment based on the word under the cursor
 function! s:create_go_doc_comment()
   norm "zyiw
-  execute ":put! z"
-  execute ":norm I// \<Esc>$"
+  execute ':put! z'
+  execute ':norm I// \<Esc>$'
 endfunction
 
 au FileType go nnoremap <leader>ui :<C-u>call <SID>create_go_doc_comment()<CR>
@@ -79,7 +73,7 @@ augroup go
   au FileType go nmap <Leader>i <Plug>(go-info)
 
   " Open the relevant Godoc for the word under the cursor
-  au FileType go nmap <Leader>god <Plug>(go-doc)
+  au FileType go nmap <Leader>goh <Plug>(go-doc)
   au FileType go nmap <Leader>gov <Plug>(go-doc-vertical)
 
   " Open the Godoc in browser
@@ -96,7 +90,6 @@ augroup go
   au FileType go nmap <Leader>v <Plug>(go-def-vertical)
   au FileType go nmap <Leader>s <Plug>(go-def-split)
 
-  au FileType go nmap <Leader>i <Plug>(go-info)
   au FileType go nmap <Leader>l <Plug>(go-metalinter)
 
   au FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
