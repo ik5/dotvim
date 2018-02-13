@@ -11,5 +11,5 @@ let g:tern#filetypes = [
       \ 'js'
       \]
 
-let g:tern#command = ["ternjs"]
-let g:tern#arguments = ["--persistent"]
+let g:tern#command = ['ternjs']
+let g:tern#arguments = ['--persistent']
