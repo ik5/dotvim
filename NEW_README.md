@@ -17,6 +17,9 @@ The main technologies that I'm placing emphases on are:
  - C
  - Python
 
+## TOC
+
+
 ## Features
 
  - ``vimrc`` handling
@@ -251,35 +254,74 @@ vim +PlugUpdate +qa
 | ``<C-c>rv``               | When a refactoring needed for methods of a class. In this refactoring, a method of a class is moved to the class of one of its attributes. The old method will call the new method. If you want to change all of the occurrences of the old method to use the new method you can inline it afterwards. |
 | ``<C-c>rs``               | Change function signature                                                                                                                                                                                                                                                                                      |
 
-###
+### ripgrep
 
-| Key | Description |
-| --- | ----------- |
-| | |
+| Key    | Description                                                                                               |
+| ---    | -----------                                                                                               |
+| ``g/`` | Look at all files from current position and sub directories                                               |
+| ``g*`` | Look at all files from current position and sub directories force the print of directories if not printed |
+| ``ga`` | Look at all files from current position and sub directories, append errors                                |
 
-###
+### Tagbar
 
-| Key | Description |
-| --- | ----------- |
-| | |
+| Key      | Description   |
+| ---      | -----------   |
+| ``<F4>`` | Toggle Tagbar |
 
-###
+### TComment
 
-| Key | Description |
-| --- | ----------- |
-| | |
+| Key                 | Description                 |
+| ---                 | -----------                 |
+| ``[num]<leader>cc`` | Comment out current line(s) |
+| ``[num]<leader>cu`` | Uncomment current line(s)   |
 
-###
+### UltraSnippets
 
-| Key | Description |
-| --- | ----------- |
-| | |
+| Key                     | Description            |
+| ---                     | -----------            |
+| ``<c-tab>`` / ``<c-j>`` | List snippets foreword |
+| ``<s-tab>`` / ``<c-k>`` | List snippets backward |
 
-###
+### UndoTree
 
-| Key | Description |
-| --- | ----------- |
-| | |
+| Key              | Description      |
+| ---              | -----------      |
+| ``<leader>undo`` | Toggle undo tree |
+
+### Fixmyjs
+
+| Key       | Description                      |
+| ---       | -----------                      |
+| ``<c-l>`` | Auto fix Javascript using eslint |
+
+### Go
+
+| Key              | Description                                                               |
+| ---              | -----------                                                               |
+| ``<c-u>``        | Create Godoc comment                                                      |
+| ``<leader>s``    | Show a list of interfaces which implemented by the type under your cursor |
+| ``<leader>i``    | Show type info for the word under your cursor                             |
+| ``<leader>goh``  | Open godoc horizontal                                                     |
+| ``<leader>gov``  | Open godoc vertical                                                       |
+| ``<leader>gobd`` | Open godoc browser                                                        |
+| ``<leader>goa``  | Switch between test and source files                                      |
+| ``<leader>got``  | Add default tags to struct (e.g. JSON)                                    |
+| ``<leader>goT``  | Opens a command for ``GoAddTags`` allowing to place the needed tag names  |
+| ``<leader>v``    | Goto declaration/definition, in a vertical window                         |
+| ``<leader>s``    | Goto declaration/definition, in a horizontal window                       |
+| ``<leader>l``    | Go meta linter                                                            |
+| ``<leader>b``    | Build go project                                                          |
+| ``<leader>t``    | Execute Go tests                                                          |
+| ``<leader>r``    | Execute Go project                                                        |
+| ``<leader>e``    | Execute Go install                                                        |
+| ``<leader>c``    | Execute test covers                                                       |
+| ``<c-l>``        | Execute all possilbe linters                                              |
+
+### Twiggy
+
+| Key              | Description   |
+| ---              | -----------   |
+| ``<leader>gitB`` | Toggle twiggy |
 
 
 ## Plugins
@@ -447,46 +489,4 @@ vim +PlugUpdate +qa
 | [](https://github.com/) | |
 | [](https://github.com/) | |
 | [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-
-
 
