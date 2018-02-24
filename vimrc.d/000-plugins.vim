@@ -118,6 +118,8 @@ if has('nvim')
   " debug using delve
   Plug 'jodosha/vim-godebug'
 endif
+" Syntax highlight for Versioned Go
+Plug 'zchee/vim-vgo'
 
 " pairs of handy bracket mappings
 Plug 'tpope/vim-unimpaired'
