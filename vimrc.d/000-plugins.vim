@@ -320,6 +320,8 @@ Plug 'sbdchd/neoformat'
 Plug 'mechatroner/rainbow_csv'
 " The best PostgreSQL plugin for Vim!
 Plug 'lifepillar/pgsql.vim'
+" Modern database interface for Vim
+Plug 'tpope/vim-dadbod'
 
 "Elm
 Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
