@@ -69,7 +69,7 @@ Plug 'tacahiroy/ctrlp-funky'
 " BufExplorer Plugin for Vim
 Plug 'jlanzarotta/bufexplorer'
 " A command-line fuzzy finder
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': './install --all' }
 " Dark powered asynchronous unite all interfaces for Neovim/Vim8
 Plug 'Shougo/denite.nvim'
 " Extended f, F, t and T key mappings for Vim
