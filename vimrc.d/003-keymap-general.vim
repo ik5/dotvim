@@ -243,3 +243,9 @@ imap <leader>rel <ESC>:set rnu!<CR>a
 " Move back and forth through commits while staying on the same line
 nnoremap <A-right> :call GlogForward()<CR>
 nnoremap <A-left> :call GlogBackward()<CR>
+
+"make enter break and do newlines
+nnoremap <CR> i<CR><Esc>==
+" nnoremap <CR> O<Esc>j
+nnoremap <leader>j i<CR><Esc>==
+
