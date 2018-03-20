@@ -175,16 +175,14 @@ nnoremap <leader><leader> <C-^>
 " Allow to copy/paste between VIM instances
 "copy the current visual selection to ~/.vbuf
 vmap <leader>y :w! ~/tmp/.vbuf<cr>
-
 "copy the current line to the buffer file if no visual selection
 nmap <leader>y :.w! ~/tmp/.vbuf<cr>
-
 "paste the contents of the buffer file
 nmap <leader>p :r ~/tmp/.vbuf<cr>
-
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
-
+" visual reselect of just yanked
+nnoremap gp `[v`]
 if has('macunix')
   " pbcopy for OSX copy/paste
   vmap <C-x> :!pbcopy<CR>

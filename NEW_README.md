@@ -139,6 +139,7 @@ vim +PlugUpdate +qa
 | ``<leader>y``                   | Copy the current visual selection or current line to `~/tmp/.vbuf` file |
 | ``<leader>p``                   | Paste the content of the buffer to `~/tmp/.vbuf` file                   |
 | ``Y``                           | Copy from cursor to the end of the line                                 |
+| ``gp``                          | visual reselect of what was yanked                                      |
 | ``<leader>ff``                  | Display all keywords under the cursor and prompt to go for one of them  |
 | ``<leader>e``                   | Go to next error message                                                |
 | ``<leader>E``                   | Go to prev error message                                                |
