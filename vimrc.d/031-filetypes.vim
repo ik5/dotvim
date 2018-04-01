@@ -25,7 +25,6 @@ autocmd Filetype less setlocal ts=2 sw=2 expandtab
 autocmd Filetype scss setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd FileType ruby compiler ruby
-autocmd FileType ruby let b:dispatch = 'ruby -c -w %'
 autocmd FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
 autocmd FileType ruby compiler ruby
 autocmd FileType vue syntax sync fromstart
