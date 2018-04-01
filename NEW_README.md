@@ -324,6 +324,14 @@ vim +PlugUpdate +qa
 | ---              | -----------   |
 | ``<leader>gitB`` | Toggle twiggy |
 
+### SplitJoin.vom
+
+| Key              | Description |
+| ---              | ----------- |
+| ``<leader>+sjj`` | Join lines  |
+| ``<leader>+sjs`` | Split lines |
+
+
 
 ## Plugins
 
