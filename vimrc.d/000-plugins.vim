@@ -22,6 +22,9 @@ Plug 'autozimu/LanguageClient-neovim', {
 " ale - Asynchronous Lint Engine
 Plug 'w0rp/ale'
 
+" obsession.vim: continuously updated session files
+Plug 'tpope/vim-obsession'
+
 " VCS (git)
 Plug 'tpope/vim-fugitive'
 " visualise git
@@ -53,6 +56,8 @@ Plug 'tomtom/tlib_vim'
 Plug 'scrooloose/nerdtree'
 " Support git changes for code
 Plug 'Xuyuanp/nerdtree-git-plugin'
+" Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
+Plug 'ryanoasis/vim-devicons'
 
 " Fuzzy file, buffer, mru, tag, etc finder
 Plug 'ctrlpvim/ctrlp.vim'
@@ -205,6 +210,8 @@ else
   Plug 'zchee/deoplete-zsh'
   " Deoplete source for emoji codes
   Plug 'fszymanski/deoplete-emoji'
+  " Neovim and vim Flow autocompletion for deoplete + neosnippet
+  Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin'  }
 endif
 " Update the bult-in CSS complete function to latest CSS standard
 Plug 'othree/csscomplete.vim'
