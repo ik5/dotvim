@@ -105,6 +105,10 @@ Plug 'sunaku/vim-ruby-minitest'
 Plug 'xmisao/rubyjump.vim'
 " Vim Flog Plugin
 Plug 'sentientmonkey/vim-flog'
+" Highlight local variables in Ruby files
+Plug 'todesking/ruby_hl_lvar.vim'
+" enables syntax highlighting in Ruby here document code blocks
+Plug 'joker1007/vim-ruby-heredoc-syntax'
 
 
 " golang support
@@ -155,6 +159,8 @@ Plug 'honza/vim-snippets'
 Plug 'garbas/vim-snipmate'
 " Adaptation of one-light and one-dark colorschemes for Vim
 Plug 'rakr/vim-one'
+" Some snippets of vim' plugin snipMate.vim for ruby
+Plug 'kaichen/vim-snipmate-ruby-snippets'
 
 " Vim plugin: flexible viewer for any documentation
 Plug 'powerman/vim-plugin-viewdoc'
