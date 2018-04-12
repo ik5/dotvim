@@ -7,35 +7,35 @@ let g:NERDTreeIgnore = [
       \ '\.pyc$', '\.pyo$','__pycache__',
       \ '\.o', '\.a', '\~$', '\.swo$', '\.swp$',
       \ '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$',
-      \ '.jsc'
+      \ '.jsc', 'node_modules'
       \]
 let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
-let NERDTreeDirArrows=1
-let NERDTreeMinimalUI=0
-let NERDTreeWinSize = 45
+let g:NERDTreeDirArrows=1
+let g:ERDTreeMinimalUI=0
+let g:ERDTreeWinSize = 45
 let g:NERDTreeDirArrowExpandable = '►'
 let g:NERDTreeDirArrowCollapsible = '▼'
 
-let NERDTreeChDirMode = 2
-let NERDTreeShowLineNumbers = 1
-let NERDTreeAutoCenter = 1
-let NERDTreeRespectWildIgnore=1
+let g:ERDTreeChDirMode = 2
+let g:ERDTreeShowLineNumbers = 1
+let g:ERDTreeAutoCenter = 1
+let g:ERDTreeRespectWildIgnore=1
 
-let NERDTreeBookmanrs = '~/.vim/.NERDTreeBookmanrs'
-let NERDTreeShowBookmarks = 1
-let NERDTreeShowHidden = 1
+let g:ERDTreeBookmanrs = '~/.vim/.NERDTreeBookmanrs'
+let g:ERDTreeShowBookmarks = 1
+let g:ERDTreeShowHidden = 1
 
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
+    \ 'Modified'  : '✹',
+    \ 'Staged'    : '✚',
+    \ 'Untracked' : '✭',
+    \ 'Renamed'   : '➜',
+    \ 'Unmerged'  : '═',
+    \ 'Deleted'   : '✖',
+    \ 'Dirty'     : '✗',
+    \ 'Clean'     : '✔︎',
     \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
+    \ 'Unknown'   : '?'
     \ }
 
 " NerdTree toggle
