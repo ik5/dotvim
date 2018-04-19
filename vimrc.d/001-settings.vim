@@ -12,8 +12,10 @@ if has('linebreak')      " Break indent wrapped lines
   let &showbreak = '↳ '
   set cpo+=n
 end
-set cmdheight=3                 " Make command line 3 lines high
-set laststatus=2                 " allways show status line
+set whichwrap+=<,>       " allow specific keys to move the cursor to previous/next
+                         " line when cursor is on the first/last char in the line.
+set cmdheight=3          " Make command line 3 lines high
+set laststatus=2         " allways show status line
 set scrolloff=3          " keep 3 lines when scrolling
 set cursorline           " have a line indicate the cursor location
 set cindent              " cindent
