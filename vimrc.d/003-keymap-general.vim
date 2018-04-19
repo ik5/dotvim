@@ -62,11 +62,22 @@ noremap <m-.> <C-W><
 " F2 close current split (window)
 noremap <F2> <Esc>:close<CR><Esc>
 
+" ================================================
+" Buffers
+" ================================================
 " delete current buffer
 noremap <leader>d :bd<CR>
 
 " Deleter buffer, keep the split (switch to prev buf, delete now prev buf)
 noremap <leader>D :b#<bar>bd#<CR>
+
+" buffer navigation
+nnoremap <M-d> :bn<CR>  " toggle between open buffers go to next buffer
+nnoremap <M-a> :bp<CR>  " toggle between open buffers go to prev buffer
+nnoremap <Esc>d :bn<CR> " toggle between open buffers go to next buffer
+nnoremap <Esc>a :bp<CR> " toggle between open buffers go to prev buffer
+nnoremap <silent> <Space>x :bn\|bd #<CR> " delete next buffer
+
 
 " ==================================================
 " Clean all end of line whitespace with <Leader>S
