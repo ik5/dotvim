@@ -218,7 +218,7 @@ else
   Plug 'fszymanski/deoplete-emoji'
   " Neovim and vim Flow autocompletion for deoplete + neosnippet
   Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin'  }
-  "  Rust completion for Neovim (Deoplete) via Racer
+  " Rust completion for Neovim (Deoplete) via Racer
   Plug 'sebastianmarkow/deoplete-rust'
 endif
 " Update the bult-in CSS complete function to latest CSS standard
