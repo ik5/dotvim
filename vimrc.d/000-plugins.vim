@@ -357,6 +357,5 @@ Plug 'beloglazov/vim-online-thesaurus'
 
 " Vim Markdown runtime files
 Plug 'tpope/vim-markdown', { 'for': ['markdown', 'md'] }
-Plug 'JamshedVesuna/vim-markdown-preview', { 'for': ['markdown', 'md'] }
 
 call plug#end()

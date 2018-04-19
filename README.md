@@ -346,8 +346,6 @@ vim +PlugUpdate +qa
 | ``<leader>+sjj`` | Join lines  |
 | ``<leader>+sjs`` | Split lines |
 
-
-
 ## Plugins
 
 | Name | Description |
