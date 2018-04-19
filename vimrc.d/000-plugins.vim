@@ -281,7 +281,7 @@ Plug 'othree/html5.vim', { 'for': ['html', 'xhtml'] }
 " JavaScript Parameter Complete
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx', 'vue', 'jsx'] }
 " Improved nginx vim plugin (incl. syntax highlighting)
-Plug 'nginx', { 'for': ['nginx'] }
+Plug 'chr4/nginx', { 'for': ['nginx'] }
 " ----------------------
 " End of Web Development
 " ----------------------
@@ -356,6 +356,7 @@ Plug 'rhysd/vim-grammarous'
 Plug 'beloglazov/vim-online-thesaurus'
 
 " Vim Markdown runtime files
-Plug 'tpope/vim-markdown', { 'for': ['markdown', 'mdtp'] }
+Plug 'tpope/vim-markdown', { 'for': ['markdown', 'md'] }
+Plug 'JamshedVesuna/vim-markdown-preview', { 'for': ['markdown', 'md'] }
 
 call plug#end()
