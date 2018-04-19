@@ -107,7 +107,7 @@ set pumheight=15               " The maximum height of a completion menu
 
 set updatetime=4000       " 4 seconds of no key press the swap file will be written
 set directory=~/tmp/swp      " Keep swap files out of the working dir, Adjust if needed in another dir
-set tags=./tags;         " Set tags directory
+set tags=./tags,tags         " Set tags directory
 
 if has('clipboard')
   if has('unnamedplus')  " When possible use + register for copy-paste
