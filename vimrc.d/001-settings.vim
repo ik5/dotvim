@@ -2,7 +2,10 @@
 " Basic Settings
 " ==================================================
 
-set nocompatible         " This is VIM!!!
+if !has('nvim')
+  set nocompatible         " This is VIM!!!
+                           " nvim is always not compatible
+endif
 set encoding=utf8        " utf8 is the default
 set ffs=unix,dos,mac     " file end of line -> unix!
 if has('linebreak')      " Break indent wrapped lines
