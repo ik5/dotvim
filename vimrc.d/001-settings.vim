@@ -205,9 +205,6 @@ if has('autocmd')
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" override YouCompleteMe
-" let g:dotvim_ycm_build_command='./install.py --clang-completer --gocode-completer --tern-completer --racer-completer'
-
 " ================================================
 " Folding configuration
 " ================================================
