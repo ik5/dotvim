@@ -6,7 +6,9 @@ if !has('nvim')
   set nocompatible         " This is VIM!!!
                            " nvim is always not compatible
 endif
-set encoding=utf8        " utf8 is the default
+set encoding=utf-8        " utf8 is the default
+set fileencoding=utf-8
+scriptencoding utf-8
 set ffs=unix,dos,mac     " file end of line -> unix!
 if has('linebreak')      " Break indent wrapped lines
   set textwidth=120        " Try this out to see how textwidth helps
