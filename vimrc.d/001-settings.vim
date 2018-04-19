@@ -21,7 +21,7 @@ set cmdheight=3          " Make command line 3 lines high
 set laststatus=2         " allways show status line
 set scrolloff=3          " keep 3 lines when scrolling
 set cursorline           " have a line indicate the cursor location
-set cursorcolumn         " have a column indicate the cursor location
+" set cursorcolumn         " have a column indicate the cursor location
 set cindent              " cindent
 set autoindent           " always set autoindenting on
 set smartindent          " smart indentation
