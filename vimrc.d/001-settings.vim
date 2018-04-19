@@ -46,8 +46,8 @@ set path+=**   " Search upwards and downwards in a directory tree using * and **
 if !has('nvim')
   set ttymouse=xterm2
   set ttyscroll=3           " number of lines to scroll before redraw
+	set ttyfast              " smoother changes
 endif
-set ttyfast              " smoother changes
 set termguicolors " enable 24 bit colors
 set history=1500          " larger history
 set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
@@ -118,10 +118,10 @@ if has('!nvim')
 endif
 
 if exists("g:did_load_filetypes")
-	filetype off
-	filetype plugin indent off
+  filetype off
+  filetype plugin indent off
 endif
-set rtp+=~/.vim/godoctor.vim
+
 filetype plugin indent on
 syntax on
 
