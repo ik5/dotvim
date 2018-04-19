@@ -12,10 +12,6 @@ augroup Ruby
   au FileType ruby compiler ruby
 augroup END
 
-augroup TEXTS
-  au BufNewFile,BufReadPost *.md set filetype=markdown
-augroup END
-
 augroup Python
   au Filetype python let g:jedi#popup_on_dot = 0
   au Filetype python setlocal ts=4 sts=4 sw=4 et ai
@@ -43,6 +39,7 @@ augroup END
 augroup Texts
   au FileType txt setlocal noet ts=2 sw=2
   au FileType md setlocal expandtab shiftwidth=2 tabstop=2
+  au BufNewFile,BufReadPost *.md set filetype=markdown
   au FileType vim setlocal expandtab shiftwidth=2 tabstop=2
 
   " put quickfix window always to the bottom
@@ -94,8 +91,9 @@ augroup Rust
 augroup END
 
 augroup General
+  au BufEnter * :syntax sync fromstart
   au FileType c,h,cpp,gobject call CSettings()
-  au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ) :call search('(\\|)\\|{\\|}\\|\[\\|\]')<CR>
-  au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ( :call search('(\\|)\\|{\\|}\\|\[\\|\]', 'b')<CR>
+  au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ')' :call search('(\\|)\\|{\\|}\\|\[\\|\]')<CR>
+  au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> '(' :call search('(\\|)\\|{\\|}\\|\[\\|\]', 'b')<CR>
 augroup END
 
