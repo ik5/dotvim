@@ -224,7 +224,13 @@ set sessionoptions=blank,buffers,curdir,folds,help,options,winsize,tabpages
 " Auto reload files
 " ================================================
 set autoread
-au CursorHold * checktime " Check every 4 seconds (based on updatetime) of no key press in normal mode
+augroup AutoRead
+  if has('nvim')
+    au FocusGained,BufEnter * :checktime " auto read on neovim
+  else
+    au CursorHold * checktime " Check every 4 seconds (based on updatetime) of no key press in normal mode
+  endif
+augroup END
 
 set hidden " Enable hidden buffers (top bar with buffers)
 
