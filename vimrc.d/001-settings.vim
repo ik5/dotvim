@@ -66,7 +66,7 @@ autocmd VimResized * wincmd =   " Automatically equalize splits when Vim is resi
 
 set wildmenu                      " show list instead of just completing
 set wildmode=list:longest,full    " command <Tab> completion, list matches, then longest common part, then all.
-set wildignore+=.hg,.git,.svn                    " Version control
+set wildignore+=.hg,.git,.svn,.cvn               " Version control
 set wildignore+=_build                           " Sphinx build dir
 set wildignore+=*.aux,*.out,*.toc                " LaTeX intermediate files
 set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg   " binary images
@@ -77,6 +77,7 @@ set wildignore+=*.sw?                            " Vim swap files
 set wildignore+=*.DS_Store
 set wildignore+=*.rdb                            " Redis database file
 set wildignore+=*/tmp/*,*.so,*.zip,*.db,*.sqlite*
+set wildignore+=*.o                              " object files
 
 " set listchars
 set list
