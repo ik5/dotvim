@@ -239,3 +239,4 @@ augroup END
 
 set hidden " Enable hidden buffers (top bar with buffers)
 
+set spellfile=~/tmp/spell/en.utf8.add " spelling file to save new words
