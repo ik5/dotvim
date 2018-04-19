@@ -172,7 +172,7 @@ if has("nvim")
 else
   set
 endif
-set nrformats=octal,hex,alpha " Enable Ctrl-A/Ctrl-X to work on octal and hex numbers, as well as characters
+set nrformats=octal,hex,alpha,bin " Enable Ctrl-A/Ctrl-X to work on octal and hex numbers, as well as characters
 
 " ==================================================
 " No modlines for security
@@ -217,7 +217,6 @@ set sessionoptions=blank,buffers,curdir,folds,help,options,winsize,tabpages
 " ================================================
 set autoread
 au CursorHold * checktime " Check every 4 seconds (based on updatetime) of no key press in normal mode
-
 
 set hidden " Enable hidden buffers (top bar with buffers)
 
