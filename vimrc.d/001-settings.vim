@@ -34,6 +34,7 @@ set visualbell           " Visual bell instead of nosie, or no indication at all
 set nobackup             " do not keep a backup file
 set number               " show line numbers
 set norelativenumber     " default is not to have a relative number
+set display+=lastline    " display as much as possible of the last line
 set title                " show title in console title bar
 set titleold="Terminal"
 set titlestring=" %F "
@@ -46,7 +47,7 @@ set matchpairs+=<:>      " show matching <> (html mainly) as well
 set showmatch
 set matchtime=3
 set mouse=a
-set path+=**   " Search upwards and downwards in a directory tree using * and **
+set path+=.,**   " Search upwards and downwards in a directory tree using * and **
 if !has('nvim')
   set ttymouse=xterm2
   set ttyscroll=3           " number of lines to scroll before redraw
@@ -58,7 +59,8 @@ set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below t
 set timeout ttimeoutlen=50
 set selection=inclusive
 set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
-set virtualedit=onemore             " Allow for cursor beyond last character
+" virtual editing provides a mean to place the cursor on a non existed char.
+set virtualedit=onemore,blockmode   " Allow for cursor beyond last character and on block mode
 set iskeyword-=.                    " '.' is an end of word designator
 set iskeyword-=#                    " '#' is an end of word designator
 set iskeyword-=-                    " '-' is an end of word designator
