@@ -78,7 +78,7 @@ Plug 'sunaku/vim-shortcut'
 " Ruby, Rails, Sinatra and bundler
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }
 Plug 'tpope/vim-bundler', { 'for': ['ruby'] }
-" endwith ruby
+" endwith ruby and other languages
 Plug 'tpope/vim-endwise'
 Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
 " Ruby tests
