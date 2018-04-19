@@ -12,6 +12,7 @@ if has('linebreak')      " Break indent wrapped lines
   set textwidth=120        " Try this out to see how textwidth helps
   set linebreak            " break the line after the amount of textwidth
   set breakindent
+  set breakindentopt=shift:2 " indent broken line by 2 more whitespaces
   let &showbreak = '↳ '
   set cpo+=n
 end
