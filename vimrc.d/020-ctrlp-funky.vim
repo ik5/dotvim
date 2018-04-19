@@ -11,3 +11,5 @@ let g:ctrlp_funky_ruby_rake_words = 1
 let g:ctrlp_funky_ruby_chef_words = 0
 let g:ctrlp_funky_ruby_access = 1
 let g:ctrlp_funky_ruby_rspec = 1
+
+autocmd BufEnter ControlP let b:ale_enabled = 0
