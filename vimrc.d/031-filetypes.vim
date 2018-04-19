@@ -107,6 +107,10 @@ augroup END
 " remove trailing whitespace on save
 au BufWritePre * :%s/\s\+$//e
 
+augroup Rust
+  autocmd FileType rust execute LocateRacer()
+augroup END
+
 augroup General
   au FileType c,h,cpp,gobject call CSettings()
   au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ) :call search('(\\|)\\|{\\|}\\|\[\\|\]')<CR>
