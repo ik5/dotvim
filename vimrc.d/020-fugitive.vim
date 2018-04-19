@@ -26,4 +26,10 @@ nnoremap <leader>gitp :Gpush<CR>
 vnoremap <leader>git? :Gstatus<CR>
 nnoremap <leader>git? :Gstatus<CR>
 
+" Git write
+vnoremap <leader>gitw :Gwrite<CR>
+nnoremap <leader>gitw :Gwrite<CR>
 
+" Git log -L
+vnoremap <leader>gitlg :Glog<CR>
+nnoremap <leader>gitlg :Glog<CR>
