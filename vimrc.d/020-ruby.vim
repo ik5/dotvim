@@ -15,8 +15,8 @@ let g:ruby_fold = 1                                 " enable fold
 let g:ruby_foldable_groups = 'ALL'                  " foldable blocks
 
 augroup Ruby
-  au FileType ruby,spec noremap <leader>rbt :call RunCurrentSpecFile()<CR>
-  au FileType ruby,spec noremap <leader>rbs :call RunNearestSpec()<CR>
-  au FileType ruby,spec noremap <leader>rbl :call RunLastSpec()<CR>
-  au FileType ruby,spec noremap <leader>rba :call RunAllSpecs()<CR>
+  au FileType ruby,rspec noremap <leader>rbt :call RunCurrentSpecFile()<CR>
+  au FileType ruby,rspec noremap <leader>rbs :call RunNearestSpec()<CR>
+  au FileType ruby,rspec noremap <leader>rbl :call RunLastSpec()<CR>
+  au FileType ruby,rspec noremap <leader>rba :call RunAllSpecs()<CR>
 augroup END
