@@ -27,8 +27,11 @@ if has('nvim')
   inoremap <C-Left> <Esc> <C-W>h
   inoremap <C-Right> <Esc> <C-W>l
 
-  au TermOpen * setlocal list
-  au TermOpen * setlocal wrap
+  augroup Term
+    au BufEnter term://* startinsert " start in insert mode
+    au TermOpen * setlocal list
+    au TermOpen * setlocal wrap
+  augroup END
 
   command! -nargs=* HTerm split term:///bin/zsh
   command! -nargs=* VTerm vsplit term:///bin/zsh
