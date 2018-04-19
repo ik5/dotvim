@@ -157,6 +157,8 @@ vim +PlugUpdate +qa
 | ``<S-Tab>``                     | Execute :retab to set thw whole buffer at the same whitespace type      |
 | ``<leader>T``                   | Open new terminal in NeoVim                                             |
 | ``<leader>rel``                 | Toggle between normal and relative numbers                              |
+| ``<leader>curr``                | Toggle cursor row indicator                                             |
+| ``<leader>curc``                | Toggle cursor column indicator                                          |
 
 ### Right To Left
 

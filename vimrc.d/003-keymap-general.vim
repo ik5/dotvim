@@ -249,3 +249,8 @@ nnoremap <CR> i<CR><Esc>==
 " nnoremap <CR> O<Esc>j
 nnoremap <leader>j i<CR><Esc>==
 
+" Toggle cursor indicators
+map <leader>curc :set cursorcolumn!<CR>
+imap <leader>curc :set cursorcolumn!<CR>
+map <leader>curr :set cursorline!<CR>
+imap <leader>curr :set cursorline!<CR>
