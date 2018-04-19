@@ -113,7 +113,7 @@ Plug 'joker1007/vim-ruby-heredoc-syntax'
 
 " golang support
 " https://github.com/fatih/vim-go-tutorial
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': [ 'go' ] }
 " Vim plugin for the godoctor
 Plug 'godoctor/godoctor.vim'
 " Go Explorer is Vim plugin for exploring Go code
