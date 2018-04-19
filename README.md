@@ -347,6 +347,15 @@ vim +PlugUpdate +qa
 | ``<leader>+sjj`` | Join lines  |
 | ``<leader>+sjs`` | Split lines |
 
+### Ruby
+
+| key             | Description               |
+| ---             | -----------               |
+| ``<leader>rbt`` | Execute current spec file |
+| ``<leader>rbs`` | Execute nearest spec file |
+| ``<leader>rbl`` | Execute last spec file    |
+| ``<leader>rba`` | Execute all spec files    |
+
 ## Plugins
 
 | Name | Description |
