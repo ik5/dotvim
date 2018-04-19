@@ -208,6 +208,8 @@ nnoremap <leader>ff [I:let nr = input('Which one: ')<Bar>exe 'normal ' . nr .'[\
 " inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
 " Error window (a.k.a. quick fix window)
+nnoremap <leader>errf :cfirst<CR>
+nnoremap <leader>errl :clast<CR>
 nnoremap <leader>errn :cn<CR>
 nnoremap <leader>errp :cp<CR>
 nnoremap <leader>errc :cclose<CR>
