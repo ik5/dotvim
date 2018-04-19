@@ -36,8 +36,8 @@ set number               " show line numbers
 set norelativenumber     " default is not to have a relative number
 set display+=lastline    " display as much as possible of the last line
 set title                " show title in console title bar
-set titleold="Terminal"
-set titlestring=" %F "
+set titleold='Terminal'
+set titlestring=' %F '
 set modelines=0
 set nomodeline          " no vim mode execution for security
 set shortmess=atIc       " Abbreviate messages
@@ -130,7 +130,7 @@ if has('!nvim')
   set term=ansi
 endif
 
-if exists("g:did_load_filetypes")
+if exists('g:did_load_filetypes')
   filetype off
   filetype plugin indent off
 endif
@@ -142,7 +142,7 @@ if version >= 703        " Columns and lines, only from vim >= 7.3
   set colorcolumn=80
 endif
 
-if has("gui_running")
+if has('gui_running')
   set lines=75
   set columns=180
 endif
@@ -179,7 +179,7 @@ set smartcase            " if searching and search contains upper case, make cas
 set magic                " For regular expressions turn magic on
 set showmatch            " show matching brakets when text is over them
 set mat=2                " and blink for two seconds
-if has("nvim")
+if has('nvim')
   set inccommand=split     " nvim live %s/../
 else
   set
@@ -196,7 +196,7 @@ set nomodeline
 " =================================================
 " Restore Position when repopening a file
 " =================================================
-if has("autocmd")
+if has('autocmd')
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
