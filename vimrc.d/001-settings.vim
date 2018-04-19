@@ -127,7 +127,7 @@ if has('persistent_undo')
 endif
 
 
-if has('!nvim')
+if !has('nvim')
   syntax on
   set t_Co=256
   set term=ansi
@@ -141,7 +141,7 @@ endif
 filetype plugin indent on
 syntax on
 
-if version >= 703        " Columns and lines, only from vim >= 7.3
+if has('colorcolumn')        " Columns and lines, only if exists
   set colorcolumn=80
 endif
 
@@ -155,11 +155,13 @@ endif
 if !has('gui_running')
   set notimeout
   set ttimeoutlen=5
-  augroup FastEscape
-    autocmd!
-    au InsertEnter * set timeoutlen=0
-    au InsertLeave * set timeoutlen=1000
-  augroup END
+  if !has('nvim')
+    augroup FastEscape
+      autocmd!
+      au InsertEnter * set timeoutlen=0
+      au InsertLeave * set timeoutlen=1000
+    augroup END
+  endif
 endif
 
 " ==================================================
