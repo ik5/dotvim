@@ -202,20 +202,20 @@ vim +PlugUpdate +qa
 
 ### Fugitive
 
-| Key                 | Description                                              |
-| ---                 | -----------                                              |
-| ``<leader>gitb``    | git blame                                                |
-| ``<leader>gitc``    | git commit                                               |
-| ``<leader>gitvd``   | vertical git diff                                        |
-| ``<leader>git/``    | git grep                                                 |
-| ``<leader>git?``    | git status                                               |
-| ``<leader/>gitps``  | git push                                                 |
-| ``<leader/>gitpl``  | git pull                                                 |
-| ``<leader/>gitft``  | git fetch                                                |
-| ``<leader/>gitw``   | git add current file                                     |
-| ``<leader/>gitlg``  | git log -L                                               |
-| ``<leader/>gitdel`` | git rm                                                   |
-| ``<leader/>gitbr``  | open current buffer in remote location using web browser |
+| Key                | Description                                              |
+| ---                | -----------                                              |
+| ``<leader>gitb``   | git blame                                                |
+| ``<leader>gitc``   | git commit                                               |
+| ``<leader>gitvd``  | vertical git diff                                        |
+| ``<leader>git/``   | git grep                                                 |
+| ``<leader>git?``   | git status                                               |
+| ``<leader>gitps``  | git push                                                 |
+| ``<leader>gitpl``  | git pull                                                 |
+| ``<leader>gitft``  | git fetch                                                |
+| ``<leader>gitw``   | git add current file                                     |
+| ``<leader>gitlg``  | git log -L                                               |
+| ``<leader>gitdel`` | git rm                                                   |
+| ``<leader>gitbr``  | open current buffer in remote location using web browser |
 
 ### gitgutter
 
