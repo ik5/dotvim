@@ -1,25 +1,32 @@
 # dotvim
-My dotvim - work in progress - Beta stages
 
-Making my VIM to be close to an IDE setup for the following languages:
+The following (Neo)Vim configuration is to help me work with programming.
+
+The reason for it, is that I work with number of technologies.
+
+The main technologies that I'm placing emphases on are:
 
  - Ruby
  - Go
  - HTML
  - CSS
  - Javascript (React/JSX, Vue, es6, es7, babel)
+ - Elm
  - XML
  - Rust
  - C
  - Python
 
+## TOC
+
+
 ## Features
 
  - ``vimrc`` handling
  - Incremental and smart case search
- - Sublime like text editing of multiple cursors
- - Information regarding trailing whitespaces, including cleaning shortcuts
- - Logical and Visual layout (for Right-To-Left lanaguegs) editing
+ - Sublime like text editing for "multiple cursors"
+ - Information on trailing whitespace, including cleaning shortcuts
+ - Logical and Visual layout (for Right-To-Left languages) editing
  - Tabs expanded to 2 spaces by default, except for Python
  - Keeping the ``<Leader>`` key as Backspace
  - Adding ``jj`` in edit mode to become alias to the ``<ESC>`` key
@@ -31,13 +38,17 @@ Making my VIM to be close to an IDE setup for the following languages:
  - ASCII and table drawing
  - Fuzzy file, buffer, MRU, tag, etc finder
  - Task list
- - Git support
+ - VCS support
  - Tab Completion
  - Commenting
  - History management, including persistent undo
- - Additional documentation support
+ - Support documentation for programming languages, based on the original (neo)vim documentation engine
+ - Support for external documentation using Zeal
  - Reload file when changed from outside
  - Working with error window (a.k.a. quickfix)
+ - In-line documentation
+ - Thesaurus, grammer and dictionary spelling
+ - Language Server support
 
 ## Installation
 The following commands will clone the repo, symlink ~/.vimrc and update the bundles:
@@ -47,7 +58,7 @@ git clone https://github.com/ik5/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 cd ~/.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 Install plugins from the command line:
@@ -58,7 +69,7 @@ vim +PlugUpdate +qa
 
 To add or override settings, place them in ``~/.vim/vimrc.local``.
 
-To update submodules in the future, when you have vim running, source vimrc to make sure plugins list is updated (or
+To update submodules in the future, when you have vim running, source vimrc to make sure plugins list are updated (or
 restart vim):
 
 ```
@@ -78,151 +89,420 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 vim +PlugUpdate +qa
 ```
 
-## Plugins
+## Commands
 
-| Name                                                                                     | Description                                                                                                                               |
-| ------------------------------------------------                                         | -----------------------                                                                                                                   |
-| [molokai](https://github.com/tomasr/molokai)                                             | The monokai theme for VIM                                                                                                                 |
-| [badwolf](https://github.com/sjl/badwolf)                                                | Inspired by Doctor Who Rose Tailor theme :)                                                                                               |
-| [vim-polyglot](https://github.com/sheerun/vim-polyglot)                                  | Over 70 language pack support for vim                                                                                                     |
-| [Syntastic](https://github.com/scrooloose/syntastic)                                     | Syntax checking for many programming languages.                                                                                           |
-| [vim-fugitive](https://github.com/tpope/vim-fugitive)                                    | Git support from insdie vim                                                                                                               |
-| [gitv](https://github.com/gregsexton/gitv)                                               | See git changes visually from inside vim                                                                                                  |
-| [vim-gitgutter](https://github.com/airblade/vim-gitgutter)                               | Indicate what was changed based on latest git status at the gutter level                                                                  |
-| [nerdcommenter](https://github.com/scrooloose/nerdcommenter)                             | Commenting based on syntax                                                                                                                |
-| [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)                  | Multiple cursors like with Sublime                                                                                                        |
-| [vim-dispatch](https://github.com/tpope/vim-dispatch)                                    | Execute things in async                                                                                                                   |
-| [mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils)                              | Test functions for other plugins                                                                                                          |
-| [tlib-vim](https://github.com/tomtom/tlib_vim)                                           | Dependencies for tlib                                                                                                                     |
-| [nerdtree](https://github.com/scrooloose/nerdtree)                                       | File explorer that is not Sexplore                                                                                                        |
-| [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)                                           | Fuzzy file, buffer, mru, tag etc finder                                                                                                   |
-| [bufexplorer](https://github.com/jlanzarotta/bufexplorer)                                | Buffer management plugin                                                                                                                  |
-| [ruby](https://github.com/vim-ruby/vim-ruby)                                             | Ruby support for vim                                                                                                                      |
-| [vim-rails](https://github.com/tpope/vim-rails)                                          | Rails support for vim                                                                                                                     |
-| [vim-bundler](https://github.com/tpope/vim-bundler)                                      | Bundler support for vim                                                                                                                   |
-| [vim-endwise](https://github.com/tpope/vim-endwise)                                      | wisely add "end" in ruby, endfunction/endif/more in vim script, etc                                                                       |
-| [vim-test](https://github.com/janko-m/vim-test)                                          | Execute tests of many languages                                                                                                           |
-| [vim-ruby-sinatra](https://github.com/hallison/vim-ruby-sinatra)                         | Support for [Sinatra](http://www.sinatrarb.com/)                                                                                          |
-| [vim-go](https://github.com/fatih/vim-go)                                                | [Golang](https://golang.org/) support for vim                                                                                             |
-| [go-explorer](https://github.com/garyburd/go-explorer)                                   | Explore go code and GoDoc                                                                                                                 |
-| [vim-unimpaired](https://github.com/tpope/vim-unimpaired)                                | pairs of handy bracket mappings                                                                                                           |
-| [auto-pairs](https://github.com/jiangmiao/auto-pairs)                                    | Auto generate pairs for '"{\[(                                                                                                            |
-| [matchit.zip](https://github.com/vim-scripts/matchit.zip)                                | Provide ability to configure % to match more then just single characters                                                                  |
-| [vim-airline](https://github.com/vim-airline/vim-airline)                                | lean & mean status/tabline for vim that's light as air                                                                                    |
-| [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)                  | A collection of themes for vim-airline                                                                                                    |
-| [powerline fonts](https://github.com/powerline/fonts)                                    | Patched fonts for Powerline users                                                                                                         |
-| [supertab](https://github.com/ervandew/supertab)                                         | Complete using the TAB key                                                                                                                |
-| [tagbar](https://github.com/majutsushi/tagbar)                                           | Using [ctags](ctags.sourceforge.net/) to show tags of a project [My dotfiles](https://github.com/ik5/dotfiles)                            |
-| [ultisnips](https://github.com/SirVer/ultisnips)                                         | The ultimate snippet solution for Vim                                                                                                     |
-| [vim-snippets](https://github.com/honza/vim-snippets)                                    | vim-snipmate default snippets                                                                                                             |
-| [vim-snipmate](https://github.com/garbas/vim-snipmate)                                   | nipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim                                   |
-| [vim-plugin-viewdoc](https://github.com/powerman/vim-plugin-viewdoc)                     | Vim plugin: flexible viewer for any documentation                                                                                         |
-| [rust.vim](https://github.com/rust-lang/rust.vim)                                        | [Rust](https://www.rust-lang.org/) support for vim                                                                                        |
-| [vim-racer](https://github.com/racer-rust)                                               | Rust [racer](https://github.com/phildawes/racer) Syntax checking                                                                          |
-| [undotree](https://github.com/mbbill/undotree)                                           | Visual undo graph                                                                                                                         |
-| [vim-surround](https://github.com/tpope/vim-surround)                                    | surrond changing things based on syntax, such as ', ", \[, ] etc..                                                                        |
-| [vim-repeat](https://github.com/tpope/vim-repeat)                                        | Enable repeating supported plugin maps with '.'                                                                                           |
-| [webapi-vim](https://github.com/mattn/webapi-vim)                                        | Web API for other plugins                                                                                                                 |
-| [vim-mucomplete](https://github.com/lifepillar/vim-mucomplete)                           | Auto complete library                                                                                                                     |
-| [xml.vim](https://github.com/othree/xml.vim)                                             | Helps editing XML and (x)html                                                                                                             |
-| [splitjoin](https://github.com/AndrewRadev/splitjoin.vim)                                | A vim plugin that simplifies the transition between multiline and single-line code                                                        |
-| [drawit](https://github.com/vim-scripts/DrawIt)                                          | ASCII drawing plugin: lines, ellipses, arrows, fills and more!                                                                            |
-| [tasklist.vim](https://github.com/vim-scripts/TaskList.vim)                              | An aggregated list for TODO, FIXME and XXX                                                                                                |
-| [tabular](https://github.com/godlygeek/tabular)                                          | Vim script for text filtering and alignment                                                                                               |
-| [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)                          | Drawing table using vim                                                                                                                   |
-| [tern for vim](https://github.com/ternjs/tern_for_vim)                                   | Using [turn](http://ternjs.net/) to do anaylze code connected to analyze javascript                                                       |
-| [vim-eunuch](https://github.com/tpope/vim-eunuch)                                        | eunuch.vim: helpers for UNIX                                                                                                              |
-| [vim-bracketed-paste](https://github.com/ConradIrwin/vim-bracketed-paste)                | Handles bracketed-paste-mode in vim (aka automatic ``:set paste``)                                                                        |
-| [quick-scope](https://github.com/unblevable/quick-scope)                                 | Lightning fast left-right movement in Vim                                                                                                 |
-| [emmet-vim](https://github.com/mattn/emmet-vim/)                                         | emmet-vim is a vim plug-in which provides support for expanding abbreviations similar to [emmet](http://emmet.io/).                       |
-| [vim-css-color](https://github.com/gp/vim-css-color)                                     | Coloring the CSS color text                                                                                                               |
-| [clang_complete](https://github.com/Rip-Rip/clang_complete)                              | Use clang for completing C, C++ etc..                                                                                                     |
-| [vim-vue](https://github.com/posva/vim-vue)                                              | Syntax Highligth for Vue.js components                                                                                                    |
-| [python-mode](https://github.com/python-mode/python-mode)                                | Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box.                                                                               |
-| [vim-jsx](https://github.com/mxw/vim-jsx)                                                | React JSX syntax highlighting and indenting for vim                                                                                       |
-| [javascript-libraries-syntax](https://github.com/Syntax for JavaScript libraries)        | Syntax for JavaScript libraries                                                                                                           |
-| [ES.Next](https://github.com/othree/es.next.syntax.vim)                                  | This syntax file is for ES7 and future syntax                                                                                             |
-| [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax)                 | Enhanced javascript syntax file for Vim                                                                                                   |
-| [vim-json](https://github.com/elzr/vim-json)                                             | A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly. |
-| [jsdoc-syntax](https://github.com/othree/jsdoc-syntax.vim)                               | Standalone JSDoc syntax for vim                                                                                                           |
-| [vim-babel](https://github.com/jbgutierrez/vim-babel)                                    | Wrapper around babel.js (ES2015, React, ...)                                                                                              |
-| [vim-javascript](https://github.com/pangloss/vim-javascript)                             | Vastly improved Javascript indentation and syntax support in Vim.                                                                         |
-| [vim-jsx-pretty](https://github.com/maxmellon/vim-jsx-pretty)                            | React JSX syntax pretty highlighting for vim                                                                                              |
-| [babel-vim-snippets](https://github.com/alnjxn/babel-vim-snippets)                       | Next generation JavaScript and React snippets for Vim                                                                                     |
-| [berkeleys-snippet-emporium](https://github.com/BerkeleyTrue/berkeleys-snippet-emporium) | vim snippets for react.                                                                                                                   |
-| [jedi-vim](https://github.com/davidhalter/jedi-vim)                                      | Using the jedi autocompletion library for VIM for Python                                                                                  |
-| [vimproc](https://github.com/Shougo/vimproc.vim)                                         | Interactive command execution in Vim.                                                                                                     |
+### General
 
+| Command   | Description                                                                             |
+| -------   | -----------                                                                             |
+| ``Wr``    | Save current buffer using `sudo`, does not function well, **please do not use for now** |
+| ``HTem``  | Open Horizontal terminal in NeoVim                                                      |
+| ``VTerm`` | Open Vertical terminal in NeoVim                                                        |
+
+###
 
 ## Shortcuts
 
-| Key                                 | Description                                                                              |
-| -----                               | -------------                                                                            |
-| ``<leader>``                        | The leader key is set to ``\``                                                           |
-| ``jj``                              | The keys are set to be a fast escape key                                                 |
-| ``<leader>r``                       | Reload vimrc                                                                             |
-| ``<leader>R``                       | Reload and activate vimrc changes                                                        |
-| ``<leader>w``                       | Fast saving (``:w!``)                                                                    |
-| ``:W``                              | Do a sudo to try and save the file, as a command!                                        |
-| ``Ctrl+j``                          | Go to the window bellow                                                                  |
-| ``Ctrl+k``                          | Go to the window above                                                                   |
-| ``Ctrl+h``                          | Go to the window on the left                                                             |
-| ``Ctrl+l``                          | Go to the window on the right                                                            |
-| ``Ctrl+w``                          | In insert mode, allows the window moving to work the same                                |
-| ``-`` and ``+``                     | Resize horizontal window                                                                 |
-| ``Alt+,`` and ``Alt+.``             | Resize vertical window                                                                   |
-| ``F2``                              | Close current window (do not remove the buffer)                                          |
-| ``<leader>d``                       | Delete current buffer                                                                    |
-| ``<leader>D``                       | Delete current buffer, keep split and switch to another buffer if found                  |
-| ``<leader>S``                       | Clean all of annoying white spaces in the end of a line                                  |
-| ``F5``                              | Toggle highlight search                                                                  |
-| ``Ctrl+F9``                         | Execute async compiler                                                                   |
-| ``F3``                              | Toggle NerdTree                                                                          |
-| ``Alt+j``                           | Move current line down                                                                   |
-| ``Alt+k``                           | Move current line up                                                                     |
-| ``Shift+F7 ``                       | Toggle spell checking                                                                    |
-| ``<leader>sn``                      | Move to the next misspelled word                                                         |
-| ``<leader>sp``                      | Move to the previous misspelled word                                                     |
-| ``<leader>sa``                      | Add current word under the cursor to the dictionary                                      |
-| ``<leader>s?``                      | Show suggestion window                                                                   |
-| ``<leader>fc``                      | Find git merge conflict markers                                                          |
-| ``<leader>g?``                      | Show git status                                                                          |
-| ``<leader>gb``                      | Show git blame                                                                           |
-| ``<leader>gc``                      | Do git commit                                                                            |
-| ``<leader>gvd``                     | Show vertical git diff                                                                   |
-| ``<leader>g/``                      | Do git grep                                                                              |
-| ``<leader>gp``                      | Do git push                                                                              |
-| ``<leader>gv``                      | See git in history changes (log) in new tab                                              |
-| ``<leader>gV``                      | See git in history changes (log) in new windows                                          |
-| ``<leader>gD``                      | See current git diff in a new window                                                     |
-| ``]h``                              | Go to the next group of changes in the current file from last commit                     |
-| ``[h``                              | Go to the previous group of changed in the current file from last commit                 |
-| ``<leader>hs``                      | Stage the current chunk of changes                                                       |
-| ``<leader>hu``                      | Undo last stage of changes                                                               |
-| ``<leader>hv``                      | Preview current stage of changes                                                         |
-| ``<leader>f0`` up to ``<leader>f0`` | Set code folding levels                                                                  |
-| ``Ctrl+p``                          | Toggle paste                                                                             |
-| ``<leader>m``                       | Remove the annoying Windows EOF of ^M                                                    |
-| ``<leader><leader>``                | Switch between the last two files                                                        |
-| ``<leader>y``                       | Copy the current line/visual selection to ``~/tmp/.vbuf`` file                           |
-| ``<leader>p``                       | Paste the content from ``~/tmp/.vbuf`` file                                              |
-| ``Y``                               | Yank the current line (to be consistent with ``D`` and ``C``)                            |
-| ``<leader>ff``                      | Display all of the lines with a keyword under the cursor and ask where to go at the list |
-| ``<leader>e``                       | Display the next error from the quickfix window                                          |
-| ``<leader>E``                       | Display the previous error from the quickfix window                                      |
-| ``<leader>Ctrl+e``                  | Close quickfix window                                                                    |
-| ``<leader>q``                       | Close all open windows except of the current one                                         |
-| ``Ctrl+f``                          | Print the full path we are at                                                            |
-| ``<leader>Ctrl+w``                  | Exit diff mode                                                                           |
-| ``F8``                              | Toggle Reverse insertion - For visual order editing                                      |
-| ``F9``                              | Toggle direction mapping - for logical order editing                                     |
-| ``F11``                             | Show BufExplorer                                                                         |
-| ``Shift+F11``                       | Toggle BufExplorer                                                                       |
-| ``Alt+F11``                         | Show BufExplorer in a Horizontal window                                                  |
-| ``Ctrl+F11``                        | Show BufExplorer in a Vertical window                                                    |
-| ``<leader>hc``                      | Toggle view of hidden chars                                                              |
-| ``<leader>wrp``                     | Toggle word wrap                                                                         |
-| ``<leader>srt``                     | Sort numbers in paragraph based on the external sort command                             |
-| ``Shift+Tab``                       | Execute :retab, to fix mixed spaces/tabs rules                                           |
+### General
 
+| Key                             | Description                                                             |
+| ---                             | -----------                                                             |
+| ``\\``                          | `<Leader>` (as a default)                                               |
+| ``jj``                          | ``<ESC>`` on insert mode                                                |
+| ``<leader>+r``                  | Load .vimrc                                                             |
+| ``<leader>+R``                  | Reload vim                                                              |
+| ``K``                           | Show documentation under the cursor                                     |
+| ``<leader>w``                   | Fast save current file (will not work on a buffer without file name)    |
+| ``<c-J>`` / ``<c-Down>``        | Navigate window / terminal - go down                                    |
+| ``<c-K>`` / ``<c-Up>``          | Navigate window / terminal- go up                                       |
+| ``<c-H>`` / ``<c-Left>``        | Navigate window / terminal- go left                                     |
+| ``<c-L>`` / ``<c-Right>``       | Navigate window / terminal- go right                                    |
+| ``<c-W>``                       | Window functions on insert mode as well                                 |
+| ``-`` / ``+``                   | Resize horizontal splits                                                |
+| ``<alt-,>`` / ``<alt-.>``       | Resize vertical splits                                                  |
+| ``<F2>``                        | Close (but not delete) current buffer                                   |
+| ``<leader>d``                   | Delete current buffer                                                   |
+| ``<leader>D``                   | Delete current buffer, but keep the split (switch to prev buffer)       |
+| ``<leader>S``                   | Delete trailing whitespace                                              |
+| ``<F5>``                        | Toggle hlsearch                                                         |
+| ``<c-d>`` / ``<c-u>``           | Center line when moving up and down half a screen                       |
+| ``<Alt-j>``                     | Move current line down                                                  |
+| ``<Alt-k>``                     | Move current line up                                                    |
+| ``SPT``                         | Toggle spelling mode                                                    |
+| ``<leader>sn``                  | Move to the next misspelled word                                        |
+| ``<leader>sp``                  | Move to the previous misspelled word                                    |
+| ``<leader>sa``                  | Add misspelled word under the cursor                                    |
+| ``<leader>s?``                  | Open suggestion window                                                  |
+| ``<leader>f1`` - ``<leader>f9`` | Set fold level between 1 and 9                                          |
+| ``<leader>m``                   | Remove ^M when encoding is messed up (windows)                          |
+| ``<leader><leader>``            | Toggle between last two files                                           |
+| ``<leader>y``                   | Copy the current visual selection or current line to `~/tmp/.vbuf` file |
+| ``<leader>p``                   | Paste the content of the buffer to `~/tmp/.vbuf` file                   |
+| ``Y``                           | Copy from cursor to the end of the line                                 |
+| ``gp``                          | visual reselect of what was yanked                                      |
+| ``<leader>ff``                  | Display all keywords under the cursor and prompt to go for one of them  |
+| ``<leader>e``                   | Go to next error message                                                |
+| ``<leader>E``                   | Go to prev error message                                                |
+| ``<leader><c-e>``               | Close quickfix error window                                             |
+| ``<leader>q``                   | Close all windows except active one                                     |
+| ``<c-f>``                       | Print full path                                                         |
+| ``<leader><c-w>``               | Exit diff mode                                                          |
+| ``<leader>hc``                  | Toggle view of hidden chars                                             |
+| ``<leader>wrp``                 | Toggle wrap mode                                                        |
+| ``<leader>srt``                 | Sort numbers in paragraph/selection                                     |
+| ``<c-PageDown>``                | Go to next tab                                                          |
+| ``<c-PageUp>``                  | Go to prev tab                                                          |
+| ``<C-O>``                       | Set :tabnew command and wait for a name to be placed                    |
+| ``<C-T>``                       | Open new tab                                                            |
+| ``<S-Tab>``                     | Execute :retab to set thw whole buffer at the same whitespace type      |
+| ``<leader>T``                   | Open new terminal in NeoVim                                             |
+| ``<leader>rel``                 | Toggle between normal and relative numbers                              |
+
+### Right To Left
+
+| Key      | Description                  |
+| ---      | -----------                  |
+| ``<F8>`` | Toggle visual order editing  |
+| ``<F9>`` | Toggle logical order editing |
+
+
+### VCS (General)
+
+| Key               | Description |
+| ----------------- | --------------------------- |
+| ``<leader>vcsfc`` | Find merge conflict markers |
+
+### ALE
+
+| Key       | Description                        |
+| ---       | -----------                        |
+| ``<c-j>`` | Go to next error reported by `ALE` |
+| ``<c-k>`` | Go to prev error reported by `ALE` |
+
+### BufExplorer
+
+| Key         | Description          |
+| ---         | -----------          |
+| ``<m-F11>`` | Toggle `BufExplorer` |
+
+### CtrlP
+
+| Key | Description |
+| --- | ----------- |
+| ``<c-p>`` | Invoke `CtrlP` |
+| ``gr`` | Fuzzy tag finding in buffer |
+
+### Fugitive
+
+| Key                 | Description                                              |
+| ---                 | -----------                                              |
+| ``<leader>gitb``    | git blame                                                |
+| ``<leader>gitc``    | git commit                                               |
+| ``<leader>gitvd``   | vertical git diff                                        |
+| ``<leader>git/``    | git grep                                                 |
+| ``<leader>git?``    | git status                                               |
+| ``<leader/>gitps``  | git push                                                 |
+| ``<leader/>gitpl``  | git pull                                                 |
+| ``<leader/>gitft``  | git fetch                                                |
+| ``<leader/>gitw``   | git add current file                                     |
+| ``<leader/>gitlg``  | git log -L                                               |
+| ``<leader/>gitdel`` | git rm                                                   |
+| ``<leader/>gitbr``  | open current buffer in remote location using web browser |
+
+### gitgutter
+
+| Key               | Description                               |
+| ---               | -----------                               |
+| ``]h``            | Next gutter change under cursor           |
+| ``[h``            | Prev gutter change under cursor           |
+| ``<leader>giths`` | Gutter set stage under cursor             |
+| ``<leader>githu`` | Gutter undo non staged lines under cursor |
+| ``<leader>githv`` | Gutter Preview changes under cursor       |
+
+### gitv
+
+| Key              | Description                  |
+| ---              | -----------                  |
+| ``<leader>gitv`` | Display changes in new tab   |
+| ``<leader>gitV`` | Display changes on new split |
+| ``<leader>gitD`` | Display git diff             |
+
+### Emmet
+
+| Key        | Description                                                                                             |
+| ---        | -----------                                                                                             |
+| ``<c-y>,`` | Complete (current tags and snippets)[https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL] |
+
+### NerdTree
+
+| Key      | Description     |
+| ---      | -----------     |
+| ``<F3>`` | Toggle NerdTree |
+
+### Python mode
+
+| Key                       | Description                                                                                                                                                                                                                                                                                                    |
+| ---                       | -----------                                                                                                                                                                                                                                                                                                    |
+| ``[[``                    | Jump to previous class or function (normal, visual, operator modes)                                                                                                                                                                                                                                            |
+| ``]]``                    | Jump to next class or function (normal, visual, operator modes)                                                                                                                                                                                                                                                |
+| ``[M``                    | Jump to previous class or method (normal, visual, operator modes)                                                                                                                                                                                                                                              |
+| ``]M``                    | Jump to next class or method (normal, visual, operator modes)                                                                                                                                                                                                                                                  |
+| ``aC``                    | Select a class. Ex: vaC, daC, yaC, caC (normal, operator modes)                                                                                                                                                                                                                                                |
+| ``iC``                    | Select inner class. Ex: viC, diC, yiC, ciC (normal, operator modes)                                                                                                                                                                                                                                            |
+| ``aM``                    | Select a function or method. Ex: vaM, daM, yaM, caM (normal, operator modes)                                                                                                                                                                                                                                   |
+| ``iM``                    | Select inner function or method. Ex: viM, diM, yiM, ciM (normal, operator modes)                                                                                                                                                                                                                               |
+| ``<C-C>g``                | Go to object definition                                                                                                                                                                                                                                                                                        |
+| ``<C-c>rr``               | Rename classes, functions, modules, packages, methods, variables and keyword arguments                                                                                                                                                                                                                         |
+| ``<C-c>r1r``              | Rename current module                                                                                                                                                                                                                                                                                          |
+| ``<C-c>ro``               | Organize imports sorts imports, too. It does that according to PEP8. Unused imports will be dropped.                                                                                                                                                                                                           |
+| ``<C-c>ra``               | Insert import for current word under cursor                                                                                                                                                                                                                                                                    |
+| ``<C-c>r1p``              | Convert current module to package                                                                                                                                                                                                                                                                              |
+| ``<C-c>rm`` / ``<C-c>rl`` | Extract method/variable from selected lines.                                                                                                                                                                                                                                                                   |
+| ``<C-c>ru``               | Try to find the places in which a function can be used and changes the code to call it instead                                                                                                                                                                                                                 |
+| ``<C-c>rv``               | When a refactoring needed for methods of a class. In this refactoring, a method of a class is moved to the class of one of its attributes. The old method will call the new method. If you want to change all of the occurrences of the old method to use the new method you can inline it afterwards. |
+| ``<C-c>rs``               | Change function signature                                                                                                                                                                                                                                                                                      |
+
+### ripgrep
+
+| Key    | Description                                                                                               |
+| ---    | -----------                                                                                               |
+| ``g/`` | Look at all files from current position and sub directories                                               |
+| ``g*`` | Look at all files from current position and sub directories force the print of directories if not printed |
+| ``ga`` | Look at all files from current position and sub directories, append errors                                |
+
+### Tagbar
+
+| Key      | Description   |
+| ---      | -----------   |
+| ``<F4>`` | Toggle Tagbar |
+
+### TComment
+
+| Key                 | Description                 |
+| ---                 | -----------                 |
+| ``[num]<leader>cc`` | Comment out current line(s) |
+| ``[num]<leader>cu`` | Uncomment current line(s)   |
+
+### UltraSnippets
+
+| Key                     | Description            |
+| ---                     | -----------            |
+| ``<c-tab>`` / ``<c-j>`` | List snippets foreword |
+| ``<s-tab>`` / ``<c-k>`` | List snippets backward |
+
+### UndoTree
+
+| Key              | Description      |
+| ---              | -----------      |
+| ``<leader>undo`` | Toggle undo tree |
+
+### Fixmyjs
+
+| Key       | Description                      |
+| ---       | -----------                      |
+| ``<c-l>`` | Auto fix Javascript using eslint |
+
+### Go
+
+| Key              | Description                                                               |
+| ---              | -----------                                                               |
+| ``<c-u>``        | Create Godoc comment                                                      |
+| ``<leader>s``    | Show a list of interfaces which implemented by the type under your cursor |
+| ``<leader>i``    | Show type info for the word under your cursor                             |
+| ``<leader>goh``  | Open godoc horizontal                                                     |
+| ``<leader>gov``  | Open godoc vertical                                                       |
+| ``<leader>gobd`` | Open godoc browser                                                        |
+| ``<leader>goa``  | Switch between test and source files                                      |
+| ``<leader>got``  | Add default tags to struct (e.g. JSON)                                    |
+| ``<leader>goT``  | Opens a command for ``GoAddTags`` allowing to place the needed tag names  |
+| ``<leader>v``    | Goto declaration/definition, in a vertical window                         |
+| ``<leader>s``    | Goto declaration/definition, in a horizontal window                       |
+| ``<leader>l``    | Go meta linter                                                            |
+| ``<leader>b``    | Build go project                                                          |
+| ``<leader>t``    | Execute Go tests                                                          |
+| ``<leader>r``    | Execute Go project                                                        |
+| ``<leader>e``    | Execute Go install                                                        |
+| ``<leader>c``    | Execute test covers                                                       |
+| ``<c-l>``        | Execute all possilbe linters                                              |
+
+### Twiggy
+
+| Key              | Description   |
+| ---              | -----------   |
+| ``<leader>gitB`` | Toggle twiggy |
+
+### SplitJoin.vom
+
+| Key              | Description |
+| ---              | ----------- |
+| ``<leader>+sjj`` | Join lines  |
+| ``<leader>+sjs`` | Split lines |
+
+
+
+## Plugins
+
+| Name | Description |
+|------|-------------|
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
+| [](https://github.com/) | |
 
