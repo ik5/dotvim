@@ -1,4 +1,4 @@
-function GlogForward()
+function! GlogForward()
   let l:line=line('.')
   try
     cnext
@@ -8,7 +8,7 @@ function GlogForward()
   call setpos('.', [0, l:line, 0, 0])
 endfunction
 
-function GlogBackward()
+function! GlogBackward()
   let l:line=line('.')
   try
     cprev
@@ -18,7 +18,7 @@ function GlogBackward()
   call setpos('.', [0, l:line, 0, 0])
 endfunction
 
-function LocateRacer()
+function! LocateRacer()
   if !has('nvim')
     return
   endif
