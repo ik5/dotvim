@@ -42,3 +42,5 @@ let g:NERDTreeIndicatorMapCustom = {
 noremap <F3> :NERDTreeToggle<CR>
 inoremap <F3> <Esc>:NERDTreeToggle<CR>
 
+" Close vim if nerdtree is the only thing open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
