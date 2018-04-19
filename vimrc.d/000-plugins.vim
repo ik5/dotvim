@@ -165,7 +165,7 @@ Plug 'kaichen/vim-snipmate-ruby-snippets'
 
 " Vim plugin: flexible viewer for any documentation
 Plug 'powerman/vim-plugin-viewdoc'
-if filereadable('/usr/bin/Zeal')
+if executable('Zeal')
   " usage of zeal in vim
   Plug 'KabbAmine/zeavim.vim'
 endif
