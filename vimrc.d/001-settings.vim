@@ -142,10 +142,7 @@ endif
 filetype plugin indent on
 syntax on
 
-if has('colorcolumn')        " Columns and lines, only if exists
-  set colorcolumn=80
-endif
-
+set colorcolumn=80 " display boundary column
 if has('gui_running')
   set lines=75
   set columns=180
