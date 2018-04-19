@@ -69,8 +69,8 @@ noremap <leader>D :b#<bar>bd#<CR>
 " buffer navigation
 nnoremap <M-d> :bn<CR>  " toggle between open buffers go to next buffer
 nnoremap <M-a> :bp<CR>  " toggle between open buffers go to prev buffer
-nnoremap <Esc>d :bn<CR> " toggle between open buffers go to next buffer
-nnoremap <Esc>a :bp<CR> " toggle between open buffers go to prev buffer
+nnoremap <leader>bfn :bn<CR> " toggle between open buffers go to next buffer
+nnoremap <leader>bfp :bp<CR> " toggle between open buffers go to prev buffer
 nnoremap <silent> <Space>x :bn\|bd #<CR> " delete next buffer
 
 

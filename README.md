@@ -162,8 +162,8 @@ vim +PlugUpdate +qa
 | ``<leader>rel``                 | Toggle between normal and relative numbers                              |
 | ``<leader>curr``                | Toggle cursor row indicator                                             |
 | ``<leader>curc``                | Toggle cursor column indicator                                          |
-| ``<ALT+d>`` / ``<ESC>d``        | Toggle between open buffers goto next buffer                            |
-| ``<ALT+a>`` / ``<ESC>a``        | Toggle between open buffers goto prev buffer                            |
+| ``<ALT+d>`` / ``<leader>bfn``   | Toggle between open buffers goto next buffer                            |
+| ``<ALT+a>`` / ``<leader>bfp``   | Toggle between open buffers goto prev buffer                            |
 | ``<SPACE>x``                    | Delete next buffer                                                      |
 
 ### Right To Left
