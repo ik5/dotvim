@@ -2,9 +2,8 @@
 " Basic Settings
 " ==================================================
 
-if !has('nvim')
-  set nocompatible         " This is VIM!!!
-                           " nvim is always not compatible
+if !has('nvim') " This is VIM!!! nvim is always not compatible
+  set nocompatible
 endif
 set encoding=utf-8        " utf8 is the default
 set fileencoding=utf-8
@@ -18,6 +17,7 @@ if has('linebreak')      " Break indent wrapped lines
   let &showbreak = '↳ '
   set cpo+=n
 end
+set joinspaces           " Insert two spaces after a '.', '?' and '!'
 set whichwrap+=<,>       " allow specific keys to move the cursor to previous/next
                          " line when cursor is on the first/last char in the line.
 set cmdheight=3          " Make command line 3 lines high
