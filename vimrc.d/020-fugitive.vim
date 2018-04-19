@@ -19,17 +19,33 @@ vnoremap <leader>git/ :Ggrep<space>
 nnoremap <leader>git/ :Ggrep<space>
 
 " push
-vnoremap <leader>gitp :Gpush<CR>
-nnoremap <leader>gitp :Gpush<CR>
+vnoremap <leader>gitps :Gpush<CR>
+nnoremap <leader>gitps :Gpush<CR>
+
+" pull
+vnoremap <leader>gitpl :Gpull<CR>
+nnoremap <leader>gitpl :Gpull<CR>
+
+" fetch
+vnoremap <leader>gitft :Gfetch<CR>
+nnoremap <leader>gitft :Gfetch<CR>
 
 " Status
 vnoremap <leader>git? :Gstatus<CR>
 nnoremap <leader>git? :Gstatus<CR>
 
-" Git write
+" write
 vnoremap <leader>gitw :Gwrite<CR>
 nnoremap <leader>gitw :Gwrite<CR>
 
-" Git log -L
+" log -L
 vnoremap <leader>gitlg :Glog<CR>
 nnoremap <leader>gitlg :Glog<CR>
+
+" delete
+vnoremap <leader>gitdel :Gdelete<CR>
+nnoremap <leader>gitdel :Gdelete<CR>
+
+" open current file in remote location using browser
+vnoremap <leader>gitbr :Gbrowse<CR>
+nnoremap <leader>gitbr :Gbrowse<CR>
