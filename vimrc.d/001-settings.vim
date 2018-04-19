@@ -138,7 +138,6 @@ endif
 " This is for the terminal version
 if !has('gui_running')
   set notimeout
-  set ttimeout=5
   set ttimeoutlen=5
   augroup FastEscape
     autocmd!
