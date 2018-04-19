@@ -141,9 +141,9 @@ vim +PlugUpdate +qa
 | ``Y``                           | Copy from cursor to the end of the line                                 |
 | ``gp``                          | visual reselect of what was yanked                                      |
 | ``<leader>ff``                  | Display all keywords under the cursor and prompt to go for one of them  |
-| ``<leader>e``                   | Go to next error message                                                |
-| ``<leader>E``                   | Go to prev error message                                                |
-| ``<leader><c-e>``               | Close quickfix error window                                             |
+| ``<leader>errn``                | Go to next error message                                                |
+| ``<leader>errp``                | Go to prev error message                                                |
+| ``<leader>errc``                | Close quickfix error window                                             |
 | ``<leader>q``                   | Close all windows except active one                                     |
 | ``<c-f>``                       | Print full path                                                         |
 | ``<leader><c-w>``               | Exit diff mode                                                          |

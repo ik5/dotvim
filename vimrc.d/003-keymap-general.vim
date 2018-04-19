@@ -208,9 +208,9 @@ nnoremap <leader>ff [I:let nr = input('Which one: ')<Bar>exe 'normal ' . nr .'[\
 " inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
 " Error window (a.k.a. quick fix window)
-nnoremap <leader>e :cn<CR>
-nnoremap <leader>E :cp<CR>
-nnoremap <leader><c-e> :cclose<CR>
+nnoremap <leader>errn :cn<CR>
+nnoremap <leader>errp :cp<CR>
+nnoremap <leader>errc :cclose<CR>
 
 " Close all windows except the active one
 nnoremap <leader>q :only<CR>
