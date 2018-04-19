@@ -93,7 +93,7 @@ set wildignore+=*.rdb                            " Redis database file
 set wildignore+=*/tmp/*,*.so,*.zip,*.db,*.sqlite*
 set wildignore+=*.o                              " object files
 
-" set listchars
+" set listchars -> display a char that represent a case
 set list
 set listchars=tab:→\ ,trail:·,extends:›,precedes:‹,nbsp:␣
 
