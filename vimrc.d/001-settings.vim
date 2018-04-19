@@ -60,7 +60,7 @@ set virtualedit=onemore             " Allow for cursor beyond last character
 set iskeyword-=.                    " '.' is an end of word designator
 set iskeyword-=#                    " '#' is an end of word designator
 set iskeyword-=-                    " '-' is an end of word designator
-set shell=/bin/zsh                       " I'm using zsh
+set shell=/bin/zsh                  " I'm using zsh
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
