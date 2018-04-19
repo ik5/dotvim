@@ -3,8 +3,8 @@
 " ==================================================
 
 let g:ctrlp_map = '<c-p>'
-map <c-p> :CtrlP<CR>
-nmap <c-p> :CtrlP<CR>
+noremap <c-p> :CtrlP<CR>
+nnoremap <c-p> :CtrlP<CR>
 
 set wildignore+=*.so,*.swp,*.zip,*.pyc,*.pyo,*.o,*.a
 let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|templates_c'
@@ -21,7 +21,7 @@ let g:ctrlp_max_depth = 40
 " ==================================================
 " gr opens Fuzzy tags search
 " ==================================================
-nmap gr :CtrlPBufTag<CR>
+nnoremap gr :CtrlPBufTag<CR>
 let g:ctrlp_buftag_types = {
       \ 'go' : '--language-force=go --golang-types=ftv',
       \ 'coffee' : '--language-force=coffee --coffee-types=cmfvf',

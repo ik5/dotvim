@@ -116,3 +116,4 @@ augroup General
   au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ) :call search('(\\|)\\|{\\|}\\|\[\\|\]')<CR>
   au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ( :call search('(\\|)\\|{\\|}\\|\[\\|\]', 'b')<CR>
 augroup END
+

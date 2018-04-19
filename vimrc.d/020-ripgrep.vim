@@ -2,9 +2,9 @@
 " ripgrep using normal vim grep
 " ==================================================
 
-nmap g/ :grep!<space>
-nmap g* :grep! -w <C-R><C-W><space>
-nmap ga :grepadd!<space>
+nnoremap g/ :grep!<space>
+nnoremap g* :grep! -w <C-R><C-W><space>
+nnoremap ga :grepadd!<space>
 
 if executable("rg")
     set grepprg=rg\ --vimgrep\ --no-heading

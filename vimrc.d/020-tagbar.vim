@@ -2,7 +2,7 @@
 " Tagbar Mapping
 " ==================================================
 
-nmap <F4> :TagbarToggle<CR>
+nnoremap <F4> :TagbarToggle<CR>
 
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',

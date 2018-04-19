@@ -16,9 +16,9 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
-map <C-_> <leader>c
-imap <C-_> <leader>cc
-vmap <C-_> <leader>ci
+noremap <C-_> <leader>c
+inoremap <C-_> <leader>cc
+vnoremap <C-_> <leader>ci
 
 let g:ft = ''
 function! NERDCommenter_before()

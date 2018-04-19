@@ -1,10 +1,10 @@
 " =======================================================
 " vim gitgutter
 " =======================================================
-nmap ]h <Plug>GitGutterNextHunk
-nmap [h <Plug>GitGutterPrevHunk
-nmap <Leader>giths <Plug>GitGutterStageHunk
-nmap <Leader>githu <Plug>GitGutterUndoHunk
-nmap <Leader>githv <Plug>GitGutterPreviewHunk
+nnoremap ]h <Plug>GitGutterNextHunk
+nnoremap [h <Plug>GitGutterPrevHunk
+nnoremap <Leader>giths <Plug>GitGutterStageHunk
+nnoremap <Leader>githu <Plug>GitGutterUndoHunk
+nnoremap <Leader>githv <Plug>GitGutterPreviewHunk
 
 

@@ -11,16 +11,16 @@ vno v <esc>
 " ================================
 
 " load .vimrc - <leader>r
-map <leader>r :sp ~/vimrc<CR><C-W>_
+noremap <leader>r :sp ~/vimrc<CR><C-W>_
 " activating changes (after save) - <leader>R
-map <silent> <leader>R :source ~/.vimrc<CR>:filetype detect<CR>:exec ":echo 'vimrc reloaded'"<CR>
+nmap <silent> <leader>R :source ~/.vimrc<CR>:filetype detect<CR>:exec ":echo 'vimrc reloaded'"<CR>
 
 if &term[:4] ==? 'xterm' || &term[:5] ==? 'screen' || &term[:3] ==? 'rxvt'
   inoremap <silent> <C-[>OC <RIGHT>
 endif
 
 " Fast saving
-nmap <leader>w :w!<cr><cr>
+noremap <leader>w :w!<cr><cr>
 
 " sudo saves the file
 " (useful for handling the permission-denied error)
@@ -49,29 +49,29 @@ noremap <C-Right> <C-W>l
 " ==================================================
 
 " Make these all work in insert mode
-imap <C-W> <C-O><C-W>
+inoremap <C-W> <C-O><C-W>
 
 " - and + to resize horizontal splits
-map - <C-W>-
-map + <C-W>+
+noremap - <C-W>-
+noremap + <C-W>+
 
 " alt-< or alt-> for vertical splits
-map <m-,> <C-W>>
-map <m-.> <C-W><
+noremap <m-,> <C-W>>
+noremap <m-.> <C-W><
 
 " F2 close current split (window)
 noremap <F2> <Esc>:close<CR><Esc>
 
 " delete current buffer
-nmap <leader>d :bd<CR>
+noremap <leader>d :bd<CR>
 
 " Deleter buffer, keep the split (switch to prev buf, delete now prev buf)
-nmap <leader>D :b#<bar>bd#<CR>
+noremap <leader>D :b#<bar>bd#<CR>
 
 " ==================================================
 " Clean all end of line whitespace with <Leader>S
 " ==================================================
-:nnoremap <silent><leader>S :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+nnoremap <silent><leader>S :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 
 " ==================================================
@@ -104,8 +104,8 @@ if ! has('nvim')
 endif
 
 " treat long lines as break lines (when moving around in them)
-map j gj
-map k gk
+noremap j gj
+noremap k gk
 
 " Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
@@ -123,44 +123,44 @@ endif
 " ====================================================
 " spell settings
 " ====================================================
-map  SPT :set spell!<CR>
-nmap SPT :set spell!<CR>
-vmap SPT :set spell!<CR>
+noremap  SPT :set spell!<CR>
+nnoremap SPT :set spell!<CR>
+vnoremap SPT :set spell!<CR>
 " move to next spelling word
-map <leader>sn ]s
+noremap <leader>sn ]s
 " move to prev spelling word
-map <leader>sp [s
+noremap <leader>sp [s
 " add word under cursor
-map <leader>sa zg
+noremap <leader>sa zg
 " suggestion window
-map <leader>s? z=
+noremap <leader>s? z=
 
 " =======================================================
 " VCS/Git Merge stuff
 " =======================================================
 " Find merge conflict markers
-map <leader>vcsfc /\v^[<\|=>]{7}( .*\|$)<CR>
+noremap <leader>vcsfc /\v^[<\|=>]{7}( .*\|$)<CR>
 
 " =======================================================
 " Code folding options
 " =======================================================
-nmap <leader>f0 :set foldlevel=0<CR>
-nmap <leader>f1 :set foldlevel=1<CR>
-nmap <leader>f2 :set foldlevel=2<CR>
-nmap <leader>f3 :set foldlevel=3<CR>
-nmap <leader>f4 :set foldlevel=4<CR>
-nmap <leader>f5 :set foldlevel=5<CR>
-nmap <leader>f6 :set foldlevel=6<CR>
-nmap <leader>f7 :set foldlevel=7<CR>
-nmap <leader>f8 :set foldlevel=8<CR>
-nmap <leader>f9 :set foldlevel=9<CR>
+nnoremap <leader>f0 :set foldlevel=0<CR>
+nnoremap <leader>f1 :set foldlevel=1<CR>
+nnoremap <leader>f2 :set foldlevel=2<CR>
+nnoremap <leader>f3 :set foldlevel=3<CR>
+nnoremap <leader>f4 :set foldlevel=4<CR>
+nnoremap <leader>f5 :set foldlevel=5<CR>
+nnoremap <leader>f6 :set foldlevel=6<CR>
+nnoremap <leader>f7 :set foldlevel=7<CR>
+nnoremap <leader>f8 :set foldlevel=8<CR>
+nnoremap <leader>f9 :set foldlevel=9<CR>
 
 " =======================================================
 " Misc
 " =======================================================
 " toggle paste
-" nmap <c-s-p> :set paste!<CR>
-" map <c-s-p> :set paste!<CR>
+" nnoremap <c-s-p> :set paste!<CR>
+" noremap <c-s-p> :set paste!<CR>
 
 " paste while keeping the current indent
 nnoremap <leader>p p`[v`]=
@@ -174,53 +174,53 @@ nnoremap <leader><leader> <C-^>
 
 " Allow to copy/paste between VIM instances
 "copy the current visual selection to ~/.vbuf
-vmap <leader>y :w! ~/tmp/.vbuf<cr>
+vnoremap <leader>y :w! ~/tmp/.vbuf<cr>
 "copy the current line to the buffer file if no visual selection
-nmap <leader>y :.w! ~/tmp/.vbuf<cr>
+nnoremap <leader>y :.w! ~/tmp/.vbuf<cr>
 "paste the contents of the buffer file
-nmap <leader>p :r ~/tmp/.vbuf<cr>
+nnoremap <leader>p :r ~/tmp/.vbuf<cr>
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 " visual reselect of just yanked
 nnoremap gp `[v`]
 if has('macunix')
   " pbcopy for OSX copy/paste
-  vmap <C-x> :!pbcopy<CR>
-  vmap <C-c> :w !pbcopy<CR><CR>
+  vnoremap <C-x> :!pbcopy<CR>
+  vnoremap <C-c> :w !pbcopy<CR><CR>
 endif
 
 "" Map <Leader>ff to display all lines with keyword under cursor
 " and ask which one to jump to
-nmap <leader>ff [I:let nr = input('Which one: ')<Bar>exe 'normal ' . nr .'[\t'<CR>
+nnoremap <leader>ff [I:let nr = input('Which one: ')<Bar>exe 'normal ' . nr .'[\t'<CR>
 
 " tabular resize on insert mode
 " inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
 " Error window (a.k.a. quick fix window)
-nmap <leader>e :cn<CR>
-nmap <leader>E :cp<CR>
-nmap <leader><c-e> :cclose<CR>
+nnoremap <leader>e :cn<CR>
+nnoremap <leader>E :cp<CR>
+nnoremap <leader><c-e> :cclose<CR>
 
 " Close all windows except the active one
 nnoremap <leader>q :only<CR>
 
 " Print full path
-map <C-f> :echo expand("%:p")<cr>
+noremap <C-f> :echo expand("%:p")<cr>
 
 " Exit diff mode
 noremap <leader><c-w> :windo diffoff<CR>
 
 " Toggle view of hidden chars
-map <leader>hc :set list!<CR>
-imap <leader>hc <ESC>:set list!<CR>a
+noremap <leader>hc :set list!<CR>
+inoremap <leader>hc <ESC>:set list!<CR>a
 
 " Toggle word wrap
-map <leader>wrp :set wrap!<CR>
-imap <leader>wrp <ESC>:set wrap!<CR>a
+noremap <leader>wrp :set wrap!<CR>
+inoremap <leader>wrp <ESC>:set wrap!<CR>a
 
 " sort numbers in paragraph
-map <leader>srt {V}k:!sort<CR>
-vmap <leader>srt {V}k:!sort<CR>
+noremap <leader>srt {V}k:!sort<CR>
+vnoremap <leader>srt {V}k:!sort<CR>
 
 "For navigating tabs like gui applications
 nnoremap <C-PageDown> gt
@@ -228,17 +228,17 @@ nnoremap <C-PageUp> gT
 nnoremap <C-O> :tabnew <Space>
 nnoremap <C-T> :tabnew<CR>
 
-map <S-Tab> :retab<CR>
-imap <S-Tab> <ESC>:retab<CR>i
-vmap <S-Tab> :retab<CR>
+noremap <S-Tab> :retab<CR>
+inoremap <S-Tab> <ESC>:retab<CR>i
+vnoremap <S-Tab> :retab<CR>
 
 if has('nvim')
-  map <leader>T :terminal<CR>
+  noremap <leader>T :terminal<CR>
 endif
 
 " add support for toggle relative numbers
-map <leader>rel :set rnu!<CR>
-imap <leader>rel <ESC>:set rnu!<CR>a
+noremap <leader>rel :set rnu!<CR>
+inoremap <leader>rel <ESC>:set rnu!<CR>a
 
 " Move back and forth through commits while staying on the same line
 nnoremap <A-right> :call GlogForward()<CR>
@@ -250,7 +250,7 @@ nnoremap <CR> i<CR><Esc>==
 nnoremap <leader>j i<CR><Esc>==
 
 " Toggle cursor indicators
-map <leader>curc :set cursorcolumn!<CR>
-imap <leader>curc :set cursorcolumn!<CR>
-map <leader>curr :set cursorline!<CR>
-imap <leader>curr :set cursorline!<CR>
+noremap <leader>curc :set cursorcolumn!<CR>
+inoremap <leader>curc :set cursorcolumn!<CR>
+noremap <leader>curr :set cursorline!<CR>
+inoremap <leader>curr :set cursorline!<CR>

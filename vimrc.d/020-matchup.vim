@@ -15,4 +15,4 @@ let g:matchup_motion_override_Npercent = 0
 let g:matchup_text_obj_linewise_operators = ['d', 'y']
 
 
-nmap <silent> <leader><F5> <plug>(matchup-hi-surround)
+nnoremap <silent> <leader><F5> <plug>(matchup-hi-surround)

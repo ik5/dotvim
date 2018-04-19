@@ -39,6 +39,6 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 " NerdTree toggle
-map <F3> :NERDTreeToggle<CR>
-imap <F3> <Esc>:NERDTreeToggle<CR>
+noremap <F3> :NERDTreeToggle<CR>
+inoremap <F3> <Esc>:NERDTreeToggle<CR>
 

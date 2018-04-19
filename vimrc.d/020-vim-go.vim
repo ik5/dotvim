@@ -51,7 +51,6 @@ function! s:create_go_doc_comment()
   execute ':norm I// \<Esc>$'
 endfunction
 
-au FileType go nnoremap <leader>ui :<C-u>call <SID>create_go_doc_comment()<CR>
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
@@ -63,43 +62,45 @@ function! s:build_go_files()
   endif
 endfunction
 
-augroup go
+augroup Golang
   autocmd!
 
+  au FileType go nnoremap <leader>ui :<C-u>call <SID>create_go_doc_comment()<CR>
+
   " Show a list of interfaces which is implemented by the type under your cursor
-  au FileType go nmap <Leader>s <Plug>(go-implements)
+  au FileType go nnoremap <Leader>s <Plug>(go-implements)
 
   " Show type info for the word under your cursor
-  au FileType go nmap <Leader>i <Plug>(go-info)
+  au FileType go nnoremap <Leader>i <Plug>(go-info)
 
   " Open the relevant Godoc for the word under the cursor
-  au FileType go nmap <Leader>goh <Plug>(go-doc)
-  au FileType go nmap <Leader>gov <Plug>(go-doc-vertical)
+  au FileType go nnoremap <Leader>goh <Plug>(go-doc)
+  au FileType go nnoremap <Leader>gov <Plug>(go-doc-vertical)
 
   " Open the Godoc in browser
-  au FileType go nmap <Leader>gobd <Plug>(go-doc-browser)
+  au FileType go nnoremap <Leader>gobd <Plug>(go-doc-browser)
 
   " Alternate between test and file
-  au FileType go nmap <Leader>goa :GoAlternate<cr>
+  au FileType go nnoremap <Leader>goa :GoAlternate<cr>
 
-  au FileType go nmap <Leader>got :GoAddTags<cr>
-  au FileType go nmap <Leader>goT :GoAddTags
-  au FileType go vmap <Leader>got :GoAddTags<cr>
-  au FileType go vmap <Leader>goT :GoAddTags
+  au FileType go nnoremap <Leader>got :GoAddTags<cr>
+  au FileType go nnoremap <Leader>goT :GoAddTags
+  au FileType go vnoremap <Leader>got :GoAddTags<cr>
+  au FileType go vnoremap <Leader>goT :GoAddTags
 
-  au FileType go nmap <Leader>v <Plug>(go-def-vertical)
-  au FileType go nmap <Leader>s <Plug>(go-def-split)
+  au FileType go nnoremap <Leader>v <Plug>(go-def-vertical)
+  au FileType go nnoremap <Leader>s <Plug>(go-def-split)
 
-  au FileType go nmap <Leader>l <Plug>(go-metalinter)
+  au FileType go nnoremap <Leader>l <Plug>(go-metalinter)
 
-  au FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
-  au FileType go nmap <leader>t  <Plug>(go-test)
-  au FileType go nmap <leader>r  <Plug>(go-run)
-  au FileType go nmap <leader>e  <Plug>(go-install)
-  au FileType go nmap <leader>c <Plug>(go-coverage)
+  au FileType go nnoremap <leader>b :<C-u>call <SID>build_go_files()<CR>
+  au FileType go nnoremap <leader>t  <Plug>(go-test)
+  au FileType go nnoremap <leader>r  <Plug>(go-run)
+  au FileType go nnoremap <leader>e  <Plug>(go-install)
+  au FileType go nnoremap <leader>c <Plug>(go-coverage)
 
   " Run all possible linters from go
-  au FileType go nmap <c-l> :GoMetaLinter<CR>
+  au FileType go nnoremap <c-l> :GoMetaLinter<CR>
 augroup END
 
 
