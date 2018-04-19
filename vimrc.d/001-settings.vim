@@ -39,8 +39,9 @@ set number               " show line numbers
 set norelativenumber     " default is not to have a relative number
 set display+=lastline    " display as much as possible of the last line
 set title                " show title in console title bar
-set titleold='Terminal'
+set titleold="Terminal"
 set titlestring=" %F "
+set titleold=            " Revert to original title when exiting
 set modelines=0
 set nomodeline          " no vim mode execution for security
 set shortmess=atIc       " Abbreviate messages
