@@ -5,8 +5,8 @@
 set nocompatible         " This is VIM!!!
 set encoding=utf8        " utf8 is the default
 set ffs=unix,dos,mac     " file end of line -> unix!
-set textwidth=120        " Try this out to see how textwidth helps
 if has('linebreak')      " Break indent wrapped lines
+  set textwidth=120        " Try this out to see how textwidth helps
   set linebreak            " break the line after the amount of textwidth
   set breakindent
   let &showbreak = '↳ '
@@ -77,6 +77,10 @@ set wildignore+=*.sw?                            " Vim swap files
 set wildignore+=*.DS_Store
 set wildignore+=*.rdb                            " Redis database file
 set wildignore+=*/tmp/*,*.so,*.zip,*.db,*.sqlite*
+
+" set listchars
+set list
+set listchars=tab:→\ ,trail:·,extends:›,precedes:‹,nbsp:␣
 
 set completeopt=longest,menu,menuone,preview   " Just show the menu upon completion (faster)
 set completeopt+=preview
