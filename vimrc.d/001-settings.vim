@@ -29,6 +29,7 @@ set smartindent          " smart indentation
 set showcmd              " display incomplete commands
 set ruler                " show the cursor position all the time
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
+set signcolumn=auto      " display the sign column only when there is something to show
 set noerrorbells         " do not do a noise bell
 set visualbell           " Visual bell instead of nosie, or no indication at all
 set nobackup             " do not keep a backup file
@@ -37,7 +38,7 @@ set norelativenumber     " default is not to have a relative number
 set display+=lastline    " display as much as possible of the last line
 set title                " show title in console title bar
 set titleold='Terminal'
-set titlestring=' %F '
+set titlestring=" %F "
 set modelines=0
 set nomodeline          " no vim mode execution for security
 set shortmess=atIc       " Abbreviate messages
@@ -60,7 +61,7 @@ set timeout ttimeoutlen=50
 set selection=inclusive
 set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
 " virtual editing provides a mean to place the cursor on a non existed char.
-set virtualedit=onemore,blockmode   " Allow for cursor beyond last character and on block mode
+set virtualedit=onemore,block       " Allow for cursor beyond last character and on block mode
 set iskeyword-=.                    " '.' is an end of word designator
 set iskeyword-=#                    " '#' is an end of word designator
 set iskeyword-=-                    " '-' is an end of word designator
