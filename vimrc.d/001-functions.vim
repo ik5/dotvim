@@ -35,3 +35,22 @@ function! LocateRacer()
     endif
   endif
 endfunction
+
+" copied from http://netbuz.org/vimrc.html
+function! CSettings()
+  setlocal cindent
+  setlocal cinoptions=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+2,(0,u0,w1,m1
+  setlocal synmaxcol=200  " Prevent massive slowdown with large C files
+  setlocal foldmethod=marker
+
+  " nnoremap <buffer> <silent> <leader>A :GNOMEAlignArguments<CR>
+  " nnoremap <buffer> <silent> <leader>gq [[=a}:GNOMEAlignArguments<CR>
+
+  " TODO: need a new mapping for this one
+  " nnoremap <buffer> <silent> <leader>gD [[}O
+  " nnoremap <buffer> <silent> <leader>gd [{}O
+  nnoremap <buffer> <silent> <leader>gi ?^#include<CR>:nohlsearch<CR>
+  let b:surround_105 = "#if 0\n\r\n#endif"
+endfunction
+
+
