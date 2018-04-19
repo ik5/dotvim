@@ -22,11 +22,6 @@ endif
 " Fast saving
 noremap <leader>w :w!<cr><cr>
 
-" sudo saves the file
-" (useful for handling the permission-denied error)
-command! Wr !sudo tee % > /dev/null
-
-
 " ==================================================
 " Window navigation
 " ==================================================

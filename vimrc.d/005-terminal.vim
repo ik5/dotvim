@@ -33,6 +33,4 @@ if has('nvim')
     au TermOpen * setlocal wrap
   augroup END
 
-  command! -nargs=* HTerm split term:///bin/zsh
-  command! -nargs=* VTerm vsplit term:///bin/zsh
 endif
