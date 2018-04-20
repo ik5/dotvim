@@ -3,11 +3,25 @@
 " ==================================================
 call plug#begin()
 
+" colors, visual display etc...
 " colorscheme
 Plug 'tomasr/molokai'
 "Plug 'crusoexia/vim-monokai'
-Plug 'sjl/badwolf' " TODO: Check and configure it
+Plug 'sjl/badwolf'
 Plug 'tomasiser/vim-code-dark'
+" Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
+Plug 'ryanoasis/vim-devicons'
+" airline support
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'powerline/fonts', { 'do': './install.sh' }
+" Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
+Plug 'edkolev/tmuxline.vim'
+" Make the yanked region apparent!
+Plug 'machakann/vim-highlightedyank'
+" Semantic Highlighting for Vim
+Plug 'jaxbot/semantic-highlight.vim'
+
 
 " Over 70 language packs
 Plug 'sheerun/vim-polyglot'
@@ -58,8 +72,6 @@ Plug 'tomtom/tlib_vim'
 Plug 'scrooloose/nerdtree'
 " Support git changes for code
 Plug 'Xuyuanp/nerdtree-git-plugin'
-" Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
-Plug 'ryanoasis/vim-devicons'
 
 " Fuzzy file, buffer, mru, tag, etc finder
 Plug 'ctrlpvim/ctrlp.vim'
@@ -137,14 +149,7 @@ Plug 'andymass/vim-matchup'
 " match tag always -> tag xml/html elements starting and ending
 Plug 'Valloric/MatchTagAlways'
 
-" airline status plugins
-Plug 'ryanoasis/vim-devicons'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'powerline/fonts', { 'do': './install.sh' }
-Plug 'edkolev/tmuxline.vim'
-
-" Do completion using tab key
+" airline status plugins" Do completion using tab key
 Plug 'ervandew/supertab'
 
 " Tagbar - show tags of a project
@@ -344,11 +349,6 @@ Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
 
 " vim kotlin
 Plug 'udalov/kotlin-vim', { 'for': ['kotlin', 'kts', 'kt'] }
-
-" Make the yanked region apparent!
-Plug 'machakann/vim-highlightedyank'
-" Semantic Highlighting for Vim
-Plug 'jaxbot/semantic-highlight.vim'
 
 " A powerful grammar checker for Vim using LanguageTool
 Plug 'rhysd/vim-grammarous'
