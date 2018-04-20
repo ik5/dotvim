@@ -184,8 +184,6 @@ set showmatch            " show matching brakets when text is over them
 set matchtime=2          " and blink for two seconds
 if has('nvim')
   set inccommand=split   " nvim live %s/../
-else
-  set
 endif
 set nrformats=octal,hex,alpha,bin     " Enable Ctrl-A/Ctrl-X to work on octal and hex numbers, as well as characters
 set gdefault                          " use the \"g\" flag by default
