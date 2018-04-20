@@ -10,3 +10,6 @@ endif
 if !isdirectory(expand('$HOME/tmp/vim_undo'))
   call mkdir(expand('$HOME/tmp/vim_undo'))
 endif
+if !isdirectory(expand('$HOME/tmp/sessions'))
+  call mkdir(expand('$HOME/tmp/sessions'))
+endif
