@@ -69,6 +69,7 @@ set iskeyword-=.                    " '.' is an end of word designator
 set iskeyword-=#                    " '#' is an end of word designator
 set iskeyword-=-                    " '-' is an end of word designator
 set shell=/bin/zsh                  " I'm using zsh
+set report=0                        " Report on line changes
 
 set conceallevel=1                  " Each block of concealed text is replaced with one
                                     " character.  If the syntax item does not have a custom
