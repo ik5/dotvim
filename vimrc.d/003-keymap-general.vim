@@ -271,3 +271,6 @@ noremap <leader>curc :set cursorcolumn!<CR>
 inoremap <leader>curc :set cursorcolumn!<CR>
 noremap <leader>curr :set cursorline!<CR>
 inoremap <leader>curr :set cursorline!<CR>
+
+" indent the last changed text
+nnoremap g= gV=
