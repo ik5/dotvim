@@ -2,7 +2,7 @@
 
 The following (Neo)Vim configuration is to help me work with programming.
 
-The reason for it, is that I work with number of technologies.
+The reason for it, is that I work with many of technologies, some even on the same project.
 
 The main technologies that I'm placing emphases on are:
 
@@ -16,6 +16,9 @@ The main technologies that I'm placing emphases on are:
  - Rust
  - C
  - Python
+
+There is also support for spelling, thesaurus, language server protocol, better
+highlighting of actions and a lot more.
 
 ## TOC
   * [Features](#features)
