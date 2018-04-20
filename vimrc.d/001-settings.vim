@@ -58,7 +58,7 @@ if !has('nvim')
 	set ttyfast              " smoother changes
 endif
 set termguicolors " enable 24 bit colors
-set history=1500          " larger history
+set history=10000        " largest history
 set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set timeout ttimeoutlen=50
 set selection=inclusive
