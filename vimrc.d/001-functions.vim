@@ -54,3 +54,11 @@ function! CSettings()
 endfunction
 
 
+function! SetHeight(percentage)
+  exec 'resize' float2nr(&lines * a:percentage / 100)
+  if line('$') <= winheight(0)
+    exec 'resize' line('$')
+  else
+    echo "Scroll for more results"
+  end
+endfunction
