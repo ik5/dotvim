@@ -240,3 +240,4 @@ set hidden " Enable hidden buffers (top bar with buffers)
 
 set spell spelllang=en_us " spelling default language
 set spellfile=~/tmp/spell/en.utf8.add " spelling file to save new words
+set thesaurus+=/tmp/spell/mthesaur.txt
