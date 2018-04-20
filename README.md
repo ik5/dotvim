@@ -18,7 +18,35 @@ The main technologies that I'm placing emphases on are:
  - Python
 
 ## TOC
-
+  * [Features](#features)
+  * [Installation](#installation)
+  * [Upgrading](#upgrading)
+  * [Commands](#commands)
+    * [General](#generalt)
+  * [Shortcuts](#shortcuts)
+    * [General](#general-1)
+    * [Right to Left](#right-to-left)
+    * [VCS (General)](#vcs-general)
+    * [ALE](#ale)
+    * [BufExplorer](#bufexplorer)
+    * [CtrlP](#ctrlp)
+    * [Fugitive](#fugitive)
+    * [GitGutter](#gitgutter)
+    * [GitV](#gitv)
+    * [Emmet](#emmet)
+    * [NerdTree](#nerdtree)
+    * [Python Mode](#python-mode)
+    * [ripgre](#ripgrep)
+    * [TagBar](#tagbar)
+    * [TComment](#tcomment)
+    * [UltraSnippets](#ultrasnippets)
+    * [UndoTree](#undotree)
+    * [FixMyJS](#fixmyjs)
+    * [Go](#go)
+    * [Twiggy](#twiggy)
+    * [SplitJoin.vim](#splitjoinvim)
+    * [Ruby](#ruby)
+  * [Plugins](#plugins)
 
 ## Features
 
@@ -99,8 +127,6 @@ vim +PlugUpdate +qa
 | ``HTem``       | Open Horizontal terminal in NeoVim |
 | ``VTerm``      | Open Vertical terminal in NeoVim   |
 | ``FormatJSON`` | Format a given JSON buffer         |
-
-###
 
 ## Shortcuts
 
@@ -348,7 +374,7 @@ vim +PlugUpdate +qa
 | ---              | -----------   |
 | ``<leader>gitB`` | Toggle twiggy |
 
-### SplitJoin.vom
+### SplitJoin.vim
 
 | Key              | Description |
 | ---              | ----------- |
