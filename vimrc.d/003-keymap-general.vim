@@ -203,13 +203,20 @@ nnoremap <leader>ff [I:let nr = input('Which one: ')<Bar>exe 'normal ' . nr .'[\
 " inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
 " Error window (a.k.a. quick fix window)
-nnoremap <leader>erf :cfirst<CR>
-nnoremap <leader>erl :clast<CR>
-nnoremap <leader>ern :cn<CR>
-nnoremap <leader>erp :cp<CR>
-nnoremap <leader>erc :cclose<CR>
-nnoremap <leader>err :crewind<CR>
-
+nnoremap <leader>erf   :cfirst<CR>zz:set cul<cr>
+nnoremap <leader>erl   :clast<CR>zz:set cul<cr>
+nnoremap <leader>ern   :cnext<CR>zz:set cul<cr>
+nnoremap <leader>erp   :cprevious<CR>zz:set cul<cr>
+nnoremap <leader>erc   :cclose<CR>zz:set cul<cr>
+nnoremap <leader>err   :crewind<CR>zz:set cul<cr>
+nnoremap <leader>erw   :cwindow<CR>
+nnoremap <leader>erlw  :lwindow<<CR>
+nnoremap <leader>erln  :lnext<CR>zz:set cul<cr>
+nnoremap <leader>erlp  :lprevious<CR>zz:set cul<cr>
+nnoremap <leader>erlf  :lfirst<CR>zz:set cul<cr>
+nnoremap <leader>erll  :llast<CR>zz:set cul<cr>
+nnoremap <leader>erlc  :lclose<CR>zz:set cul<cr>
+nnoremap <leader>erlr  :lrewind<CR>zz:set cul<cr>
 
 " Close all windows except the active one
 nnoremap <leader>q :only<CR>
