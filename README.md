@@ -20,7 +20,7 @@ The main technologies that I'm placing emphases on are:
 There is also support for spelling, thesaurus, language server protocol, better
 highlighting of actions and a lot more.
 
-## TOC
+## Table Of Content
   * [Features](#features)
   * [Installation](#installation)
   * [Upgrading](#upgrading)
