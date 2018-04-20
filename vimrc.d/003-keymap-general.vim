@@ -274,3 +274,14 @@ inoremap <leader>curr :set cursorline!<CR>
 
 " indent the last changed text
 nnoremap g= gV=
+
+" Surround word
+nnoremap <leader>sr" :normal ysiw"<CR>
+nnoremap <leader>sr' :normal ysiw'<CR>
+nnoremap <leader>sr` :normal ysiw`<CR>
+nnoremap <leader>sr( :normal bce()<Esc>P
+nnoremap <leader>sr) :normal ce()<Esc>P
+nnoremap <leader>sr[ :normal bce[]<Esc>P
+nnoremap <leader>sr] :normal ce[]<Esc>P
+nnoremap <leader>sr{ :normal bce{}<Esc>P
+nnoremap <leader>sr} :normal ce{}<Esc>P
