@@ -360,22 +360,22 @@ vim +PlugUpdate +qa
 
 | Name | Description |
 |------|-------------|
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
+| [molokai](https://github.com/tomasr/molokai) | Molokai color scheme |
+| [BadWolf](https://github.com/sjl/badwolf) | Bad Wolf (Doctor Who's Rose) color scheme |
+| [Code Dark](https://github.com/tomasiser/vim-code-dark) | Code Dark color scheme |
+| [Dev Icons](https://github.com/ryanoasis/vim-devicons) | Dev icon fonts for file types |
+| [Airline](https://github.com/vim-airline/vim-airline) | Airline display of status bar, and buffers |
+| [Airline themes](https://github.com/vim-airline/vim-airline-themes) | Themes for airline |
+| [Powerline Fonts](https://github.com/powerline/fonts) | Developent fonts symbols |
+| [tmux line](https://github.com/edkolev/tmuxline.vim) | status line support for tmux when vim connected |
+| [Highlight Yank](https://github.com/machakann/vim-highlightedyank) | Highlight the content that was yanked for few seconds |
+| [Semantic Highlight](https://github.com/jaxbot/semantic-highlight.vim) | Semantic highlight Where every variable is a different color  |
+| [Polyglot](https://github.com/sheerun/vim-polyglot) | Additional syntax highlight support |
+| [Editor configuration](https://github.com/editorconfig/editorconfig-vim) | Set VIM configuration per project |
+| [Language Client](https://github.com/autozimu/LanguageClient-neovim) | Language Server Protocol (LSP) support for vim and neovim |
+| [ALE](https://github.com/w0rp/ale) | Asynchronous Lint Engine |
+| [Session manager](https://github.com/tpope/vim-obsession) | Continuously updated VIM's session files |
+| [Projectionist](https://github.com/tpope/vim-projectionist) | Granular project configuration using 'projections' |
 | [](https://github.com/) | |
 | [](https://github.com/) | |
 | [](https://github.com/) | |
