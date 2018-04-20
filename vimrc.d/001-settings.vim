@@ -181,13 +181,14 @@ set ignorecase           " ignore case when searching
 set smartcase            " if searching and search contains upper case, make case sensitive search
 set magic                " For regular expressions turn magic on
 set showmatch            " show matching brakets when text is over them
-set mat=2                " and blink for two seconds
+set matchtime=2          " and blink for two seconds
 if has('nvim')
-  set inccommand=split     " nvim live %s/../
+  set inccommand=split   " nvim live %s/../
 else
   set
 endif
-set nrformats=octal,hex,alpha,bin " Enable Ctrl-A/Ctrl-X to work on octal and hex numbers, as well as characters
+set nrformats=octal,hex,alpha,bin     " Enable Ctrl-A/Ctrl-X to work on octal and hex numbers, as well as characters
+set gdefault                          " use the \"g\" flag by default
 
 " ==================================================
 " No modlines for security
