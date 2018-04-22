@@ -74,7 +74,7 @@ highlighting of actions and a lot more.
  - History management, including persistent undo
  - Support documentation for programming languages, based on the original (neo)vim documentation engine
   - In-line documentation
- - Support for external documentation using Zeal
+  - Support for external documentation using Zeal
  - Reload file when changed from outside
  - Working with error window (a.k.a. quickfix and selection list)
  - Thesaurus, grammer and dictionary spelling
