@@ -49,8 +49,6 @@ Plug 'gregsexton/gitv'
 Plug 'airblade/vim-gitgutter'
 " Mercurial
 Plug 'ludovicchabant/vim-lawrencium'
-" Fugitive extension to manage and merge Git branches
-Plug 'idanarye/vim-merginal'
 " A git commit browser
 Plug 'junegunn/gv.vim'
 " Git branch management
