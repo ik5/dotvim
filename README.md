@@ -422,10 +422,13 @@ vim +PlugUpdate +qa
 | [ALE](https://github.com/w0rp/ale) | Asynchronous Lint Engine |
 | [Session manager](https://github.com/tpope/vim-obsession) | Continuously updated VIM's session files |
 | [Projectionist](https://github.com/tpope/vim-projectionist) | Granular project configuration using 'projections' |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
+| [Fugitive](https://github.com/tpope/vim-fugitive) | API and tools to support GIT |
+| [Gitv](https://github.com/gregsexton/gitv) | Visualize GIT like gitk |
+| [gitgutter](https://github.com/airblade/vim-gitgutter) | Git gutter, marks file changes based on git diff |
+| [Gv](https://github.com/junegunn/gv.vim) | Fast and simple GIT log, simpler then gitv, with less features, for fast history, without additional requirements |
+| [Twiggy](https://github.com/sodapopcan/vim-twiggy) | GIT branch manager |
+| [Rhubarb](https://github.com/tpope/vim-rhubarb) | Github ``hub`` support for Fugitive |
+| [Mercurial](https://github.com/ludovicchabant/vim-lawrencium) | Basic Mercurial support for vim inspired by Fugitive |
 | [](https://github.com/) | |
 | [](https://github.com/) | |
 | [](https://github.com/) | |
