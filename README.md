@@ -429,17 +429,17 @@ vim +PlugUpdate +qa
 | [Twiggy](https://github.com/sodapopcan/vim-twiggy) | GIT branch manager |
 | [Rhubarb](https://github.com/tpope/vim-rhubarb) | Github ``hub`` support for Fugitive |
 | [Mercurial](https://github.com/ludovicchabant/vim-lawrencium) | Basic Mercurial support for vim inspired by Fugitive |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
+| [nerdcommenter](https://github.com/scrooloose/nerdcommenter) | Add/Remove block of comments based on supported language |
+| [VIM-Addon-MW-Utils](https://github.com/MarcWeber/vim-addon-mw-utils) | vim: interpret a file by function and cache file automatically - A requirement by other plugins |
+| [Tlib-VIM](https://github.com/tomtom/tlib_vim) | Some utility functions for VIM - A requirement by other plugins |
+| [NerdTree](https://github.com/scrooloose/nerdtree) | File explorer for VIM |
+| [NerdTree GIT](https://github.com/Xuyuanp/nerdtree-git-plugin) | Display GIT state on a file inside NerdTree |
+| [CtrlP](https://github.com/ctrlpvim/ctrlp.vim) | Fuzzy file finder from buffer, MRU, tag, directories and more |
+| [CtrlP Funky](https://github.com/tacahiroy/ctrlp-funky) | Function navigation for CtrlP |
+| [BufExplorer](https://github.com/jlanzarotta/bufexplorer) | Buffer manager for VIM |
+| [FZF](https://github.com/junegunn/fzf) | Fuzzy finder |
+| [FZF-VIM](https://github.com/junegunn/fzf.vim) | Better FZF support for VIM |
+| [Denite.vim](https://github.com/Shougo/denite.nvim) | Dark powered pluginfor NeoVIM/VIM to unite all interfaces - **Still experimental in my code** |
 | [](https://github.com/) | |
 | [](https://github.com/) | |
 | [](https://github.com/) | |
