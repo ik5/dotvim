@@ -83,8 +83,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'Shougo/denite.nvim'
 " Extended f, F, t and T key mappings for Vim
 Plug 'rhysd/clever-f.vim'
-" Discoverable & searchable shortcuts for (Neo)Vim
-Plug 'sunaku/vim-shortcut'
 
 " Ruby, Rails, Sinatra and bundler
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }

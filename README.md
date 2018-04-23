@@ -441,7 +441,6 @@ vim +PlugUpdate +qa
 | [FZF-VIM](https://github.com/junegunn/fzf.vim) | Better FZF support for VIM |
 | [Denite.vim](https://github.com/Shougo/denite.nvim) | A common extensible interface for searching and displaying lists of information from within NeoVim/Vim. **Still experimental in my code** |
 | [Clever-F](https://github.com/rhysd/clever-f.vim) | Extended f, F, t and T key mappings for Vim |
-| [Vim Shortcut](https://github.com/sunaku/vim-shortcut) | Discoverable & searchable shortcuts for (Neo)Vim |
 | [](https://github.com/) | |
 | [](https://github.com/) | |
 | [](https://github.com/) | |
