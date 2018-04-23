@@ -439,7 +439,7 @@ vim +PlugUpdate +qa
 | [BufExplorer](https://github.com/jlanzarotta/bufexplorer) | Buffer manager for VIM |
 | [FZF](https://github.com/junegunn/fzf) | Fuzzy finder |
 | [FZF-VIM](https://github.com/junegunn/fzf.vim) | Better FZF support for VIM |
-| [Denite.vim](https://github.com/Shougo/denite.nvim) | a common extensible interface for searching and displaying lists of information from within NeoVim/Vim. It can display and search through any arbitrary source, from files and directories to buffers - **Still experimental in my code** |
+| [Denite.vim](https://github.com/Shougo/denite.nvim) | A common extensible interface for searching and displaying lists of information from within NeoVim/Vim. **Still experimental in my code** |
 | [Clever-F](https://github.com/rhysd/clever-f.vim) | Extended f, F, t and T key mappings for Vim |
 | [Vim Shortcut](https://github.com/sunaku/vim-shortcut) | Discoverable & searchable shortcuts for (Neo)Vim |
 | [](https://github.com/) | |
