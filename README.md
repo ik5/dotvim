@@ -185,6 +185,7 @@ vim +PlugUpdate +qa
 | ``<leader>erll``                | Go to last location list error window                                                               |
 | ``<leader>erlc``                | Close location list error window                                                                    |
 | ``<leader>erlr``                | Rewind location list error window                                                                   |
+| ``q``                           | Close quickfix windows                                                                              |
 | ``<leader>q``                   | Close all windows except active one                                                                 |
 | ``<c-f>``                       | Print full path                                                                                     |
 | ``<leader><c-w>``               | Exit diff mode                                                                                      |
