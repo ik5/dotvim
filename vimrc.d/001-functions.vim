@@ -82,3 +82,14 @@ function! LoadSession()
     echo "No session loaded."
   endif
 endfunction
+
+function! CloseQuickFix()
+  " TODO: work in progress
+  if !has(&buftype)
+   finish
+  endif
+  if &buftype !=? 'quickfix'
+    finish
+  endif
+  " detect if the quickfix is location or error
+endfunction
