@@ -40,6 +40,8 @@ Plug 'w0rp/ale'
 Plug 'tpope/vim-obsession'
 " Projectionist provides granular project configuration using 'projections'
 Plug 'tpope/vim-projectionist'
+" Browse and open sessions with this Denite source
+Plug 'rafi/vim-denite-session'
 
 " VCS (git)
 Plug 'tpope/vim-fugitive'
