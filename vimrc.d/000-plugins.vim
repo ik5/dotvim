@@ -117,6 +117,8 @@ Plug 'sentientmonkey/vim-flog', { 'for': ['ruby', 'haml', 'eruby'] }
 Plug 'todesking/ruby_hl_lvar.vim', { 'for': ['ruby', 'haml', 'eruby'] }
 " enables syntax highlighting in Ruby here document code blocks
 Plug 'joker1007/vim-ruby-heredoc-syntax', { 'for': ['ruby', 'haml', 'eruby'] }
+" denite-rails is a Denite.nvim source for Rails
+Plug '5t111111/denite-rails'
 
 
 " golang support
