@@ -155,6 +155,7 @@ vim +PlugUpdate +qa
 | ``<leader>D``                   | Delete current buffer, but keep the split (switch to prev buffer)                                   |
 | ``<leader>S``                   | Delete trailing whitespace                                                                          |
 | ``<F5>``                        | Toggle hlsearch                                                                                     |
+| ``<leader>srln``                | Clear the search register, so the last search is gone                                               |
 | ``<c-d>`` / ``<c-u>``           | Center line when moving up and down half a screen                                                   |
 | ``<Alt-j>``                     | Move current line down                                                                              |
 | ``<Alt-k>``                     | Move current line up                                                                                |

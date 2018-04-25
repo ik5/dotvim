@@ -92,6 +92,10 @@ noremap <F5> :set hlsearch! hlsearch?<CR>
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
+" clear last search register
+norema <leader>srln :let @/=''<CR>
+
+
 " center line when moving up and down half a screen
 noremap <C-d> <C-d>zz
 noremap <C-u> <C-u>zz
