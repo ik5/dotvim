@@ -1,8 +1,9 @@
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-    \ 'javascript.jsx': ['javascript-typescript-stdio'],
+    \ 'javascript': ['javascript-typescript-stdio'],
     \ 'ruby': ['language_server-ruby'],
     \ 'ruby-sinatra': ['language_server-ruby'],
+    \ 'vue': ['vls'],
     \ }
 
 set completefunc=LanguageClient#complete
