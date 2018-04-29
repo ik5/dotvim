@@ -4,6 +4,7 @@ let g:LanguageClient_serverCommands = {
     \ 'ruby': ['language_server-ruby'],
     \ 'ruby-sinatra': ['language_server-ruby'],
     \ 'vue': ['vls'],
+    \ 'go': ['go-langserver', '-trace', '-logfile', expand('~/tmp/langserver-go.log')]
     \ }
 
 set completefunc=LanguageClient#complete
