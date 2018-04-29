@@ -49,3 +49,8 @@ nnoremap <leader>gitdel :Gdelete<CR>
 " open current file in remote location using browser
 vnoremap <leader>gitbr :Gbrowse<CR>
 nnoremap <leader>gitbr :Gbrowse<CR>
+
+" create new branch
+vnoremap <leader>gitbc :Git checout -B
+nnoremap <leader>gitbc :Git checout -B
+
