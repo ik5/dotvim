@@ -51,6 +51,6 @@ vnoremap <leader>gitbr :Gbrowse<CR>
 nnoremap <leader>gitbr :Gbrowse<CR>
 
 " create new branch
-vnoremap <leader>gitbc :Git checout -B
-nnoremap <leader>gitbc :Git checout -B
+vnoremap <leader>gitbc :Git checkout -B
+nnoremap <leader>gitbc :Git checkout -B
 
