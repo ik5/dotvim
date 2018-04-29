@@ -265,6 +265,7 @@ vim +PlugUpdate +qa
 | ``<leader>gitlg``  | git log -L                                               |
 | ``<leader>gitdel`` | git rm                                                   |
 | ``<leader>gitbr``  | open current buffer in remote location using web browser |
+| ``<leader>gitbc``  | Prompts for creating new branch (`checkout -B`)          |
 
 ### gitgutter
 
