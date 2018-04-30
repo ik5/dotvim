@@ -444,8 +444,8 @@ vim +PlugUpdate +qa
 | [FZF-VIM](https://github.com/junegunn/fzf.vim) | Better FZF support for VIM |
 | [Denite.vim](https://github.com/Shougo/denite.nvim) | A common extensible interface for searching and displaying lists of information from within NeoVim/Vim. **Still experimental in my code** |
 | [Clever-F](https://github.com/rhysd/clever-f.vim) | Extended f, F, t and T key mappings for Vim |
-| [](https://github.com/) | |
-| [](https://github.com/) | |
+| [VIM-Rails](https://github.com/tpope/vim-rails) | Support for working on Rails based on open files |
+| [VIM-Bundler](https://github.com/tpope/vim-bundler) | Support bundler management |
 | [](https://github.com/) | |
 | [](https://github.com/) | |
 | [](https://github.com/) | |
