@@ -1,6 +1,5 @@
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-    \ 'javascript': ['javascript-typescript-stdio'],
     \ 'ruby': ['language_server-ruby'],
     \ 'ruby-sinatra': ['language_server-ruby'],
     \ 'vue': ['vls'],
