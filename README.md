@@ -391,10 +391,10 @@ vim +PlugUpdate +qa
 
 ### SplitJoin.vim
 
-| Key              | Description |
-| ---              | ----------- |
-| ``<leader>+sjj`` | Join lines  |
-| ``<leader>+sjs`` | Split lines |
+| Key             | Description |
+| ---             | ----------- |
+| ``<leader>sjj`` | Join lines  |
+| ``<leader>sjs`` | Split lines |
 
 ### Ruby
 
