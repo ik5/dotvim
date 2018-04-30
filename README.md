@@ -289,7 +289,7 @@ vim +PlugUpdate +qa
 
 | Key        | Description                                                                                             |
 | ---        | -----------                                                                                             |
-| ``<c-y>,`` | Complete (current tags and snippets)[https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL] |
+| ``<c-y>,`` | Complete [current tags and snippets](https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL) |
 
 ### NerdTree
 
