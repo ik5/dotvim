@@ -357,4 +357,7 @@ Plug 'beloglazov/vim-online-thesaurus'
 " Vim Markdown runtime files
 Plug 'tpope/vim-markdown', { 'for': ['markdown', 'md'] }
 
+" Convert given timestamp to local date time and utc
+Plug 'heavenshell/vim-jikoku'
+
 call plug#end()
