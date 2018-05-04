@@ -63,8 +63,6 @@ function! s:build_go_files()
 endfunction
 
 augroup Golang
-  autocmd!
-
   au FileType go nnoremap <leader>ui :<C-u>call <SID>create_go_doc_comment()<CR>
 
   " Show a list of interfaces which is implemented by the type under your cursor
