@@ -10,6 +10,6 @@ augroup OmniComplete
   au FileType ruby setlocal omnifunc=rubycomplete#Complete
   au FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
   au FileType nginx setl iskeyword-=.,/,: commentstring=#%s noet
-  au FileType go setl ts=4 nu rnu
+  au FileType go setl ts=4 number
   au Filetype arduino setl commentstring=//%s
 augroup END
