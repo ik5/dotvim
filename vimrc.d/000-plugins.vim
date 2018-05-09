@@ -210,7 +210,7 @@ else
   " Deoplete sources for ruby language
   Plug 'fishbullet/deoplete-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
   " deoplete source for Ruby with solargraph -> IDE tools for Ruby
-  Plug 'uplus/deoplete-solargraph', { 'do': 'gem install solargraph && sudo pip install solargraph-utils.py', 'for': ['ruby', 'haml', 'eruby']  }
+  Plug 'uplus/deoplete-solargraph', { 'for': ['ruby', 'haml', 'eruby']  }
   " A neocomplcache plugin for English, using look command
   Plug 'ujihisa/neco-look'
   " better spirce scanning
