@@ -124,12 +124,13 @@ vim +PlugUpdate +qa
 
 ### General
 
-| Command        | Description                        |
-| -------        | -----------                        |
-| ``Wr``         | Save current buffer using `sudo`   |
-| ``HTem``       | Open Horizontal terminal in NeoVim |
-| ``VTerm``      | Open Vertical terminal in NeoVim   |
-| ``FormatJSON`` | Format a given JSON buffer         |
+| Command          | Description                                            |
+| -------          | -----------                                            |
+| ``Wr``           | Save current buffer using `sudo`                       |
+| ``HTem``         | Open Horizontal terminal in NeoVim                     |
+| ``VTerm``        | Open Vertical terminal in NeoVim                       |
+| ``FormatJSON``   | Format a given JSON buffer                             |
+| ``GenerateUUID`` | Generate UUID and insert it to current cursor position |
 
 ## Shortcuts
 

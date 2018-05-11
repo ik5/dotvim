@@ -8,3 +8,7 @@ command! -nargs=* VTerm vsplit term:///bin/zsh
 
 command! -range=% FormatJSON <line1>,<line2>!python3 -c
       \"import json, sys, collections; print(json.dumps(json.load(sys.stdin,object_pairs_hook=collections.OrderedDict), indent=2))"
+
+command! -nargs=* -range=% GenerateUUID call GenerateUUID()
+
+

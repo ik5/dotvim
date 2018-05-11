@@ -93,3 +93,18 @@ function! CloseQuickFix()
   endif
   " detect if the quickfix is location or error
 endfunction
+
+" Based on https://gist.github.com/jonmorehouse/8442341
+function! GenerateUUID()
+  python << EOF
+import uuid
+import vim
+
+# output a uuid to the vim variable for insertion below
+vim.command("let generatedUUID = \"%s\"" % str(uuid.uuid4()))
+
+EOF
+
+  " insert the python generated uuid into the current cursor's position
+  :execute "normal i" . generatedUUID . ""
+endfunction
