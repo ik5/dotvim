@@ -42,6 +42,8 @@ Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-projectionist'
 " Browse and open sessions with this Denite source
 Plug 'rafi/vim-denite-session'
+" Find out which project a file belongs to, easy to use in scripts/mappings <- requirement for some plugins
+Plug 'dbakker/vim-projectroot'
 
 " VCS (git)
 Plug 'tpope/vim-fugitive'
