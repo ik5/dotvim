@@ -49,6 +49,7 @@ highlighting of actions and a lot more.
     * [Twiggy](#twiggy)
     * [SplitJoin.vim](#splitjoinvim)
     * [Ruby](#ruby)
+    * [Far](#far)
   * [Plugins](#plugins)
 
 ## Features
