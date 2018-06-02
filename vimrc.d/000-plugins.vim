@@ -348,8 +348,10 @@ Plug 'tpope/vim-dadbod'
 "Elm
 Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
 
+if has('kotlin')
 " vim kotlin
 Plug 'udalov/kotlin-vim', { 'for': ['kotlin', 'kts', 'kt'] }
+endif
 
 " A powerful grammar checker for Vim using LanguageTool
 Plug 'rhysd/vim-grammarous'
