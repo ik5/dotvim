@@ -36,12 +36,22 @@ Plug 'autozimu/LanguageClient-neovim', {
 " ale - Asynchronous Lint Engine
 Plug 'w0rp/ale'
 
+" Dark powered asynchronous unite all interfaces for Neovim/Vim8
+Plug 'Shougo/denite.nvim'
+" Browse and open sessions with this Denite source
+Plug 'rafi/vim-denite-session'
+" denite-rails is a Denite.nvim source for Rails
+Plug '5t111111/denite-rails', { 'for': ['ruby', 'haml', 'eruby'] }
+" Control your location list and quickfix list by unite/denite
+Plug 'chemzqm/unite-location'
+
+
+
+
 " obsession.vim: continuously updated session files
 Plug 'tpope/vim-obsession'
 " Projectionist provides granular project configuration using 'projections'
 Plug 'tpope/vim-projectionist'
-" Browse and open sessions with this Denite source
-Plug 'rafi/vim-denite-session'
 " Find out which project a file belongs to, easy to use in scripts/mappings <- requirement for some plugins
 Plug 'dbakker/vim-projectroot'
 
@@ -83,8 +93,6 @@ Plug 'jlanzarotta/bufexplorer'
 " A command-line fuzzy finder
 Plug 'junegunn/fzf', { 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-" Dark powered asynchronous unite all interfaces for Neovim/Vim8
-Plug 'Shougo/denite.nvim'
 " Extended f, F, t and T key mappings for Vim
 Plug 'rhysd/clever-f.vim'
 
@@ -121,8 +129,6 @@ Plug 'sentientmonkey/vim-flog', { 'for': ['ruby', 'haml', 'eruby'] }
 Plug 'todesking/ruby_hl_lvar.vim', { 'for': ['ruby', 'haml', 'eruby'] }
 " enables syntax highlighting in Ruby here document code blocks
 Plug 'joker1007/vim-ruby-heredoc-syntax', { 'for': ['ruby', 'haml', 'eruby'] }
-" denite-rails is a Denite.nvim source for Rails
-Plug '5t111111/denite-rails', { 'for': ['ruby', 'haml', 'eruby'] }
 
 
 " golang support
@@ -193,6 +199,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 " abolish.vim: easily search for, substitute, and abbreviate multiple variants of a word
 Plug 'tpope/vim-abolish'
+" Find And Replace Vim plugin
+Plug 'brooth/far.vim'
+
 
 " Web API
 Plug 'mattn/webapi-vim'
