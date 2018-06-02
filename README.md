@@ -406,6 +406,13 @@ vim +PlugUpdate +qa
 | ``<leader>rbl`` | Execute last spec file    |
 | ``<leader>rba`` | Execute all spec files    |
 
+### Far
+
+| key             | Description      |
+| ---             | -----------      |
+| ``<leader>far`` | Call Far command |
+
+
 ## Plugins
 
 | Name | Description |
