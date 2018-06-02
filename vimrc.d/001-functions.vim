@@ -84,14 +84,19 @@ function! LoadSession()
 endfunction
 
 function! CloseQuickFix()
-  " TODO: work in progress
   if !has(&buftype)
    finish
   endif
   if &buftype !=? 'quickfix'
     finish
   endif
-  " detect if the quickfix is location or error
+
+  let b:qf_isLoc = ! empty(getloclist(0))
+  if b:qf_isLoc == 1
+:lclose
+  else
+:cclose
+  endif
 endfunction
 
 " Based on https://gist.github.com/jonmorehouse/8442341

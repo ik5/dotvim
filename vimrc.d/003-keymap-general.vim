@@ -222,8 +222,9 @@ augroup QuickFix
   autocmd BufReadPost quickfix nnoremap <leader>erll  :llast<CR>zz:set cul<cr>
   autocmd BufReadPost quickfix nnoremap <leader>erlc  :lclose<CR>zz:set cul<cr>
   autocmd BufReadPost quickfix nnoremap <leader>erlr  :lrewind<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap q :cclose<CR>zz:set cul<cr>
 augroup END
+
+nnoremap q :call CloseQuickFix()<CR>zz:set cul<cr>
 
 " Close all windows except the active one
 nnoremap <leader>q :only<CR>
