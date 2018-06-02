@@ -292,3 +292,10 @@ nnoremap <leader>sr[ :normal bce[]<Esc>P
 nnoremap <leader>sr] :normal ce[]<Esc>P
 nnoremap <leader>sr{ :normal bce{}<Esc>P
 nnoremap <leader>sr} :normal ce{}<Esc>P
+
+" Macros
+nnoremap Q q
+nnoremap M @q
+vnoremap M :norm @q<CR>
+" Remove macro key
+nnoremap q <Nop>
