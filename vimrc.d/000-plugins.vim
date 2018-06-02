@@ -357,7 +357,7 @@ Plug 'tpope/vim-dadbod'
 "Elm
 Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
 
-if has('kotlin')
+if filereadable('kotlin')
 " vim kotlin
 Plug 'udalov/kotlin-vim', { 'for': ['kotlin', 'kts', 'kt'] }
 endif
