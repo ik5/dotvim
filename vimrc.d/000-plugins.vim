@@ -354,8 +354,10 @@ Plug 'lifepillar/pgsql.vim', { 'for': ['sql'] }
 " Modern database interface for Vim
 Plug 'tpope/vim-dadbod'
 
-"Elm
-Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
+if filereadable('elm')
+  "Elm
+  Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
+endif
 
 if filereadable('kotlin')
 " vim kotlin
