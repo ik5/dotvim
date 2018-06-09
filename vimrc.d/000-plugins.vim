@@ -95,6 +95,8 @@ Plug 'junegunn/fzf', { 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Extended f, F, t and T key mappings for Vim
 Plug 'rhysd/clever-f.vim'
+" An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2
+Plug 'dyng/ctrlsf.vim'
 
 " Ruby, Rails, Sinatra and bundler
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }
