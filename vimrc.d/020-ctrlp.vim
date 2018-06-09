@@ -2,6 +2,10 @@
 " CtrlP
 " ==================================================
 
+if !exists('g:ctrlp_map')
+  finish
+endif
+
 let g:ctrlp_map = '<c-p>'
 noremap <c-p> :CtrlP<CR>
 nnoremap <c-p> :CtrlP<CR>

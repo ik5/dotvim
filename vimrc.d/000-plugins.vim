@@ -85,9 +85,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Fuzzy file, buffer, mru, tag, etc finder
-Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 " A simple function navigator for ctrlp.vim
-Plug 'tacahiroy/ctrlp-funky'
+" Plug 'tacahiroy/ctrlp-funky'
 " BufExplorer Plugin for Vim
 Plug 'jlanzarotta/bufexplorer'
 " A command-line fuzzy finder
