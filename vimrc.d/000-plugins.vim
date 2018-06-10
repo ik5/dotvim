@@ -89,6 +89,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " A simple function navigator for ctrlp.vim
 " Plug 'tacahiroy/ctrlp-funky'
 " BufExplorer Plugin for Vim
+" Fast file navigation for VIM
+Plug 'wincent/command-t', {
+    \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
+    \ }
 Plug 'jlanzarotta/bufexplorer'
 " A command-line fuzzy finder
 Plug 'junegunn/fzf', { 'do': './install --all' }
@@ -310,7 +314,9 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'vim-scripts/DrawIt'
 
 " An aggregated list for TODO, FIXME and XXX
-Plug 'vim-scripts/TaskList.vim'
+" Plug 'vim-scripts/TaskList.vim'
+" todo-vim is plugin for manage your todo notes
+Plug 'vim-scripts/todo-vim'
 
 " Vim script for text filtering and alignment
 Plug 'godlygeek/tabular'
