@@ -8,6 +8,8 @@ call plug#begin()
 Plug 'tomasr/molokai'
 "Plug 'crusoexia/vim-monokai'
 Plug 'sjl/badwolf'
+" Adaptation of one-light and one-dark colorschemes for Vim
+Plug 'rakr/vim-one'
 Plug 'tomasiser/vim-code-dark'
 " Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
 Plug 'ryanoasis/vim-devicons'
@@ -136,7 +138,7 @@ Plug 'todesking/ruby_hl_lvar.vim', { 'for': ['ruby', 'haml', 'eruby'] }
 " enables syntax highlighting in Ruby here document code blocks
 Plug 'joker1007/vim-ruby-heredoc-syntax', { 'for': ['ruby', 'haml', 'eruby'] }
 
-
+if executable('go')
 " golang support
 " https://github.com/fatih/vim-go-tutorial
 Plug 'fatih/vim-go', { 'for': [ 'go' ] }
@@ -150,6 +152,7 @@ if has('nvim')
 endif
 " Syntax highlight for Versioned Go
 Plug 'zchee/vim-vgo', { 'for': ['go'] }
+endif
 
 " pairs of handy bracket mappings
 Plug 'tpope/vim-unimpaired'
@@ -176,8 +179,6 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
 Plug 'garbas/vim-snipmate'
-" Adaptation of one-light and one-dark colorschemes for Vim
-Plug 'rakr/vim-one'
 " Some snippets of vim' plugin snipMate.vim for ruby
 Plug 'kaichen/vim-snipmate-ruby-snippets'
 
@@ -190,10 +191,12 @@ endif
 " Displays function signatures from completions in the command line
 Plug 'Shougo/echodoc.vim'
 
+if executable('rust')
 " support for rust
 Plug 'rust-lang/rust.vim', { 'for': ['rust', 'rs', 'rslib'] }
 " rust racer syntax checking
 Plug 'racer-rust/vim-racer', { 'for': ['rust', 'rs', 'rslib'] }
+endif
 
 " visual undo graph
 Plug 'mbbill/undotree'
@@ -218,8 +221,10 @@ if !has('nvim')
 else
   " Dark powered asynchronous completion framework for neovim
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  if executable('go')
   " Go complete
-  Plug 'zchee/deoplete-go', { 'do': 'make'}
+    Plug 'zchee/deoplete-go', { 'do': 'make'}
+  endif
   " python complete
   Plug 'zchee/deoplete-jedi', { 'for': 'python' }
   " javascript complete
@@ -242,8 +247,10 @@ else
   Plug 'fszymanski/deoplete-emoji'
   " Neovim and vim Flow autocompletion for deoplete + neosnippet
   Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin', 'for': ['javascript', 'jsx', 'vue']  }
+  if executable('rust')
   " Rust completion for Neovim (Deoplete) via Racer
   Plug 'sebastianmarkow/deoplete-rust', { 'for': ['rust', 'rs', 'rslib'] }
+  endif
 endif
 " Update the bult-in CSS complete function to latest CSS standard
 Plug 'othree/csscomplete.vim', { 'for': ['css']  }
