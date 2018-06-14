@@ -18,6 +18,9 @@ let g:pymode_options = 0
 " python v2 by default
 let g:pymode_python = 'python'
 
+let g:python_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python3'
+
 " Enable PEP8 identation
 let g:pymode_indent = 1
 
