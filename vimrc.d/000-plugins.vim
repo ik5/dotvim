@@ -191,7 +191,7 @@ endif
 " Displays function signatures from completions in the command line
 Plug 'Shougo/echodoc.vim'
 
-if executable('rust')
+if executable('rustc')
 " support for rust
 Plug 'rust-lang/rust.vim', { 'for': ['rust', 'rs', 'rslib'] }
 " rust racer syntax checking
