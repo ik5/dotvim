@@ -1,9 +1,9 @@
 let g:rubycomplete_buffer_loading=1                 " do not execute code for evaluating
 let g:rubycomplete_classes_in_global = 1            " evaluate classes and objects
 let g:rubycomplete_rails = 1                        " detect rails and add support for it
-let ruby_operators = 1                              " highlight operators
-let ruby_space_errors = 1                           " Whitespace errors highlight
-let ruby_spellcheck_strings = 1                     " spellcheck a string
+let g:ruby_operators = 1                            " highlight operators
+let g:ruby_space_errors = 1                         " Whitespace errors highlight
+let g:ruby_spellcheck_strings = 1                   " spellcheck a string
 let g:rubycomplete_load_gemfile = 1                 " parse gemfile
 let g:rubycomplete_use_bundler = 1                  " use Gemfile of bundler
 let g:ruby_indent_access_modifier_style = 'outdent' " indetation type
