@@ -247,7 +247,7 @@ else
   Plug 'fszymanski/deoplete-emoji'
   " Neovim and vim Flow autocompletion for deoplete + neosnippet
   Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin', 'for': ['javascript', 'jsx', 'vue']  }
-  if executable('rust')
+  if executable('rustc')
   " Rust completion for Neovim (Deoplete) via Racer
   Plug 'sebastianmarkow/deoplete-rust', { 'for': ['rust', 'rs', 'rslib'] }
   endif
