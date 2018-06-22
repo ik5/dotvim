@@ -364,26 +364,26 @@ vim +PlugUpdate +qa
 
 ### Go
 
-| Key              | Description                                                               |
-| ---              | -----------                                                               |
-| ``<c-u>``        | Create Godoc comment                                                      |
-| ``<leader>s``    | Show a list of interfaces which implemented by the type under your cursor |
-| ``<leader>i``    | Show type info for the word under your cursor                             |
-| ``<leader>goh``  | Open godoc horizontal                                                     |
-| ``<leader>gov``  | Open godoc vertical                                                       |
-| ``<leader>gobd`` | Open godoc browser                                                        |
-| ``<leader>goa``  | Switch between test and source files                                      |
-| ``<leader>got``  | Add default tags to struct (e.g. JSON)                                    |
-| ``<leader>goT``  | Opens a command for ``GoAddTags`` allowing to place the needed tag names  |
-| ``<leader>v``    | Goto declaration/definition, in a vertical window                         |
-| ``<leader>s``    | Goto declaration/definition, in a horizontal window                       |
-| ``<leader>l``    | Go meta linter                                                            |
-| ``<leader>b``    | Build go project                                                          |
-| ``<leader>t``    | Execute Go tests                                                          |
-| ``<leader>r``    | Execute Go project                                                        |
-| ``<leader>e``    | Execute Go install                                                        |
-| ``<leader>c``    | Execute test covers                                                       |
-| ``<c-l>``        | Execute all possilbe linters                                              |
+| Key                 | Description                                                               |
+| ---                 | -----------                                                               |
+| ``<leader>godoc``   | Create Godoc comment                                                      |
+| ``<leader>gos``     | Show a list of interfaces which implemented by the type under your cursor |
+| ``<leader>goi``     | Show type info for the word under your cursor                             |
+| ``<leader>goh``     | Open godoc horizontal                                                     |
+| ``<leader>gov``     | Open godoc vertical                                                       |
+| ``<leader>gobd``    | Open godoc browser                                                        |
+| ``<leader>goa``     | Switch between test and source files                                      |
+| ``<leader>got``     | Add default tags to struct (e.g. JSON)                                    |
+| ``<leader>goT``     | Opens a command for ``GoAddTags`` allowing to place the needed tag names  |
+| ``<leader>gov``     | Goto declaration/definition, in a vertical window                         |
+| ``<leader>gos``     | Goto declaration/definition, in a horizontal window                       |
+| ``<leader>gol``     | Go meta linter                                                            |
+| ``<leader>gob``     | Build go project                                                          |
+| ``<leader>got``     | Execute Go tests                                                          |
+| ``<leader>gor``     | Execute Go project                                                        |
+| ``<leader>goe``     | Execute Go install                                                        |
+| ``<leader>goc``     | Execute test covers                                                       |
+| ``<leader>go<c-l>`` | Execute all possilbe linters                                              |
 
 ### Twiggy
 
