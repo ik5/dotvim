@@ -23,7 +23,7 @@ augroup GIT
   " set it to the first line when editing a git commit message
   au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
   " Do linebreak after 78 chars
-  au FileType gitcommit au! BufEnter COMMIT_EDITMSG set textwidth=78
+  au FileType gitcommit au! BufEnter COMMIT_EDITMSG set textwidth=72
   " set gitconfig file also as gitconfig and not only .gitconfig
   au BufRead,BufNewFile gitconfig setlocal filetype=gitconfig
   au BufRead,BufNewFile *gitconfig setlocal filetype=gitconfig
