@@ -113,3 +113,8 @@ EOF
   " insert the python generated uuid into the current cursor's position
   :execute "normal i" . generatedUUID . ""
 endfunction
+
+function! RubyBinPath()
+  let b:path=split(execute('!ruby -r rubygems -e ''puts Gem.user_dir'' '))[-1]
+  return b:path . "/bin/"
+endfunction

@@ -13,7 +13,7 @@ let g:ruby_operators = 1                                " operator like methods 
 let g:ruby_space_errors = 1                             " whitespace errors highlighted
 let g:ruby_fold = 1                                     " enable fold
 let g:ruby_foldable_groups = 'ALL'                      " foldable blocks
-let g:ruby_host_prog = expand('~/bin/neovim-ruby-host') " make sure you find the right copy of ruby host
+let g:ruby_host_prog = RubyBinPath(). 'neovim-ruby-host' " make sure you find the right copy of ruby host
 
 augroup Ruby
   au FileType ruby,rspec noremap <leader>rbt :call RunCurrentSpecFile()<CR>
