@@ -114,7 +114,26 @@ EOF
   :execute "normal i" . generatedUUID . ""
 endfunction
 
+function! RubyPath()
+  return split(execute('!ruby -r rubygems -e ''puts Gem.user_dir'' '))[-1]
+endfunction
+
 function! RubyBinPath()
-  let b:path=split(execute('!ruby -r rubygems -e ''puts Gem.user_dir'' '))[-1]
-  return b:path . "/bin/"
+  return RubyPath() . "/bin/"
+endfunction
+
+function! RubyNeoVimPath()
+  if filereadable(RubyBinPath() . 'neovim-ruby-host')
+    return RubyBinPath() . 'neovim-ruby-host'
+  endif
+
+  if filereadable(expand('$HOME/bin/neovim-ruby-host'))
+    return expand('$HOME/bin/neovim-ruby-host')
+  endif
+
+  if filereadable('/usr/local/bin/neovim-ruby-host')
+    return '/usr/local/bin/neovim-ruby-host'
+  endif
+
+  return ''
 endfunction
