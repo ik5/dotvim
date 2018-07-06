@@ -413,6 +413,12 @@ vim +PlugUpdate +qa
 | ---             | -----------      |
 | ``<leader>far`` | Call Far command |
 
+### vim Conflicted
+
+| Key     | Description                       |
+| ---     | -----------                       |
+| ``dgu`` | diffget from the upstream version |
+| ``dgl`` | diffget from the local version    |
 
 ## Plugins
 

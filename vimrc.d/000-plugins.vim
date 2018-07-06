@@ -71,6 +71,8 @@ Plug 'junegunn/gv.vim'
 Plug 'sodapopcan/vim-twiggy'
 " GitHub extension for fugitive.vim
 Plug 'tpope/vim-rhubarb'
+" Easy git merge conflict resolution in Vim
+Plug 'christoomey/vim-conflicted'
 
 " Comments support
 "Plug 'tomtom/tcomment_vim'
