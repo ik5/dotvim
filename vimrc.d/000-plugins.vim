@@ -279,7 +279,9 @@ Plug 'jelera/vim-javascript-syntax', { 'for': ['javascript', 'vue', 'jsx', 'java
 " Tern plugin for Vim
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
 " Css Coloring
-Plug 'ap/vim-css-color', { 'for': ['html', 'xhtml', 'xml', 'css', 'sass', 'scss', 'less']  }
+" Plug 'ap/vim-css-color', { 'for': ['html', 'xhtml', 'xml', 'css', 'sass', 'scss', 'less']  }
+"  A Vim plugin to colorize all text in the form #rrggbb or #rgb
+Plug 'lilydjwg/colorizer'
 " A better JSON for Vim: distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
 Plug 'elzr/vim-json', { 'for': ['json', 'javascript'] }
 " Standalone JSDoc syntax for vim
