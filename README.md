@@ -244,13 +244,6 @@ vim +PlugUpdate +qa
 | ---         | -----------          |
 | ``<m-F11>`` | Toggle `BufExplorer` |
 
-### CtrlP
-
-| Key | Description |
-| --- | ----------- |
-| ``<c-p>`` | Invoke `CtrlP` |
-| ``gr`` | Fuzzy tag finding in buffer |
-
 ### Fugitive
 
 | Key                | Description                                              |
