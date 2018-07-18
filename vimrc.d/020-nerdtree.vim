@@ -12,7 +12,7 @@ let g:NERDTreeIgnore = [
 let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
 let g:NERDTreeDirArrows=1
 let g:ERDTreeMinimalUI=0
-let g:ERDTreeWinSize = 45
+let g:ERDTreeWinSize = 56
 let g:NERDTreeDirArrowExpandable = '►'
 let g:NERDTreeDirArrowCollapsible = '▼'
 
