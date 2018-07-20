@@ -11,4 +11,6 @@ command! -range=% FormatJSON <line1>,<line2>!python3 -c
 
 command! -nargs=* -range=% GenerateUUID call GenerateUUID()
 
+command! RebaseSquash silent execute '2,$s/^pick/s/|silent! w!|2'
 
+command! CloseOthers tabonly|only

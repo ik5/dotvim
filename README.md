@@ -132,6 +132,8 @@ vim +PlugUpdate +qa
 | ``VTerm``        | Open Vertical terminal in NeoVim                       |
 | ``FormatJSON``   | Format a given JSON buffer                             |
 | ``GenerateUUID`` | Generate UUID and insert it to current cursor position |
+| ``RebaseSquash`` | Perform a `pick` strategy for squash on rebase in GIT  |
+| ``CloseOthers``  | Close all windows and tabs but the current active one  |
 
 ## Shortcuts
 

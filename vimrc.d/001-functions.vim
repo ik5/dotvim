@@ -137,3 +137,8 @@ function! RubyNeoVimPath()
 
   return ''
 endfunction
+
+function! s:SmartSplit(file)
+  let split_cmd = (winwidth(0) >= 100) ? 'vsplit' : 'split'
+  execute split_cmd . " " . a:file
+endfunction

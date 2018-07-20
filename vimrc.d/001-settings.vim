@@ -37,6 +37,7 @@ set visualbell           " Visual bell instead of nosie, or no indication at all
 set nobackup             " do not keep a backup file
 set number               " show line numbers
 set norelativenumber     " default is not to have a relative number
+set numberwidth=6        " minimal number of columns for line number
 set display+=lastline    " display as much as possible of the last line
 set title                " show title in console title bar
 set titleold="Terminal"
@@ -241,3 +242,6 @@ set hidden " Enable hidden buffers (top bar with buffers)
 set spell spelllang=en_us " spelling default language
 set spellfile=~/tmp/spell/en.utf8.add " spelling file to save new words
 set thesaurus+=/tmp/spell/mthesaur.txt
+
+" Ignore whitespace only changes in diff
+set diffopt+=iwhite

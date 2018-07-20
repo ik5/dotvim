@@ -2,9 +2,14 @@
 let mapleader='\'
 
 " use jj as escape
-ino jj <esc>
-cno jj <c-c>
-vno v <esc>
+inoremap jj <esc>
+cnoremap jj <c-c>
+onoremap jj <esc>
+vnoremap jj <esc>gV
+nnoremap jj <esc>:noh<CR>
+if has('nvim')
+  tnoremap jj <esc>
+endif
 
 " ================================
 " vimrc handling

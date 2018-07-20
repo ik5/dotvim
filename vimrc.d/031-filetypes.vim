@@ -26,6 +26,12 @@ augroup GIT
   au FileType gitcommit au! BufEnter COMMIT_EDITMSG set textwidth=72 colorcolumn=72
   " set gitconfig file also as gitconfig and not only .gitconfig
   au BufRead,BufNewFile gitconfig,*gitconfig setlocal filetype=gitconfig
+
+  autocmd BufEnter PULLREQ_EDITMSG setlocal filetype=gitcommit
+  autocmd BufEnter PULLREQ_EDITMSG setlocal filetype=gitcommit
+  autocmd FileType gitrebase silent! RebaseSquash
+  autocmd FileType gitcommit set spell
+  autocmd BufRead,BufNewFile git/config set filetype=gitconfig
 augroup END
 
 augroup Golang
@@ -66,6 +72,8 @@ augroup web
   au BufNewFile,BufRead *.tpl set filetype=html
 
   au Filetype html,xhtml,xml setlocal ts=2 sw=2 expandtab
+  " Treat <li> and <p> tags like the block tags they are
+  au Filetype html,xhtml let g:html_indent_tags = 'li\|p'
 
   " Allow variables to include dashes
   au FileType css,scss setlocal iskeyword+=-
