@@ -393,12 +393,13 @@ vim +PlugUpdate +qa
 
 ### Ruby
 
-| key             | Description               |
-| ---             | -----------               |
-| ``<leader>rbt`` | Execute current spec file |
-| ``<leader>rbs`` | Execute nearest spec file |
-| ``<leader>rbl`` | Execute last spec file    |
-| ``<leader>rba`` | Execute all spec files    |
+| key               | Description                                            |
+| ---               | -----------                                            |
+| ``<leader>rbt``   | Execute current spec file                              |
+| ``<leader>rbs``   | Execute nearest spec file                              |
+| ``<leader>rbl``   | Execute last spec file                                 |
+| ``<leader>rba``   | Execute all spec files                                 |
+| ``<leader>rbdbg`` | Add `require pry; binding.pry` to the current location |
 
 ### Far
 

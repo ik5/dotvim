@@ -9,7 +9,7 @@ augroup Ruby
   au Filetype ruby setlocal ts=2 sw=2 expandtab
   au FileType ruby compiler ruby
   au FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
-  au FileType ruby compiler ruby
+  au FileType ruby nnoremap <leader>rbdbg orequire "pry"; binding.pry<esc>
 augroup END
 
 augroup Python
@@ -25,8 +25,7 @@ augroup GIT
   " Do linebreak after 78 chars
   au FileType gitcommit au! BufEnter COMMIT_EDITMSG set textwidth=72 colorcolumn=72
   " set gitconfig file also as gitconfig and not only .gitconfig
-  au BufRead,BufNewFile gitconfig setlocal filetype=gitconfig
-  au BufRead,BufNewFile *gitconfig setlocal filetype=gitconfig
+  au BufRead,BufNewFile gitconfig,*gitconfig setlocal filetype=gitconfig
 augroup END
 
 augroup Golang
@@ -59,38 +58,34 @@ augroup END
 augroup JSON
   au! BufRead,BufNewFile *.json set filetype=json
   " Make sure that .babelrc, and eslintrc files set as json
-  au BufRead,BufNewFile .babelrc set filetype=json
-  au BufRead,BufNewFile .eslintrc set filetype=json
+  au BufRead,BufNewFile .eslintrc,.babelrc set filetype=json
 augroup END
 
 augroup web
   " make the smarty .tpl files html files for our purposes
   au BufNewFile,BufRead *.tpl set filetype=html
 
-  au Filetype html setlocal ts=2 sw=2 expandtab
-  au Filetype xhtml setlocal ts=2 sw=2 expandtab
-  au Filetype xml setlocal ts=2 sw=2 expandtab
+  au Filetype html,xhtml,xml setlocal ts=2 sw=2 expandtab
 
-  au FileType css setlocal iskeyword+=-
-  au FileType scss setlocal iskeyword+=-
+  " Allow variables to include dashes
+  au FileType css,scss setlocal iskeyword+=-
+  au Filetype css,scss setlocal iskeyword+=$
   au BufRead,BufNewFile *.scss set filetype=scss.css
 
-  au Filetype css setlocal ts=2 sw=2 expandtab
-  au Filetype scss setlocal ts=2 sw=2 expandtab
+  au Filetype css,scss setlocal ts=2 sw=2 expandtab
 
   " define less filetype
   au BufNewFile,BufRead *.less set filetype=less
   au Filetype less setlocal ts=2 sw=2 expandtab
 augroup END
 
-" remove trailing whitespace on save
-au BufWritePre * :%s/\s\+$//e
-
 augroup Rust
   autocmd FileType rust execute LocateRacer()
 augroup END
 
 augroup General
+  " remove trailing whitespace on save
+  au BufWritePre * :%s/\s\+$//e
   au BufEnter * :syntax sync fromstart
   au FileType c,h,cpp,gobject call CSettings()
   au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ')' :call search('(\\|)\\|{\\|}\\|\[\\|\]')<CR>
