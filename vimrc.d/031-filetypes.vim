@@ -9,7 +9,7 @@ augroup Ruby
   au Filetype ruby setlocal ts=2 sw=2 expandtab
   au FileType ruby compiler ruby
   au FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
-  au FileType ruby nnoremap <leader>rbdbg orequire "pry"; binding.pry<esc>
+  au FileType ruby nnoremap <leader>dbg orequire "pry"; binding.pry<esc>
 augroup END
 
 augroup Python
