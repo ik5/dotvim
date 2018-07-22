@@ -119,8 +119,7 @@ Plug 'hallison/vim-ruby-sinatra', { 'for': ['ruby', 'haml', 'eruby'] }
 " ruby refactoring
 Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'haml', 'eruby'] }
 " A custom text object for selecting ruby blocks
-Plug 'nelstrom/vim-textobj-rubyblock', { 'for': ['ruby', 'haml', 'eruby'] }
-Plug 'kana/vim-textobj-user', { 'for': ['ruby', 'haml', 'eruby'] } " requirement by vim-textobj-user
+Plug 'nelstrom/vim-textobj-rubyblock', { 'for': ['ruby', 'haml', 'eruby'] } " requirement by vim-textobj-user
 " it's like rails.vim without the rails
 Plug 'tpope/vim-rake', { 'for': ['ruby', 'haml', 'eruby'] }
 " Switch Ruby versions from inside Vim
