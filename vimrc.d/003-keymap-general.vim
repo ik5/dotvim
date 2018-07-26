@@ -1,14 +1,14 @@
 ﻿" define the leader to be explicitly \ char
 let mapleader='\'
 
-" use jj as escape
-inoremap jj <esc>
-cnoremap jj <c-c>
-onoremap jj <esc>
-vnoremap jj <esc>gV
-nnoremap jj <esc>:noh<CR>
+" use XX as escape
+inoremap XX <esc>
+cnoremap XX <c-c>
+onoremap XX <esc>
+vnoremap XX <esc>gV
+nnoremap XX <esc>:noh<CR>
 if has('nvim')
-  tnoremap jj <esc>
+  tnoremap XX <esc>
 endif
 
 " ================================

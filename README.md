@@ -60,7 +60,7 @@ highlighting of actions and a lot more.
  - Logical and Visual layout (for Right-To-Left languages) editing
  - Tabs expanded to 2 spaces by default, except for Python
  - Keeping the ``<Leader>`` key as Backslash
- - Adding ``jj`` in edit mode to become alias to the ``<ESC>`` key
+ - Adding ``XX`` in edit mode to become alias to the ``<ESC>`` key
  - Highlight current row and color column 80
  - Syntax checking
  - Snippets
