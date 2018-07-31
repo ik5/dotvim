@@ -28,10 +28,10 @@ function! LocateRacer()
   endif
 
   if executable('rustc')
-    let rustc_root = systemlist('rustc --print sysroot')[0]
-    let rustc_src_dir = rustc_root . '/lib/rustlib/src/rust/src'
-    if isdirectory(rustc_src_dir)
-      let g:deoplete#sources#rust#rust_source_path = rustc_src_dir
+    let l:rustc_root = systemlist('rustc --print sysroot')[0]
+    let l:rustc_src_dir = l:rustc_root . '/lib/rustlib/src/rust/src'
+    if isdirectory(l:rustc_src_dir)
+      let g:deoplete#sources#rust#rust_source_path = l:rustc_src_dir
     endif
   endif
 endfunction
@@ -59,27 +59,27 @@ function! SetHeight(percentage)
   if line('$') <= winheight(0)
     exec 'resize' line('$')
   else
-    echo "Scroll for more results"
+    echo 'Scroll for more results'
   end
 endfunction
 
 function! MakeSession()
-  let b:sessiondir = $HOME . "/tmp/sessions" . getcwd()
+  let b:sessiondir = $HOME . '/tmp/sessions' . getcwd()
   if (filewritable(b:sessiondir) != 2)
     exe 'silent !mkdir -p ' b:sessiondir
     redraw!
   endif
   let b:filename = b:sessiondir . '/session.vim'
-  exe "mksession! " . b:filename
+  exe 'mksession! ' . b:filename
 endfunction
 
 function! LoadSession()
-  let b:sessiondir = $HOME . "/tmp/sessions" . getcwd()
-  let b:sessionfile = b:sessiondir . "/session.vim"
+  let b:sessiondir = $HOME . '/tmp/sessions' . getcwd()
+  let b:sessionfile = b:sessiondir . '/session.vim'
   if (filereadable(b:sessionfile))
     exe 'source ' b:sessionfile
   else
-    echo "No session loaded."
+    echo 'No session loaded.'
   endif
 endfunction
 
@@ -111,7 +111,7 @@ vim.command("let generatedUUID = \"%s\"" % str(uuid.uuid4()))
 EOF
 
   " insert the python generated uuid into the current cursor's position
-  :execute "normal i" . generatedUUID . ""
+  :execute 'normal i' . generatedUUID . ''
 endfunction
 
 function! RubyPath()
@@ -119,7 +119,7 @@ function! RubyPath()
 endfunction
 
 function! RubyBinPath()
-  return RubyPath() . "/bin/"
+  return RubyPath() . '/bin/'
 endfunction
 
 function! RubyNeoVimPath()
@@ -139,6 +139,7 @@ function! RubyNeoVimPath()
 endfunction
 
 function! s:SmartSplit(file)
-  let split_cmd = (winwidth(0) >= 100) ? 'vsplit' : 'split'
-  execute split_cmd . " " . a:file
+  let l:split_cmd = (winwidth(0) >= 100) ? 'vsplit' : 'split'
+  execute l:split_cmd . ' ' . a:file
 endfunction
+
