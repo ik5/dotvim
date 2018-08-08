@@ -46,8 +46,8 @@ Plug 'rafi/vim-denite-session'
 Plug '5t111111/denite-rails', { 'for': ['ruby', 'haml', 'eruby'] }
 " Control your location list and quickfix list by unite/denite
 Plug 'chemzqm/unite-location'
-
-
+" Vim plugin: Create your own text objects - dependency for other plugins
+Plug 'kana/vim-textobj-user'
 
 
 " obsession.vim: continuously updated session files
