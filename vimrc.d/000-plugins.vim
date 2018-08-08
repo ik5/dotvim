@@ -48,6 +48,8 @@ Plug '5t111111/denite-rails', { 'for': ['ruby', 'haml', 'eruby'] }
 Plug 'chemzqm/unite-location'
 " Vim plugin: Create your own text objects - dependency for other plugins
 Plug 'kana/vim-textobj-user'
+" endwith ruby and other languages
+Plug 'tpope/vim-endwise'
 
 
 " obsession.vim: continuously updated session files
@@ -106,53 +108,53 @@ Plug 'rhysd/clever-f.vim'
 " An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2
 Plug 'dyng/ctrlsf.vim'
 
-" Ruby, Rails, Sinatra and bundler
-Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }
-Plug 'tpope/vim-bundler', { 'for': ['ruby'] }
-" endwith ruby and other languages
-Plug 'tpope/vim-endwise'
-Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
-" Ruby tests
-Plug 'janko-m/vim-test', { 'for': ['ruby', 'haml', 'eruby'] }
-" Sinatra
-Plug 'hallison/vim-ruby-sinatra', { 'for': ['ruby', 'haml', 'eruby'] }
-" ruby refactoring
-Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'haml', 'eruby'] }
-" A custom text object for selecting ruby blocks
-Plug 'nelstrom/vim-textobj-rubyblock', { 'for': ['ruby', 'haml', 'eruby'] } " requirement by vim-textobj-user
-" it's like rails.vim without the rails
-Plug 'tpope/vim-rake', { 'for': ['ruby', 'haml', 'eruby'] }
-" Switch Ruby versions from inside Vim
-Plug 'tpope/vim-rvm', { 'for': ['ruby', 'haml', 'eruby'] }
-" Minimal rbenv support
-Plug 'tpope/vim-rbenv', { 'for': ['ruby', 'haml', 'eruby'] }
-" Automatically generate ctags for rbenv Ruby stdlibs
-Plug 'tpope/rbenv-ctags', { 'for': ['ruby', 'haml', 'eruby'] }
-" Vim highlighting & completion for MiniTest
-Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby', 'haml', 'eruby'] }
-" Vim plugin for ruby editing. Quick jump to method, class, module defenitions in buffers
-Plug 'xmisao/rubyjump.vim', { 'for': ['ruby', 'haml', 'eruby'] }
-" Vim Flog Plugin
-" Plug 'sentientmonkey/vim-flog', { 'for': ['ruby', 'haml', 'eruby'] }
-" Highlight local variables in Ruby files
-Plug 'todesking/ruby_hl_lvar.vim', { 'for': ['ruby', 'haml', 'eruby'] }
-" enables syntax highlighting in Ruby here document code blocks
-Plug 'joker1007/vim-ruby-heredoc-syntax', { 'for': ['ruby', 'haml', 'eruby'] }
+if executable('ruby')
+  " Ruby, Rails, Sinatra and bundler
+  Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }
+  Plug 'tpope/vim-bundler', { 'for': ['ruby'] }
+  Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
+  " Ruby tests
+  Plug 'janko-m/vim-test', { 'for': ['ruby', 'haml', 'eruby'] }
+  " Sinatra
+  Plug 'hallison/vim-ruby-sinatra', { 'for': ['ruby', 'haml', 'eruby'] }
+  " ruby refactoring
+  Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'haml', 'eruby'] }
+  " A custom text object for selecting ruby blocks
+  Plug 'nelstrom/vim-textobj-rubyblock', { 'for': ['ruby', 'haml', 'eruby'] } " requirement by vim-textobj-user
+  " it's like rails.vim without the rails
+  Plug 'tpope/vim-rake', { 'for': ['ruby', 'haml', 'eruby'] }
+  " Switch Ruby versions from inside Vim
+  Plug 'tpope/vim-rvm', { 'for': ['ruby', 'haml', 'eruby'] }
+  " Minimal rbenv support
+  Plug 'tpope/vim-rbenv', { 'for': ['ruby', 'haml', 'eruby'] }
+  " Automatically generate ctags for rbenv Ruby stdlibs
+  Plug 'tpope/rbenv-ctags', { 'for': ['ruby', 'haml', 'eruby'] }
+  " Vim highlighting & completion for MiniTest
+  Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby', 'haml', 'eruby'] }
+  " Vim plugin for ruby editing. Quick jump to method, class, module defenitions in buffers
+  Plug 'xmisao/rubyjump.vim', { 'for': ['ruby', 'haml', 'eruby'] }
+  " Vim Flog Plugin
+  " Plug 'sentientmonkey/vim-flog', { 'for': ['ruby', 'haml', 'eruby'] }
+  " Highlight local variables in Ruby files
+  Plug 'todesking/ruby_hl_lvar.vim', { 'for': ['ruby', 'haml', 'eruby'] }
+  " enables syntax highlighting in Ruby here document code blocks
+  Plug 'joker1007/vim-ruby-heredoc-syntax', { 'for': ['ruby', 'haml', 'eruby'] }
+endif
 
 if executable('go')
-" golang support
-" https://github.com/fatih/vim-go-tutorial
-Plug 'fatih/vim-go', { 'for': [ 'go' ] }
-" Vim plugin for the godoctor
-Plug 'godoctor/godoctor.vim', { 'for': ['go'] }
-" Go Explorer is Vim plugin for exploring Go code
-Plug 'garyburd/go-explorer', { 'for': ['go'] }
-if has('nvim')
-  " debug using delve
-  Plug 'jodosha/vim-godebug', { 'for': ['go'] }
-endif
-" Syntax highlight for Versioned Go
-Plug 'zchee/vim-vgo', { 'for': ['go'] }
+  " golang support
+  " https://github.com/fatih/vim-go-tutorial
+  Plug 'fatih/vim-go', { 'for': [ 'go' ] }
+  " Vim plugin for the godoctor
+  Plug 'godoctor/godoctor.vim', { 'for': ['go'] }
+  " Go Explorer is Vim plugin for exploring Go code
+  Plug 'garyburd/go-explorer', { 'for': ['go'] }
+  if has('nvim')
+    " debug using delve
+    Plug 'jodosha/vim-godebug', { 'for': ['go'] }
+  endif
+  " Syntax highlight for Versioned Go
+  Plug 'zchee/vim-vgo', { 'for': ['go'] }
 endif
 
 " pairs of handy bracket mappings
@@ -193,10 +195,10 @@ endif
 Plug 'Shougo/echodoc.vim'
 
 if executable('rustc')
-" support for rust
-Plug 'rust-lang/rust.vim', { 'for': ['rust', 'rs', 'rslib'] }
-" rust racer syntax checking
-Plug 'racer-rust/vim-racer', { 'for': ['rust', 'rs', 'rslib'] }
+  " support for rust
+  Plug 'rust-lang/rust.vim', { 'for': ['rust', 'rs', 'rslib'] }
+  " rust racer syntax checking
+  Plug 'racer-rust/vim-racer', { 'for': ['rust', 'rs', 'rslib'] }
 endif
 
 " visual undo graph
@@ -223,7 +225,7 @@ else
   " Dark powered asynchronous completion framework for neovim
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   if executable('go')
-  " Go complete
+    " Go complete
     Plug 'zchee/deoplete-go', { 'do': 'make'}
   endif
   " python complete
@@ -249,8 +251,8 @@ else
   " Neovim and vim Flow autocompletion for deoplete + neosnippet
   Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin', 'for': ['javascript', 'jsx', 'vue']  }
   if executable('rustc')
-  " Rust completion for Neovim (Deoplete) via Racer
-  Plug 'sebastianmarkow/deoplete-rust', { 'for': ['rust', 'rs', 'rslib'] }
+    " Rust completion for Neovim (Deoplete) via Racer
+    Plug 'sebastianmarkow/deoplete-rust', { 'for': ['rust', 'rs', 'rslib'] }
   endif
 endif
 " Update the bult-in CSS complete function to latest CSS standard
@@ -378,8 +380,8 @@ if filereadable('elm')
 endif
 
 if filereadable('kotlin')
-" vim kotlin
-Plug 'udalov/kotlin-vim', { 'for': ['kotlin', 'kts', 'kt'] }
+  " vim kotlin
+  Plug 'udalov/kotlin-vim', { 'for': ['kotlin', 'kts', 'kt'] }
 endif
 
 " A powerful grammar checker for Vim using LanguageTool
