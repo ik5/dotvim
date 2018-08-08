@@ -133,7 +133,7 @@ Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby', 'haml', 'eruby'] }
 " Vim plugin for ruby editing. Quick jump to method, class, module defenitions in buffers
 Plug 'xmisao/rubyjump.vim', { 'for': ['ruby', 'haml', 'eruby'] }
 " Vim Flog Plugin
-Plug 'sentientmonkey/vim-flog', { 'for': ['ruby', 'haml', 'eruby'] }
+" Plug 'sentientmonkey/vim-flog', { 'for': ['ruby', 'haml', 'eruby'] }
 " Highlight local variables in Ruby files
 Plug 'todesking/ruby_hl_lvar.vim', { 'for': ['ruby', 'haml', 'eruby'] }
 " enables syntax highlighting in Ruby here document code blocks
