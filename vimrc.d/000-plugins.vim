@@ -315,6 +315,8 @@ Plug 'othree/html5.vim', { 'for': ['html', 'xhtml'] }
 Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx', 'vue', 'jsx'] }
 " Improved nginx vim plugin (incl. syntax highlighting)
 Plug 'chr4/nginx', { 'for': ['nginx'] }
+" Highlights JavaScript/TypeScript tagged Template Strings with custom syntaxes
+Plug 'cdata/vim-tagged-template'
 " ----------------------
 " End of Web Development
 " ----------------------

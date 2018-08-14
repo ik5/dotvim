@@ -65,6 +65,10 @@ augroup JSON
   au! BufRead,BufNewFile *.json set filetype=json
   " Make sure that .babelrc, and eslintrc files set as json
   au BufRead,BufNewFile .eslintrc,.babelrc set filetype=json
+
+  if exists('g:taggedtemplate#tagSyntaxMap')
+    au FileType,BufNewFile,BufRead javascript,typescript,jsx call taggedtemplate#applySyntaxMap()
+  endif
 augroup END
 
 augroup web
@@ -88,7 +92,7 @@ augroup web
 augroup END
 
 augroup Rust
-  autocmd FileType rust execute LocateRacer()
+  au FileType rust execute LocateRacer()
 augroup END
 
 augroup General
