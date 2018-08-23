@@ -354,10 +354,12 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 " Vim plugin for working with python virtualenvs
 Plug 'jmcantrell/vim-virtualenv', { 'for': 'python' }
 
-" HasiCorp
-Plug 'hashivim/vim-terraform', { 'for': ['tf', 'terraform'] }
-" Terraform complete
-Plug 'juliosueiras/vim-terraform-completion', { 'for': ['tf', 'terraform'] }
+if executable('terraform')
+  " HasiCorp
+  Plug 'hashivim/vim-terraform', { 'for': ['tf', 'terraform'] }
+  " Terraform complete
+  Plug 'juliosueiras/vim-terraform-completion', { 'for': ['tf', 'terraform'] }
+endif
 
 " GraphQL
 Plug 'jparise/vim-graphql', { 'for': ['gql', 'graphql','javascript', 'javascript.jsx', 'vue', 'jsx' ] }
