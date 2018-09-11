@@ -99,7 +99,18 @@ Install plugins from the command line:
 vim +PlugUpdate +qa
 ```
 
-To add or override settings, place them in ``~/.vim/vimrc.local``.
+For Neovim, under ~/.config/nvim:
+```
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+Install plugins from the command line:
+```
+nvim +PlugUpdate +qa
+```
+
+To add or override settings, place them in ``~/.vim/vimrc.local`` or ``~/.config/nvim/vimrc.local``.
 
 To update submodules in the future, when you have vim running, source vimrc to make sure plugins list are updated (or
 restart vim):
