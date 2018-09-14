@@ -1,2 +1,2 @@
-let g:polyglot_disabled = ['elm'] " disable elm support from polyglot
+let g:polyglot_disabled = ['elm', 'go'] " disable elm support from polyglot
 
