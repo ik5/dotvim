@@ -2,7 +2,7 @@
 " set packpath+=~/.vim
 " source ~/.vimrc
 
-set runtimepath+=~/.config/nvim,~/.config/nvim/after
+set runtimepath+=~/.config/nvim,~/.config/nvim/after,~/.config/nvim/autoload
 set packpath+=~/.config/nvim
 
 

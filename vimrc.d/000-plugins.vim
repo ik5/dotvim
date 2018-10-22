@@ -1,7 +1,11 @@
 " ==================================================
 " vim-plug  setup
 " ==================================================
-call plug#begin()
+if has('nvim')
+  call plug#begin('~/.config/nvim/plugged')
+else
+  call plug#begin('~/.vim/plugged')
+endif
 
 " colors, visual display etc...
 " colorscheme
