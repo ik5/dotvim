@@ -147,8 +147,6 @@ if executable('go')
   Plug 'fatih/vim-go', { 'for': [ 'go' ] }
   " Vim plugin for the godoctor
   Plug 'godoctor/godoctor.vim', { 'for': ['go'] }
-  " Go Explorer is Vim plugin for exploring Go code
-  Plug 'garyburd/go-explorer', { 'for': ['go'] }
   if has('nvim')
     " debug using delve
     Plug 'jodosha/vim-godebug', { 'for': ['go'] }
