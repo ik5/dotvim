@@ -29,8 +29,6 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'jaxbot/semantic-highlight.vim'
 
 
-" Over 70 language packs
-Plug 'sheerun/vim-polyglot'
 " style configuration
 Plug 'editorconfig/editorconfig-vim'
 " Language Server Protocol (LSP) support for vim and neovim
@@ -143,8 +141,7 @@ endif
 if executable('go')
   " golang support
   " https://github.com/fatih/vim-go-tutorial
-  " Disabled in favor of polyglot
-  " Plug 'fatih/vim-go', { 'for': [ 'go' ] }
+  Plug 'fatih/vim-go', { 'for': [ 'go' ] }
   " Vim plugin for the godoctor
   Plug 'godoctor/godoctor.vim', { 'for': ['go'] }
   if has('nvim')
@@ -397,4 +394,7 @@ Plug 'tpope/vim-markdown', { 'for': ['markdown', 'md'] }
 " Convert given timestamp to local date time and utc
 Plug 'heavenshell/vim-jikoku'
 
+
+" Over 70 language packs
+Plug 'sheerun/vim-polyglot'
 call plug#end()
