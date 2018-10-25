@@ -1,2 +1,2 @@
-let g:polyglot_disabled = ['elm', 'vim-go'] " disable support for polyglot
+let g:polyglot_disabled = ['elm'] " disable support for polyglot
 
