@@ -94,11 +94,6 @@ Plug 'scrooloose/nerdtree'
 " Support git changes for code
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" Fuzzy file, buffer, mru, tag, etc finder
-" Plug 'ctrlpvim/ctrlp.vim'
-" A simple function navigator for ctrlp.vim
-" Plug 'tacahiroy/ctrlp-funky'
-" BufExplorer Plugin for Vim
 " Fast file navigation for VIM
 Plug 'wincent/command-t', {
     \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
@@ -166,7 +161,7 @@ Plug 'jiangmiao/auto-pairs'
 " vim match-up: even better % 👊 navigate and highlight matching words
 Plug 'andymass/vim-matchup'
 "The matchit.vim script allows you to configure % to match more than just single characters.
-" Plug 'vim-scripts/matchit.zip'
+Plug 'vim-scripts/matchit.zip'
 " match tag always -> tag xml/html elements starting and ending
 Plug 'Valloric/MatchTagAlways'
 
