@@ -19,7 +19,11 @@ let g:deoplete#sources#go#json_directory = '~/.cache/deoplete/go/$GOOS_$GOARCH'
 " support cgo
 let g:deoplete#sources#go#cgo = 1
 " libclang shared library path for cgo complete
+if filereadable('/usr/lib/libclang.so')
 let g:deoplete#sources#go#cgo#libclang_path = '/usr/lib/libclang.so'
+elseif filereadable('/usr/lib64/libclang.so')
+let g:deoplete#sources#go#cgo#libclang_path = '/usr/lib64/libclang.so'
+end
 " C language standard version
 let g:deoplete#sources#go#cgo#std = 'c11'
 
