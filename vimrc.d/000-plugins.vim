@@ -221,12 +221,12 @@ else
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   if executable('go')
     " Go complete
-    Plug 'zchee/deoplete-go', { 'do': 'make'}
+    Plug 'zchee/deoplete-go', { 'do': 'make', 'for': 'go' }
   endif
   " python complete
   Plug 'zchee/deoplete-jedi', { 'for': 'python' }
   " javascript complete
-  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install' }
+  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install', 'for': ['javascript', 'vue', 'jsx'] }
   " Deoplete sources for ruby language
   Plug 'fishbullet/deoplete-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
   " deoplete source for Ruby with solargraph -> IDE tools for Ruby
@@ -396,5 +396,5 @@ Plug 'heavenshell/vim-jikoku'
 
 
 " Over 70 language packs
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 call plug#end()
