@@ -159,7 +159,7 @@ Plug 'jiangmiao/auto-pairs'
 " vim match-up: even better % 👊 navigate and highlight matching words
 Plug 'andymass/vim-matchup'
 "The matchit.vim script allows you to configure % to match more than just single characters.
-Plug 'vim-scripts/matchit.zip'
+" Plug 'vim-scripts/matchit.zip'
 " match tag always -> tag xml/html elements starting and ending
 Plug 'Valloric/MatchTagAlways'
 
