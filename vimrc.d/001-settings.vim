@@ -245,3 +245,8 @@ set thesaurus+=/tmp/spell/mthesaur.txt
 
 " Ignore whitespace only changes in diff
 set diffopt+=iwhite
+
+if has('nvim')
+  let g:loaded_matchit = 1
+endif
+

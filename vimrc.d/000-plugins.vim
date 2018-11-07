@@ -161,7 +161,7 @@ Plug 'andymass/vim-matchup'
 "The matchit.vim script allows you to configure % to match more than just single characters.
 " Plug 'vim-scripts/matchit.zip'
 " match tag always -> tag xml/html elements starting and ending
-Plug 'Valloric/MatchTagAlways'
+" Plug 'Valloric/MatchTagAlways'
 
 " airline status plugins" Do completion using tab key
 Plug 'ervandew/supertab'
@@ -396,5 +396,5 @@ Plug 'heavenshell/vim-jikoku'
 
 
 " Over 70 language packs
-" Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
