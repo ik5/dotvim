@@ -229,6 +229,7 @@ vim +PlugUpdate +qa
 | ``<leader>sr]``                 | Surround a word with [], from cursor location to the end of the word                                |
 | ``<leader>sr{``                 | Surround a word with {}, going to beginning of a word. if already there, going to the previous word |
 | ``<leader>sr}``                 | Surround a word with {}, from cursor location to the end of the word                                |
+| `<leader>=`                   | Adjust viewport to the middle |
 
 ### Right To Left
 
