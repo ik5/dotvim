@@ -16,9 +16,15 @@ endif
 " ================================
 
 " load .vimrc - <leader>r
-noremap <leader>r :sp ~/vimrc<CR><C-W>_
-" activating changes (after save) - <leader>R
-nmap <silent> <leader>R :source ~/.vimrc<CR>:filetype detect<CR>:exec ":echo 'vimrc reloaded'"<CR>
+if !has('nvim')
+  noremap <leader>r :sp ~/vimrc<CR><C-W>_
+  " activating changes (after save) - <leader>R
+  nmap <silent> <leader>R :source $MYVIMRC<CR>:filetype detect<CR>:exec ":echo 'vimrc reloaded'"<CR>
+else
+  noremap <leader>r :sp ~/.config/nvim/init<CR><C-W>_
+  " activating changes (after save) - <leader>R
+  nmap <silent> <leader>R :source $MYVIMRC<CR>:filetype detect<CR>:exec ":echo 'init.vim reloaded'"<CR>
+endif
 
 if &term[:4] ==? 'xterm' || &term[:5] ==? 'screen' || &term[:3] ==? 'rxvt'
   inoremap <silent> <C-[>OC <RIGHT>
@@ -305,3 +311,7 @@ nnoremap M @q
 vnoremap M :norm @q<CR>
 " Remove macro key
 nnoremap q <Nop>
+
+" viewport
+" Adjust viewports to the same size
+map <Leader>= <C-w>=
