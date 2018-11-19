@@ -143,6 +143,7 @@ function! s:SmartSplit(file)
   execute l:split_cmd . ' ' . a:file
 endfunction
 
+" from https://vi.stackexchange.com/questions/10797/change-the-filetype-based-on-tags-regions-in-the-file
 function! s:vueSetFileType()
   if searchpair('<script', '', '</script>', 'bnW')
     set ft=javascript
