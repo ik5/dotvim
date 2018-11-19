@@ -143,3 +143,11 @@ function! s:SmartSplit(file)
   execute l:split_cmd . ' ' . a:file
 endfunction
 
+function! s:vueSetFileType()
+  if searchpair('<script', '', '</script>', 'bnW')
+    set ft=javascript
+  elseif searchpair('<style', '', '</style>', 'bnW')
+    set ft=css
+  else
+    set ft=html
+  endfunction
