@@ -11,19 +11,19 @@ let g:NERDTreeIgnore = [
       \]
 let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
 let g:NERDTreeDirArrows=1
-let g:ERDTreeMinimalUI=0
-let g:ERDTreeWinSize = 56
+let g:NERDTreeMinimalUI=0
+let g:NERDTreeWinSize = 56
 let g:NERDTreeDirArrowExpandable = '►'
 let g:NERDTreeDirArrowCollapsible = '▼'
 
-let g:ERDTreeChDirMode = 2
-let g:ERDTreeShowLineNumbers = 1
-let g:ERDTreeAutoCenter = 1
-let g:ERDTreeRespectWildIgnore=1
+let g:NERDTreeChDirMode = 2
+let g:NERDTreeShowLineNumbers = 1
+let g:NERDTreeAutoCenter = 1
+let g:NERDTreeRespectWildIgnore=1
 
-let g:ERDTreeBookmanrs = '~/.vim/.NERDTreeBookmanrs'
-let g:ERDTreeShowBookmarks = 1
-let g:ERDTreeShowHidden = 1
+let g:NERDTreeBookmanrs = '~/.vim/.NERDTreeBookmanrs'
+let g:NERDTreeShowBookmarks = 1
+let g:NERDTreeShowHidden = 1
 
 let g:NERDTreeIndicatorMapCustom = {
     \ 'Modified'  : '✹',
