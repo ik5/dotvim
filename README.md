@@ -230,6 +230,12 @@ vim +PlugUpdate +qa
 | ``<leader>sr{``                 | Surround a word with {}, going to beginning of a word. if already there, going to the previous word |
 | ``<leader>sr}``                 | Surround a word with {}, from cursor location to the end of the word                                |
 | `<leader>=`                   | Adjust viewport to the middle |
+| `gc` | swap current char with the next char |
+| `gC` | swap current char with the prev char  |
+| `gl` | swap current word with the prev word, stay on the same position |
+| `gr` | swap current word with the next word, stay on the same position|
+| `g{` | swap current paragraph with the next  |
+| `g}` | swap current paragraph with the prev |
 
 ### Right To Left
 

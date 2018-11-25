@@ -141,6 +141,21 @@ if has('mac') || has('macunix')
   vnoremap <D-k> <M-k>
 endif
 
+" swap content
+" swap current char with the next
+nnoremap <silent> gc xph
+" swap current chat with the prev
+nnoremap <silent> gC Xph
+" swap current word with the prev
+nnoremap <silent> gl "_yiw?\w\+\_W\+\%#<CR>:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><c-o><c-l>:nohlsearch<CR>
+" swap current word with the next
+nnoremap <silent> gr "_yiw:s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR><c-o>/\w\+\_W\+<CR><c-l>:nohlsearch<CR>
+" swap current paragraph with the next
+nnoremap g{ {dap}p{
+" swap current paragraph with the prev
+nnoremap g} }dap{p}
+
+
 " ====================================================
 " spell settings
 " ====================================================
@@ -314,4 +329,5 @@ nnoremap q <Nop>
 
 " viewport
 " Adjust viewports to the same size
-map <Leader>= <C-w>=
+nnoremap <Leader>= <C-w>=
+
