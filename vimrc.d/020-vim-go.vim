@@ -82,9 +82,13 @@ augroup Golang
   au FileType go nnoremap <Leader>goa :GoAlternate<cr>
 
   au FileType go nnoremap <Leader>got :GoAddTags<cr>
-  au FileType go nnoremap <Leader>goT :GoAddTags
   au FileType go vnoremap <Leader>got :GoAddTags<cr>
+  au FileType go onoremap <Leader>got :GoAddTags<cr>
+  au FileType go cnoremap <Leader>got :GoAddTags<cr>
+  au FileType go nnoremap <Leader>goT :GoAddTags
   au FileType go vnoremap <Leader>goT :GoAddTags
+  au FileType go cnoremap <Leader>goT :GoAddTags
+  au FileType go onoremap <Leader>goT :GoAddTags
 
   au FileType go nnoremap <Leader>gov <Plug>(go-def-vertical)
   au FileType go nnoremap <Leader>gos <Plug>(go-def-split)
