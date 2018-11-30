@@ -58,7 +58,12 @@ if !has('nvim')
   set ttyscroll=3           " number of lines to scroll before redraw
 	set ttyfast              " smoother changes
 endif
-set termguicolors " enable 24 bit colors
+if has('termguicolors')
+  set termguicolors " enable 24 bit colors
+  if has('nvim')
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+endif
 set history=10000        " largest history
 set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set timeout ttimeoutlen=50
