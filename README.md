@@ -145,6 +145,7 @@ vim +PlugUpdate +qa
 | ``GenerateUUID`` | Generate UUID and insert it to current cursor position |
 | ``RebaseSquash`` | Perform a `pick` strategy for squash on rebase in GIT  |
 | ``CloseOthers``  | Close all windows and tabs but the current active one  |
+| `FixDoubleQuotes` | Replace unicode double quotes to ascii's version |
 
 ## Shortcuts
 
