@@ -103,7 +103,7 @@ set wildignore+=*.spl                            " compiled spelling word lists
 set wildignore+=*.sw?                            " Vim swap files
 set wildignore+=*.DS_Store
 set wildignore+=*.rdb                            " Redis database file
-set wildignore+=*/tmp/*,*.so,*.zip,*.db,*.sqlite*
+set wildignore+=*.so,*.zip,*.db,*.sqlite*
 set wildignore+=*.o                              " object files
 
 " set listchars -> display a char that represent a case
