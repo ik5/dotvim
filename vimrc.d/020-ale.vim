@@ -38,7 +38,8 @@ let g:ale_javascript_eslint_use_global = 0
 
 let g:ale_fixers = { 'javascript': ['eslint'] }
 
-let g:ale_python_flake8_executable = 'flake8-python2'
+" let g:ale_python_flake8_executable = 'flake8-python2'
+let g:ale_python_flake8_executable = 'flake8'
 
 let g:ale_linters = {'jsx': ['eslint'], 'ruby': ['rubocop'] }
 let g:ale_ruby_rubocop_executable = 'rubocop'

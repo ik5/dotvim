@@ -16,7 +16,8 @@ let g:jedi#use_splits_not_buffers = 'right'
 let g:pymode_options = 0
 
 " python v2 by default
-let g:pymode_python = 'python'
+" let g:pymode_python = 'python'
+let g:pymode_python = 'python3'
 
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
