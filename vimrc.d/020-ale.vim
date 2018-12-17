@@ -53,5 +53,6 @@ let g:ale_perl_perl_options = '-c -Mwarnings -Ilib'
 let g:ale_perl_perlcritic_showrules = 1
 
 let g:ale_type_map = {
-\ 'perlcritic': {'ES': 'WS', 'E': 'W'},
-\}
+      \'perl': {'ES': 'WS'},
+      \ 'perlcritic': {'ES': 'WS', 'E': 'W'},
+      \}
