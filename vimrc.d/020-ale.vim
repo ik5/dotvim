@@ -41,8 +41,17 @@ let g:ale_fixers = { 'javascript': ['eslint'] }
 " let g:ale_python_flake8_executable = 'flake8-python2'
 let g:ale_python_flake8_executable = 'flake8'
 
-let g:ale_linters = {'jsx': ['eslint'], 'ruby': ['rubocop'] }
+let g:ale_linters = {
+      \ 'jsx': ['eslint'],
+      \ 'ruby': ['rubocop'],
+      \ 'perl': ['syntax-check', 'perl', 'perlcritic']
+      \}
 let g:ale_ruby_rubocop_executable = 'rubocop'
 let g:ale_linter_aliases = {'jsx': 'css'}
 
+let g:ale_perl_perl_options = '-c -Mwarnings -Ilib'
+let g:ale_perl_perlcritic_showrules = 1
 
+let g:ale_type_map = {
+\ 'perlcritic': {'ES': 'WS', 'E': 'W'},
+\}

@@ -383,6 +383,11 @@ if filereadable('kotlin')
   Plug 'udalov/kotlin-vim', { 'for': ['kotlin', 'kts', 'kt'] }
 endif
 
+if executable('perl')
+  " ALE perl syntax checker
+  Plug 'skaji/syntax-check-perl'
+endif
+
 " A powerful grammar checker for Vim using LanguageTool
 Plug 'rhysd/vim-grammarous'
 " A Vim plugin for looking up words in an online thesaurus
