@@ -15,6 +15,8 @@ Plug 'sjl/badwolf'
 " Adaptation of one-light and one-dark colorschemes for Vim
 Plug 'rakr/vim-one'
 Plug 'tomasiser/vim-code-dark'
+" base16 colorschemes
+Plug 'chriskempson/base16-vim'
 " Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
 Plug 'ryanoasis/vim-devicons'
 " airline support
