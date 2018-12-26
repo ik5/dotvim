@@ -42,6 +42,7 @@ let g:ale_fixers = { 'javascript': ['eslint'] }
 let g:ale_python_flake8_executable = 'flake8'
 
 let g:ale_linters = {
+      \ 'javascript': ['eslint'],
       \ 'jsx': ['eslint'],
       \ 'ruby': ['rubocop'],
       \ 'perl': ['syntax-check', 'perl', 'perlcritic']
