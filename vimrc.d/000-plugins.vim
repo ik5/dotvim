@@ -148,7 +148,12 @@ if executable('go')
   Plug 'godoctor/godoctor.vim', { 'for': ['go'] }
   if has('nvim')
     " debug using delve
-    Plug 'jodosha/vim-godebug', { 'for': ['go'] }
+    Plug 'jodosha/vim-godebug', { 'for': ['ngo'] }
+    " for auto complete
+    Plug 'stamblerre/gocode', { 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh', 'for': ['go']  }
+  else
+    " for auto complete
+    Plug 'stamblerre/gocode', { 'do': '~/.vim/plugged/gocode/vim/symlink.sh', 'for': ['go']  }
   endif
   " Syntax highlight for Versioned Go
   Plug 'zchee/vim-vgo', { 'for': ['go'] }
