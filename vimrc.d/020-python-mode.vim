@@ -35,7 +35,8 @@ let g:pymode_lint_signs = 1
 let g:pymode_lint_message = 0
 
 " Enable rope
-let g:pymode_rope = 1
+let g:pymode_rope = 0
+let g:appendArtifactFix = 0
 " Auto complete (ctrl-space)
 
 let g:pymode_rope_goto_definition_cmd = 'new'
