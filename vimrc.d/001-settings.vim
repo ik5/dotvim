@@ -194,7 +194,6 @@ set gdefault                          " use the \"g\" flag by default
 if has('nvim')
   set inccommand=split   " nvim live %s/../
 endif
-runtime macro/matchit.vim
 
 " ==================================================
 " No modlines for security
