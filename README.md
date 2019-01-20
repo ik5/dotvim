@@ -175,12 +175,12 @@ vim +PlugUpdate +qa
 | ``<c-d>`` / ``<c-u>``           | Center line when moving up and down half a screen                                                   |
 | ``<Alt-j>``                     | Move current line down                                                                              |
 | ``<Alt-k>``                     | Move current line up                                                                                |
-| `gc` | swap current char with the next char |
-| `gC` | swap current char with the prev char  |
-| `gl` | swap current word with the prev word, stay on the same position |
-| `gr` | swap current word with the next word, stay on the same position|
-| `g{` | swap current paragraph with the next  |
-| `g}` | swap current paragraph with the prev |
+| `gc`                            | swap current char with the next char                                                                |
+| `gC`                            | swap current char with the prev char                                                                |
+| `gl`                            | swap current word with the prev word, stay on the same position                                     |
+| `gr`                            | swap current word with the next word, stay on the same position                                     |
+| `g{`                            | swap current paragraph with the next                                                                |
+| `g}`                            | swap current paragraph with the prev                                                                |
 | ``SPT``                         | Toggle spelling mode                                                                                |
 | ``<leader>sn``                  | Move to the next misspelled word                                                                    |
 | ``<leader>sp``                  | Move to the previous misspelled word                                                                |
@@ -236,7 +236,11 @@ vim +PlugUpdate +qa
 | ``<leader>sr]``                 | Surround a word with [], from cursor location to the end of the word                                |
 | ``<leader>sr{``                 | Surround a word with {}, going to beginning of a word. if already there, going to the previous word |
 | ``<leader>sr}``                 | Surround a word with {}, from cursor location to the end of the word                                |
-| `<leader>=`                   | Adjust viewport to the middle |
+| `<leader>=`                     | Adjust viewport to the middle                                                                       |
+| `,f`                            | Find file and open it for edit                                                                      |
+| `,s`                            | Find file and open it for edit in horizontal split                                                  |
+| `,v`                            | Find file and open it for edit in vertical split                                                    |
+| `,t`                            | Find file and open it for edit in new tab                                                           |
 
 ### Right To Left
 

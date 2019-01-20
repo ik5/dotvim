@@ -331,3 +331,8 @@ nnoremap q <Nop>
 " Adjust viewports to the same size
 nnoremap <Leader>= <C-w>=
 
+" find files
+nnoremap ,f :find
+nnoremap ,s :sfind
+nnoremap ,v :vert sfind
+nnoremap ,t :tabfind
