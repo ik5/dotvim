@@ -5,7 +5,7 @@ let g:deoplete#enable_smart_case = 1
 
 " go deoplete
 " location of gocode
-let g:deoplete#sources#go#gocode_binary = '/usr/bin/gocode'
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'bin/gocode'
 " do not insert . after package name
 let g:deoplete#sources#go#package_do = 0
 " order of what to display
