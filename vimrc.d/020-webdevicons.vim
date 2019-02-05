@@ -9,4 +9,8 @@ let g:webdevicons_enable_denite = 1
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1 " display directory icon
 let g:DevIconsEnableFoldersOpenClose = 1 " open/close directory icon
 let g:DevIconsEnableFolderExtensionPatternMatching = 1 " file extension pattern matching
-let g:WebDevIconsOS = 'linux'
+if has('mac') || has('macunix')
+  let g:WebDevIconsOS = 'Darwin'
+else
+  let g:WebDevIconsOS = 'linux'
+endif
