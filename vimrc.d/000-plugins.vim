@@ -148,7 +148,7 @@ if executable('go')
   Plug 'godoctor/godoctor.vim', { 'for': ['go'] }
   if has('nvim')
     " debug using delve
-    Plug 'jodosha/vim-godebug', { 'for': ['ngo'] }
+    Plug 'jodosha/vim-godebug', { 'for': ['go'] }
     " for auto complete
     Plug 'stamblerre/gocode', { 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh', 'for': ['go']  }
   else
