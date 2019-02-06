@@ -193,6 +193,9 @@ if executable('zeal')
   " usage of zeal in vim
   Plug 'KabbAmine/zeavim.vim'
 endif
+if filereadable('/Applications/Dash.app/Contents/MacOS/Dash')
+  Plug 'rizzatti/dash.vim'
+endif
 " Displays function signatures from completions in the command line
 Plug 'Shougo/echodoc.vim'
 
