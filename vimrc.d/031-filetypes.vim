@@ -27,11 +27,11 @@ augroup GIT
   " set gitconfig file also as gitconfig and not only .gitconfig
   au BufRead,BufNewFile gitconfig,*gitconfig setlocal filetype=gitconfig
 
-  autocmd BufEnter PULLREQ_EDITMSG setlocal filetype=gitcommit
-  autocmd BufEnter PULLREQ_EDITMSG setlocal filetype=gitcommit
-  autocmd FileType gitrebase silent! RebaseSquash
-  autocmd FileType gitcommit set spell
-  autocmd BufRead,BufNewFile git/config set filetype=gitconfig
+  au BufEnter PULLREQ_EDITMSG setlocal filetype=gitcommit
+  au BufEnter PULLREQ_EDITMSG setlocal filetype=gitcommit
+  au FileType gitrebase silent! RebaseSquash
+  au FileType gitcommit set spell
+  au BufRead,BufNewFile git/config set filetype=gitconfig
 augroup END
 
 augroup Golang
@@ -48,7 +48,7 @@ augroup Texts
   au FileType vim setlocal expandtab shiftwidth=2 tabstop=2
 
   " put quickfix window always to the bottom
-  autocmd FileType qf wincmd J
+  au FileType qf wincmd J
 augroup END
 
 augroup JAVASCRIPT
@@ -104,3 +104,7 @@ augroup General
   au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> '(' :call search('(\\|)\\|{\\|}\\|\[\\|\]', 'b')<CR>
 augroup END
 
+augroup YAML
+  au BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+  au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+augroup END
