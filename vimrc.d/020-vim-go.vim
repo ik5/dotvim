@@ -33,16 +33,25 @@ let g:go_highlight_build_constraints = 1
 
 " auto listener on save
 let g:go_metalinter_autosave = 1
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 
 " look for gopath
 let g:go_autodetect_gopath = 1
 
 " display the variable type under the cursor
 let g:go_auto_type_info = 1
+let g:go_info_mode = 'guru'
 
 "autocmd FileType go autocmd BufWritePre <buffer> GoFmt
 
+let g:go_snippet_engine = "automatic"
+
+let g:go_decls_includes = 'func,type,var'
+
 let g:go_auto_sameids=1
+
+" do not resue buffer on GoDef
+let g:go_def_reuse_buffer=0
 
 " create a go doc comment based on the word under the cursor
 function! s:create_go_doc_comment()
@@ -103,6 +112,9 @@ augroup Golang
 
   " Run all possible linters from go
   au FileType go nnoremap <leader>go<c-l> :GoMetaLinter<CR>
+
+  au FileType go nnoremap <leader>gofs :GoFillStruct<CR>
+  au FileType go nnoremap <leader>goif :GoIfErr<CR>
 augroup END
 
 
