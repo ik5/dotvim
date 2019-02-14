@@ -394,7 +394,7 @@ vim +PlugUpdate +qa
 | ``<leader>got``     | Add default tags to struct (e.g. JSON)                                    |
 | ``<leader>goT``     | Opens a command for ``GoAddTags`` allowing to place the needed tag names  |
 | ``<leader>gov``     | Goto declaration/definition, in a vertical window                         |
-| ``<leader>gos``     | Goto declaration/definition, in a horizontal window                       |
+| ``<leader>gd``     | Goto declaration/definition, in a horizontal window                       |
 | ``<leader>gol``     | Go meta linter                                                            |
 | ``<leader>gob``     | Build go project                                                          |
 | ``<leader>got``     | Execute Go tests                                                          |
@@ -402,6 +402,8 @@ vim +PlugUpdate +qa
 | ``<leader>goe``     | Execute Go install                                                        |
 | ``<leader>goc``     | Execute test covers                                                       |
 | ``<leader>go<c-l>`` | Execute all possilbe linters                                              |
+| ``<leader>gof``   | Fill Struct with empty values |
+| ``<leader>gofi`` | template for `if err ...` |
 
 ### Twiggy
 

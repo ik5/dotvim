@@ -72,20 +72,20 @@ function! s:build_go_files()
 endfunction
 
 augroup Golang
-  au FileType go nnoremap <leader>godoc :<C-u>call <SID>create_go_doc_comment()<CR>
+  au FileType go nmap <leader>godoc :<C-u>call <SID>create_go_doc_comment()<CR>
 
   " Show a list of interfaces which is implemented by the type under your cursor
-  au FileType go nnoremap <Leader>gos <Plug>(go-implements)
+  au FileType go nmap <Leader>gos <Plug>(go-implements)
 
   " Show type info for the word under your cursor
-  au FileType go nnoremap <Leader>goi <Plug>(go-info)
+  au FileType go nmap <Leader>goi <Plug>(go-info)
 
   " Open the relevant Godoc for the word under the cursor
-  au FileType go nnoremap <Leader>goh <Plug>(go-doc)
-  au FileType go nnoremap <Leader>gov <Plug>(go-doc-vertical)
+  au FileType go nmap <Leader>goh <Plug>(go-doc)
+  au FileType go nmap <Leader>gov <Plug>(go-doc-vertical)
 
   " Open the Godoc in browser
-  au FileType go nnoremap <Leader>gobd <Plug>(go-doc-browser)
+  au FileType go nmap <Leader>gobd <Plug>(go-doc-browser)
 
   " Alternate between test and file
   au FileType go nnoremap <Leader>goa :GoAlternate<cr>
@@ -99,22 +99,22 @@ augroup Golang
   au FileType go cnoremap <Leader>goT :GoAddTags
   au FileType go onoremap <Leader>goT :GoAddTags
 
-  au FileType go nnoremap <Leader>gov <Plug>(go-def-vertical)
-  au FileType go nnoremap <Leader>gd <Plug>(go-def-split)
+  au FileType go nmap <Leader>gov <Plug>(go-def-vertical)
+  au FileType go nmap <Leader>gd <Plug>(go-def-split)
 
-  au FileType go nnoremap <Leader>gol <Plug>(go-metalinter)
+  au FileType go nmap <Leader>gol <Plug>(go-metalinter)
 
-  au FileType go nnoremap <leader>gob :<C-u>call <SID>build_go_files()<CR>
-  au FileType go nnoremap <leader>got  <Plug>(go-test)
-  au FileType go nnoremap <leader>gor  <Plug>(go-run)
-  au FileType go nnoremap <leader>goe  <Plug>(go-install)
-  au FileType go nnoremap <leader>goc <Plug>(go-coverage)
+  au FileType go nmap <leader>gob :<C-u>call <SID>build_go_files()<CR>
+  au FileType go nmap <leader>got  <Plug>(go-test)
+  au FileType go nmap <leader>gor  <Plug>(go-run)
+  au FileType go nmap <leader>goe  <Plug>(go-install)
+  au FileType go nmap <leader>goc <Plug>(go-coverage)
 
   " Run all possible linters from go
   au FileType go nnoremap <leader>go<c-l> :GoMetaLinter<CR>
 
   au FileType go nnoremap <leader>gofs :GoFillStruct<CR>
-  au FileType go nnoremap <leader>goif :GoIfErr<CR>
+  au FileType go nnoremap <leader>gofi :GoIfErr<CR>
 augroup END
 
 
