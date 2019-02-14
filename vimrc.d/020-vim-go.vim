@@ -100,7 +100,7 @@ augroup Golang
   au FileType go onoremap <Leader>goT :GoAddTags
 
   au FileType go nnoremap <Leader>gov <Plug>(go-def-vertical)
-  au FileType go nnoremap <Leader>gos <Plug>(go-def-split)
+  au FileType go nnoremap <Leader>gd <Plug>(go-def-split)
 
   au FileType go nnoremap <Leader>gol <Plug>(go-metalinter)
 
