@@ -9,7 +9,7 @@ let g:deoplete#sources#go#gocode_binary = $GOPATH.'bin/gocode'
 " do not insert . after package name
 let g:deoplete#sources#go#package_do = 0
 " order of what to display
-let g:deoplete#sources#go#sort_class = ['package', 'type', 'func', 'var', 'const']
+let g:deoplete#sources#go#sort_class = ['type', 'func', 'var', 'const', 'package']
 " support pointer match (*)
 let g:deoplete#sources#go#pointer = 1
 " cache stdlib
@@ -20,12 +20,16 @@ let g:deoplete#sources#go#json_directory = '~/.cache/deoplete/go/$GOOS_$GOARCH'
 let g:deoplete#sources#go#cgo = 1
 " libclang shared library path for cgo complete
 if filereadable('/usr/lib/libclang.so')
-let g:deoplete#sources#go#cgo#libclang_path = '/usr/lib/libclang.so'
+  let g:deoplete#sources#go#cgo#libclang_path = '/usr/lib/libclang.so'
 elseif filereadable('/usr/lib64/libclang.so')
-let g:deoplete#sources#go#cgo#libclang_path = '/usr/lib64/libclang.so'
+  let g:deoplete#sources#go#cgo#libclang_path = '/usr/lib64/libclang.so'
+elseif executable('go')
+  echoerr 'Please setup libclang'
 end
 " C language standard version
 let g:deoplete#sources#go#cgo#std = 'c11'
+let g:deoplete#sources#go#auto_goos = 1
+
 
 " Python jedi
 " Show docstring in a preview window
@@ -45,7 +49,7 @@ let g:tern#filetypes = [
 
 let g:deoplete#omni#functions = {}
 let g:deoplete#omni#functions.javascript = [
-  \ 'tern#Complete',
-  \ 'jspc#omni'
-\]
+      \ 'tern#Complete',
+      \ 'jspc#omni'
+      \]
 
