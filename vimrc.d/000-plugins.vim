@@ -228,7 +228,7 @@ Plug 'mattn/webapi-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 if executable('go')
   " Go complete
-  Plug 'zchee/deoplete-go', { 'do': 'make', 'for': 'go' }
+  Plug 'zchee/deoplete-go', { 'do': 'make', 'for': [ 'go' ] }
 endif
 " python complete
 Plug 'zchee/deoplete-jedi', { 'for': 'python' }
