@@ -54,7 +54,10 @@ Plug 'chemzqm/unite-location'
 Plug 'kana/vim-textobj-user'
 " endwith ruby and other languages
 Plug 'tpope/vim-endwise'
-
+" surrond changing things based on syntax, such as ', ", [, ] etc..
+Plug 'tpope/vim-surround'
+" Vim plugin that provides additional text objects
+Plug 'wellle/targets.vim'
 
 " obsession.vim: continuously updated session files
 Plug 'tpope/vim-obsession'
@@ -208,9 +211,6 @@ endif
 
 " visual undo graph
 Plug 'mbbill/undotree'
-
-" surrond changing things based on syntax, such as ', ", [, ] etc..
-Plug 'tpope/vim-surround'
 
 " repeat.vim: enable repeating supported plugin maps with '.'
 Plug 'tpope/vim-repeat'
