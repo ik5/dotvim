@@ -12,12 +12,19 @@ let g:go_template_autocreate = 0
 
 " place terminal horizontal
 let g:go_term_mode = 'split'
-
 " open new terminal
 let g:go_term_enabled = 1
 
 " show errors
 let g:go_fmt_fail_silently = 0
+
+" enable vim-go text object
+let g:go_textobj_enabled = 1
+" text object for functions also include the comments when using 'af'
+let g:go_textobj_include_function_doc = 1
+" Consider the variable of an function assignment to be part of the anonymous
+" function when using the `af` text object
+let g:go_textobj_include_variable = 1
 
 " syntax-highlighting for Functions, Methods and Structs
 let g:go_highlight_space_tab_error = 1
@@ -34,24 +41,38 @@ let g:go_highlight_build_constraints = 1
 " auto listener on save
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
 
 " look for gopath
 let g:go_autodetect_gopath = 1
 
 " display the variable type under the cursor
 let g:go_auto_type_info = 1
-let g:go_info_mode = 'guru'
+let g:go_info_mode = [ 'guru', 'gocode' ]
+
+" Specifies whether `gocode` should add built-in types, functions and constants
+" to an autocompletion proposals.
+let g:go_gocode_propose_builtins = 1
+" use binary packages for propose things
+let g:go_gocode_propose_source = 0
+" allow to have propose from un imported packages
+let g:go_gocode_unimported_packages = 1
 
 "autocmd FileType go autocmd BufWritePre <buffer> GoFmt
 
 let g:go_snippet_engine = "automatic"
 
-let g:go_decls_includes = 'func,type,var'
+let g:go_decls_includes = 'func,type,var,const'
 
 let g:go_auto_sameids=1
 
 " do not resue buffer on GoDef
 let g:go_def_reuse_buffer=0
+
+let g:go_play_browser_command = 'firefox-developer %URL% &'
+
+" open alternate in split rather on same buffer
+let g:go_alternate_mode = "split"
 
 " create a go doc comment based on the word under the cursor
 function! s:create_go_doc_comment()
