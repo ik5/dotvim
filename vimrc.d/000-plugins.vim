@@ -252,12 +252,15 @@ Plug 'zchee/deoplete-zsh', { 'for': ['zsh'] }
 Plug 'fszymanski/deoplete-emoji'
 " Neovim and vim Flow autocompletion for deoplete + neosnippet
 Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin', 'for': ['javascript', 'jsx', 'vue']  }
+" Vim plugin for insert mode completion of words in adjacent tmux panes
+Plug 'wellle/tmux-complete.vim'
 if executable('rustc')
   " Rust completion for Neovim (Deoplete) via Racer
   Plug 'sebastianmarkow/deoplete-rust', { 'for': ['rust', 'rs', 'rslib'] }
 endif
 " Update the bult-in CSS complete function to latest CSS standard
 Plug 'othree/csscomplete.vim', { 'for': ['css']  }
+
 
 " ---------------
 " Web Development
