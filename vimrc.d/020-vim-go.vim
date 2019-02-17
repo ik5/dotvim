@@ -40,8 +40,8 @@ let g:go_highlight_build_constraints = 1
 
 " auto listener on save
 let g:go_metalinter_autosave = 1
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_enabled = ['gometalinter', 'vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave_enabled = ['gometalinter', 'vet', 'golint', 'errcheck']
 
 " look for gopath
 let g:go_autodetect_gopath = 1
