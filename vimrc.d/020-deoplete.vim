@@ -23,6 +23,8 @@ if filereadable('/usr/lib/libclang.so')
   let g:deoplete#sources#go#cgo#libclang_path = '/usr/lib/libclang.so'
 elseif filereadable('/usr/lib64/libclang.so')
   let g:deoplete#sources#go#cgo#libclang_path = '/usr/lib64/libclang.so'
+elseif filereadable('/Library/Developer/CommandLineTools/usr/lib/libclang.dylib')
+  let g:deoplete#sources#go#cgo#libclang_path = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 elseif executable('go')
   echoerr 'Please setup libclang'
 end
