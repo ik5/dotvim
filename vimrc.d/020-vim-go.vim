@@ -48,7 +48,7 @@ let g:go_autodetect_gopath = 1
 
 " display the variable type under the cursor
 let g:go_auto_type_info = 1
-let g:go_info_mode = [ 'guru', 'gocode' ]
+let g:go_info_mode = 'gocode'
 
 " Specifies whether `gocode` should add built-in types, functions and constants
 " to an autocompletion proposals.
