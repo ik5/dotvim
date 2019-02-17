@@ -1,15 +1,27 @@
+let b:golangserver = []
+if executable('bingo')
+  let b:golangserver = ['bingo']
+elseif executable('go-langserver')
+  let b:golangserver = ['go-langserver', '-trace', '-logfile', expand('~/tmp/langserver-go.log')]
+endif
+
 let g:LanguageClient_serverCommands = {
-    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-    \ 'ruby': ['language_server-ruby'],
-    \ 'ruby-sinatra': ['language_server-ruby'],
-    \ 'vue': ['vls'],
-    \ 'go': ['go-langserver', '-trace', '-logfile', expand('~/tmp/langserver-go.log')]
-    \ }
+      \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+      \ 'ruby': ['language_server-ruby'],
+      \ 'ruby-sinatra': ['language_server-ruby'],
+      \ 'vue': ['vls'],
+      \ 'go': b:golangserver,
+      \ }
+
 
 set completefunc=LanguageClient#complete
 set formatexpr=LanguageClient_textDocument_rangeFormatting()
 let g:LanguageClient_loggingLevel = 'debug'
 let g:LanguageClient_autoStart = 1
+
+let g:LanguageClient_rootMarkers = {
+      \ 'go': ['.git', 'go.mod'],
+      \ }
 
 if executable('javascript-typescript-stdio')
   let g:LanguageClient_serverCommands.javascript = ['javascript-typescript-stdio']
