@@ -109,6 +109,6 @@ augroup YAML
   au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 augroup END
 
-augroup fmt
-  au BufWritePre * undojoin | Neoformat
-augroup END
+"augroup fmt
+"  au BufWritePre * undojoin | Neoformat
+"augroup END
