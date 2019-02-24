@@ -146,7 +146,7 @@ endif
 if executable('go')
   " golang support
   " https://github.com/fatih/vim-go-tutorial
-  Plug 'fatih/vim-go', { 'for': [ 'go' ], 'do': ":GoInstallBinaries" }
+  Plug 'fatih/vim-go', {'do': ':GoInstallBinaries', 'for': [ 'go' ] }
   " Vim plugin for the godoctor
   Plug 'godoctor/godoctor.vim', { 'for': ['go'] }
   if has('nvim')
