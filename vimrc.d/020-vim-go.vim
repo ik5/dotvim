@@ -41,16 +41,16 @@ let g:go_highlight_build_constraints = 1
 
 " auto listener on save
 let g:go_metalinter_autosave = 1
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'gofmt', 'gotype', 'gosec']
-let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'gofmt', 'gotype', 'gosec']
-let g:go_metalinter_deadline = '60s'
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'gofmt', 'gosec']
+let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'gofmt', 'gosec']
+let g:go_metalinter_deadline = '1.5m'
 
 " look for gopath
 let g:go_autodetect_gopath = 1
 
 " display the variable type under the cursor
 let g:go_auto_type_info = 1
-let g:go_info_mode = 'gocode'
+let g:go_info_mode = 'guru'
 
 " Specifies whether `gocode` should add built-in types, functions and constants
 " to an autocompletion proposals.
