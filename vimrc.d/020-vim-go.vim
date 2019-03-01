@@ -17,6 +17,7 @@ let g:go_term_enabled = 1
 
 " show errors
 let g:go_fmt_fail_silently = 0
+let g:go_jump_to_error = 0
 
 " enable vim-go text object
 let g:go_textobj_enabled = 1
