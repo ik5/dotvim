@@ -69,8 +69,11 @@ Plug 'dbakker/vim-projectroot'
 " VCS (git)
 Plug 'tpope/vim-fugitive'
 " visualise git
-Plug 'gregsexton/gitv'
+" Plug 'gregsexton/gitv'
 " A Vim plugin which shows a git diff in the gutter
+" A lightweight and powerful git branch viewer for vim.
+Plug 'rbong/vim-flog'
+
 Plug 'airblade/vim-gitgutter'
 " Mercurial
 Plug 'ludovicchabant/vim-lawrencium'
