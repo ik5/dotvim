@@ -36,7 +36,6 @@ highlighting of actions and a lot more.
   - [CtrlP](#ctrlp)
   - [Fugitive](#fugitive)
   - [GitGutter](#gitgutter)
-  - [GitV](#gitv)
   - [Emmet](#emmet)
   - [NerdTree](#nerdtree)
   - [Python Mode](#python-mode)
@@ -287,8 +286,8 @@ vim +PlugUpdate +qa
 | `<leader>gitw`   | git add current file                                     |
 | `<leader>gitlg`  | git log -L                                               |
 | `<leader>gitdel` | git rm                                                   |
-| `<leader>gitbr`  | open current buffer in remote location using web browser |
-| `<leader>gitbc`  | Prompts for creating new branch (`checkout -B`)          |
+| `<leader>gitB`  | open current buffer in remote location using web browser |
+| `<leader>gitot`  | Prompts for creating new branch (`checkout -B`)          |
 
 ### gitgutter
 
@@ -299,14 +298,6 @@ vim +PlugUpdate +qa
 | `<leader>giths` | Gutter set stage under cursor             |
 | `<leader>githu` | Gutter undo non staged lines under cursor |
 | `<leader>githv` | Gutter Preview changes under cursor       |
-
-### gitv
-
-| Key            | Description                  |
-| -------------- | ---------------------------- |
-| `<leader>gitv` | Display changes in new tab   |
-| `<leader>gitV` | Display changes on new split |
-| `<leader>gitD` | Display git diff             |
 
 ### Emmet
 
