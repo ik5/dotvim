@@ -142,10 +142,10 @@ augroup Golang
   au FileType go nmap <leader>goc <Plug>(go-coverage)
 
   " Run all possible linters from go
-  au FileType go nnoremap <leader>go<c-l> :GoMetaLinter<CR>
+  au FileType go nnoremap <leader>go<c-l> :GoMetaLinter!<CR>
 
   au FileType go nnoremap <leader>gofs :GoFillStruct<CR>
   au FileType go nnoremap <leader>gofi :GoIfErr<CR>
+
+  au BufWritePost *go :GoMetaLinter!
 augroup END
-
-
