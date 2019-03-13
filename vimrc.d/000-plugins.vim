@@ -39,6 +39,9 @@ Plug 'autozimu/LanguageClient-neovim', {
       \ 'do': 'bash install.sh',
       \ }
 
+" Vim plugin to diff two directories
+Plug 'will133/vim-dirdiff'
+
 " ale - Asynchronous Lint Engine
 Plug 'w0rp/ale'
 
