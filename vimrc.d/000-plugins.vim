@@ -159,10 +159,10 @@ if executable('go')
     " debug using delve
     Plug 'jodosha/vim-godebug', { 'for': ['go'] }
     " for auto complete
-    Plug 'stamblerre/gocode', { 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh', 'for': ['go']  }
+    " Plug 'stamblerre/gocode', { 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh', 'for': ['go']  }
   else
     " for auto complete
-    Plug 'stamblerre/gocode', { 'do': '~/.vim/plugged/gocode/vim/symlink.sh', 'for': ['go']  }
+    " Plug 'stamblerre/gocode', { 'do': '~/.vim/plugged/gocode/vim/symlink.sh', 'for': ['go']  }
   endif
   " Syntax highlight for Versioned Go
   Plug 'zchee/vim-vgo', { 'for': ['go'] }
