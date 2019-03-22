@@ -435,6 +435,14 @@ vim +PlugUpdate +qa
 | `dgu` | diffget from the upstream version |
 | `dgl` | diffget from the local version    |
 
+
+### Command-T
+
+| Key          | Description                       |
+| -----        | --------------------------------- |
+| ``<Ctrl-P>``   | Open Fuzzy file finder            |
+| ``<leader-b>`` | Open Fuzzy file finder buffer     |
+
 ### vim surround
 
 | Key | Description |
