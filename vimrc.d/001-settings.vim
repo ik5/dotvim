@@ -105,6 +105,7 @@ set wildignore+=*.DS_Store
 set wildignore+=*.rdb                            " Redis database file
 set wildignore+=*.so,*.zip,*.db,*.sqlite*
 set wildignore+=*.o                              " object files
+set wildignore+=vendor/*                         " ignore vendor directory
 
 " set listchars -> display a char that represent a case
 set list
