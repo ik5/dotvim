@@ -1,6 +1,5 @@
 
-if has("gui_macvim")
-  macmenu &File.New\ Tab key=<nop>
+if has('gui_macvim')
   map <D-p> <Plug>(CommandT)
   imap <D-p> <Plug>(CommandT)
   nmap <D-p> <Plug>(CommandT)
