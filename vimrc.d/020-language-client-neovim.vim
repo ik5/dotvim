@@ -1,9 +1,10 @@
-let b:golangserver = []
-if executable('bingo')
-  let b:golangserver = ['bingo']
-elseif executable('go-langserver')
-  let b:golangserver = ['go-langserver', '-trace', '-logfile', expand('~/tmp/langserver-go.log')]
-endif
+let b:golangserver = ['gopls']
+
+" if executable('bingo')
+"   let b:golangserver = ['bingo']
+" elseif executable('go-langserver')
+"   let b:golangserver = ['go-langserver', '-trace', '-logfile', expand('~/tmp/langserver-go.log')]
+" endif
 
 let g:LanguageClient_serverCommands = {
       \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
