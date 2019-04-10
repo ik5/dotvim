@@ -29,7 +29,8 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'machakann/vim-highlightedyank'
 " Semantic Highlighting for Vim
 Plug 'jaxbot/semantic-highlight.vim'
-
+" Retro groove color scheme for Vim
+Plug 'morhetz/gruvbox'
 
 " style configuration
 Plug 'editorconfig/editorconfig-vim'

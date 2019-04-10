@@ -39,6 +39,13 @@ let g:badwolf_css_props_highlight = 1
 " code-dark
 let g:codedark_conservative = 0 " be colorful, thank you :)
 
+" gruvbox
+let g:gruvbox_bold = 1
+let g:gruvbox_italic = 1
+let g:gruvbox_underline = 1
+let g:gruvbox_undercurl = 1
+let g:gruvbox_termcolors = 256
+
 "Credit joshdick
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -57,6 +64,7 @@ if exists('$TMUX')
   set t_8b=^[[48;2;%lu;%lu;%lum
   set t_8f=^[[38;2;%lu;%lu;%lum
 endif
+
 
 colorscheme badwolf
 " colorscheme molokai
