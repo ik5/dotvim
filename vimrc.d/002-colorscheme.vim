@@ -32,7 +32,7 @@ let g:badwolf_darkgutter = 1
 " Make the tab line much lighter than the background.
 let g:badwolf_tabline = 3
 " Turn off HTML link underlining
-let g:badwolf_html_link_underline = 0
+let g:badwolf_html_link_underline = 1
 " Turn on CSS properties highlighting
 let g:badwolf_css_props_highlight = 1
 
