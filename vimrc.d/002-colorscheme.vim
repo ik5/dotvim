@@ -61,7 +61,7 @@ if exists('$TMUX')
   set t_8f=^[[38;2;%lu;%lu;%lum
 endif
 
-colorscheme molokai
+colorscheme badwolf
+" colorscheme molokai
 " colorscheme codedark
-" colorscheme badwolf
 " colorscheme one
