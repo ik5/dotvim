@@ -51,7 +51,7 @@ set backspace=indent,eol,start
 set matchpairs+=<:>      " show matching <> (html mainly) as well
 set showmatch
 set matchtime=3
-set mouse=a
+set mouse=
 set path+=.,**   " Search upwards and downwards in a directory tree using * and **
 if !has('nvim')
   set ttymouse=xterm2
