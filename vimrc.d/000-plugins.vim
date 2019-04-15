@@ -156,15 +156,6 @@ if executable('go')
   Plug 'fatih/vim-go', {'do': ':GoInstallBinaries', 'for': [ 'go' ] }
   " Vim plugin for the godoctor
   Plug 'godoctor/godoctor.vim', { 'for': ['go'] }
-  if has('nvim')
-    " debug using delve
-    Plug 'jodosha/vim-godebug', { 'for': ['go'] }
-    " for auto complete
-    " Plug 'stamblerre/gocode', { 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh', 'for': ['go']  }
-  else
-    " for auto complete
-    " Plug 'stamblerre/gocode', { 'do': '~/.vim/plugged/gocode/vim/symlink.sh', 'for': ['go']  }
-  endif
   " Syntax highlight for Versioned Go
   Plug 'zchee/vim-vgo', { 'for': ['go'] }
 endif
