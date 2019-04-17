@@ -85,10 +85,10 @@ endfunction
 
 function! CloseQuickFix()
   if !has(&buftype)
-   finish
+    return
   endif
   if &buftype !=? 'quickfix'
-    finish
+    return
   endif
 
   let b:qf_isLoc = ! empty(getloclist(0))
