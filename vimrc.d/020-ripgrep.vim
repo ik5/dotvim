@@ -2,6 +2,7 @@
 " ripgrep using normal vim grep
 " ==================================================
 
+nnoremap gw :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 nnoremap g/ :grep!<space>
 nnoremap g* :grep! -w <C-R><C-W><space>
 nnoremap ga :grepadd!<space>

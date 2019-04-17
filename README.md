@@ -341,6 +341,7 @@ vim +PlugUpdate +qa
 | `g/` | Look at all files from current position and sub directories                                               |
 | `g*` | Look at all files from current position and sub directories force the print of directories if not printed |
 | `ga` | Look at all files from current position and sub directories, append errors                                |
+| `gw` | Look at all files from current postion and sub directories for current work under the cursor              |
 
 ### Tagbar
 
