@@ -1,5 +1,10 @@
+
+" default mapping
+let g:NERDCreateDefaultMappings = 1
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
+" remove extra spaces after removal of a comment
+let g:NERDRemoveExtraSpaces = 1
 
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
@@ -8,7 +13,9 @@ let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 
 " Add your own custom formats or override the defaults
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+let g:NERDCustomDelimiters = {
+      \ 'c': { 'left': '/**','right': '*/' },
+      \ }
 
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
@@ -16,9 +23,18 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
-noremap <C-_> <leader>c
-inoremap <C-_> <leader>cc
-vnoremap <C-_> <leader>ci
+" comment whole line on visual mode
+let g:NERDCommentWholeLinesInVMode = 0
+
+" look for alternative as well
+let g:NERDRemoveAltComs = 1
+
+" comment again if a comment already there
+let g:NERDDefaultNesting = 1
+
+" decide if to do one liner or multiline
+let g:NERDToggleCheckAllLines = 1
+
 
 let g:ft = ''
 function! NERDCommenter_before()
