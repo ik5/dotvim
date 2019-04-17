@@ -233,22 +233,22 @@ nnoremap <leader>ff [I:let nr = input('Which one: ')<Bar>exe 'normal ' . nr .'[\
 " inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
 
 " Error window (a.k.a. quick fix window)
-augroup QuickFix
-  autocmd BufReadPost quickfix nnoremap <leader>erf   :cfirst<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap <leader>erl   :clast<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap <leader>ern   :cnext<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap <leader>erp   :cprevious<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap <leader>erc   :cclose<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap <leader>err   :crewind<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap <leader>erw   :cwindow<CR>
-  autocmd BufReadPost quickfix nnoremap <leader>erlw  :lwindow<<CR>
-  autocmd BufReadPost quickfix nnoremap <leader>erln  :lnext<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap <leader>erlp  :lprevious<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap <leader>erlf  :lfirst<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap <leader>erll  :llast<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap <leader>erlc  :lclose<CR>zz:set cul<cr>
-  autocmd BufReadPost quickfix nnoremap <leader>erlr  :lrewind<CR>zz:set cul<cr>
-augroup END
+" augroup QuickFix
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erf   :cfirst<CR>zz:set cul<cr>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erl   :clast<CR>zz:set cul<cr>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>ern   :cnext<CR>zz:set cul<cr>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erp   :cprevious<CR>zz:set cul<cr>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erc   :cclose<CR>zz:set cul<cr>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>err   :crewind<CR>zz:set cul<cr>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erw   :cwindow<CR>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erlw  :lwindow<<CR>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erln  :lnext<CR>zz:set cul<cr>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erlp  :lprevious<CR>zz:set cul<cr>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erlf  :lfirst<CR>zz:set cul<cr>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erll  :llast<CR>zz:set cul<cr>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erlc  :lclose<CR>zz:set cul<cr>
+"   autocmd BufReadPost,BufWinEnter quickfix nnoremap <leader>erlr  :lrewind<CR>zz:set cul<cr>
+" augroup END
 
 nnoremap q :call CloseQuickFix()<CR>zz:set cul<cr>
 
