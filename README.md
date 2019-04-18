@@ -191,7 +191,7 @@ vim +PlugUpdate +qa
 | `<leader>s?`                | Open suggestion window                                                                              |
 | `<leader>f1` - `<leader>f9` | Set fold level between 1 and 9                                                                      |
 | `<leader>m`                 | Remove ^M when encoding is messed up (windows)                                                      |
-| `<leader><leader>`          | Toggle between last two files                                                                       |
+| `<c-b>b`          | Toggle between last two files                                                                       |
 | `<c-b>p` | Previous buffer |
 | `<c-b>n` | Next buffer |
 | `<leader>y`                 | Copy the current visual selection or current line to `~/tmp/.vbuf` file                             |

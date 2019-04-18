@@ -206,7 +206,7 @@ nnoremap <leader>P P`[v`]=
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " switch between the last two files
-nnoremap <leader><leader> <C-^>
+nnoremap <c-b>b <C-^>
 nnoremap <c-b>p :bprevious<cr>:redraw<cr>
 nnoremap <c-b>n :bnext<cr>:redraw<cr>
 
