@@ -205,9 +205,12 @@ nnoremap <leader>P P`[v`]=
 "remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
-" switch between the last two files
+" manage current active buffer
+"  toggle between last two buffers
 nnoremap <c-b>b <C-^>
+" go to previous buffer
 nnoremap <c-b>p :bprevious<cr>:redraw<cr>
+" go to next buffer
 nnoremap <c-b>n :bnext<cr>:redraw<cr>
 
 " Allow to copy/paste between VIM instances
