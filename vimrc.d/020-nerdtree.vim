@@ -11,10 +11,11 @@ let g:NERDTreeIgnore = [
       \]
 let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
 let g:NERDTreeDirArrows=1
-let g:NERDTreeMinimalUI=0
+let g:NERDTreeMinimalUI=1
 let g:NERDTreeWinSize = 56
 let g:NERDTreeDirArrowExpandable = '►'
 let g:NERDTreeDirArrowCollapsible = '▼'
+let g:NERDTreeAutoDeleteBuffer = 1
 
 let g:NERDTreeChDirMode = 2
 let g:NERDTreeShowLineNumbers = 1
