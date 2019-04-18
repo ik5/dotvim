@@ -192,6 +192,8 @@ vim +PlugUpdate +qa
 | `<leader>f1` - `<leader>f9` | Set fold level between 1 and 9                                                                      |
 | `<leader>m`                 | Remove ^M when encoding is messed up (windows)                                                      |
 | `<leader><leader>`          | Toggle between last two files                                                                       |
+| `<c-b>p` | Previous buffer |
+| `<c-b>n` | Next buffer |
 | `<leader>y`                 | Copy the current visual selection or current line to `~/tmp/.vbuf` file                             |
 | `<leader>p`                 | Paste the content of the buffer to `~/tmp/.vbuf` file                                               |
 | `Y`                         | Copy from cursor to the end of the line                                                             |

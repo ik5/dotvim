@@ -192,7 +192,7 @@ nnoremap <leader>f8 :set foldlevel=8<CR>
 nnoremap <leader>f9 :set foldlevel=9<CR>
 
 " =======================================================
-" Misc
+" Miscprevious
 " =======================================================
 " toggle paste
 " nnoremap <c-s-p> :set paste!<CR>
@@ -207,6 +207,8 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " switch between the last two files
 nnoremap <leader><leader> <C-^>
+nnoremap <c-b>p :bprevious<cr>:redraw<cr>
+nnoremap <c-b>n :bnext<cr>:redraw<cr>
 
 " Allow to copy/paste between VIM instances
 "copy the current visual selection to ~/.vbuf
