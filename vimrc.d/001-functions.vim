@@ -151,4 +151,4 @@ function! s:vueSetFileType()
     set ft=css
   else
     set ft=html
-  endfunction
+endfunction
