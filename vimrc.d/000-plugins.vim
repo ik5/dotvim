@@ -19,6 +19,8 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'chriskempson/base16-vim'
 " Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
 Plug 'ryanoasis/vim-devicons'
+" Extra NERDTree Icons
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " airline support
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
