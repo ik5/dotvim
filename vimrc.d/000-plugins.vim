@@ -104,10 +104,6 @@ Plug 'scrooloose/nerdtree'
 " Support git changes for code
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" Fast file navigation for VIM
-Plug 'wincent/command-t', {
-      \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
-      \ }
 Plug 'jlanzarotta/bufexplorer'
 " A command-line fuzzy finder
 Plug 'junegunn/fzf', { 'do': './install --all' }
