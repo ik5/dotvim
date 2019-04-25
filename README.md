@@ -424,12 +424,14 @@ vim +PlugUpdate +qa
 | `dgl` | diffget from the local version    |
 
 
-### Command-T
+### Denite
 
-| Key          | Description                       |
-| -----        | --------------------------------- |
-| ``<Ctrl-P>``   | Open Fuzzy file finder            |
-| ``<leader-b>`` | Open Fuzzy file finder buffer     |
+| key | Description |
+| --- | ----------- |
+| `;` | Browse current open buffers |
+| `<leader>;` | Browse list of files in current directory |
+| `<leader>gr` | Search current directory for occurences of given term and close window if no results |
+| `<leader>Wrd` | Search current directory for occurences of word under cursor |
 
 ### vim surround
 

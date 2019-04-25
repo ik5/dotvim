@@ -62,3 +62,13 @@ call s:profile(s:denite_options)
 catch
   echo 'Denite not installed. It should work after running :PlugInstall'
 endtry
+
+" Browse current open buffers
+nmap ; :Denite buffer -split=floating -winrow=1<CR>
+" Browse list of files in current directory
+nmap <leader>; :Denite file/rec -split=floating -winrow=1<CR>
+" Search current directory for occurences of given term and
+" close window if no results
+nnoremap <leader>gr :Denite grep:. -no-empty -mode=normal<CR><Paste>
+" Search current directory for occurences of word under cursor
+nnoremap <leader>Wrd :DeniteCursorWord grep:. -mode=normal<CR>
