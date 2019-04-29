@@ -107,9 +107,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'jlanzarotta/bufexplorer'
-" A command-line fuzzy finder
-" Plug 'junegunn/fzf', { 'do': './install --all' }
-" Plug 'junegunn/fzf.vim'
 " Extended f, F, t and T key mappings for Vim
 Plug 'rhysd/clever-f.vim'
 " An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2
