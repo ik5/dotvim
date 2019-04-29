@@ -110,7 +110,7 @@ Plug 'jlanzarotta/bufexplorer'
 " Extended f, F, t and T key mappings for Vim
 Plug 'rhysd/clever-f.vim'
 " An ack.vim alternative mimics Ctrl-Shift-F on Sublime Text 2
-Plug 'dyng/ctrlsf.vim'
+" Plug 'dyng/ctrlsf.vim'
 
 if executable('ruby')
   " Ruby, Rails, Sinatra and bundler
