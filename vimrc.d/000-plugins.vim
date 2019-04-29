@@ -34,8 +34,6 @@ Plug 'jaxbot/semantic-highlight.vim'
 " Retro groove color scheme for Vim
 Plug 'morhetz/gruvbox'
 
-" style configuration
-Plug 'editorconfig/editorconfig-vim'
 " Language Server Protocol (LSP) support for vim and neovim
 Plug 'autozimu/LanguageClient-neovim', {
       \ 'branch': 'next',
@@ -44,6 +42,9 @@ Plug 'autozimu/LanguageClient-neovim', {
 
 " Vim plugin to diff two directories
 Plug 'will133/vim-dirdiff'
+" visual undo graph
+Plug 'mbbill/undotree'
+
 
 " ale - Asynchronous Lint Engine
 Plug 'w0rp/ale'
@@ -64,13 +65,59 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
 " Vim plugin that provides additional text objects
 Plug 'wellle/targets.vim'
+" repeat.vim: enable repeating supported plugin maps with '.'
+Plug 'tpope/vim-repeat'
+" abolish.vim: easily search for, substitute, and abbreviate multiple variants of a word
+Plug 'tpope/vim-abolish'
+" Find And Replace Vim plugin
+Plug 'brooth/far.vim'
 
-" obsession.vim: continuously updated session files
-Plug 'tpope/vim-obsession'
-" Projectionist provides granular project configuration using 'projections'
-Plug 'tpope/vim-projectionist'
-" Find out which project a file belongs to, easy to use in scripts/mappings <- requirement for some plugins
-Plug 'dbakker/vim-projectroot'
+" auto complete
+" Dark powered asynchronous completion framework for neovim
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+if executable('go')
+  " Go complete
+  Plug 'zchee/deoplete-go', { 'do': 'make', 'for': [ 'go' ] }
+endif
+if executable("python")
+  " python complete
+  Plug 'zchee/deoplete-jedi', { 'for': 'python' }
+  if executable("npm")
+    "" javascript complete
+    Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install', 'for': ['javascript', 'vue', 'jsx'] }
+  endif
+endif
+if executable("ruby")
+  " Deoplete sources for ruby language
+  Plug 'fishbullet/deoplete-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
+  " deoplete source for Ruby with solargraph -> IDE tools for Ruby
+  " Plug 'uplus/deoplete-solargraph', { 'for': ['ruby', 'haml', 'eruby']  }
+  " A neocomplcache plugin for English, using look command
+endif
+Plug 'ujihisa/neco-look'
+" better spirce scanning
+Plug 'Shougo/neco-syntax'
+" vim syntax complete
+Plug 'Shougo/neco-vim', { 'for': ['vim'] }
+" deoplete.nvim source for C/C++/Obj-C/Obj-C++ with clang-python3
+Plug 'zchee/deoplete-clang', { 'for': ['c', 'cpp'] }
+" Zsh completion for deoplete.nvim
+Plug 'zchee/deoplete-zsh', { 'for': ['zsh'] }
+" Deoplete source for emoji codes
+Plug 'fszymanski/deoplete-emoji'
+" Neovim and vim Flow autocompletion for deoplete + neosnippet
+Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin', 'for': ['javascript', 'jsx', 'vue']  }
+" Vim plugin for insert mode completion of words in adjacent tmux panes
+Plug 'wellle/tmux-complete.vim'
+if executable('rustc')
+  " Rust completion for Neovim (Deoplete) via Racer
+  Plug 'sebastianmarkow/deoplete-rust', { 'for': ['rust', 'rs', 'rslib'] }
+endif
+" Update the bult-in CSS complete function to latest CSS standard
+Plug 'othree/csscomplete.vim', { 'for': ['css']  }
+
+" async formatting for neovim and vim8
+Plug 'sbdchd/neoformat'
 
 " VCS (git)
 Plug 'tpope/vim-fugitive'
@@ -79,7 +126,7 @@ Plug 'tpope/vim-fugitive'
 " A Vim plugin which shows a git diff in the gutter
 " A lightweight and powerful git branch viewer for vim.
 Plug 'rbong/vim-flog'
-
+"
 Plug 'airblade/vim-gitgutter'
 " Mercurial
 Plug 'ludovicchabant/vim-lawrencium'
@@ -150,7 +197,7 @@ if executable('go')
   " https://github.com/fatih/vim-go-tutorial
   Plug 'fatih/vim-go', {'do': ':GoInstallBinaries', 'for': [ 'go' ] }
   " Vim plugin for the godoctor
-  Plug 'godoctor/godoctor.vim', { 'for': ['go'] }
+  " Plug 'godoctor/godoctor.vim', { 'for': ['go'] }
   " Syntax highlight for Versioned Go
   Plug 'zchee/vim-vgo', { 'for': ['go'] }
 endif
@@ -198,57 +245,9 @@ if executable('rustc')
   Plug 'racer-rust/vim-racer', { 'for': ['rust', 'rs', 'rslib'] }
 endif
 
-" visual undo graph
-Plug 'mbbill/undotree'
-
-" repeat.vim: enable repeating supported plugin maps with '.'
-Plug 'tpope/vim-repeat'
-" abolish.vim: easily search for, substitute, and abbreviate multiple variants of a word
-Plug 'tpope/vim-abolish'
-" Find And Replace Vim plugin
-Plug 'brooth/far.vim'
-
 
 " Web API
 Plug 'mattn/webapi-vim'
-
-" auto complete
-" Dark powered asynchronous completion framework for neovim
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-if executable('go')
-  " Go complete
-  Plug 'zchee/deoplete-go', { 'do': 'make', 'for': [ 'go' ] }
-endif
-" python complete
-Plug 'zchee/deoplete-jedi', { 'for': 'python' }
-" javascript complete
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install', 'for': ['javascript', 'vue', 'jsx'] }
-" Deoplete sources for ruby language
-Plug 'fishbullet/deoplete-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
-" deoplete source for Ruby with solargraph -> IDE tools for Ruby
-" Plug 'uplus/deoplete-solargraph', { 'for': ['ruby', 'haml', 'eruby']  }
-" A neocomplcache plugin for English, using look command
-Plug 'ujihisa/neco-look'
-" better spirce scanning
-Plug 'Shougo/neco-syntax'
-" vim syntax complete
-Plug 'Shougo/neco-vim', { 'for': ['vim'] }
-" deoplete.nvim source for C/C++/Obj-C/Obj-C++ with clang-python3
-Plug 'zchee/deoplete-clang', { 'for': ['c', 'cpp'] }
-" Zsh completion for deoplete.nvim
-Plug 'zchee/deoplete-zsh', { 'for': ['zsh'] }
-" Deoplete source for emoji codes
-Plug 'fszymanski/deoplete-emoji'
-" Neovim and vim Flow autocompletion for deoplete + neosnippet
-Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin', 'for': ['javascript', 'jsx', 'vue']  }
-" Vim plugin for insert mode completion of words in adjacent tmux panes
-Plug 'wellle/tmux-complete.vim'
-if executable('rustc')
-  " Rust completion for Neovim (Deoplete) via Racer
-  Plug 'sebastianmarkow/deoplete-rust', { 'for': ['rust', 'rs', 'rslib'] }
-endif
-" Update the bult-in CSS complete function to latest CSS standard
-Plug 'othree/csscomplete.vim', { 'for': ['css']  }
 
 
 " ---------------
@@ -360,9 +359,6 @@ Plug 'jparise/vim-graphql', { 'for': ['gql', 'graphql','javascript', 'javascript
 "  A vim plugin to display the indention levels with thin vertical lines
 Plug 'Yggdroot/indentLine'
 
-" async formatting for neovim and vim8
-Plug 'sbdchd/neoformat'
-
 " Databases
 " vim plugin for highlighting columns in csv/tsv files and executing SELECT and UPDATE queries in SQL-like language
 Plug 'mechatroner/rainbow_csv', { 'for': ['csv'] }
@@ -396,7 +392,6 @@ Plug 'tpope/vim-markdown', { 'for': ['markdown', 'md'] }
 
 " Convert given timestamp to local date time and utc
 Plug 'heavenshell/vim-jikoku'
-
 
 " Over 70 language packs
 Plug 'sheerun/vim-polyglot'
