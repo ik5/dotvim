@@ -70,7 +70,7 @@ let g:go_gocode_unimported_packages = 1
 
 "autocmd FileType go autocmd BufWritePre <buffer> GoFmt
 
-let g:go_snippet_engine = "automatic"
+let g:go_snippet_engine = 'automatic'
 
 let g:go_decls_includes = 'func,type,var,const'
 
@@ -82,7 +82,7 @@ let g:go_def_reuse_buffer=0
 let g:go_play_browser_command = 'firefox %URL% &'
 
 " open alternate in split rather on same buffer
-let g:go_alternate_mode = "split"
+let g:go_alternate_mode = 'split'
 
 " create a go doc comment based on the word under the cursor
 function! s:create_go_doc_comment()
