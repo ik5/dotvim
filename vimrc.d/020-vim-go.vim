@@ -5,7 +5,7 @@
 let g:go_async_run = 1
 let g:go_fmt_command = 'goimports'
 "let g:go_fmt_command = 'gofmt'
-let g:go_list_type = 'quickfix'
+let g:go_list_type = 'locationlist'
 let g:go_list_height = 5
 " do not create an Hello World template
 let g:go_template_autocreate = 0
