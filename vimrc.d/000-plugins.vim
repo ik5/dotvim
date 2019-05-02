@@ -92,11 +92,13 @@ if executable("ruby")
   " Plug 'uplus/deoplete-solargraph', { 'for': ['ruby', 'haml', 'eruby']  }
   " A neocomplcache plugin for English, using look command
 endif
-Plug 'ujihisa/neco-look'
-" better spirce scanning
-Plug 'Shougo/neco-syntax'
-" vim syntax complete
-Plug 'Shougo/neco-vim', { 'for': ['vim'] }
+if executable("look")
+  " better spirce scanning
+  Plug 'Shougo/neco-syntax'
+  " vim syntax complete
+  Plug 'Shougo/neco-vim', { 'for': ['vim'] }
+  Plug 'ujihisa/neco-look'
+endif
 if  executable("llc")
   " deoplete.nvim source for C/C++/Obj-C/Obj-C++ with clang-python3
   Plug 'zchee/deoplete-clang', { 'for': ['c', 'cpp'] }
@@ -110,8 +112,8 @@ Plug 'fszymanski/deoplete-emoji'
 " Neovim and vim Flow autocompletion for deoplete + neosnippet
 Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin', 'for': ['javascript', 'jsx', 'vue']  }
 if executable("tmux")
-" Vim plugin for insert mode completion of words in adjacent tmux panes
-Plug 'wellle/tmux-complete.vim'
+  " Vim plugin for insert mode completion of words in adjacent tmux panes
+  Plug 'wellle/tmux-complete.vim'
 endif
 if executable('rustc')
   " Rust completion for Neovim (Deoplete) via Racer
@@ -119,6 +121,14 @@ if executable('rustc')
 endif
 " Update the bult-in CSS complete function to latest CSS standard
 Plug 'othree/csscomplete.vim', { 'for': ['css']  }
+" Track the engine.
+Plug 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
+" snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
+Plug 'garbas/vim-snipmate'
+" Some snippets of vim' plugin snipMate.vim for ruby
+Plug 'kaichen/vim-snipmate-ruby-snippets'
 
 " async formatting for neovim and vim8
 Plug 'sbdchd/neoformat'
@@ -130,7 +140,7 @@ Plug 'tpope/vim-fugitive'
 " A Vim plugin which shows a git diff in the gutter
 " A lightweight and powerful git branch viewer for vim.
 Plug 'rbong/vim-flog'
-"
+" A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
 Plug 'airblade/vim-gitgutter'
 " Mercurial
 Plug 'ludovicchabant/vim-lawrencium'
@@ -218,14 +228,6 @@ Plug 'majutsushi/tagbar'
 " javascript tags for tagbar
 Plug 'hushicai/tagbar-javascript.vim', { 'do': 'npm install esctags' }
 
-" Track the engine.
-Plug 'SirVer/ultisnips'
-" Snippets are separated from the engine. Add this if you want them:
-Plug 'honza/vim-snippets'
-" snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
-Plug 'garbas/vim-snipmate'
-" Some snippets of vim' plugin snipMate.vim for ruby
-Plug 'kaichen/vim-snipmate-ruby-snippets'
 
 " Vim plugin: flexible viewer for any documentation
 Plug 'powerman/vim-plugin-viewdoc'
@@ -246,10 +248,8 @@ if executable('rustc')
   Plug 'racer-rust/vim-racer', { 'for': ['rust', 'rs', 'rslib'] }
 endif
 
-
 " Web API
 " Plug 'mattn/webapi-vim'
-
 
 " ---------------
 " Web Development
@@ -337,15 +337,19 @@ Plug 'tpope/vim-eunuch'
 " Handles bracketed-paste-mode in vim (aka. automatic `:set paste`)
 Plug 'ConradIrwin/vim-bracketed-paste'
 
-" Use of Clang for completing C, C++, Objective-C and Objective-C++
-Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
+if executable("llc")
+  " Use of Clang for completing C, C++, Objective-C and Objective-C++
+  Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
+endif
 
-" Support for python programming
-Plug 'python-mode/python-mode', { 'for': 'python' }
-" Using the jedi autocompletion library for VIM for Python
-Plug 'davidhalter/jedi-vim', { 'for': 'python' }
-" Vim plugin for working with python virtualenvs
-Plug 'jmcantrell/vim-virtualenv', { 'for': 'python' }
+if executable("python")
+  " Support for python programming
+  Plug 'python-mode/python-mode', { 'for': 'python' }
+  " Using the jedi autocompletion library for VIM for Python
+  Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+  " Vim plugin for working with python virtualenvs
+  Plug 'jmcantrell/vim-virtualenv', { 'for': 'python' }
+endif
 
 if executable('terraform')
   " HasiCorp
