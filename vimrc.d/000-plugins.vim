@@ -97,16 +97,22 @@ Plug 'ujihisa/neco-look'
 Plug 'Shougo/neco-syntax'
 " vim syntax complete
 Plug 'Shougo/neco-vim', { 'for': ['vim'] }
-" deoplete.nvim source for C/C++/Obj-C/Obj-C++ with clang-python3
-Plug 'zchee/deoplete-clang', { 'for': ['c', 'cpp'] }
-" Zsh completion for deoplete.nvim
-Plug 'zchee/deoplete-zsh', { 'for': ['zsh'] }
+if  executable("llc")
+  " deoplete.nvim source for C/C++/Obj-C/Obj-C++ with clang-python3
+  Plug 'zchee/deoplete-clang', { 'for': ['c', 'cpp'] }
+endif
+if executable("zsh")
+  " Zsh completion for deoplete.nvim
+  Plug 'zchee/deoplete-zsh', { 'for': ['zsh'] }
+endif
 " Deoplete source for emoji codes
 Plug 'fszymanski/deoplete-emoji'
 " Neovim and vim Flow autocompletion for deoplete + neosnippet
 Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin', 'for': ['javascript', 'jsx', 'vue']  }
+if executable("tmux")
 " Vim plugin for insert mode completion of words in adjacent tmux panes
 Plug 'wellle/tmux-complete.vim'
+endif
 if executable('rustc')
   " Rust completion for Neovim (Deoplete) via Racer
   Plug 'sebastianmarkow/deoplete-rust', { 'for': ['rust', 'rs', 'rslib'] }
@@ -207,9 +213,6 @@ Plug 'jiangmiao/auto-pairs'
 " vim match-up: even better % 👊 navigate and highlight matching words
 Plug 'andymass/vim-matchup'
 
-" airline status plugins" Do completion using tab key
-Plug 'ervandew/supertab'
-
 " Tagbar - show tags of a project
 Plug 'majutsushi/tagbar'
 " javascript tags for tagbar
@@ -245,7 +248,7 @@ endif
 
 
 " Web API
-Plug 'mattn/webapi-vim'
+" Plug 'mattn/webapi-vim'
 
 
 " ---------------
