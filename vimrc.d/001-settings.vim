@@ -112,7 +112,7 @@ set list
 set listchars=tab:→\ ,trail:·,extends:›,precedes:‹,nbsp:␣
 
 set completeopt=longest,menu,menuone,preview   " Just show the menu upon completion (faster)
-set completeopt+=preview
+set completeopt-=preview
 set infercase                     " Allow smarter completion by infering the case
 set pumheight=15               " The maximum height of a completion menu
 
