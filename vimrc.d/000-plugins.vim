@@ -39,13 +39,6 @@ Plug 'autozimu/LanguageClient-neovim', {
       \ 'branch': 'next',
       \ 'do': 'bash install.sh',
       \ }
-
-" Vim plugin to diff two directories
-Plug 'will133/vim-dirdiff'
-" visual undo graph
-Plug 'mbbill/undotree'
-
-
 " ale - Asynchronous Lint Engine
 Plug 'w0rp/ale'
 
@@ -71,6 +64,11 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-abolish'
 " Find And Replace Vim plugin
 Plug 'brooth/far.vim'
+" Vim plugin to diff two directories
+Plug 'will133/vim-dirdiff'
+" visual undo graph
+Plug 'mbbill/undotree'
+
 
 " auto complete
 " Dark powered asynchronous completion framework for neovim
