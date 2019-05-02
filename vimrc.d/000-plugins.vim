@@ -52,7 +52,7 @@ Plug 'w0rp/ale'
 " Dark powered asynchronous unite all interfaces for Neovim/Vim8
 Plug 'Shougo/denite.nvim'
 " Browse and open sessions with this Denite source
-Plug 'rafi/vim-denite-session'
+" Plug 'rafi/vim-denite-session'
 " denite-rails is a Denite.nvim source for Rails
 Plug '5t111111/denite-rails', { 'for': ['ruby', 'haml', 'eruby'] }
 " Control your location list and quickfix list by unite/denite
