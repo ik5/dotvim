@@ -67,6 +67,10 @@ let g:go_gocode_propose_builtins = 1
 let g:go_gocode_propose_source = 1
 " allow to have propose from un imported packages
 let g:go_gocode_unimported_packages = 1
+" control whether omnifunc omnifunc is set
+let g:go_code_completion_enabled = 1
+" make sure that `let g:auto_complete_enabled = 1` is set.
+let g:auto_complete_enabled = 1
 
 "autocmd FileType go autocmd BufWritePre <buffer> GoFmt
 
