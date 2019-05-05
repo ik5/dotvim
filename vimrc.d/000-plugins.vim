@@ -77,33 +77,33 @@ if executable('go')
   " Go complete
   Plug 'zchee/deoplete-go', { 'do': 'make', 'for': [ 'go' ] }
 endif
-if executable("python")
+if executable('python')
   " python complete
   Plug 'zchee/deoplete-jedi', { 'for': 'python' }
-  if executable("npm")
+  if executable('npm')
     "" javascript complete
     Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install', 'for': ['javascript', 'vue', 'jsx'] }
   endif
 endif
-if executable("ruby")
+if executable('ruby')
   " Deoplete sources for ruby language
   Plug 'fishbullet/deoplete-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
   " deoplete source for Ruby with solargraph -> IDE tools for Ruby
   " Plug 'uplus/deoplete-solargraph', { 'for': ['ruby', 'haml', 'eruby']  }
   " A neocomplcache plugin for English, using look command
 endif
-if executable("look")
+if executable('look')
   " better spirce scanning
   Plug 'Shougo/neco-syntax'
   " vim syntax complete
   Plug 'Shougo/neco-vim', { 'for': ['vim'] }
   Plug 'ujihisa/neco-look'
 endif
-if  executable("llc")
+if  executable('llc') || executable('clang')
   " deoplete.nvim source for C/C++/Obj-C/Obj-C++ with clang-python3
   Plug 'zchee/deoplete-clang', { 'for': ['c', 'cpp'] }
 endif
-if executable("zsh")
+if executable('zsh')
   " Zsh completion for deoplete.nvim
   Plug 'zchee/deoplete-zsh', { 'for': ['zsh'] }
 endif
@@ -111,7 +111,7 @@ endif
 Plug 'fszymanski/deoplete-emoji'
 " Neovim and vim Flow autocompletion for deoplete + neosnippet
 Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin', 'for': ['javascript', 'jsx', 'vue']  }
-if executable("tmux")
+if executable('tmux')
   " Vim plugin for insert mode completion of words in adjacent tmux panes
   Plug 'wellle/tmux-complete.vim'
 endif
@@ -337,12 +337,12 @@ Plug 'tpope/vim-eunuch'
 " Handles bracketed-paste-mode in vim (aka. automatic `:set paste`)
 Plug 'ConradIrwin/vim-bracketed-paste'
 
-if executable("llc")
+if executable('llc') || executable('clang')
   " Use of Clang for completing C, C++, Objective-C and Objective-C++
   Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
 endif
 
-if executable("python")
+if executable('python')
   " Support for python programming
   Plug 'python-mode/python-mode', { 'for': 'python' }
   " Using the jedi autocompletion library for VIM for Python
