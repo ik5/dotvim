@@ -398,6 +398,10 @@ Plug 'tpope/vim-markdown', { 'for': ['markdown', 'md'] }
 " Convert given timestamp to local date time and utc
 Plug 'heavenshell/vim-jikoku'
 
+if executable("mvn")
+  Plug 'mikelue/vim-maven-plugin', { 'for': ['java'] }
+endif
+
 " Over 70 language packs
 Plug 'sheerun/vim-polyglot'
 call plug#end()
