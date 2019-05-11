@@ -249,8 +249,9 @@ set spell spelllang=en_us " spelling default language
 set spellfile=~/tmp/spell/en.utf8.add " spelling file to save new words
 set thesaurus+=/tmp/spell/mthesaur.txt
 
-" Ignore whitespace only changes in diff
-set diffopt+=iwhite
+
+set diffopt+=filler " Show filler lines, to keep the test sync with a window
+set diffopt+=iwhite " Ignore whitespace only changes in diff
 
 if has('nvim')
   let g:loaded_matchit = 1
