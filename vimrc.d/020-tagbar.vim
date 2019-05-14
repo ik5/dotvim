@@ -75,6 +75,10 @@ let g:tagbar_type_proto = {
       \'kinds': [
       \'m:message',
       \'v:variable',
+      \'s:service',
+      \'e:value',
+      \'g:enum',
+      \'p:procedures',
       \],
       \}
 
