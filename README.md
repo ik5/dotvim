@@ -231,6 +231,7 @@ vim +PlugUpdate +qa
 | `,s`                        | Find file and open it for edit in horizontal split                                                  |
 | `,v`                        | Find file and open it for edit in vertical split                                                    |
 | `,t`                        | Find file and open it for edit in new tab                                                           |
+| `<C-x><C-o>`                | Open omnicomplete                                                                                   |
 
 ### Right To Left
 
