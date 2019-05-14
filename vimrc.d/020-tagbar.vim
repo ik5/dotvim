@@ -71,6 +71,13 @@ let g:tagbar_type_make = {
       \ ]
       \}
 
+let g:tagbar_type_proto = {
+      \'kinds': [
+      \'m:message',
+      \'v:variable',
+      \],
+      \}
+
 " let g:tagbar_type_javascript = {
       " \ 'ctagtype': 'js',
       " \ 'kinds': [
