@@ -374,7 +374,7 @@ vim +PlugUpdate +qa
 | `<leader>gov`     | Open godoc vertical                                                       |
 | `<leader>gobd`    | Open godoc browser                                                        |
 | `<leader>goa`     | Switch between test and source files                                      |
-| `<leader>got`     | Add default tags to struct (e.g. JSON)                                    |
+| ``<leader>go` ``     | Add default tags to struct (e.g. JSON)                                    |
 | `<leader>goT`     | Opens a command for `GoAddTags` allowing to place the needed tag names    |
 | `<leader>gov`     | Goto declaration/definition, in a vertical window                         |
 | `<leader>gd`      | Goto declaration/definition, in a horizontal window                       |
