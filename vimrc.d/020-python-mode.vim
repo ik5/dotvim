@@ -35,9 +35,9 @@ let g:pymode_virtualenv = 1
 
 " Allow syntastic to do the linting, but show on the side, what type of lint happened
 let g:pymode_lint = 1
-let g:pymode_lint_on_write = 0
+let g:pymode_lint_on_write = 1
 let g:pymode_lint_signs = 1
-let g:pymode_lint_message = 0
+let g:pymode_lint_message = 1
 
 " Enable rope
 let g:pymode_rope = 0
