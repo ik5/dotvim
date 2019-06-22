@@ -125,10 +125,10 @@ augroup Golang
   " Alternate between test and file
   au FileType go nnoremap <Leader>goa :GoAlternate<cr>
 
-  au FileType go nnoremap <Leader>got :GoAddTags<cr>
-  au FileType go vnoremap <Leader>got :GoAddTags<cr>
-  au FileType go onoremap <Leader>got :GoAddTags<cr>
-  au FileType go cnoremap <Leader>got :GoAddTags<cr>
+  au FileType go nnoremap <Leader>go` :GoAddTags<cr>
+  au FileType go vnoremap <Leader>go` :GoAddTags<cr>
+  au FileType go onoremap <Leader>go` :GoAddTags<cr>
+  au FileType go cnoremap <Leader>go` :GoAddTags<cr>
   au FileType go nnoremap <Leader>goT :GoAddTags
   au FileType go vnoremap <Leader>goT :GoAddTags
   au FileType go cnoremap <Leader>goT :GoAddTags

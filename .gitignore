@@ -2,3 +2,4 @@ autoload
 plugged
 doc
 ftplugin/
+.netrwhist
