@@ -152,3 +152,17 @@ function! s:vueSetFileType()
   else
     set ft=html
 endfunction
+
+function! UnixFF()
+  set ff=unix
+
+  if &modified == 0
+    return
+  endif
+
+  if confirm('Save current changes?', '&Y/&N', 0) == 0
+    confirm w
+    echo 'Saved file "' . expand('%') . '"'
+  endif
+endfunction
+

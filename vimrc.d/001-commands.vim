@@ -16,3 +16,5 @@ command! RebaseSquash silent execute '2,$s/^pick/s/|silent! w!|2'
 command! CloseOthers tabonly|only
 
 command! FixDoubleQuotes %s/“\|”/"/g
+
+command! ToUnixFF call UnixFF()

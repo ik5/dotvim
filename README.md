@@ -149,6 +149,7 @@ vim +PlugUpdate +qa
 | `RebaseSquash`    | Perform a `pick` strategy for squash on rebase in GIT  |
 | `CloseOthers`     | Close all windows and tabs but the current active one  |
 | `FixDoubleQuotes` | Replace unicode double quotes to ascii's version       |
+| `ToUnixFF`        | Set current file ending to Unix                        |
 
 ## Shortcuts
 
