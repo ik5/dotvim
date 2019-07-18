@@ -48,7 +48,7 @@ let g:go_highlight_generate_tags = 1
 let g:go_highlight_debug = 1
 
 " auto listener on save
-let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave = 0
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'gofmt', 'gosec']
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'gofmt', 'gosec']
 let g:go_metalinter_deadline = '1.5m'
