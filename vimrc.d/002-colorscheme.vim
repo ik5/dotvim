@@ -66,7 +66,7 @@ if exists('$TMUX')
 endif
 
 
-"colorscheme badwolf
-colorscheme molokai
+colorscheme badwolf
+"colorscheme molokai
 " colorscheme codedark
 " colorscheme one
