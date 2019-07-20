@@ -1,3 +1,4 @@
+finish
 let b:golangserver = ['gopls']
 
 " if executable('bingo')

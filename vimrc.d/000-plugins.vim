@@ -34,12 +34,7 @@ Plug 'jaxbot/semantic-highlight.vim'
 " Retro groove color scheme for Vim
 Plug 'morhetz/gruvbox'
 
-" Language Server Protocol (LSP) support for vim and neovim
-Plug 'autozimu/LanguageClient-neovim', {
-      \ 'branch': 'next',
-      \ 'do': 'bash install.sh',
-      \ }
-" ale - Asynchronous Lint Engine
+" linting
 Plug 'w0rp/ale'
 
 " Dark powered asynchronous unite all interfaces for Neovim/Vim8
@@ -71,27 +66,6 @@ Plug 'mbbill/undotree'
 
 
 " auto complete
-" Dark powered asynchronous completion framework for neovim
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-if executable('go')
-  " Go complete
-  Plug 'zchee/deoplete-go', { 'do': 'make', 'for': [ 'go' ] }
-endif
-if executable('python')
-  " python complete
-  Plug 'zchee/deoplete-jedi', { 'for': 'python' }
-  if executable('npm')
-    "" javascript complete
-    Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install', 'for': ['javascript', 'vue', 'jsx'] }
-  endif
-endif
-if executable('ruby')
-  " Deoplete sources for ruby language
-  Plug 'fishbullet/deoplete-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
-  " deoplete source for Ruby with solargraph -> IDE tools for Ruby
-  " Plug 'uplus/deoplete-solargraph', { 'for': ['ruby', 'haml', 'eruby']  }
-  " A neocomplcache plugin for English, using look command
-endif
 if executable('look')
   " better spirce scanning
   Plug 'Shougo/neco-syntax'
@@ -99,25 +73,13 @@ if executable('look')
   Plug 'Shougo/neco-vim', { 'for': ['vim'] }
   Plug 'ujihisa/neco-look'
 endif
-if  executable('llc') || executable('clang')
-  " deoplete.nvim source for C/C++/Obj-C/Obj-C++ with clang-python3
-  Plug 'zchee/deoplete-clang', { 'for': ['c', 'cpp'] }
-endif
-if executable('zsh')
-  " Zsh completion for deoplete.nvim
-  Plug 'zchee/deoplete-zsh', { 'for': ['zsh'] }
-endif
 " Deoplete source for emoji codes
-Plug 'fszymanski/deoplete-emoji'
+" Plug 'fszymanski/deoplete-emoji'
 " Neovim and vim Flow autocompletion for deoplete + neosnippet
-Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin', 'for': ['javascript', 'jsx', 'vue']  }
+" Plug 'wokalski/autocomplete-flow', { 'do': 'npm i flow-bin', 'for': ['javascript', 'jsx', 'vue']  }
 if executable('tmux')
   " Vim plugin for insert mode completion of words in adjacent tmux panes
   Plug 'wellle/tmux-complete.vim'
-endif
-if executable('rustc')
-  " Rust completion for Neovim (Deoplete) via Racer
-  Plug 'sebastianmarkow/deoplete-rust', { 'for': ['rust', 'rs', 'rslib'] }
 endif
 " Update the bult-in CSS complete function to latest CSS standard
 Plug 'othree/csscomplete.vim', { 'for': ['css']  }
@@ -129,9 +91,11 @@ Plug 'honza/vim-snippets'
 Plug 'garbas/vim-snipmate'
 " Some snippets of vim' plugin snipMate.vim for ruby
 Plug 'kaichen/vim-snipmate-ruby-snippets'
+" Intellisense engine for vim8 & neovim, full language server protocol support as VSCode
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
 
 " async formatting for neovim and vim8
-Plug 'sbdchd/neoformat'
+" Plug 'sbdchd/neoformat'
 
 " VCS (git)
 Plug 'tpope/vim-fugitive'
