@@ -36,14 +36,19 @@ nnoremap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:ale_javascript_eslint_executable = 'eslint_d'
 let g:ale_javascript_eslint_use_global = 0
 
-let g:ale_fixers = { 'javascript': ['eslint'] }
+let g:ale_fixers = {
+      \'javascript': ['prettier', 'eslint'],
+      \ 'vue': ['prettier-vue','prettier', 'eslint' ],
+      \ 'jsx': ['prettier', 'eslint'],
+      \}
 
 " let g:ale_python_flake8_executable = 'flake8-python2'
 let g:ale_python_flake8_executable = 'flake8'
 
 let g:ale_linters = {
-      \ 'javascript': ['eslint'],
-      \ 'jsx': ['eslint'],
+      \ 'javascript': ['prettier', 'eslint'],
+      \ 'vue': ['prettier-vue','prettier', 'eslint'],
+      \ 'jsx': ['prettier', 'eslint'],
       \ 'ruby': ['rubocop'],
       \ 'perl': ['syntax-check', 'perl', 'perlcritic'],
       \ 'json': ['jsonlint', 'jq'],
