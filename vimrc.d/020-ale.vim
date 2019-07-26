@@ -55,9 +55,8 @@ let g:ale_linters = {
       \ 'ruby': ['rubocop'],
       \ 'perl': ['syntax-check', 'perl', 'perlcritic'],
       \ 'json': ['jsonlint', 'jq'],
-      \ 'go': [],
+      \ 'go': ['vet', 'golint', 'errcheck', 'gofmt', 'gosec'],
       \}
-      " \ 'go': ['vet', 'golint', 'errcheck', 'gofmt', 'gosec'],
 let g:ale_ruby_rubocop_executable = 'rubocop'
 let g:ale_linter_aliases = {'jsx': 'css'}
 
