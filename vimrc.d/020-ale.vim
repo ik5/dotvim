@@ -36,9 +36,12 @@ nnoremap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:ale_javascript_eslint_executable = 'eslint_d'
 let g:ale_javascript_eslint_use_global = 0
 
+let g:ale_javascript_prettier_executable = 'prettier'
+let g:ale_vue_prettier_executable = 'prettier-vue'
+
 let g:ale_fixers = {
       \'javascript': ['prettier', 'eslint'],
-      \ 'vue': ['prettier-vue','prettier', 'eslint' ],
+      \ 'vue': ['eslint', 'prettier-vue','prettier'],
       \ 'jsx': ['prettier', 'eslint'],
       \}
 
@@ -52,8 +55,9 @@ let g:ale_linters = {
       \ 'ruby': ['rubocop'],
       \ 'perl': ['syntax-check', 'perl', 'perlcritic'],
       \ 'json': ['jsonlint', 'jq'],
-      \ 'go': ['vet', 'golint', 'errcheck', 'gofmt', 'gosec'],
+      \ 'go': [],
       \}
+      " \ 'go': ['vet', 'golint', 'errcheck', 'gofmt', 'gosec'],
 let g:ale_ruby_rubocop_executable = 'rubocop'
 let g:ale_linter_aliases = {'jsx': 'css'}
 
