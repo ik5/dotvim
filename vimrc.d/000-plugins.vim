@@ -261,15 +261,15 @@ Plug 'mattn/emmet-vim', { 'for': ['html', 'xhtml', 'css', 'xml', 'erb'] }
 " support for vue.js
 Plug 'posva/vim-vue', { 'for': ['vue', 'javascript'] }
 " YAJS.vim: Yet Another JavaScript Syntax for Vim
-Plug 'othree/yajs.vim', { 'for': ['vue', 'javascript', 'jsx', 'javascript.jsx'] }
+" Plug 'othree/yajs.vim', { 'for': ['vue', 'javascript', 'jsx', 'javascript.jsx'] }
 " vim-jsx
-Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
+" Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 " Syntax for JavaScript libraries
-Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
+" Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
 " ES.Next syntax for Vim - This syntax file is for ES7 and future syntax
-Plug 'othree/es.next.syntax.vim', { 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
+" Plug 'othree/es.next.syntax.vim', { 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
 " Enhanced javascript syntax file for Vim
-Plug 'jelera/vim-javascript-syntax', { 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
+" Plug 'jelera/vim-javascript-syntax', { 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
 " Tern plugin for Vim
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
 " Css Coloring
@@ -283,29 +283,29 @@ Plug 'othree/jsdoc-syntax.vim', { 'for': ['javascript'] }
 " Wrapper around babel.js (ES2015, React, ...)  Wrapper around babel.js (ES2015, React, ...)
 Plug 'jbgutierrez/vim-babel', { 'for': ['javascript'] }
 " Vastly improved Javascript indentation and syntax support in Vim.
-Plug 'pangloss/vim-javascript',{ 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
+" Plug 'pangloss/vim-javascript',{ 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
 " React JSX syntax pretty highlighting for vim.
-Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
+" Plug 'maxmellon/vim-jsx-pretty', { 'for': ['javascript', 'vue', 'jsx', 'javascript.jsx'] }
 " Next generation JavaScript and React snippets for Vim
 Plug 'alnjxn/babel-vim-snippets', { 'for': ['javascript'] }
 " vim snippets for react.
 Plug 'BerkeleyTrue/berkeleys-snippet-emporium', { 'for': ['javascript', 'jsx', 'javascript.jsx'] }
 " auto fix your javascript using fixmyjs
-Plug 'ruanyl/vim-fixmyjs', { 'for': ['javascript', 'jsx', 'javascript.jsx', 'vue'] }
+" Plug 'ruanyl/vim-fixmyjs', { 'for': ['javascript', 'jsx', 'javascript.jsx', 'vue'] }
 " CSS3 syntax (and syntax defined in some foreign specifications) support for Vim's built-in syntax/css.vim
-Plug 'hail2u/vim-css3-syntax', { 'for': ['css']}
+" Plug 'hail2u/vim-css3-syntax', { 'for': ['css']}
 " Vim syntax file for scss (Sassy CSS)
-Plug 'cakebaker/scss-syntax.vim', { 'for': ['sass', 'scss'] }
+" Plug 'cakebaker/scss-syntax.vim', { 'for': ['sass', 'scss'] }
 " vim syntax for LESS (dynamic CSS)
-Plug 'groenewege/vim-less', { 'for': ['less'] }
+" Plug 'groenewege/vim-less', { 'for': ['less'] }
 " List of JavaScript ES6 snippets and syntax highlighting for vim
 Plug 'isRuslan/vim-es6', { 'for': ['javascript', 'jsx', 'javascript.jsx', 'vue'] }
 "A vim plugin that wraps `jscs -x` into a `:Format` command
 Plug 'mklabs/jscs.vim', { 'do': 'npm i jscs -g', 'for': ['javascript', 'jsx', 'javascript.jsx', 'vue']  }
 "  HTML5 omnicomplete and syntax
-Plug 'othree/html5.vim', { 'for': ['html', 'xhtml'] }
+" Plug 'othree/html5.vim', { 'for': ['html', 'xhtml'] }
 " JavaScript Parameter Complete
-Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx', 'vue', 'jsx'] }
+" Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx', 'vue', 'jsx'] }
 " Improved nginx vim plugin (incl. syntax highlighting)
 Plug 'chr4/nginx', { 'for': ['nginx'] }
 " Highlights JavaScript/TypeScript tagged Template Strings with custom syntaxes
