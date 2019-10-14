@@ -93,6 +93,8 @@ Plug 'garbas/vim-snipmate'
 Plug 'kaichen/vim-snipmate-ruby-snippets'
 " Intellisense engine for vim8 & neovim, full language server protocol support as VSCode
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
+" Denite support of coc.nvim
+Plug 'neoclide/coc-denite'
 
 " async formatting for neovim and vim8
 " Plug 'sbdchd/neoformat'
@@ -205,12 +207,12 @@ endif
 " Displays function signatures from completions in the command line
 Plug 'Shougo/echodoc.vim'
 
-if executable('rustc')
-  " support for rust
-  Plug 'rust-lang/rust.vim', { 'for': ['rust', 'rs', 'rslib'] }
-  " rust racer syntax checking
-  Plug 'racer-rust/vim-racer', { 'for': ['rust', 'rs', 'rslib'] }
-endif
+" if executable('rustc')
+"   " support for rust
+"   Plug 'rust-lang/rust.vim', { 'for': ['rust', 'rs', 'rslib'] }
+"   " rust racer syntax checking
+"   Plug 'racer-rust/vim-racer', { 'for': ['rust', 'rs', 'rslib'] }
+" endif
 
 " Web API
 " Plug 'mattn/webapi-vim'
@@ -315,12 +317,12 @@ if executable('python')
   Plug 'jmcantrell/vim-virtualenv', { 'for': 'python' }
 endif
 
-if executable('terraform')
-  " HasiCorp
-  Plug 'hashivim/vim-terraform', { 'for': ['tf', 'terraform'] }
-  " Terraform complete
-  Plug 'juliosueiras/vim-terraform-completion', { 'for': ['tf', 'terraform'] }
-endif
+" if executable('terraform')
+"   " HasiCorp
+"   Plug 'hashivim/vim-terraform', { 'for': ['tf', 'terraform'] }
+"   " Terraform complete
+"   Plug 'juliosueiras/vim-terraform-completion', { 'for': ['tf', 'terraform'] }
+" endif
 
 " GraphQL
 Plug 'jparise/vim-graphql', { 'for': ['gql', 'graphql','javascript', 'javascript.jsx', 'vue', 'jsx' ] }
@@ -336,15 +338,15 @@ Plug 'lifepillar/pgsql.vim', { 'for': ['sql'] }
 " Modern database interface for Vim
 Plug 'tpope/vim-dadbod'
 
-if filereadable('elm')
-  "Elm
-  Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
-endif
+" if filereadable('elm')
+"   "Elm
+"   Plug 'ElmCast/elm-vim', { 'for': ['elm'] }
+" endif
 
-if filereadable('kotlin')
-  " vim kotlin
-  Plug 'udalov/kotlin-vim', { 'for': ['kotlin', 'kts', 'kt'] }
-endif
+" if filereadable('kotlin')
+"   " vim kotlin
+"   Plug 'udalov/kotlin-vim', { 'for': ['kotlin', 'kts', 'kt'] }
+" endif
 
 if executable('perl')
   " ALE perl syntax checker

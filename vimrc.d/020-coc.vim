@@ -26,17 +26,19 @@ function! s:show_documentation()
   endif
 endfunction
 
-" Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
+augroup Cock
+  " Highlight symbol under cursor on CursorHold
+  autocmd CursorHold * silent call CocActionAsync('highlight')
 
-" Map <tab> to trigger completion and navigate to the next item:
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
+  " Update signature help on jump placeholder
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
 
-inoremap <silent><expr> <TAB>
-  \ pumvisible() ? "\<C-n>" :
-  \ <SID>check_back_space() ? "\<TAB>" :
-  \ coc#refresh()
+" See yank list
+nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 
+vmap <leader>fp  <Plug>(coc-format-selected)
+nmap <leader>fp  <Plug>(coc-format-selected)
+
+" Remap for rename current word
+nmap <leader>rn <Plug>(coc-rename)

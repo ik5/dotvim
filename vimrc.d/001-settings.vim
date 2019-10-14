@@ -31,7 +31,7 @@ set smartindent          " smart indentation
 set showcmd              " display incomplete commands
 set ruler                " show the cursor position all the time
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
-set signcolumn=auto      " display the sign column only when there is something to show
+set signcolumn=yes      " display the sign column only when there is something to show
 set noerrorbells         " do not do a noise bell
 set visualbell           " Visual bell instead of nosie, or no indication at all
 set nobackup             " do not keep a backup file
@@ -116,7 +116,7 @@ set completeopt-=preview " making sure that no preview exists, it causes some is
 set infercase                     " Allow smarter completion by infering the case
 set pumheight=15               " The maximum height of a completion menu
 
-set updatetime=4000       " 4 seconds of no key press the swap file will be written
+set updatetime=400           " 400 millisecond of no key press the swap file will be written
 set directory=~/tmp/swp      " Keep swap files out of the working dir, Adjust if needed in another dir
 set tags=./tags,tags         " Set tags directory
 

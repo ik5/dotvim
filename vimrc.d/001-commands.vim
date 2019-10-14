@@ -18,3 +18,5 @@ command! CloseOthers tabonly|only
 command! FixDoubleQuotes %s/“\|”/"/g
 
 command! ToUnixFF call UnixFF()
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
