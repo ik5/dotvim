@@ -1,0 +1,23 @@
+---
+languages:
+  eruby:
+    lint-command: 'erb -x -T - | ruby -c'
+    lint-stdin: true
+    lint-offset: 1
+    format-command: 'htmlbeautifier'
+
+  vim:
+    lint-command: 'vint -'
+    lint-stdin: true
+
+  markdown:
+    lint-command: 'markdownlint -s'
+    lint-stdin: true
+    lint-formats:
+      - '%f: %l: %m'
+
+  yaml:
+    lint-command: 'yamllint -f parsable -'
+    lint-stdin: true
+    lint-formats:
+      - '%f:%l:%c: %m'
