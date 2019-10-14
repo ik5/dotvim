@@ -56,7 +56,7 @@ set path+=.,**   " Search upwards and downwards in a directory tree using * and 
 if !has('nvim')
   set ttymouse=xterm2
   set ttyscroll=3           " number of lines to scroll before redraw
-	set ttyfast              " smoother changes
+  set ttyfast              " smoother changes
 endif
 set history=10000        " largest history
 set noshowmode           " Hide the default mode text (e.g. -- INSERT -- below the statusline)
