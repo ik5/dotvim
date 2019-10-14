@@ -3,6 +3,9 @@
 " ==================================================
 
 if (has('termguicolors'))
+  if has('nvim')
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
   set termguicolors " true colors
 endif
 let g:rehash256 = 1 " molokai looks for it, so placing it first
