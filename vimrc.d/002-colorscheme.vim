@@ -21,14 +21,15 @@ else
     set t_Co=256
 endif
 
-let g:monokai_term_italic = 1
-let g:monokai_gui_italic = 1
-
 " ==================================================
 " Trailing whitespace handling
 " ==================================================
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
+
+" monokai
+let g:monokai_term_italic = 1
+let g:monokai_gui_italic = 1
 
 " Bad Wolf
 
@@ -54,4 +55,4 @@ let g:gruvbox_termcolors = 256
 colorscheme badwolf
 "colorscheme molokai
 " colorscheme codedark
-" colorscheme one
+" colorscheme gruvbox
