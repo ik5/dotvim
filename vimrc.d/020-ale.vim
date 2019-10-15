@@ -40,8 +40,8 @@ let g:ale_javascript_prettier_executable = 'prettier'
 let g:ale_vue_prettier_executable = 'prettier-vue'
 
 let g:ale_fixers = {
-      \'javascript': ['prettier', 'eslint'],
-      \'css': ['prettier'],
+      \ 'javascript': ['prettier', 'eslint'],
+      \ 'css': ['prettier'],
       \ 'vue': ['eslint', 'prettier-vue','prettier'],
       \ 'jsx': ['prettier', 'eslint'],
       \}
