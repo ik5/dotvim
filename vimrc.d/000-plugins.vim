@@ -85,6 +85,10 @@ endif
 Plug 'othree/csscomplete.vim', { 'for': ['css']  }
 " Track the engine.
 Plug 'SirVer/ultisnips'
+" neo-snippet plugin
+Plug 'Shougo/neosnippet.vim'
+" The standard snippets repository for neosnippet
+Plug 'Shougo/neosnippet-snippets'
 " Snippets are separated from the engine. Add this if you want them:
 Plug 'honza/vim-snippets'
 " snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
