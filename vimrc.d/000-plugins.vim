@@ -35,7 +35,7 @@ Plug 'jaxbot/semantic-highlight.vim'
 Plug 'morhetz/gruvbox'
 
 " linting
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 " Dark powered asynchronous unite all interfaces for Neovim/Vim8
 Plug 'Shougo/denite.nvim'
