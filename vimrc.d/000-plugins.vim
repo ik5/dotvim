@@ -361,6 +361,11 @@ if executable('perl')
   Plug 'skaji/syntax-check-perl'
 endif
 
+if executable('php')
+  "  An up-to-date Vim syntax for PHP (7.x supported)
+  Plug 'stanangeloff/php.vim'
+endif
+
 " A powerful grammar checker for Vim using LanguageTool
 Plug 'rhysd/vim-grammarous'
 " A Vim plugin for looking up words in an online thesaurus
