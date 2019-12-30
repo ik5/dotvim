@@ -63,7 +63,8 @@ Plug 'brooth/far.vim'
 Plug 'will133/vim-dirdiff'
 " visual undo graph
 Plug 'mbbill/undotree'
-
+" EditorConfig plugin for Vim
+Plug 'editorconfig/editorconfig-vim'
 
 " auto complete
 if executable('look')
