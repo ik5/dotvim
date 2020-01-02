@@ -56,3 +56,11 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
+
+call coc#config('languageserver', {
+      \ 'ccls': {
+      \   "command": "ccls",
+      \   "trace.server": "verbose",
+      \   "filetypes": ["c", "cpp", "objc", "objcpp"]
+      \ }
+      \})

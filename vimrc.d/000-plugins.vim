@@ -315,6 +315,10 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 if executable('llc') || executable('clang')
   " Use of Clang for completing C, C++, Objective-C and Objective-C++
   Plug 'Rip-Rip/clang_complete', { 'for': ['c', 'cpp'] }
+  " Include source for coc.nvim
+  Plug 'jsfaint/coc-neoinclude', { 'for': ['c', 'cpp'] }
+  " Include completion framework for neocomplete/deoplete
+  Plug 'Shougo/neoinclude.vim', { 'for': ['c', 'cpp'] }
 endif
 
 if executable('python')
