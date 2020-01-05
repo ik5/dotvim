@@ -26,7 +26,7 @@ function! s:show_documentation()
   endif
 endfunction
 
-augroup Cock
+augroup Coc
   " Highlight symbol under cursor on CursorHold
   autocmd CursorHold * silent call CocActionAsync('highlight')
 
