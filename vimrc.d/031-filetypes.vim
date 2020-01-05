@@ -53,7 +53,7 @@ augroup END
 
 augroup JAVASCRIPT
   au FileType vue syntax sync fromstart
-  au BufRead,BufNewFile *.vue call s:vueSetFileType()
+  au FileType vue call VueSetFileType()
   au Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
   " jquery
   au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery

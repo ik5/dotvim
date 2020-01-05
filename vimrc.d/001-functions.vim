@@ -144,13 +144,18 @@ function! s:SmartSplit(file)
 endfunction
 
 " from https://vi.stackexchange.com/questions/10797/change-the-filetype-based-on-tags-regions-in-the-file
-function! s:vueSetFileType()
-  if searchpair('<script', '', '</script>', 'bnW')
+function! VueSetFileType()
+  if searchpair('<script>', '', '</script>', 'bnW')
     set ft=javascript
-  elseif searchpair('<style', '', '</style>', 'bnW')
+  elseif searchpair('<style lang="scss"', '', '</style>', 'bnW')
+    set ft=scss
+  elseif searchpair('<style>', '', '</style>', 'bnW')
     set ft=css
-  else
+  elseif searchpair('<template>', '', '</template>', 'bnW')
     set ft=html
+  else
+    set ft=vue
+  end
 endfunction
 
 function! UnixFF()
