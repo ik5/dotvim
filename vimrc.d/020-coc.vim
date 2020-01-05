@@ -32,7 +32,7 @@ augroup Coc
 
   " Update signature help on jump placeholder
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-augroup end
+augroup END
 
 " See yank list
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
