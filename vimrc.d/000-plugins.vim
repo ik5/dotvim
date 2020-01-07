@@ -200,8 +200,6 @@ Plug 'andymass/vim-matchup'
 
 " Tagbar - show tags of a project
 Plug 'majutsushi/tagbar'
-" javascript tags for tagbar
-Plug 'hushicai/tagbar-javascript.vim', { 'do': 'npm install esctags' }
 
 
 " Vim plugin: flexible viewer for any documentation
@@ -255,6 +253,8 @@ Plug 'lilydjwg/colorizer'
 Plug 'elzr/vim-json', { 'for': ['json', 'javascript'] }
 " Standalone JSDoc syntax for vim
 Plug 'othree/jsdoc-syntax.vim', { 'for': ['javascript'] }
+" Generate JSDoc commands based on function signature
+Plug 'heavenshell/vim-jsdoc'
 " Wrapper around babel.js (ES2015, React, ...)  Wrapper around babel.js (ES2015, React, ...)
 Plug 'jbgutierrez/vim-babel', { 'for': ['javascript'] }
 " Vastly improved Javascript indentation and syntax support in Vim.
