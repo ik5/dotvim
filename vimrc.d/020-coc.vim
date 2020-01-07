@@ -59,8 +59,19 @@ let g:coc_snippet_next = '<tab>'
 
 call coc#config('languageserver', {
       \ 'ccls': {
-      \   "command": "ccls",
-      \   "trace.server": "verbose",
-      \   "filetypes": ["c", "cpp", "objc", "objcpp"]
+      \   'command': 'ccls',
+      \   'trace.server': 'verbose',
+      \   'filetypes': ['c', 'cpp', 'objc', 'objcpp']
       \ }
       \})
+
+call coc#config('eslint', {
+      \ 'filetype': [
+      \ 'javascript',
+      \ 'typescript',
+      \ 'typescriptreact',
+      \ 'javascriptreact',
+      \ 'typescript.tsx',
+      \ 'vue'
+      \ ] })
+
