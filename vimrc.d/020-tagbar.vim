@@ -82,15 +82,27 @@ let g:tagbar_type_proto = {
       \],
       \}
 
-" let g:tagbar_type_javascript = {
-      " \ 'ctagtype': 'js',
-      " \ 'kinds': [
-      " \ 'o:object',
-      " \ 'f:function',
-      " \ 's:string',
-      " \ 'a:array',
-      " \ 'b:boolean',
-      " \ 'n:number',
-      " \ 'v,variable'
-      " \]
-      " \}
+let g:tagbar_type_javascript = {
+      \ 'ctagstype': 'javascript',
+      \ 'kinds': [
+      \ 'a:arrays',
+      \ 'P:properties',
+      \ 'T:tags',
+      \ 'O:objects',
+      \ 'G:generator functions',
+      \ 'f:functions',
+      \ 'C:constructors/classes',
+      \ 'M:methods',
+      \ 'v:variables',
+      \ 'I:imports',
+      \ 'E:exports',
+      \ 'S:styled components'
+      \ ]}
+
+" let g:tagbar_type_vue = {
+"       \ 'ctagstype': 'vue',
+"       \ 'kinds': [
+"       \ 's:Script',
+"       \ 'f:Function',
+"       \ 'p:Property'
+"      \ ]}
