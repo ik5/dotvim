@@ -44,6 +44,7 @@ let g:ale_fixers = {
       \ 'css': ['prettier'],
       \ 'vue': ['eslint', 'prettier-vue','prettier'],
       \ 'jsx': ['prettier', 'eslint'],
+      \ 'php': ['php_cs_fixer'],
       \}
 
 " let g:ale_python_flake8_executable = 'flake8-python2'
