@@ -18,13 +18,13 @@ Plug 'tomasiser/vim-code-dark'
 " base16 colorschemes
 Plug 'chriskempson/base16-vim'
 " Adds file type glyphs/icons to popular Vim plugins: NERDTree, vim-airline, Powerline, Unite, vim-startify and more
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
 " Extra NERDTree Icons
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " airline support
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'powerline/fonts', { 'do': './install.sh' }
+" Plug 'powerline/fonts', { 'do': './install.sh' }
 " Simple tmux statusline generator with support for powerline symbols and statusline / airline / lightline integration
 Plug 'edkolev/tmuxline.vim'
 " Make the yanked region apparent!
