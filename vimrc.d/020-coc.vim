@@ -62,6 +62,12 @@ call coc#config('languageserver', {
       \   'command': 'ccls',
       \   'trace.server': 'verbose',
       \   'filetypes': ['c', 'cpp', 'objc', 'objcpp']
+      \ },
+      \ 'sorbet': {
+      \   'command': 'srb',
+      \   'args': ['tc', '--lsp', '--enable-all-experimental-lsp-features'],
+      \   'filetypes': ['ruby'],
+      \   'rootPatterns': ["sorbet/config"]
       \ }
       \})
 
