@@ -58,21 +58,31 @@ let g:go_autodetect_gopath = 1
 
 " display the variable type under the cursor
 let g:go_auto_type_info = 1
-let g:go_info_mode = 'gocode'
+let g:go_info_mode = 'gopls'
 
-" Specifies whether `gocode` should add built-in types, functions and constants
-" to an autocompletion proposals.
-let g:go_gocode_propose_builtins = 1
-" use binary packages for propose things
-let g:go_gocode_propose_source = 1
-" allow to have propose from un imported packages
-let g:go_gocode_unimported_packages = 1
-" control whether omnifunc omnifunc is set
-let g:go_code_completion_enabled = 1
-" make sure that `let g:auto_complete_enabled = 1` is set.
-let g:auto_complete_enabled = 1
+" Specifies whether `gopls` can be used by vim-go.
+let g:go_gopls_enabled = 1
+" Specifies whether `gopls` should include suggestions from unimported packages.
+let g:go_gopls_complete_unimported = 1
+" Specifies whether `gopls` should use deep completion.
+let g:go_gopls_deep_completion = 1
+" Specifies whether `gopls` should use fuzzy matching for completions.
+let g:go_gopls_fuzzy_matching = 1
+" Specifies whether `gopls` should run staticcheck checks.
+let g:go_gopls_staticcheck = 1
+" Specifies whether `gopls` can provide placeholders for function parameters and
+" struct fields. When set, completion items will be treated as anonymous
+" snippets if UltiSnips is installed and configured to be used as
+" |'g:go_snippet_engine'|.
+let g:go_gopls_use_placeholders = 1
+" Specifies whether `gopls` diagnostics are enabled. Only the diagnostics for
+" the current buffer will be processed when it is not set.
+let g:go_diagnostics_enabled = 0
+" Use this option to define the command to be used for |:GoDef|.
+let g:go_def_mode = 'gopls'
+" Use this option to define the command to be used for |:GoReferrers|.
+let g:go_referrers_mode = 'gopls'
 
-"autocmd FileType go autocmd BufWritePre <buffer> GoFmt
 
 let g:go_snippet_engine = 'automatic'
 
@@ -82,6 +92,11 @@ let g:go_auto_sameids=1
 
 " do not resue buffer on GoDef
 let g:go_def_reuse_buffer=0
+
+" Use this option to enable/disable the default mapping of CTRL-],
+" <C-LeftMouse>, g<C-LeftMouse> and (`gd`) for GoDef and CTRL-t for :GoDefPop.
+" Disabling it allows you to map something else to these keys or mappings.
+let g:go_def_mapping_enabled = 1
 
 let g:go_play_browser_command = 'firefox %URL% &'
 
@@ -107,6 +122,7 @@ function! s:build_go_files()
 endfunction
 
 augroup Golang
+"autocmd FileType go autocmd BufWritePre <buffer> GoFmt
   au FileType go nmap <leader>godoc :<C-u>call <SID>create_go_doc_comment()<CR>
 
   " Show a list of interfaces which is implemented by the type under your cursor
