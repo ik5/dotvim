@@ -57,7 +57,7 @@ let g:go_metalinter_deadline = '1.5m'
 let g:go_autodetect_gopath = 1
 
 " display the variable type under the cursor
-let g:go_auto_type_info = 1
+let g:go_auto_type_info = 0
 let g:go_info_mode = 'gopls'
 
 " Specifies whether `gopls` can be used by vim-go.
@@ -88,7 +88,7 @@ let g:go_snippet_engine = 'automatic'
 
 let g:go_decls_includes = 'func,type,var,const'
 
-let g:go_auto_sameids=1
+let g:go_auto_sameids=0
 
 " do not resue buffer on GoDef
 let g:go_def_reuse_buffer=0
