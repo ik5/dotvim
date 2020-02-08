@@ -39,7 +39,7 @@ let g:go_highlight_extra_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_string_spellcheck = 1
-let g:go_highlight_variable_declarations = 0
+let g:go_highlight_variable_declarations = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_format_strings = 1
 let g:go_highlight_operators = 1
@@ -57,7 +57,7 @@ let g:go_metalinter_deadline = '1.5m'
 let g:go_autodetect_gopath = 1
 
 " display the variable type under the cursor
-let g:go_auto_type_info = 0
+let g:go_auto_type_info = 1
 let g:go_info_mode = 'gopls'
 
 " Specifies whether `gopls` can be used by vim-go.
