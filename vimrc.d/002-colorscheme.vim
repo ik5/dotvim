@@ -52,7 +52,7 @@ let g:gruvbox_underline = 1
 let g:gruvbox_undercurl = 1
 let g:gruvbox_termcolors = 256
 
-"colorscheme badwolf
-colorscheme molokai
+colorscheme badwolf
+"colorscheme molokai
 " colorscheme codedark
 " colorscheme gruvbox
