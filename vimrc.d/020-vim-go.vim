@@ -67,7 +67,7 @@ let g:go_gopls_complete_unimported = 1
 " Specifies whether `gopls` should use deep completion.
 let g:go_gopls_deep_completion = 1
 " Specifies whether `gopls` should use fuzzy matching for completions.
-let g:go_gopls_fuzzy_matching = 1
+let g:go_gopls_matcher = 1
 " Specifies whether `gopls` should run staticcheck checks.
 let g:go_gopls_staticcheck = 1
 " Specifies whether `gopls` can provide placeholders for function parameters and
