@@ -49,6 +49,9 @@ Plug 'chemzqm/unite-location'
 Plug 'kana/vim-textobj-user'
 " Text objects for dealing with URIs
 Plug 'jceb/vim-textobj-uri'
+" vim-textobj-parameter is a Vim plugin to provide text objects (a, and i, by
+" default) to select parameters of functions.
+Plug 'sgur/vim-textobj-parameter'
 " endwith ruby and other languages
 Plug 'tpope/vim-endwise'
 " surrond changing things based on syntax, such as ', ", [, ] etc..

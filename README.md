@@ -51,6 +51,7 @@ highlighting of actions and a lot more.
   - [Ruby](#ruby)
   - [Far](#far)
   - [TextObj-URI](#TextObj-URI)
+  - [TextObj-Parameter](#TextObj-Parameter)
 - [Plugins](#plugins)
 
 ## Features
@@ -455,6 +456,14 @@ vim +PlugUpdate +qa
 | `<action>iu`  | Work on internal URI |
 | `<action>au`  | Work on entire URI   |
 | `go`          | Open/Run url         |
+
+### TextObj-Parameter
+
+| Key           | Description                          |
+| -----         | -------------                        |
+| `<action>i,`  | Work on argument without spaces      |
+| `<action>a,`  | Work on argument with spaces         |
+| `<action>i2,` | Work on argument with leading spaces |
 
 ## Plugins
 
