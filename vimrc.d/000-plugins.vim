@@ -47,6 +47,8 @@ Plug '5t111111/denite-rails', { 'for': ['ruby', 'haml', 'eruby'] }
 Plug 'chemzqm/unite-location'
 " Vim plugin: Create your own text objects - dependency for other plugins
 Plug 'kana/vim-textobj-user'
+" Text objects for dealing with URIs
+Plug 'jceb/vim-textobj-uri'
 " endwith ruby and other languages
 Plug 'tpope/vim-endwise'
 " surrond changing things based on syntax, such as ', ", [, ] etc..
@@ -278,7 +280,7 @@ Plug 'isRuslan/vim-es6', { 'for': ['javascript', 'jsx', 'javascript.jsx', 'vue']
 "A vim plugin that wraps `jscs -x` into a `:Format` command
 Plug 'mklabs/jscs.vim', { 'do': 'npm i jscs -g', 'for': ['javascript', 'jsx', 'javascript.jsx', 'vue']  }
 "  HTML5 omnicomplete and syntax
-" Plug 'othree/html5.vim', { 'for': ['html', 'xhtml'] }
+Plug 'othree/html5.vim', { 'for': ['html', 'xhtml', 'erb'] }
 " JavaScript Parameter Complete
 " Plug 'othree/jspc.vim', { 'for': ['javascript', 'javascript.jsx', 'vue', 'jsx'] }
 " Improved nginx vim plugin (incl. syntax highlighting)
@@ -369,6 +371,8 @@ endif
 if executable('php')
   "  An up-to-date Vim syntax for PHP (7.x supported)
   Plug 'stanangeloff/php.vim'
+  " Improved PHP omnicompletion
+  Plug 'shawncplus/phpcomplete.vim'
 endif
 
 " A powerful grammar checker for Vim using LanguageTool
@@ -385,6 +389,9 @@ Plug 'heavenshell/vim-jikoku'
 if executable("mvn")
   Plug 'mikelue/vim-maven-plugin', { 'for': ['java'] }
 endif
+
+" A Vim plugin to make it easy to read pcap dumps
+Plug 'bps/vim-tshark'
 
 " Over 70 language packs
 Plug 'sheerun/vim-polyglot'
