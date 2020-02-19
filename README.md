@@ -50,6 +50,7 @@ highlighting of actions and a lot more.
   - [SplitJoin.vim](#splitjoinvim)
   - [Ruby](#ruby)
   - [Far](#far)
+  - [TextObj-URI](#TextObj-URI)
 - [Plugins](#plugins)
 
 ## Features
@@ -446,6 +447,14 @@ vim +PlugUpdate +qa
 | Key | Description |
 | --- | ----------- |
 |     |             |
+
+### TextObj-URI
+
+| Key           | Description          |
+|---------------|----------------------|
+| `<action>iu`  | Work on internal URI |
+| `<action>au`  | Work on entire URI   |
+| `go`          | Open/Run url         |
 
 ## Plugins
 
