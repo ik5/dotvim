@@ -51,7 +51,6 @@ highlighting of actions and a lot more.
   - [Ruby](#ruby)
   - [Far](#far)
   - [TextObj-URI](#TextObj-URI)
-  - [TextObj-Parameter](#TextObj-Parameter)
 - [Plugins](#plugins)
 
 ## Features
@@ -457,56 +456,11 @@ vim +PlugUpdate +qa
 | `<action>au`  | Work on entire URI   |
 | `go`          | Open/Run url         |
 
-### TextObj-Parameter
-
-| Key           | Description                          |
-| -----         | -------------                        |
-| `<action>i,`  | Work on argument without spaces      |
-| `<action>a,`  | Work on argument with spaces         |
-| `<action>i2,` | Work on argument with leading spaces |
-
 ## Plugins
 
 | Name                                                                     | Description                                                                                                                               |
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| [molokai](https://github.com/tomasr/molokai)                             | Molokai color scheme                                                                                                                      |
-| [BadWolf](https://github.com/sjl/badwolf)                                | Bad Wolf (Doctor Who's Rose) color scheme                                                                                                 |
-| [Code Dark](https://github.com/tomasiser/vim-code-dark)                  | Code Dark color scheme                                                                                                                    |
-| [Dev Icons](https://github.com/ryanoasis/vim-devicons)                   | Dev icon fonts for file types                                                                                                             |
-| [Airline](https://github.com/vim-airline/vim-airline)                    | Airline display of status bar, and buffers                                                                                                |
-| [Airline themes](https://github.com/vim-airline/vim-airline-themes)      | Themes for airline                                                                                                                        |
-| [Powerline Fonts](https://github.com/powerline/fonts)                    | Developent fonts symbols                                                                                                                  |
-| [tmux line](https://github.com/edkolev/tmuxline.vim)                     | status line support for tmux when vim connected                                                                                           |
-| [Highlight Yank](https://github.com/machakann/vim-highlightedyank)       | Highlight the content that was yanked for few seconds                                                                                     |
-| [Semantic Highlight](https://github.com/jaxbot/semantic-highlight.vim)   | Semantic highlight Where every variable is a different color                                                                              |
-| [Polyglot](https://github.com/sheerun/vim-polyglot)                      | Additional syntax highlight support                                                                                                       |
-| [Editor configuration](https://github.com/editorconfig/editorconfig-vim) | Set VIM configuration per project                                                                                                         |
-| [Language Client](https://github.com/autozimu/LanguageClient-neovim)     | Language Server Protocol (LSP) support for vim and neovim                                                                                 |
-| [ALE](https://github.com/w0rp/ale)                                       | Asynchronous Lint Engine                                                                                                                  |
-| [Session manager](https://github.com/tpope/vim-obsession)                | Continuously updated VIM's session files                                                                                                  |
-| [Projectionist](https://github.com/tpope/vim-projectionist)              | Granular project configuration using 'projections'                                                                                        |
-| [Fugitive](https://github.com/tpope/vim-fugitive)                        | API and tools to support GIT                                                                                                              |
-| [Gitv](https://github.com/gregsexton/gitv)                               | Visualize GIT like gitk                                                                                                                   |
-| [gitgutter](https://github.com/airblade/vim-gitgutter)                   | Git gutter, marks file changes based on git diff                                                                                          |
-| [Gv](https://github.com/junegunn/gv.vim)                                 | Fast and simple GIT log, simpler then gitv, with less features, for fast history, without additional requirements                         |
-| [Twiggy](https://github.com/sodapopcan/vim-twiggy)                       | GIT branch manager                                                                                                                        |
-| [Rhubarb](https://github.com/tpope/vim-rhubarb)                          | Github `hub` support for Fugitive                                                                                                         |
-| [Mercurial](https://github.com/ludovicchabant/vim-lawrencium)            | Basic Mercurial support for vim inspired by Fugitive                                                                                      |
-| [nerdcommenter](https://github.com/scrooloose/nerdcommenter)             | Add/Remove block of comments based on supported language                                                                                  |
-| [VIM-Addon-MW-Utils](https://github.com/MarcWeber/vim-addon-mw-utils)    | vim: interpret a file by function and cache file automatically - A requirement by other plugins                                           |
-| [Tlib-VIM](https://github.com/tomtom/tlib_vim)                           | Some utility functions for VIM - A requirement by other plugins                                                                           |
-| [NerdTree](https://github.com/scrooloose/nerdtree)                       | File explorer for VIM                                                                                                                     |
-| [NerdTree GIT](https://github.com/Xuyuanp/nerdtree-git-plugin)           | Display GIT state on a file inside NerdTree                                                                                               |
-| [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)                           | Fuzzy file finder from buffer, MRU, tag, directories and more                                                                             |
-| [CtrlP Funky](https://github.com/tacahiroy/ctrlp-funky)                  | Function navigation for CtrlP                                                                                                             |
-| [BufExplorer](https://github.com/jlanzarotta/bufexplorer)                | Buffer manager for VIM                                                                                                                    |
-| [FZF](https://github.com/junegunn/fzf)                                   | Fuzzy finder                                                                                                                              |
-| [FZF-VIM](https://github.com/junegunn/fzf.vim)                           | Better FZF support for VIM                                                                                                                |
-| [Denite.vim](https://github.com/Shougo/denite.nvim)                      | A common extensible interface for searching and displaying lists of information from within NeoVim/Vim. **Still experimental in my code** |
-| [Clever-F](https://github.com/rhysd/clever-f.vim)                        | Extended f, F, t and T key mappings for Vim                                                                                               |
-| [VIM-Rails](https://github.com/tpope/vim-rails)                          | Support for working on Rails based on open files                                                                                          |
-| [VIM-Bundler](https://github.com/tpope/vim-bundler)                      | Support bundler management                                                                                                                |
-| [](https://github.com/)                                                  |                                                                                                                                           |
+
 | [](https://github.com/)                                                  |                                                                                                                                           |
 | [](https://github.com/)                                                  |                                                                                                                                           |
 | [](https://github.com/)                                                  |                                                                                                                                           |
