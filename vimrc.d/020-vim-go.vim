@@ -19,6 +19,9 @@ let g:go_term_enabled = 1
 let g:go_fmt_fail_silently = 0
 let g:go_jump_to_error = 0
 
+" use K to display godoc
+let g:go_doc_keywordprg_enabled = 1
+
 " enable vim-go text object
 let g:go_textobj_enabled = 1
 " text object for functions also include the comments when using 'af'
@@ -40,18 +43,21 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_highlight_string_spellcheck = 1
 let g:go_highlight_variable_declarations = 1
-let g:go_highlight_extra_types = 1
 let g:go_highlight_format_strings = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_generate_tags = 1
 let g:go_highlight_debug = 1
 
-" auto listener on save
-let g:go_metalinter_autosave = 1
+"golangci-lint auto listener on save
+let g:go_metalinter_command = 'gopls' " Ignore golangci-lint at the moment due to bugs
+let g:go_gopls_staticcheck = 1
+" let g:go_metalinter_autosave = 1
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'gofmt', 'gosec']
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'gofmt', 'gosec']
 let g:go_metalinter_deadline = '1.5m'
+let g:syntastic_go_checkers = ['vet', 'golint', 'errcheck', 'gofmt', 'gosec']
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
 " look for gopath
 let g:go_autodetect_gopath = 1
@@ -88,9 +94,12 @@ let g:go_snippet_engine = 'automatic'
 
 let g:go_decls_includes = 'func,type,var,const'
 
-let g:go_auto_sameids=0
+let g:go_auto_sameids=1
 
-" do not resue buffer on GoDef
+" Use this option to auto |:AsmFmt| on save
+let g:go_asmfmt_autosave = 1
+
+" do not reuse buffer on GoDef
 let g:go_def_reuse_buffer=0
 
 " Use this option to enable/disable the default mapping of CTRL-],
@@ -102,6 +111,13 @@ let g:go_play_browser_command = 'firefox %URL% &'
 
 " open alternate in split rather on same buffer
 let g:go_alternate_mode = 'split'
+
+" enable folding on:
+let g:go_fold_enable = ['block', 'import', 'varconst', 'package_comment']
+
+" Show the name of each failed test before the errors and logs output by the
+" test. By default it is disabled.
+let g:go_test_show_name = 1
 
 " create a go doc comment based on the word under the cursor
 function! s:create_go_doc_comment()
