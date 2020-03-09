@@ -63,7 +63,7 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_autodetect_gopath = 1
 
 " display the variable type under the cursor
-let g:go_auto_type_info = 1
+let g:go_auto_type_info = 0
 let g:go_info_mode = 'gopls'
 
 " Specifies whether `gopls` can be used by vim-go.
