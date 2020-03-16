@@ -214,7 +214,7 @@ if filereadable('/Applications/Dash.app/Contents/MacOS/Dash')
   Plug 'rizzatti/dash.vim'
 endif
 " Displays function signatures from completions in the command line
-Plug 'Shougo/echodoc.vim'
+" Plug 'Shougo/echodoc.vim'
 
 " if executable('rustc')
 "   " support for rust
