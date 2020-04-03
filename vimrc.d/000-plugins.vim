@@ -216,12 +216,12 @@ endif
 " Displays function signatures from completions in the command line
 " Plug 'Shougo/echodoc.vim'
 
-" if executable('rustc')
-"   " support for rust
-"   Plug 'rust-lang/rust.vim', { 'for': ['rust', 'rs', 'rslib'] }
-"   " rust racer syntax checking
-"   Plug 'racer-rust/vim-racer', { 'for': ['rust', 'rs', 'rslib'] }
-" endif
+if executable('rustc')
+  " support for rust
+  Plug 'rust-lang/rust.vim', { 'for': ['rust', 'rs', 'rslib'] }
+  " rust racer syntax checking
+  Plug 'racer-rust/vim-racer', { 'for': ['rust', 'rs', 'rslib'] }
+endif
 
 " Web API
 " Plug 'mattn/webapi-vim'
