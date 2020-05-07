@@ -3,17 +3,26 @@
 " ============================================
 
 let g:go_async_run = 1
-let g:go_fmt_command = 'goimports'
-"let g:go_fmt_command = 'gofmt'
+"let g:go_fmt_command = 'goimports'
+let g:go_fmt_command = 'gofmt'
 let g:go_list_type = 'locationlist'
+let g:go_list_autoclose = 0
 " let g:go_list_height = 5
 " do not create an Hello World template
 let g:go_template_autocreate = 0
+
+" Use this option to auto |:GoImports| on save.
+let g:go_imports_autosave = 1
+" Use this option to define which tool is used to adjust imports.
+let g:go_imports_mode = 'gopls'
+" Use this option to auto |:GoModFmt| on save.
+let g:go_mod_fmt_autosave = 1
 
 " place terminal horizontal
 let g:go_term_mode = 'split'
 " open new terminal
 let g:go_term_enabled = 1
+let g:go_term_close_on_exit = 0
 
 " show errors
 let g:go_fmt_fail_silently = 0
@@ -21,6 +30,11 @@ let g:go_jump_to_error = 0
 
 " use K to display godoc
 let g:go_doc_keywordprg_enabled = 1
+" Maximum height for the GoDoc window created with |:GoDoc|.
+let g:go_doc_max_height = 40
+" godoc server URL used when |:GoDocBrowser| is used. Change if you want to use
+" a private internal service. Default is 'https://godoc.org'.
+let g:go_doc_url = 'https://pkg.go.dev/'
 
 " enable vim-go text object
 let g:go_textobj_enabled = 1
@@ -51,36 +65,53 @@ let g:go_highlight_debug = 1
 
 "golangci-lint auto listener on save
 let g:go_metalinter_command = 'gopls' " Ignore golangci-lint at the moment due to bugs
-let g:go_gopls_staticcheck = 1
-" let g:go_metalinter_autosave = 1
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'gofmt', 'gosec']
-let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck', 'gofmt', 'gosec']
+" Specifies whether `gopls` should run staticcheck checks.
+let g:go_gopls_staticcheck = v:true
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_deadline = '1.5m'
 let g:syntastic_go_checkers = ['vet', 'golint', 'errcheck', 'gofmt', 'gosec']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 
 " look for gopath
 let g:go_autodetect_gopath = 1
+" Use this option to change default path for vim-go tools when using
+" |:GoInstallBinaries| and |:GoUpdateBinaries|.
+let g:go_bin_path = "$GOPATH/bin"
+" Enabling this option ensures that the binaries installed via
+" |:GoInstallBinaries| and |:GoUpdateBinaries| are the same ones that are
+" invoked via the tool commands.
+let g:go_search_bin_path_first = 1
+" Use this option to disable updating dependencies with |:GoInstallBinaries|.
+let g:go_get_update = 1
+
+" Use this option to configure the delay until it starts some jobs
+let g:go_updatetime = 800
 
 " display the variable type under the cursor
-let g:go_auto_type_info = 0
+let g:go_auto_type_info = 1
 let g:go_info_mode = 'gopls'
 
+" Enable code completion with 'omnifunc'.
+let g:go_code_completion_enabled = 1
 " Specifies whether `gopls` can be used by vim-go.
 let g:go_gopls_enabled = 1
+" The analyses settings for `gopls`.
+let g:go_gopls_analyses = v:true
 " Specifies whether `gopls` should include suggestions from unimported packages.
-let g:go_gopls_complete_unimported = 1
+let g:go_gopls_complete_unimported = v:true
 " Specifies whether `gopls` should use deep completion.
-let g:go_gopls_deep_completion = 1
+let g:go_gopls_deep_completion = v:true
 " Specifies whether `gopls` should use fuzzy matching for completions.
-let g:go_gopls_matcher = 1
+let g:go_gopls_matcher = 'fuzzy'
 " Specifies whether `gopls` should run staticcheck checks.
 let g:go_gopls_staticcheck = 1
 " Specifies whether `gopls` can provide placeholders for function parameters and
 " struct fields. When set, completion items will be treated as anonymous
 " snippets if UltiSnips is installed and configured to be used as
 " |'g:go_snippet_engine'|.
-let g:go_gopls_use_placeholders = 1
+let g:go_gopls_use_placeholders = v:true
 " Specifies whether `gopls` diagnostics are enabled. Only the diagnostics for
 " the current buffer will be processed when it is not set.
 let g:go_diagnostics_enabled = 0
@@ -88,19 +119,22 @@ let g:go_diagnostics_enabled = 0
 let g:go_def_mode = 'gopls'
 " Use this option to define the command to be used for |:GoReferrers|.
 let g:go_referrers_mode = 'gopls'
-
-
+" Use this option to define the command to be used for |:GoImplements|.
+let g:go_implements_mode = 'gopls'
+" Define the snippet engine to use.
 let g:go_snippet_engine = 'automatic'
+" Use this option to define which tool is used to rename.
+let g:go_rename_command = 'gorename'
 
 let g:go_decls_includes = 'func,type,var,const'
 
-let g:go_auto_sameids=1
+let g:go_auto_sameids = 1
 
 " Use this option to auto |:AsmFmt| on save
 let g:go_asmfmt_autosave = 1
 
 " do not reuse buffer on GoDef
-let g:go_def_reuse_buffer=0
+let g:go_def_reuse_buffer = 0
 
 " Use this option to enable/disable the default mapping of CTRL-],
 " <C-LeftMouse>, g<C-LeftMouse> and (`gd`) for GoDef and CTRL-t for :GoDefPop.
@@ -118,6 +152,8 @@ let g:go_fold_enable = ['block', 'import', 'varconst', 'package_comment']
 " Show the name of each failed test before the errors and logs output by the
 " test. By default it is disabled.
 let g:go_test_show_name = 1
+" Use this option to change the test timeout of |:GoTest|.
+let g:go_test_timeout= '1m'
 
 " create a go doc comment based on the word under the cursor
 function! s:create_go_doc_comment()
