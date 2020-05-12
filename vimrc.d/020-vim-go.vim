@@ -67,7 +67,7 @@ let g:go_highlight_debug = 1
 let g:go_metalinter_command = 'gopls' " Ignore golangci-lint at the moment due to bugs
 " Specifies whether `gopls` should run staticcheck checks.
 let g:go_gopls_staticcheck = v:true
-let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave = 0
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_deadline = '1.5m'
@@ -129,9 +129,6 @@ let g:go_rename_command = 'gorename'
 let g:go_decls_includes = 'func,type,var,const'
 
 let g:go_auto_sameids = 1
-
-" Use this option to auto |:AsmFmt| on save
-let g:go_asmfmt_autosave = 1
 
 " do not reuse buffer on GoDef
 let g:go_def_reuse_buffer = 0
