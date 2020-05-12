@@ -297,6 +297,8 @@ Plug 'mechatroner/rainbow_csv', { 'for': ['csv'] }
 Plug 'lifepillar/pgsql.vim', { 'for': ['sql'] }
 " Modern database interface for Vim
 Plug 'tpope/vim-dadbod'
+" Provides database access to many dbms (Oracle, Sybase, Microsoft, MySQL, DBI,..)
+Plug 'vim-scripts/dbext.vim'
 
 " if filereadable('elm')
 "   "Elm
