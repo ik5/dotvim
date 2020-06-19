@@ -60,6 +60,7 @@ let g:ale_linters = {
       \ 'go': ['vet', 'golint', 'errcheck', 'gofmt', 'gosec'],
       \ 'html': ['tidy', 'htmlhint', 'prettier'],
       \ 'css': ['prettier', 'stylelint', 'csslint'],
+      \ 'proto': ['protoc-gen-lint',],
       \}
 let g:ale_ruby_rubocop_executable = 'rubocop'
 let g:ale_linter_aliases = {'jsx': 'css'}
