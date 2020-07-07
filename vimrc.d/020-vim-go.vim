@@ -78,7 +78,7 @@ let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_autodetect_gopath = 1
 " Use this option to change default path for vim-go tools when using
 " |:GoInstallBinaries| and |:GoUpdateBinaries|.
-let g:go_bin_path = "$GOPATH/bin"
+" let g:go_bin_path = "$GOPATH/bin"
 " Enabling this option ensures that the binaries installed via
 " |:GoInstallBinaries| and |:GoUpdateBinaries| are the same ones that are
 " invoked via the tool commands.
