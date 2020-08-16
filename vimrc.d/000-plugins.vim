@@ -331,11 +331,11 @@ Plug 'beloglazov/vim-online-thesaurus'
 Plug 'tpope/vim-markdown', { 'for': ['markdown', 'md'] }
 
 " Convert given timestamp to local date time and utc
-Plug 'heavenshell/vim-jikoku'
+" Plug 'heavenshell/vim-jikoku'
 
-if executable("mvn")
-  Plug 'mikelue/vim-maven-plugin', { 'for': ['java'] }
-endif
+" if executable("mvn")
+"   Plug 'mikelue/vim-maven-plugin', { 'for': ['java'] }
+" endif
 
 " A Vim plugin to make it easy to read pcap dumps
 Plug 'bps/vim-tshark'
