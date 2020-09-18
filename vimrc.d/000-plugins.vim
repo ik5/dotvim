@@ -95,7 +95,7 @@ Plug 'kaichen/vim-snipmate-ruby-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
 " Denite support of coc.nvim
 Plug 'neoclide/coc-denite'
-if matchend($SHELL, 'zsh')
+if filereadable('/bin/zsh')
   " coc.nvim source for Zsh completions
   Plug 'tjdevries/coc-zsh'
 endif
