@@ -341,5 +341,7 @@ Plug 'tpope/vim-markdown', { 'for': ['markdown', 'md'] }
 Plug 'bps/vim-tshark'
 
 " Over 70 language packs
+" needed to be set before the plug is loaded
+let g:polyglot_disabled = ['elm-vim', 'vim-go'] " disable support for polyglot
 Plug 'sheerun/vim-polyglot'
 call plug#end()
