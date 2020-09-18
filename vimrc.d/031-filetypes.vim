@@ -102,6 +102,7 @@ augroup General
   au FileType c,h,cpp,gobject call CSettings()
   au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ')' :call search('(\\|)\\|{\\|}\\|\[\\|\]')<CR>
   au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> '(' :call search('(\\|)\\|{\\|}\\|\[\\|\]', 'b')<CR>
+  au CursorHold * silent call CocActionAsync('highlight')
 augroup END
 
 augroup YAML
