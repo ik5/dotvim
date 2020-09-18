@@ -42,7 +42,7 @@ let g:ale_vue_prettier_executable = 'prettier-vue'
 let g:ale_fixers = {
       \ 'javascript': ['prettier', 'eslint'],
       \ 'css': ['prettier'],
-      \ 'vue': ['eslint', 'prettier-vue','prettier'],
+      \ 'vue': ['eslint', 'prettier-vue','prettier', 'remove_trailing_lines', 'trim_whitespace'],
       \ 'jsx': ['prettier', 'eslint'],
       \ 'php': ['php_cs_fixer'],
       \}
@@ -63,7 +63,10 @@ let g:ale_linters = {
       \ 'proto': ['protoc-gen-lint',],
       \}
 let g:ale_ruby_rubocop_executable = 'rubocop'
-let g:ale_linter_aliases = {'jsx': 'css'}
+let g:ale_linter_aliases = {
+      \ 'jsx': 'css',
+      \ 'vue': ['javascript', 'html', 'scss']
+      \}
 
 let g:ale_perl_perl_options = '-c -Mwarnings -Ilib'
 let g:ale_perl_perlcritic_showrules = 1
