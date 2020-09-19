@@ -109,6 +109,8 @@ let g:tagbar_type_vue = {
        \ 'n:Names',
        \ 'f:Functions',
        \ 'e:Events',
+       \ 'E:Exports',
        \ 'v:Variables',
-       \ 's:Styles'
+       \ 's:Styles',
+       \ 'i:Imports'
        \ ]}
