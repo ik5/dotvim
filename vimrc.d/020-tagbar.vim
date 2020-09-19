@@ -99,10 +99,16 @@ let g:tagbar_type_javascript = {
       \ 'S:styled components'
       \ ]}
 
-" let g:tagbar_type_vue = {
-"       \ 'ctagstype': 'vue',
-"       \ 'kinds': [
-"       \ 's:Script',
-"       \ 'f:Function',
-"       \ 'p:Property'
-"      \ ]}
+let g:tagbar_type_vue = {
+       \ 'ctagstype': 'vue',
+       \ 'kinds': [
+       \ 't:Tags',
+       \ 'T:Templates',
+       \ 'o:Objetcs',
+       \ 'p:Properties',
+       \ 'n:Names',
+       \ 'f:Functions',
+       \ 'e:Events',
+       \ 'v:Variables',
+       \ 's:Styles'
+       \ ]}
