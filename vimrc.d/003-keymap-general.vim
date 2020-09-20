@@ -207,11 +207,11 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " manage current active buffer
 "  toggle between last two buffers
-nnoremap <c-b>b <C-^>
+nnoremap <c-b>b <C-^><silent>:redraw!<CR>
 " go to previous buffer
-nnoremap <c-b>p :bprevious<cr>:redraw<cr>
+nnoremap <c-b>p :bprevious<cr><silent>:redraw!<cr>
 " go to next buffer
-nnoremap <c-b>n :bnext<cr>:redraw<cr>
+nnoremap <c-b>n :bnext<cr><silent>:redraw!<cr>
 
 " Allow to copy/paste between VIM instances
 "copy the current visual selection to ~/.vbuf
