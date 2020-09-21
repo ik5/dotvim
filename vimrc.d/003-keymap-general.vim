@@ -219,7 +219,7 @@ vnoremap <leader>y :w! ~/tmp/.vbuf<cr>
 "copy the current line to the buffer file if no visual selection
 nnoremap <leader>y :.w! ~/tmp/.vbuf<cr>
 "paste the contents of the buffer file
-nnoremap <leader>p :r ~/tmp/.vbuf<cr>
+nnoremap <leader>cf :r ~/tmp/.vbuf<cr>
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 " visual reselect of just yanked
