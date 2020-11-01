@@ -245,15 +245,15 @@ Plug 'AndrewRadev/splitjoin.vim'
 
 " ASCII drawing plugin: lines, ellipses, arrows, fills, and more!
 Plug 'vim-scripts/DrawIt'
+" Drawing tables usin VIM
+Plug 'dhruvasagar/vim-table-mode'
+
 
 " todo-vim is plugin for manage your todo notes
 Plug 'vim-scripts/todo-vim'
 
 " Vim script for text filtering and alignment
 Plug 'godlygeek/tabular'
-
-" Drawing tables usin VIM
-Plug 'dhruvasagar/vim-table-mode'
 
 " eunuch.vim: helpers for UNIX
 Plug 'tpope/vim-eunuch'
