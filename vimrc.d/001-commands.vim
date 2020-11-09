@@ -20,3 +20,7 @@ command! FixDoubleQuotes %s/“\|”/"/g
 command! ToUnixFF call UnixFF()
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+command! -nargs=0 -range -bar Base64Encode <line1>,<line2>call Base64Encode()
+command! -nargs=0 -range -bar Base64Decode <line1>,<line2>call Base64Decode()
+

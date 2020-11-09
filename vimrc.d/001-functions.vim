@@ -171,3 +171,26 @@ function! UnixFF()
   endif
 endfunction
 
+function! Base64Encode() range
+    " go to first line, last line, delete into @b, insert text
+    " note the substitute() call to join the b64 into one line
+    " this lets `:Base64Encode | Base64Decode` work without modifying the text
+    " at all, regardless of line length -- although that particular command is
+    " useless, lossless editing is a plus
+    exe "normal! " . a:firstline . "GV" . a:lastline . "G"
+    \ . "\"bdO0\<C-d>\<C-r>\<C-o>"
+    \ . "=substitute(system('python -m base64 -e', @b), "
+    \ . "'\\n', '', 'g')\<CR>\<ESC>"
+endfunction
+
+function! Base64Decode() range
+    let l:join = "\"bc"
+    if a:firstline != a:lastline
+        " gJ exits vis mode so we need a cc to change two lines
+        let l:join = "gJ" . l:join . "c"
+    endif
+    exe "normal! " . a:firstline . "GV" . a:lastline . "G" . l:join
+    \ . "0\<C-d>\<C-r>\<C-o>"
+    \ . "=system('python -m base64 -d', @b)\<CR>\<BS>\<ESC>"
+endfunction
+
