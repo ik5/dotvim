@@ -151,6 +151,9 @@ vim +PlugUpdate +qa
 | `CloseOthers`     | Close all windows and tabs but the current active one  |
 | `FixDoubleQuotes` | Replace unicode double quotes to ascii's version       |
 | `ToUnixFF`        | Set current file ending to Unix                        |
+| `Base64Encode`    | Encode a (range of) string/bytes to base 64            |
+| `Base64Decode`    | Decode a (range of) base64 to string/bytes             |
+
 
 ## Shortcuts
 
