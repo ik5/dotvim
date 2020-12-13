@@ -322,6 +322,11 @@ if executable('php')
   Plug 'shawncplus/phpcomplete.vim'
 endif
 
+if executable('dotnet')
+  " Vim omnicompletion (intellisense) and more for C#
+  Plug 'OmniSharp/omnisharp-vim'
+endif
+
 " A powerful grammar checker for Vim using LanguageTool
 Plug 'rhysd/vim-grammarous'
 " A Vim plugin for looking up words in an online thesaurus
