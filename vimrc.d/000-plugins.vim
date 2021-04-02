@@ -39,7 +39,7 @@ Plug 'dense-analysis/ale'
 " Dark powered asynchronous unite all interfaces for Neovim/Vim8
 Plug 'Shougo/denite.nvim'
 " denite-rails is a Denite.nvim source for Rails
-Plug '5t111111/denite-rails', { 'for': ['ruby', 'haml', 'eruby'] }
+" Plug '5t111111/denite-rails', { 'for': ['ruby', 'haml', 'eruby'] }
 " Control your location list and quickfix list by unite/denite
 Plug 'chemzqm/unite-location'
 " Vim plugin: Create your own text objects - dependency for other plugins
@@ -90,7 +90,7 @@ Plug 'honza/vim-snippets'
 " snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
 Plug 'garbas/vim-snipmate'
 " Some snippets of vim' plugin snipMate.vim for ruby
-Plug 'kaichen/vim-snipmate-ruby-snippets'
+" Plug 'kaichen/vim-snipmate-ruby-snippets'
 " Intellisense engine for vim8 & neovim, full language server protocol support as VSCode
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
 " Denite support of coc.nvim
@@ -134,36 +134,36 @@ Plug 'jlanzarotta/bufexplorer'
 " Extended f, F, t and T key mappings for Vim
 Plug 'rhysd/clever-f.vim'
 
-if executable('ruby')
-  " Ruby, Rails, Sinatra and bundler
-  Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }
-  Plug 'tpope/vim-bundler', { 'for': ['ruby'] }
-  Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
-  " Ruby tests
-  Plug 'janko-m/vim-test', { 'for': ['ruby', 'haml', 'eruby'] }
-  " Sinatra
-  Plug 'hallison/vim-ruby-sinatra', { 'for': ['ruby', 'haml', 'eruby'] }
-  " ruby refactoring
-  Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'haml', 'eruby'] }
-  " A custom text object for selecting ruby blocks
-  Plug 'nelstrom/vim-textobj-rubyblock', { 'for': ['ruby', 'haml', 'eruby'] } " requirement by vim-textobj-user
-  " it's like rails.vim without the rails
-  Plug 'tpope/vim-rake', { 'for': ['ruby', 'haml', 'eruby'] }
-  " Switch Ruby versions from inside Vim
-  Plug 'tpope/vim-rvm', { 'for': ['ruby', 'haml', 'eruby'] }
-  " Minimal rbenv support
-  Plug 'tpope/vim-rbenv', { 'for': ['ruby', 'haml', 'eruby'] }
-  " Automatically generate ctags for rbenv Ruby stdlibs
-  Plug 'tpope/rbenv-ctags', { 'for': ['ruby', 'haml', 'eruby'] }
-  " Vim highlighting & completion for MiniTest
-  Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby', 'haml', 'eruby'] }
-  " Vim plugin for ruby editing. Quick jump to method, class, module defenitions in buffers
-  Plug 'xmisao/rubyjump.vim', { 'for': ['ruby', 'haml', 'eruby'] }
-  " Highlight local variables in Ruby files
-  Plug 'todesking/ruby_hl_lvar.vim', { 'for': ['ruby', 'haml', 'eruby'] }
-  " enables syntax highlighting in Ruby here document code blocks
-  Plug 'joker1007/vim-ruby-heredoc-syntax', { 'for': ['ruby', 'haml', 'eruby'] }
-endif
+" if executable('ruby')
+"   " Ruby, Rails, Sinatra and bundler
+"   Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby', 'haml', 'coffee', 'javascript'] }
+"   Plug 'tpope/vim-bundler', { 'for': ['ruby'] }
+"   Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'haml', 'eruby'] }
+"   " Ruby tests
+"   Plug 'janko-m/vim-test', { 'for': ['ruby', 'haml', 'eruby'] }
+"   " Sinatra
+"   Plug 'hallison/vim-ruby-sinatra', { 'for': ['ruby', 'haml', 'eruby'] }
+"   " ruby refactoring
+"   Plug 'ecomba/vim-ruby-refactoring', { 'for': ['ruby', 'haml', 'eruby'] }
+"   " A custom text object for selecting ruby blocks
+"   Plug 'nelstrom/vim-textobj-rubyblock', { 'for': ['ruby', 'haml', 'eruby'] } " requirement by vim-textobj-user
+"   " it's like rails.vim without the rails
+"   Plug 'tpope/vim-rake', { 'for': ['ruby', 'haml', 'eruby'] }
+"   " Switch Ruby versions from inside Vim
+"   Plug 'tpope/vim-rvm', { 'for': ['ruby', 'haml', 'eruby'] }
+"   " Minimal rbenv support
+"   Plug 'tpope/vim-rbenv', { 'for': ['ruby', 'haml', 'eruby'] }
+"   " Automatically generate ctags for rbenv Ruby stdlibs
+"   Plug 'tpope/rbenv-ctags', { 'for': ['ruby', 'haml', 'eruby'] }
+"   " Vim highlighting & completion for MiniTest
+"   Plug 'sunaku/vim-ruby-minitest', { 'for': ['ruby', 'haml', 'eruby'] }
+"   " Vim plugin for ruby editing. Quick jump to method, class, module defenitions in buffers
+"   Plug 'xmisao/rubyjump.vim', { 'for': ['ruby', 'haml', 'eruby'] }
+"   " Highlight local variables in Ruby files
+"   Plug 'todesking/ruby_hl_lvar.vim', { 'for': ['ruby', 'haml', 'eruby'] }
+"   " enables syntax highlighting in Ruby here document code blocks
+"   Plug 'joker1007/vim-ruby-heredoc-syntax', { 'for': ['ruby', 'haml', 'eruby'] }
+" endif
 
 if executable('go')
   " golang support
