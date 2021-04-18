@@ -58,7 +58,7 @@ let g:ale_linters = {
       \ 'ruby': ['rubocop'],
       \ 'perl': ['syntax-check', 'perl', 'perlcritic'],
       \ 'json': ['jsonlint', 'jq'],
-      \ 'go': ['vet', 'golint', 'errcheck', 'gofmt', 'gosec'],
+      \ 'go': [ 'revive', 'vet', 'golint', 'errcheck', 'gofmt', 'gosec'],
       \ 'html': ['tidy', 'htmlhint', 'prettier'],
       \ 'css': ['prettier', 'stylelint', 'csslint'],
       \ 'proto': ['protoc-gen-lint',],
