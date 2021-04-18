@@ -45,6 +45,7 @@ let g:ale_fixers = {
       \ 'vue': ['eslint', 'prettier-vue','prettier', 'remove_trailing_lines', 'trim_whitespace'],
       \ 'jsx': ['prettier', 'eslint'],
       \ 'php': ['php_cs_fixer'],
+      \ 'rust': ['rustfmt'],
       \}
 
 " let g:ale_python_flake8_executable = 'flake8-python2'
@@ -61,6 +62,7 @@ let g:ale_linters = {
       \ 'html': ['tidy', 'htmlhint', 'prettier'],
       \ 'css': ['prettier', 'stylelint', 'csslint'],
       \ 'proto': ['protoc-gen-lint',],
+      \ 'rust': ['rustc'],
       \}
 let g:ale_ruby_rubocop_executable = 'rubocop'
 let g:ale_linter_aliases = {
