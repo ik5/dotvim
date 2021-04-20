@@ -76,7 +76,6 @@ call coc#config('eslint', {
       \ 'javascript',
       \ 'typescript',
       \ 'typescriptreact',
-      \ 'javascriptreact',
       \ 'typescript.tsx',
       \ 'vue'
       \ ] })
