@@ -144,6 +144,10 @@ endif
 filetype plugin indent on
 syntax on
 
+" syntax sync fromstart
+syntax sync minlines=10
+syntax sync maxlines=50
+
 set colorcolumn=80 " display boundary column
 if has('gui_running')
   set lines=75
