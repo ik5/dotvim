@@ -255,5 +255,8 @@ endif
 
 if has('nvim')
   let g:loaded_matchit = 1
+
+  " remove python 2 support from neovim
+  let g:loaded_python_provider = 0
 endif
 
