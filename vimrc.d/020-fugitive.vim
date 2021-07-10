@@ -3,36 +3,36 @@
 " =====================================================
 
 " Blame
-vnoremap <leader>gitb :Gblame<CR>
-nnoremap <leader>gitb :Gblame<CR>
+vnoremap <leader>gitb :Git blame<CR>
+nnoremap <leader>gitb :Git blame<CR>
 
 " Commit
-vnoremap <leader>gitc :Gcommit<CR>
-nnoremap <leader>gitc :Gcommit<CR>
+vnoremap <leader>gitc :Git commit<CR>
+nnoremap <leader>gitc :Git commit<CR>
 
 " vdiff
-vnoremap <leader>gitvd :Gvdiff<CR>
-nnoremap <leader>gitvd :Gvdiff<CR>
+vnoremap <leader>gitvd :vert Git --paginate<CR>
+nnoremap <leader>gitvd :vert Git --paginate<CR>
 
 " git grep
 vnoremap <leader>git/ :Ggrep<space>
 nnoremap <leader>git/ :Ggrep<space>
 
 " push
-vnoremap <leader>gitps :Gpush<CR>
-nnoremap <leader>gitps :Gpush<CR>
+vnoremap <leader>gitps :Git push<CR>
+nnoremap <leader>gitps :Git push<CR>
 
 " pull
-vnoremap <leader>gitpl :Gpull<CR>
-nnoremap <leader>gitpl :Gpull<CR>
+vnoremap <leader>gitpl :Git pull<CR>
+nnoremap <leader>gitpl :Git pull<CR>
 
 " fetch
-vnoremap <leader>gitft :Gfetch<CR>
-nnoremap <leader>gitft :Gfetch<CR>
+vnoremap <leader>gitft :Git fetch<CR>
+nnoremap <leader>gitft :Git fetch<CR>
 
 " Status
-vnoremap <leader>git? :Gstatus<CR>
-nnoremap <leader>git? :Gstatus<CR>
+vnoremap <leader>git? :Git status<CR>
+nnoremap <leader>git? :Git status<CR>
 
 " write
 vnoremap <leader>gitw :Gwrite<CR>
