@@ -27,34 +27,32 @@ endif
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 
-if !has('nvim')
-  " monokai
-  let g:monokai_term_italic = 1
-  let g:monokai_gui_italic = 1
+" monokai
+let g:monokai_term_italic = 1
+let g:monokai_gui_italic = 1
 
-  " Bad Wolf
+" Bad Wolf
 
-  " Make the gutters darker than the background.
-  let g:badwolf_darkgutter = 1
-  " Make the tab line much lighter than the background.
-  let g:badwolf_tabline = 3
-  " Turn off HTML link underlining
-  let g:badwolf_html_link_underline = 1
-  " Turn on CSS properties highlighting
-  let g:badwolf_css_props_highlight = 1
+" Make the gutters darker than the background.
+let g:badwolf_darkgutter = 1
+" Make the tab line much lighter than the background.
+let g:badwolf_tabline = 3
+" Turn off HTML link underlining
+let g:badwolf_html_link_underline = 1
+" Turn on CSS properties highlighting
+let g:badwolf_css_props_highlight = 1
 
-  colorscheme badwolf
-  "colorscheme molokai
-else
-  let g:vscode_style = 'dark'
-  colorscheme vscode
-  " colorscheme material
-  " let g:material_style = 'darker'
-  " let g:material_italic_comments = 1
-  " let g:material_italic_keywords = 1
-  " let g:material_italic_functions = 1
-  " let g:material_italic_variables = 0
-  " let g:material_contrast = 1
-  " let g:material_borders = 1
-  " let g:material_disable_background = 1
-endif
+" code-dark
+let g:codedark_conservative = 0 " be colorful, thank you :)
+
+" gruvbox
+let g:gruvbox_bold = 1
+let g:gruvbox_italic = 1
+let g:gruvbox_underline = 1
+let g:gruvbox_undercurl = 1
+let g:gruvbox_termcolors = 256
+
+colorscheme badwolf
+"colorscheme molokai
+" colorscheme codedark
+" colorscheme gruvbox

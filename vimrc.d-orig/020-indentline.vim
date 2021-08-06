@@ -1,6 +1,3 @@
-if has('nvim')
-  finish
-endif
 let g:indentLine_loaded = 1
 let g:indentLine_setColors = 1
 let g:indentLine_color_tty_light = 4
