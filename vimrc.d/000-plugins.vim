@@ -74,6 +74,8 @@ if has('nvim')
   Plug 'windwp/nvim-autopairs'
   " Zsh completion source for nvim-compe
   Plug 'tamago324/compe-zsh'
+  " Tmux completion source for nvim-compe.
+  Plug 'andersevenrud/compe-tmux'
 endif
 Plug 'liuchengxu/vista.vim'
 " *****************************************************************************

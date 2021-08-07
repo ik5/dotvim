@@ -30,6 +30,10 @@ let g:compe.source.ultisnips = v:true
 let g:compe.source.luasnip = v:true
 let g:compe.source.emoji = v:true
 let g:compe.source.zsh = v:true
+let g:compe.source.tmux = {}
+let g:compe.source.tmux.disabled = v:false
+let g:compe.source.tmux.all_panes = v:true
+let g:compe.source.tmux.kind = "Text"
 
 lua << EOF
 require'lspconfig'.jedi_language_server.setup{}
