@@ -49,7 +49,7 @@ else
   "  A vim plugin to display the indention levels with thin vertical lines
   Plug 'Yggdroot/indentLine'
 endif
-
+Plug 'simnalamburt/vim-mundo'
 " *****************************************************************************
 
 " ******************************** VCS ****************************************
@@ -57,6 +57,14 @@ if has('nvim')
   " Git signs written in pure lua
   Plug 'lewis6991/gitsigns.nvim'
 endif
+Plug 'tpope/vim-fugitive'
+" A Vim plugin which shows a git diff in the gutter
+" A lightweight and powerful git branch viewer for vim.
+Plug 'rbong/vim-flog'
+" Git branch management
+Plug 'sodapopcan/vim-twiggy'
+" Easy git merge conflict resolution in Vim
+Plug 'christoomey/vim-conflicted'
 " *****************************************************************************
 
 " ******************************** LSP ****************************************
@@ -82,6 +90,33 @@ endif
 Plug 'liuchengxu/vista.vim'
 " *****************************************************************************
 
+" Programming Languages
+if executable('go')
+  " https://github.com/fatih/vim-go-tutorial
+  Plug 'fatih/vim-go', {'do': ':GoInstallBinaries', 'for': [ 'go' ] }
+  " Syntax highlight for Versioned Go
+  Plug 'zchee/vim-vgo', { 'for': ['go'] }
+endif
 
+if executable('python')
+  " Support for python programming
+  Plug 'python-mode/python-mode', { 'for': 'python' }
+  " Using the jedi autocompletion library for VIM for Python
+  Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+  " Vim plugin for working with python virtualenvs
+  Plug 'jmcantrell/vim-virtualenv', { 'for': 'python' }
+  " the Requirements File Format syntax support for Vim
+  Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+endif
+
+if executable('rustc')
+  " support for rust
+  Plug 'rust-lang/rust.vim', { 'for': ['rust', 'rs', 'rslib'] }
+  " rust racer syntax checking
+  Plug 'racer-rust/vim-racer', { 'for': ['rust', 'rs', 'rslib'] }
+endif
+
+" config files
+Plug 'cespare/vim-toml', { 'for': ['toml']}
 
 call plug#end()
