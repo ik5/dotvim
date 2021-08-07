@@ -43,6 +43,8 @@ if has('nvim')
   Plug 'kyazdani42/nvim-tree.lua'
   " Fix CursorHold Performance.
   Plug 'antoinemadec/FixCursorHold.nvim'
+  " Create your own textobjects using tree-sitter queries!
+  Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 else
   "  A vim plugin to display the indention levels with thin vertical lines
   Plug 'Yggdroot/indentLine'
