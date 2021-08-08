@@ -131,6 +131,9 @@ endif
 " vuejs
 Plug 'posva/vim-vue'
 
+" PHP completion, refactoring, introspection tool and language server.
+Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
+
 " config files
 Plug 'cespare/vim-toml', { 'for': ['toml']}
 
