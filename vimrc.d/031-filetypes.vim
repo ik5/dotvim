@@ -102,6 +102,11 @@ augroup General
   au FileType c,h,cpp,gobject call CSettings()
   au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> ')' :call search('(\\|)\\|{\\|}\\|\[\\|\]')<CR>
   au FileType c,h,cpp,vala,javascript nnoremap <buffer> <silent> '(' :call search('(\\|)\\|{\\|}\\|\[\\|\]', 'b')<CR>
+
+  if has('nvim')
+    " Yank highlight
+    au TextYankPost * lua vim.highlight.on_yank {higroup="IncSearch", timeout=500, on_visual=true}
+  endif
 augroup END
 
 augroup YAML
