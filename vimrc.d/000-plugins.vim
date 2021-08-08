@@ -45,11 +45,19 @@ if has('nvim')
   Plug 'antoinemadec/FixCursorHold.nvim'
   " Create your own textobjects using tree-sitter queries!
   Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+  " Neovim motions on speed!
+  Plug 'phaazon/hop.nvim'
 else
   "  A vim plugin to display the indention levels with thin vertical lines
   Plug 'Yggdroot/indentLine'
 endif
 Plug 'simnalamburt/vim-mundo'
+" vim match-up: even better % navigate and highlight matching words
+Plug 'andymass/vim-matchup'
+" Find And Replace Vim plugin
+Plug 'brooth/far.vim'
+" Comment functions so powerful—no comment necessary.
+Plug 'preservim/nerdcommenter'
 " *****************************************************************************
 
 " ******************************** VCS ****************************************
@@ -116,7 +124,18 @@ if executable('rustc')
   Plug 'racer-rust/vim-racer', { 'for': ['rust', 'rs', 'rslib'] }
 endif
 
+if has('nvim')
+  Plug 'windwp/nvim-ts-autotag'
+endif
+
+" vuejs
+Plug 'posva/vim-vue'
+
 " config files
 Plug 'cespare/vim-toml', { 'for': ['toml']}
 
+" Over 70 language packs
+" needed to be set before the plug is loaded
+let g:polyglot_disabled = ['vim-go', 'rust.vim'] " disable support for polyglot
+Plug 'sheerun/vim-polyglot'
 call plug#end()
