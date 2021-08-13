@@ -10,7 +10,7 @@ if (has('termguicolors'))
   set t_8f=^[[38;2;%lu;%lu;%lum
   set termguicolors " true colors
 endif
-let g:rehash256 = 1 " molokai looks for it, so placing it first
+" let g:rehash256 = 1 " molokai looks for it, so placing it first
 
 set background=dark
 
@@ -44,17 +44,19 @@ if !has('nvim')
   let g:badwolf_css_props_highlight = 1
 
   colorscheme badwolf
-  "colorscheme molokai
+  " colorscheme molokai
 else
   let g:vscode_style = 'dark'
-  colorscheme vscode
+  let g:material_style = 'oceanic'
+  let g:material_italic_comments = 1
+  let g:material_italic_keywords = 1
+  let g:material_italic_functions = 1
+  let g:material_italic_variables = 1
+  let g:material_contrast = 1
+  let g:material_borders = 1
+  let g:material_disable_background = 0
+
+  " colorscheme vscode
+  colorscheme monokai_pro
   " colorscheme material
-  " let g:material_style = 'darker'
-  " let g:material_italic_comments = 1
-  " let g:material_italic_keywords = 1
-  " let g:material_italic_functions = 1
-  " let g:material_italic_variables = 0
-  " let g:material_contrast = 1
-  " let g:material_borders = 1
-  " let g:material_disable_background = 1
 endif

@@ -11,13 +11,14 @@ endif
 " ************************************ colorscheme ****************************
 if has('nvim')
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  " Plug 'tanvirtin/monokai.nvim'
-  " Plug 'marko-cerovac/material.nvim'
-  " Plug 'RRethy/nvim-base16'
+  Plug 'tanvirtin/monokai.nvim'
+  Plug 'marko-cerovac/material.nvim'
+  Plug 'RRethy/nvim-base16'
   Plug 'Mofiqul/vscode.nvim'
 else
   Plug 'tomasr/molokai'
   Plug 'sjl/badwolf'
+  Plug 'cocopon/iceberg.vim'
 endif
 " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " airline support
@@ -47,6 +48,9 @@ if has('nvim')
   Plug 'nvim-treesitter/nvim-treesitter-textobjects'
   " Neovim motions on speed!
   Plug 'phaazon/hop.nvim'
+  if executable('deno')
+    Plug 'vim-denops/denops.vim'
+  endif
 else
   "  A vim plugin to display the indention levels with thin vertical lines
   Plug 'Yggdroot/indentLine'
@@ -58,6 +62,17 @@ Plug 'andymass/vim-matchup'
 Plug 'brooth/far.vim'
 " Comment functions so powerful—no comment necessary.
 Plug 'preservim/nerdcommenter'
+" surround changing things based on syntax, such as ', ", [, ] etc..
+Plug 'tpope/vim-surround'
+" *****************************************************************************
+
+" ******************************** Fuzzy Finders ******************************
+if has('nvim')
+  Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-telescope/telescope-symbols.nvim'
+  Plug 'nvim-telescope/telescope-dap.nvim'
+  Plug 'gbrlsnchs/telescope-lsp-handlers.nvim'
+endif
 " *****************************************************************************
 
 " ******************************** VCS ****************************************
@@ -77,8 +92,6 @@ Plug 'christoomey/vim-conflicted'
 
 " ******************************** LSP ****************************************
 if has('nvim')
-  " Auto completion plugin for nvim.
-  Plug 'hrsh7th/nvim-compe'
   " A collection of common configurations for Neovim's built-in language server
   " client.
   Plug 'neovim/nvim-lspconfig'
@@ -90,10 +103,44 @@ if has('nvim')
   " A super powerful autopairs for Neovim. It support multiple character.
   " Requires neovim 0.5+
   Plug 'windwp/nvim-autopairs'
-  " Zsh completion source for nvim-compe
-  Plug 'tamago324/compe-zsh'
-  " Tmux completion source for nvim-compe.
-  Plug 'andersevenrud/compe-tmux'
+
+  if !executable('deno')
+    " Dark powered asynchronous completion framework for neovim/Vim8
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'Shougo/deoplete-zsh', {'for': ['zsh', 'bash', 'shell']}
+    Plug 'deoplete-plugins/deoplete-go', {'for': ['go']}
+    Plug 'deoplete-plugins/deoplete-cgo', {'for': ['go']}
+    Plug 'deoplete-plugins/deoplete-jedi', {'for': ['python']}
+    Plug 'deoplete-plugins/deoplete-clang', {'for': ['c', 'c++', 'cpp']}
+    Plug 'deoplete-plugins/deoplete-lsp'
+    Plug 'deoplete-plugins/deoplete-tag'
+  else
+    Plug 'Shougo/ddc.vim'
+    " Around completion for ddc.vim
+    Plug 'Shougo/ddc-around'
+    " nvim-lsp completion for ddc.vim
+    Plug 'Shougo/ddc-nvim-lsp'
+    " Zsh completion for ddc.vim
+    Plug 'Shougo/ddc-zsh'
+    " Buffer source for ddc.vim
+    Plug 'matsui54/ddc-buffer'
+    " ultisnips source for ddc.vim
+    Plug 'matsui54/ddc-ultisnips'
+    " Heading matcher for ddc.vim
+    Plug 'Shougo/ddc-matcher_head'
+    " Fuzzy matcher for ddc.vim
+    Plug 'matsui54/ddc-matcher_fuzzy'
+    " A ddc.vim source for nextword for completing words in English.
+    " Plug 'Shougo/ddc-nextword'
+
+    " nvim-dap is a Debug Adapter Protocol client implementation
+    Plug 'mfussenegger/nvim-dap'
+    " A UI for nvim-dap
+    Plug 'rcarriga/nvim-dap-ui'
+    " A Neovim plugin to easily run and debug Jest tests.
+    Plug 'David-Kunz/jester'
+  endif
+  Plug 'Shougo/neco-vim', {'for': ['vim', 'toml']}
 endif
 Plug 'liuchengxu/vista.vim'
 " *****************************************************************************
@@ -132,10 +179,14 @@ endif
 Plug 'posva/vim-vue'
 
 " PHP completion, refactoring, introspection tool and language server.
-Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
+" Plug 'phpactor/phpactor', {'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o'}
 
 " config files
 Plug 'cespare/vim-toml', { 'for': ['toml']}
+
+" HTML
+" ----
+Plug 'mattn/emmet-vim'
 
 " Over 70 language packs
 " needed to be set before the plug is loaded

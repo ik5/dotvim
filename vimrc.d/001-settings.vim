@@ -105,8 +105,8 @@ set wildignore+=vendor/*                         " ignore vendor directory
 set list
 set listchars=tab:→\ ,trail:·,extends:›,precedes:‹,nbsp:␣
 
-set completeopt=longest,menu,menuone   " Just show the menu upon completion (faster)
-set completeopt-=preview " making sure that no preview exists, it causes some issues
+set completeopt=longest,menu,menuone,noselect   " Just show the menu upon completion (faster)
+"set completeopt-=preview " making sure that no preview exists, it causes some issues
 set infercase                     " Allow smarter completion by infering the case
 set pumheight=15               " The maximum height of a completion menu
 
