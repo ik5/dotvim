@@ -70,7 +70,6 @@ Plug 'tpope/vim-surround'
 if has('nvim')
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'nvim-telescope/telescope-symbols.nvim'
-  Plug 'nvim-telescope/telescope-dap.nvim'
   Plug 'gbrlsnchs/telescope-lsp-handlers.nvim'
 endif
 " *****************************************************************************
@@ -133,12 +132,6 @@ if has('nvim')
     " A ddc.vim source for nextword for completing words in English.
     " Plug 'Shougo/ddc-nextword'
 
-    " nvim-dap is a Debug Adapter Protocol client implementation
-    Plug 'mfussenegger/nvim-dap'
-    " A UI for nvim-dap
-    Plug 'rcarriga/nvim-dap-ui'
-    " A Neovim plugin to easily run and debug Jest tests.
-    Plug 'David-Kunz/jester'
   endif
   Plug 'Shougo/neco-vim', {'for': ['vim', 'toml']}
 endif
