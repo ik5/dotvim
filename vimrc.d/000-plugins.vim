@@ -133,6 +133,8 @@ if has('nvim')
     Plug 'Shougo/ddc-matcher_head'
     " Fuzzy matcher for ddc.vim
     Plug 'matsui54/ddc-matcher_fuzzy'
+    " Matched rank order sorter for ddc.vim
+    Plug 'Shougo/ddc-sorter_rank'
     " A ddc.vim source for nextword for completing words in English.
     " Plug 'Shougo/ddc-nextword'
 

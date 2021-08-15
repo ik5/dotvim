@@ -4,20 +4,20 @@ endif
 
 call ddc#custom#patch_global('sources', [
                   \ 'nvimlsp',
-                  \ 'gatherCandidates',
                   \ 'zsh',
                   \ 'around',
-                  \ 'vim',
                   \ 'buffer',
                   \ 'ultisnips',
-                  \ 'matcher_fuzzy'
                   \ ])
 " Change source options
 call ddc#custom#patch_global('sourceOptions', {
-                  \ '_': {'matchers': ['matcher_head', 'matcher_fuzzy']},
+                  \ '_': {
+                    \ 'matchers': ['matcher_head', 'matcher_fuzzy'],
+                    \ 'sorters': ['sorter_rank'],
+                    \ },
                   \ 'nvimlsp': {'mark': 'lsp', 'forceCompletionPattern': '\.|:|->'},
-                  \ 'around': {'matchers': ['matcher_head'], 'mark': 'A'},
-                  \ 'ultisnips': {'mark': 'US'},
+                  \ 'around': {'matchers': ['matcher_head'], 'mark': 'AROUND'},
+                  \ 'ultisnips': {'mark': 'SNIPS'},
                   \ 'necovim': {'mark': 'vim'},
                   \ })
 
@@ -33,6 +33,18 @@ call ddc#custom#patch_filetype(
 call ddc#custom#patch_filetype(
                   \ ['help', 'markdown', 'gitcommit'], 'sources', ['around']
                   \ )
+
+call ddc#custom#patch_filetype(['c', 'cpp'], 'sources', ['around', 'clangd'])
+call ddc#custom#patch_filetype(['c', 'cpp'], 'sourceOptions', {
+      \ 'clangd': {'mark': 'C'},
+      \ })
+call ddc#custom#patch_filetype('markdown', 'sourceParams', {
+      \ 'around': {'maxSize': 100},
+      \ })
+
+call ddc#custom#patch_global('filterParams', {
+    \ 'matcher_fuzzy': {'camelcase': v:true},
+    \ })
 
 inoremap <silent><expr> <C-l> ddc#complete_common_string()
 inoremap <silent><expr> <TAB>
