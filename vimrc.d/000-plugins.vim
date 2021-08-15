@@ -64,6 +64,8 @@ Plug 'brooth/far.vim'
 Plug 'preservim/nerdcommenter'
 " surround changing things based on syntax, such as ', ", [, ] etc..
 Plug 'tpope/vim-surround'
+" Pairs of handy bracket mappings
+Plug 'tpope/vim-unimpaired'
 " *****************************************************************************
 
 " ******************************** Fuzzy Finders ******************************
@@ -180,6 +182,12 @@ Plug 'cespare/vim-toml', { 'for': ['toml']}
 " HTML
 " ----
 Plug 'mattn/emmet-vim'
+
+" php
+" ---
+if has('nvim')
+  Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()', 'for': 'php'}
+endif
 
 " Over 70 language packs
 " needed to be set before the plug is loaded
