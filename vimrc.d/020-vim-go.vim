@@ -4,7 +4,7 @@
 
 let g:go_async_run = 1
 "let g:go_fmt_command = 'goimports'
-let g:go_fmt_command = 'gofmt'
+let g:go_fmt_command = 'gopls'
 let g:go_list_type = 'locationlist'
 let g:go_list_autoclose = 0
 " let g:go_list_height = 5
@@ -171,7 +171,7 @@ function! s:build_go_files()
 endfunction
 
 augroup Golang
-"autocmd FileType go autocmd BufWritePre <buffer> GoFmt
+  au BufWritePre go <buffer> <Plug>(go-imports)<CR> :GoFmt<CR>
   au FileType go nmap <leader>godoc :<C-u>call <SID>create_go_doc_comment()<CR>
 
   " Show a list of interfaces which is implemented by the type under your cursor
