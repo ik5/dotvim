@@ -66,6 +66,8 @@ Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
 " Pairs of handy bracket mappings
 Plug 'tpope/vim-unimpaired'
+" flexible viewer for any documentation
+Plug 'powerman/vim-plugin-viewdoc'
 " *****************************************************************************
 
 " ******************************** Fuzzy Finders ******************************
