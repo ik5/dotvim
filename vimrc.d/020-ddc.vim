@@ -14,7 +14,7 @@ call ddc#custom#patch_global('sources', [
                   \ ])
 " Change source options
 call ddc#custom#patch_global('sourceOptions', {
-                  \ '_': {'matchers': ['nvimlsp', 'matcher_head', 'matcher_fuzzy']},
+                  \ '_': {'matchers': ['matcher_head', 'matcher_fuzzy']},
                   \ 'nvimlsp': {'mark': 'lsp', 'forceCompletionPattern': '\.|:|->'},
                   \ 'around': {'matchers': ['matcher_head'], 'mark': 'A'},
                   \ 'ultisnips': {'mark': 'US'},
