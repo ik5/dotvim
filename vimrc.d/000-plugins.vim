@@ -124,7 +124,7 @@ if has('nvim')
     " nvim-lsp completion for ddc.vim
     Plug 'Shougo/ddc-nvim-lsp'
     " Zsh completion for ddc.vim
-    Plug 'Shougo/ddc-zsh'
+    "Plug 'Shougo/ddc-zsh'
     " Buffer source for ddc.vim
     Plug 'matsui54/ddc-buffer'
     " ultisnips source for ddc.vim
