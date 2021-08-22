@@ -106,6 +106,9 @@ if has('nvim')
   " A super powerful autopairs for Neovim. It support multiple character.
   " Requires neovim 0.5+
   Plug 'windwp/nvim-autopairs'
+  " A light-weight lsp plugin based on neovim built-in lsp with highly a
+  " performant UI.
+  Plug 'glepnir/lspsaga.nvim'
 
   if !executable('deno')
     " Dark powered asynchronous completion framework for neovim/Vim8
