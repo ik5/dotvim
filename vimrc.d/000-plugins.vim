@@ -193,7 +193,7 @@ Plug 'mattn/emmet-vim'
 " php
 " ---
 if has('nvim')
-  Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()', 'for': 'php'}
+  " Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()'}
 endif
 
 " Over 70 language packs
