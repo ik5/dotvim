@@ -16,5 +16,5 @@ let g:indent_blankline_show_end_of_line = v:true
 let g:indent_blankline_show_foldtext = v:false
 let g:indent_blankline_show_current_context = v:true
 let g:indent_blankline_filetype_exclude = ['help']
-let g:indent_blankline_buftype_exclude = ['terminal', 'help']
+let g:indent_blankline_buftype_exclude = ['terminal', 'help', 'NvimTree', '__vista__']
 let g:indent_blankline_strict_tabs = v:true
