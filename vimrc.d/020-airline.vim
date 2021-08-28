@@ -1,3 +1,7 @@
+if has('nvim')
+  finish
+endif
+
 " ==================================================
 " airline
 " ==================================================
@@ -7,7 +11,7 @@ let g:airline_powerline_fonts = 1
 " let g:airline_theme = 'serene'
 " let g:airline_theme = 'tomorrow'
 " let g:airline_theme = 'molokai'
- let g:airline_theme = 'badwolf'
+let g:airline_theme = 'badwolf'
 
 
 "let g:airline_section_x='%b 0x%B : %{airline#util#prepend(airline#extensions#tagbar#currenttag(),0)}%{airline#util#prepend("",0)}%{WebDevIconsGetFileTypeSymbol()} %{airline#util#wrap(airline#parts#filetype(),0)}'

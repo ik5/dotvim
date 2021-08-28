@@ -17,16 +17,17 @@ if has('nvim')
   Plug 'Mofiqul/vscode.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+
 else
   Plug 'tomasr/molokai'
   Plug 'sjl/badwolf'
   Plug 'cocopon/iceberg.vim'
   Plug 'powerline/fonts', { 'do': './install.sh' }
+  " airline support
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 endif
 " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-" airline support
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 " Simple tmux statusline generator with support for powerline symbols and
 " statusline / airline / lightline integration
 Plug 'edkolev/tmuxline.vim'
@@ -102,6 +103,8 @@ if has('nvim')
   " A collection of common configurations for Neovim's built-in language server
   " client.
   Plug 'neovim/nvim-lspconfig'
+  " Provides the missing :LspInstall for nvim-lspconfig
+  Plug 'kabouzeid/nvim-lspinstall'
   "UltiSnips is the ultimate solution for snippets in Vim. It has many features,
   "speed being one of them.
   Plug 'sirver/UltiSnips'
@@ -113,6 +116,9 @@ if has('nvim')
   " A light-weight lsp plugin based on neovim built-in lsp with highly a
   " performant UI.
   Plug 'glepnir/lspsaga.nvim'
+
+  " A tree like view for symbols in Neovim using the Language Server Protocol.
+  Plug 'simrat39/symbols-outline.nvim'
 
   if !executable('deno')
     " Dark powered asynchronous completion framework for neovim/Vim8
