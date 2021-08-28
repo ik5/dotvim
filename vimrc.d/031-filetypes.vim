@@ -8,7 +8,9 @@
 augroup Ruby
   au Filetype ruby setlocal ts=2 sw=2 expandtab
   au FileType ruby compiler ruby
-  au FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
+  if has('g:snipMate')
+    au FileType ruby let g:snipMate.scope_aliases['ruby'] = 'ruby,rails'
+  endif
   au FileType ruby nnoremap <leader>dbg orequire "pry"; binding.pry<esc>
 augroup END
 
