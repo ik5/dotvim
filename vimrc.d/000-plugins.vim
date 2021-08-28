@@ -144,7 +144,11 @@ if has('nvim')
 
   endif
   Plug 'Shougo/neco-vim', {'for': ['vim', 'toml']}
+  " A format runner for neovim, written in lua
+  " Plug 'mhartington/formatter.nvim'
 endif
+"A (Neo)vim plugin for formatting code.
+Plug 'sbdchd/neoformat'
 Plug 'liuchengxu/vista.vim'
 " *****************************************************************************
 
