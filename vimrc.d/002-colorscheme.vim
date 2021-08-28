@@ -15,10 +15,10 @@ endif
 set background=dark
 
 if has('gui_running')
-    set guifont=Mononoki\ Regular\ 12.5,Monaco\ 11,Droid\ Sans\ Mono\ 10,Andale\ Mono\ Regular\ 10,\ Liberation\ Mono\ 10
-    set guioptions-=T   " Toolbars off (icons on top of the screen)
+  set guifont=Mononoki\ Regular\ 12.5,Monaco\ 11,Droid\ Sans\ Mono\ 10,Andale\ Mono\ Regular\ 10,\ Liberation\ Mono\ 10
+  set guioptions-=T   " Toolbars off (icons on top of the screen)
 else
-    set t_Co=256
+  set t_Co=256
 endif
 
 " ==================================================
@@ -55,6 +55,9 @@ else
   let g:material_contrast = 1
   let g:material_borders = 1
   let g:material_disable_background = 0
+
+  let g:tokyonight_style = 'night'
+  let g:tokyonight_italic_functions = 1
 
   " colorscheme vscode
   colorscheme monokai_pro

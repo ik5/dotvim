@@ -120,6 +120,3 @@ augroup PHP
   autocmd FileType php set iskeyword+=$
 augroup END
 
-"augroup fmt
-"  au BufWritePre * undojoin | Neoformat
-"augroup END

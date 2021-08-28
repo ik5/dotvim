@@ -16,6 +16,7 @@ if has('nvim')
   Plug 'RRethy/nvim-base16'
   Plug 'Mofiqul/vscode.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 else
   Plug 'tomasr/molokai'
   Plug 'sjl/badwolf'
