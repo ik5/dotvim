@@ -15,16 +15,17 @@ if has('nvim')
   Plug 'marko-cerovac/material.nvim'
   Plug 'RRethy/nvim-base16'
   Plug 'Mofiqul/vscode.nvim'
+  Plug 'kyazdani42/nvim-web-devicons'
 else
   Plug 'tomasr/molokai'
   Plug 'sjl/badwolf'
   Plug 'cocopon/iceberg.vim'
+  Plug 'powerline/fonts', { 'do': './install.sh' }
 endif
 " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " airline support
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'powerline/fonts', { 'do': './install.sh' }
 " Simple tmux statusline generator with support for powerline symbols and
 " statusline / airline / lightline integration
 Plug 'edkolev/tmuxline.vim'
