@@ -50,6 +50,8 @@ if has('nvim')
   Plug 'nvim-treesitter/nvim-treesitter-textobjects'
   " Neovim motions on speed!
   Plug 'phaazon/hop.nvim'
+  " The fastest Neovim colorizer
+  Plug 'norcalli/nvim-colorizer.lua'
   if executable('deno')
     Plug 'vim-denops/denops.vim'
   endif
