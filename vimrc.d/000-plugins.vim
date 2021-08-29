@@ -121,11 +121,13 @@ if has('nvim')
   " A light-weight lsp plugin based on neovim built-in lsp with highly a
   " performant UI.
   Plug 'glepnir/lspsaga.nvim'
-
   " A tree like view for symbols in Neovim using the Language Server Protocol.
   Plug 'simrat39/symbols-outline.nvim'
   " lsp signature hint when you type
   Plug 'ray-x/lsp_signature.nvim'
+  " Plugin that creates missing LSP diagnostics highlight groups for color
+  " schemes that don't yet support the Neovim 0.5 builtin LSP client.
+  Plug 'folke/lsp-colors.nvim'
 
   if !executable('deno')
     " Dark powered asynchronous completion framework for neovim/Vim8
