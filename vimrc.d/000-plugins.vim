@@ -16,6 +16,7 @@ if has('nvim')
   Plug 'RRethy/nvim-base16'
   Plug 'Mofiqul/vscode.nvim'
   Plug 'kyazdani42/nvim-web-devicons'
+  " Plug 'mortepau/codicons.nvim'
   Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
   " Plug 'konapun/vacuumline.nvim'
@@ -123,6 +124,8 @@ if has('nvim')
 
   " A tree like view for symbols in Neovim using the Language Server Protocol.
   Plug 'simrat39/symbols-outline.nvim'
+  " lsp signature hint when you type
+  Plug 'ray-x/lsp_signature.nvim'
 
   if !executable('deno')
     " Dark powered asynchronous completion framework for neovim/Vim8
