@@ -18,6 +18,8 @@ if has('nvim')
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
+  Plug 'konapun/vacuumline.nvim'
+  Plug 'glepnir/galaxyline.nvim', {'branch': 'main'}
 else
   Plug 'tomasr/molokai'
   Plug 'sjl/badwolf'
