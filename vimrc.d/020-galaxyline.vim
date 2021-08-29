@@ -1,6 +1,6 @@
-if !has('nvim')
+" if !has('nvim')
   finish
-endif
+" endif
 
 lua <<EOF
 require('vacuumline').setup({

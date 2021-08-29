@@ -18,21 +18,22 @@ if has('nvim')
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
-  Plug 'konapun/vacuumline.nvim'
-  Plug 'glepnir/galaxyline.nvim', {'branch': 'main'}
+  " Plug 'konapun/vacuumline.nvim'
+  " Plug 'glepnir/galaxyline.nvim', {'branch': 'main'}
 else
   Plug 'tomasr/molokai'
   Plug 'sjl/badwolf'
   Plug 'cocopon/iceberg.vim'
-  Plug 'powerline/fonts', { 'do': './install.sh' }
-  " airline support
-  Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
 endif
 " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " Simple tmux statusline generator with support for powerline symbols and
 " statusline / airline / lightline integration
 Plug 'edkolev/tmuxline.vim'
+Plug 'powerline/fonts', { 'do': './install.sh' }
+Plug 'ryanoasis/vim-devicons'
+" airline support
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " *****************************************************************************
 
 " **************************** General ****************************************
