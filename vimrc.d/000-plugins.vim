@@ -210,6 +210,10 @@ if has('nvim')
   " Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()'}
 endif
 
+if has('nvim')
+  Plug 'lewis6991/spellsitter.nvim'
+endif
+
 " Over 70 language packs
 " needed to be set before the plug is loaded
 let g:polyglot_disabled = ['vim-go', 'rust.vim'] " disable support for polyglot
