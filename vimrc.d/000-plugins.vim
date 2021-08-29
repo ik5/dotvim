@@ -83,6 +83,7 @@ if has('nvim')
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'nvim-telescope/telescope-symbols.nvim'
   Plug 'gbrlsnchs/telescope-lsp-handlers.nvim'
+  Plug 'fhill2/telescope-ultisnips.nvim'
 endif
 " *****************************************************************************
 

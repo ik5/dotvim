@@ -63,5 +63,6 @@ extensions = {
 }
 
 require('telescope').load_extension('lsp_handlers')
+require('telescope').load_extension('ultisnips')
 
 EOF
