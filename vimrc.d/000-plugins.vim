@@ -75,6 +75,9 @@ Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
 " Pairs of handy bracket mappings
 Plug 'tpope/vim-unimpaired'
+" Seamless navigation between tmux panes and vim splits
+" TODO: make it work
+" Plug 'christoomey/vim-tmux-navigator'
 
 " flexible viewer for any documentation
 Plug 'powerman/vim-plugin-viewdoc'
