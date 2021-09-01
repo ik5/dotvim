@@ -4,10 +4,10 @@ endif
 
 call ddc#custom#patch_global('sources', [
                   \ 'nvimlsp',
-                  \ 'zsh',
                   \ 'around',
                   \ 'buffer',
                   \ 'ultisnips',
+                  \ 'ctags',
                   \ ])
 " Change source options
 call ddc#custom#patch_global('sourceOptions', {
@@ -19,6 +19,7 @@ call ddc#custom#patch_global('sourceOptions', {
                   \ 'around': {'matchers': ['matcher_head'], 'mark': 'AROUND'},
                   \ 'ultisnips': {'mark': 'SNIPS'},
                   \ 'necovim': {'mark': 'vim'},
+                  \ 'ctags': {'mark': 'CTAG'},
                   \ })
 
 call ddc#custom#patch_global('sourceParams', {

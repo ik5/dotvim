@@ -167,6 +167,8 @@ if has('nvim')
     " A ddc.vim source for nextword for completing words in English.
     " Plug 'Shougo/ddc-nextword'
 
+    " A source for ddc.vim to gather candidates from Universal Ctags
+    Plug 'delphinus/ddc-ctags'
   endif
   Plug 'Shougo/neco-vim', {'for': ['vim', 'toml']}
   " A format runner for neovim, written in lua
