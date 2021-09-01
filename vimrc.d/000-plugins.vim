@@ -209,9 +209,11 @@ Plug 'posva/vim-vue'
 " config files
 Plug 'cespare/vim-toml', { 'for': ['toml']}
 
-" HTML
+" Harkup
 " ----
 Plug 'mattn/emmet-vim'
+" A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more (formerly allml)
+Plug 'tpope/vim-ragtag'
 
 " php
 " ---
