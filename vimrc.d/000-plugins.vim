@@ -21,6 +21,9 @@ if has('nvim')
 
   " Plug 'konapun/vacuumline.nvim'
   " Plug 'glepnir/galaxyline.nvim', {'branch': 'main'}
+
+  " A dark neovim colorscheme written in lua
+  Plug 'glepnir/zephyr-nvim', { 'branch': 'main' }
 else
   Plug 'tomasr/molokai'
   Plug 'sjl/badwolf'
