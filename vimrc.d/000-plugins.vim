@@ -75,8 +75,12 @@ Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
 " Pairs of handy bracket mappings
 Plug 'tpope/vim-unimpaired'
+
 " flexible viewer for any documentation
 Plug 'powerman/vim-plugin-viewdoc'
+" vim-rfc lists all existing RFCs and opens the selected one in a new buffer.
+Plug 'mhinz/vim-rfc'
+
 " *****************************************************************************
 
 " ******************************** Fuzzy Finders ******************************
