@@ -72,6 +72,7 @@ else
   "  A vim plugin to display the indention levels with thin vertical lines
   Plug 'Yggdroot/indentLine'
 endif
+" Vim undo tree visualizer
 Plug 'simnalamburt/vim-mundo'
 " vim match-up: even better % navigate and highlight matching words
 Plug 'andymass/vim-matchup'
