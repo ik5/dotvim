@@ -63,6 +63,8 @@ if has('nvim')
   Plug 'phaazon/hop.nvim'
   " The fastest Neovim colorizer
   Plug 'norcalli/nvim-colorizer.lua'
+  " Better quickfix window in Neovim, polish old quickfix window.
+  Plug 'kevinhwang91/nvim-bqf'
   if executable('deno')
     Plug 'vim-denops/denops.vim'
   endif
@@ -99,6 +101,12 @@ if has('nvim')
   Plug 'gbrlsnchs/telescope-lsp-handlers.nvim'
   Plug 'fhill2/telescope-ultisnips.nvim'
 endif
+
+if executable('fzf')
+  " A command-line fuzzy finder
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+endif
+
 " *****************************************************************************
 
 " ******************************** VCS ****************************************
