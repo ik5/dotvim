@@ -3,3 +3,21 @@ snippet doc "''' txt '''"
 ${1}
 '''
 endsnippet
+
+snippet print "Print value of some variable"
+print("$1".format($2))
+$0
+endsnippet
+
+snippet impa "import FOO as BAR" b
+import ${1:FOO} as ${2:BAR}
+endsnippet
+
+snippet main "Main function boilerplate" b
+def main():
+	$0
+
+
+if __name__ == "__main__":
+	main()
+endsnippet
