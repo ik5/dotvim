@@ -56,6 +56,9 @@ if has('nvim')
   Plug 'antoinemadec/FixCursorHold.nvim'
   " Create your own textobjects using tree-sitter queries!
   Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+  " Interactively select and swap function arguments, list elements, and more.
+  " Powered by tree-sitter.
+  Plug 'mizlan/iswap.nvim'
   " Neovim motions on speed!
   Plug 'phaazon/hop.nvim'
   " The fastest Neovim colorizer
