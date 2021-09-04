@@ -240,6 +240,11 @@ if has('nvim')
   Plug 'lewis6991/spellsitter.nvim'
 endif
 
+" Markdown
+" markdown preview plugin for (neo)vim
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+
 " Over 70 language packs
 " needed to be set before the plug is loaded
 let g:polyglot_disabled = ['vim-go', 'rust.vim'] " disable support for polyglot
