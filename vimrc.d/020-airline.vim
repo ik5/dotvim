@@ -15,7 +15,7 @@ let g:airline_theme = 'badwolf'
 
 "let g:airline_section_x='%b 0x%B : %{airline#util#prepend(airline#extensions#tagbar#currenttag(),0)}%{airline#util#prepend("",0)}%{airline#util#wrap(airline#parts#filetype(),0)}'
 let g:airline_section_x='%b 0x%B : %{airline#util#prepend("",0)}%{airline#util#wrap(airline#parts#filetype(),0)}'
-let g:airline_section_y='%{airline#util#wrap(airline#parts#ffenc(),0)}'
+let g:airline_section_y='%{airline#util#wrap(airline#parts#ffenc(),0)} %{gutentags#statusline()}'
 let g:airline_section_z='%3p%% %#__accent_bold#%{g:airline_symbols.linenr}%4l%#__restore__#%#__accent_bold#/%L%{g:airline_symbols.maxlinenr}%#__restore__# :%3v '
 
 let g:airline#extensions#tabline#enabled = 1

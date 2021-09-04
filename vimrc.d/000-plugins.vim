@@ -192,6 +192,7 @@ endif
 "A (Neo)vim plugin for formatting code.
 Plug 'sbdchd/neoformat'
 Plug 'liuchengxu/vista.vim'
+Plug 'ludovicchabant/vim-gutentags'
 " *****************************************************************************
 
 " Programming Languages
