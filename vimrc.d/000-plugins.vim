@@ -92,7 +92,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'powerman/vim-plugin-viewdoc'
 " vim-rfc lists all existing RFCs and opens the selected one in a new buffer.
 Plug 'mhinz/vim-rfc'
-
+" Vim plugin that provides additional text objects
+Plug 'wellle/targets.vim'
 " *****************************************************************************
 
 " ******************************** Fuzzy Finders ******************************
@@ -195,6 +196,8 @@ Plug 'liuchengxu/vista.vim'
 Plug 'ludovicchabant/vim-gutentags'
 " Vim script for text filtering and alignment
 Plug 'godlygeek/tabular'
+" A Vim plugin that provides a completion function for Unicode glyphs
+Plug 'chrisbra/unicode.vim'
 " *****************************************************************************
 
 " Programming Languages
