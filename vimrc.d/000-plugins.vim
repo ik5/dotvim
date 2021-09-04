@@ -193,6 +193,8 @@ endif
 Plug 'sbdchd/neoformat'
 Plug 'liuchengxu/vista.vim'
 Plug 'ludovicchabant/vim-gutentags'
+" Vim script for text filtering and alignment
+Plug 'godlygeek/tabular'
 " *****************************************************************************
 
 " Programming Languages
