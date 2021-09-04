@@ -9,3 +9,7 @@ if !has('nvim')
 	${1:action}
 endif
 endsnippet
+
+snippet pplug "vim-plug Paste Plugin" b
+Plug '${1:`!v substitute(@+, '\([^\/]*\/\/[^\/]*\/\)\([^/]*\/[^/]*\)\(.*\)', '\2', '' )`}'
+endsnippet
