@@ -76,8 +76,6 @@ endif
 Plug 'simnalamburt/vim-mundo'
 " vim match-up: even better % navigate and highlight matching words
 Plug 'andymass/vim-matchup'
-" Find And Replace Vim plugin
-Plug 'brooth/far.vim'
 " Comment functions so powerful—no comment necessary.
 Plug 'preservim/nerdcommenter'
 " surround changing things based on syntax, such as ', ", [, ] etc..
