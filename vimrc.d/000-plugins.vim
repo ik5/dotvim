@@ -257,6 +257,11 @@ endif
 " markdown preview plugin for (neo)vim
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
+" restructuredText
+if has('nvim')
+  " Sphinx integrations for Neovim.
+  Plug 'stsewd/sphinx.nvim', { 'do': ':UpdateRemotePlugins' }
+endif
 
 " Over 70 language packs
 " needed to be set before the plug is loaded
