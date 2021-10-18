@@ -16,7 +16,6 @@ require'nvim-tree'.setup {
     follow = false,
     auto_close = false,
     hijack_cursor = false,
-    lsp_diagnostics = true,
 
 }
 
