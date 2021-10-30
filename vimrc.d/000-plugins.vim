@@ -150,41 +150,19 @@ if has('nvim')
   " schemes that don't yet support the Neovim 0.5 builtin LSP client.
   Plug 'folke/lsp-colors.nvim'
 
-  if !executable('deno')
-    " Dark powered asynchronous completion framework for neovim/Vim8
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'Shougo/deoplete-zsh', {'for': ['zsh', 'bash', 'shell']}
-    Plug 'deoplete-plugins/deoplete-go', {'for': ['go']}
-    Plug 'deoplete-plugins/deoplete-cgo', {'for': ['go']}
-    Plug 'deoplete-plugins/deoplete-jedi', {'for': ['python']}
-    Plug 'deoplete-plugins/deoplete-clang', {'for': ['c', 'c++', 'cpp']}
-    Plug 'deoplete-plugins/deoplete-lsp'
-    Plug 'deoplete-plugins/deoplete-tag'
-  else
-    Plug 'Shougo/ddc.vim'
-    " Around completion for ddc.vim
-    Plug 'Shougo/ddc-around'
-    " nvim-lsp completion for ddc.vim
-    Plug 'Shougo/ddc-nvim-lsp'
-    " Zsh completion for ddc.vim
-    "Plug 'Shougo/ddc-zsh'
-    " Buffer source for ddc.vim
-    Plug 'matsui54/ddc-buffer'
-    " ultisnips source for ddc.vim
-    Plug 'matsui54/ddc-ultisnips'
-    " Heading matcher for ddc.vim
-    Plug 'Shougo/ddc-matcher_head'
-    " Fuzzy matcher for ddc.vim
-    Plug 'matsui54/ddc-matcher_fuzzy'
-    " Matched rank order sorter for ddc.vim
-    Plug 'Shougo/ddc-sorter_rank'
-    " A ddc.vim source for nextword for completing words in English.
-    " Plug 'Shougo/ddc-nextword'
+  " vscode-like pictograms for neovim lsp completion items
+  Plug 'onsails/lspkind-nvim'
 
-    " A source for ddc.vim to gather candidates from Universal Ctags
-    Plug 'delphinus/ddc-ctags'
-  endif
+  Plug 'hrsh7th/nvim-cmp'
+  Plug 'hrsh7th/cmp-buffer'
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/cmp-emoji'
+  Plug 'hrsh7th/cmp-path'
+  Plug 'hrsh7th/cmp-nvim-lua'
+  Plug 'f3fora/cmp-spell'
+  Plug 'quangnguyen30192/cmp-nvim-ultisnips'
   Plug 'Shougo/neco-vim', {'for': ['vim', 'toml']}
+
   " A format runner for neovim, written in lua
   " Plug 'mhartington/formatter.nvim'
 endif
