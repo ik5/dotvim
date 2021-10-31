@@ -65,9 +65,6 @@ if has('nvim')
   Plug 'norcalli/nvim-colorizer.lua'
   " Better quickfix window in Neovim, polish old quickfix window.
   Plug 'kevinhwang91/nvim-bqf'
-  if executable('deno')
-    Plug 'vim-denops/denops.vim'
-  endif
 else
   "  A vim plugin to display the indention levels with thin vertical lines
   Plug 'Yggdroot/indentLine'
