@@ -78,6 +78,9 @@ cmp.setup {
         {name = "calc"}, {name = "spell"},
         {name = "emoji"},
     },
-    completion = {completeopt = 'menu,menuone,noinsert'}
+    completion = {
+      completeopt = 'menu,menuone,noinsert',
+      keyword_length = 3,
+      }
     }
 EOF
