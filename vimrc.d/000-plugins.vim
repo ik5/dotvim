@@ -159,6 +159,7 @@ if has('nvim')
   Plug 'f3fora/cmp-spell'
   Plug 'quangnguyen30192/cmp-nvim-ultisnips'
   Plug 'Shougo/neco-vim', {'for': ['vim', 'toml']}
+  Plug 'lukas-reineke/cmp-rg'
 
   " A format runner for neovim, written in lua
   " Plug 'mhartington/formatter.nvim'

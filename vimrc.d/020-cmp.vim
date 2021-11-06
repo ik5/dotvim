@@ -23,7 +23,7 @@ cmp.setup {
             " " .. vim_item.kind
             -- set a name for each source
             vim_item.menu = ({
-                buffer = "[Buf]",
+                buffer = "[BUF]",
                 nvim_lsp = "[LSP]",
                 ultisnips = "[SNPT]",
                 nvim_lua = "[LUA]",
@@ -33,6 +33,7 @@ cmp.setup {
                 spell = "[SPELL]",
                 calc = "[CALC]",
                 emoji = "[EMOJI]",
+                rg = "[RG]",
             })[entry.source.name]
             return vim_item
         end
@@ -77,10 +78,11 @@ cmp.setup {
         {name = "nvim_lua"}, {name = "look"}, {name = "path"},
         {name = "calc"}, {name = "spell"},
         {name = "emoji"},
+        {name = "rg", opts = { additional_arguments = "-S" } },
     },
     completion = {
       completeopt = 'menu,menuone,noinsert',
-      keyword_length = 3,
+      keyword_length = 2,
       }
     }
 EOF
