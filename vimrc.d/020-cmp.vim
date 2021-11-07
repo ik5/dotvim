@@ -34,6 +34,8 @@ cmp.setup {
                 calc = "[CALC]",
                 emoji = "[EMOJI]",
                 rg = "[RG]",
+                ts = "[TS]",
+                look = "[LOOK]"
             })[entry.source.name]
             return vim_item
         end
@@ -79,6 +81,8 @@ cmp.setup {
         {name = "calc"}, {name = "spell"},
         {name = "emoji"},
         {name = "rg", opts = { additional_arguments = "-S" } },
+        {name = "treesitter"},
+        {name = "look", keyword_length=2, opts={convert_case=true, loud=true}},
     },
     completion = {
       completeopt = 'menu,menuone,noinsert',
