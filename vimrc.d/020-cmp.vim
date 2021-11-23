@@ -81,10 +81,10 @@ cmp.setup {
       {name = "nvim_lua"}, {name = "look"}, {name = "path"},
       {name = "calc"}, {name = "spell"},
       {name = "emoji"},
-      {name = "rg", opts = { additional_arguments = "-S" } },
+      {name = "rg", options = { additional_arguments = "-S" } },
       {name = "treesitter"},
-      {name = "look", keyword_length=2, opts={convert_case=true, loud=true}},
-      {name = "tmux", opts = {
+      {name = "look", keyword_length=2, options={convert_case=true, loud=true}},
+      {name = "tmux", options = {
           all_panes = false,
           label = "[tmux]",
           trigger_characters = { "." },
