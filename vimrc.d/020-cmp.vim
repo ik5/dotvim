@@ -35,7 +35,8 @@ cmp.setup {
                 emoji = "[EMOJI]",
                 rg = "[RG]",
                 ts = "[TS]",
-                look = "[LOOK]"
+                look = "[LOOK]",
+                tmux = "[TMUX]"
             })[entry.source.name]
             return vim_item
         end
@@ -76,13 +77,20 @@ cmp.setup {
     },
     snippet = {expand = function(args) vim.fn["UltiSnips#Anon"](args.body) end},
     sources = {
-        {name = 'buffer'}, {name = 'nvim_lsp'}, {name = "ultisnips"},
-        {name = "nvim_lua"}, {name = "look"}, {name = "path"},
-        {name = "calc"}, {name = "spell"},
-        {name = "emoji"},
-        {name = "rg", opts = { additional_arguments = "-S" } },
-        {name = "treesitter"},
-        {name = "look", keyword_length=2, opts={convert_case=true, loud=true}},
+      {name = 'buffer'}, {name = 'nvim_lsp'}, {name = "ultisnips"},
+      {name = "nvim_lua"}, {name = "look"}, {name = "path"},
+      {name = "calc"}, {name = "spell"},
+      {name = "emoji"},
+      {name = "rg", opts = { additional_arguments = "-S" } },
+      {name = "treesitter"},
+      {name = "look", keyword_length=2, opts={convert_case=true, loud=true}},
+      {name = "tmux", opts = {
+          all_panes = false,
+          label = "[tmux]",
+          trigger_characters = { "." },
+          trigger_characters_ft = {}
+        }
+      },
     },
     completion = {
       completeopt = 'menu,menuone,noinsert',

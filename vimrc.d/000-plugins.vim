@@ -162,6 +162,7 @@ if has('nvim')
   Plug 'lukas-reineke/cmp-rg'
   Plug 'ray-x/cmp-treesitter'
   Plug 'octaltree/cmp-look'
+  Plug 'andersevenrud/compe-tmux', { 'branch': 'cmp' }
 
   " A format runner for neovim, written in lua
   " Plug 'mhartington/formatter.nvim'
