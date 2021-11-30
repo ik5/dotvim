@@ -127,7 +127,8 @@ if has('nvim')
   " client.
   Plug 'neovim/nvim-lspconfig'
   " Provides the missing :LspInstall for nvim-lspconfig
-  Plug 'kabouzeid/nvim-lspinstall'
+  " Plug 'kabouzeid/nvim-lspinstall'
+  Plug 'williamboman/nvim-lsp-installer'
   "UltiSnips is the ultimate solution for snippets in Vim. It has many features,
   "speed being one of them.
   Plug 'sirver/UltiSnips'
