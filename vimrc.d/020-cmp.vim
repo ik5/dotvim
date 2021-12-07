@@ -23,8 +23,8 @@ cmp.setup {
             " " .. vim_item.kind
             -- set a name for each source
             vim_item.menu = ({
-                buffer = "[BUF]",
                 nvim_lsp = "[LSP]",
+                buffer = "[BUF]",
                 ultisnips = "[SNPT]",
                 nvim_lua = "[LUA]",
                 cmp_tabnine = "[TAB]",
@@ -77,7 +77,7 @@ cmp.setup {
     },
     snippet = {expand = function(args) vim.fn["UltiSnips#Anon"](args.body) end},
     sources = {
-      {name = 'buffer'}, {name = 'nvim_lsp'}, {name = "ultisnips"},
+      {name = 'nvim_lsp'}, {name = 'buffer'}, {name = "ultisnips"},
       {name = "nvim_lua"}, {name = "look"}, {name = "path"},
       {name = "calc"}, {name = "spell"},
       {name = "emoji"},
@@ -98,10 +98,10 @@ cmp.setup {
       },
     sorting = {
       comparators = {
+        cmp.config.compare.kind,
         cmp.config.compare.offset,
         cmp.config.compare.exact,
         cmp.config.compare.score,
-        cmp.config.compare.kind,
         cmp.config.compare.sort_text,
         cmp.config.compare.length,
         cmp.config.compare.order,
