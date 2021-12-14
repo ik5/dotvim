@@ -56,6 +56,7 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
+--[[
 local servers = {
   'jedi_language_server',
   'rust_analyzer',
@@ -85,6 +86,7 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+--]]
 
 local function preview_location_callback(_, _, result)
   if result == nil or vim.tbl_isempty(result) then
