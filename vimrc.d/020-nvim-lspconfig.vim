@@ -2,10 +2,6 @@ if !has('nvim')
   finish
 endif
 
-augroup LSP
-  autocmd CursorHold,CursorHoldI * lua require('code_action_utils').code_action_listener()
-augroup END
-
 lua << EOF
 local nvim_lsp = require('lspconfig')
 

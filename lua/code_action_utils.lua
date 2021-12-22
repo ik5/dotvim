@@ -1,5 +1,6 @@
 local M = {}
 
+  --[[
 function M.code_action_listener()
   local context = { diagnostics = vim.lsp.diagnostic.get_line_diagnostics() }
   local params = vim.lsp.util.make_range_params()
@@ -13,6 +14,7 @@ function M.code_action_listener()
   end
   )
 end
+  ]]
 
 return M
 
