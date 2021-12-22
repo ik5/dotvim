@@ -52,8 +52,6 @@ if has('nvim')
   Plug 'nvim-treesitter/nvim-treesitter-refactor'
   " A File Explorer For Neovim Written In Lua
   Plug 'kyazdani42/nvim-tree.lua'
-  " Fix CursorHold Performance.
-  Plug 'antoinemadec/FixCursorHold.nvim'
   " Create your own textobjects using tree-sitter queries!
   Plug 'nvim-treesitter/nvim-treesitter-textobjects'
   " Interactively select and swap function arguments, list elements, and more.
