@@ -98,7 +98,7 @@ let g:go_code_completion_enabled = 1
 " Specifies whether `gopls` can be used by vim-go.
 let g:go_gopls_enabled = 1
 " The analyses settings for `gopls`.
-let g:go_gopls_analyses = v:true
+let g:go_gopls_analyses = { 'unreachable': 'v:true', 'unusedparams': 'v:true' }
 " Specifies whether `gopls` should include suggestions from unimported packages.
 let g:go_gopls_complete_unimported = v:true
 " Specifies whether `gopls` should use deep completion.
