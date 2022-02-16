@@ -48,7 +48,7 @@ local on_attach = function(client, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
--- capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
@@ -91,11 +91,10 @@ local function preview_location_callback(_, _, result)
   vim.lsp.util.preview_location(result[1])
 end
 
---[[
 function PeekDefinition()
   local params = vim.lsp.util.make_position_params()
   return vim.lsp.buf_request(0, 'textDocument/definition', params, preview_location_callback)
 end
-]]
+
 EOF
 
