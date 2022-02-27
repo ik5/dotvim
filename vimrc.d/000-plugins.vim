@@ -184,7 +184,7 @@ if executable('go')
   Plug 'zchee/vim-vgo', { 'for': ['go'] }
 endif
 
-if executable('python')
+if executable('python3') || executable('python')
   " Support for python programming
   Plug 'python-mode/python-mode', { 'for': 'python' }
   " Using the jedi autocompletion library for VIM for Python
@@ -215,17 +215,11 @@ Plug 'posva/vim-vue'
 " config files
 Plug 'cespare/vim-toml', { 'for': ['toml']}
 
-" Harkup
+" Markup
 " ----
 Plug 'mattn/emmet-vim'
 " A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more (formerly allml)
 Plug 'tpope/vim-ragtag'
-
-" php
-" ---
-if has('nvim')
-  " Plug 'phpactor/phpactor', { 'do': ':call phpactor#Update()'}
-endif
 
 if has('nvim')
   Plug 'lewis6991/spellsitter.nvim'
@@ -240,6 +234,13 @@ if has('nvim')
   " Sphinx integrations for Neovim.
   Plug 'stsewd/sphinx.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
+
+if executable('haproxy')
+  Plug 'zimbatm/haproxy.vim'
+endif
+
+" Databases/SQL
+Plug 'lifepillar/pgsql.vim'
 
 " Over 70 language packs
 " needed to be set before the plug is loaded
