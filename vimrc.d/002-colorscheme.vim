@@ -60,6 +60,7 @@ else
   let g:tokyonight_italic_functions = 1
 
   " colorscheme vscode
-  colorscheme monokai_soda
+  "colorscheme monokai_soda
+  colorscheme monokai
   " colorscheme material
 endif
