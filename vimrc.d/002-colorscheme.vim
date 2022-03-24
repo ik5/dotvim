@@ -47,7 +47,7 @@ if !has('nvim')
   " colorscheme molokai
 else
   let g:vscode_style = 'dark'
-  let g:material_style = 'oceanic'
+  let g:material_style = 'darker'
   let g:material_italic_comments = 1
   let g:material_italic_keywords = 1
   let g:material_italic_functions = 1
@@ -61,6 +61,6 @@ else
 
   " colorscheme vscode
   "colorscheme monokai_soda
-  colorscheme monokai
-  " colorscheme material
+  " colorscheme monokai
+  colorscheme material
 endif
