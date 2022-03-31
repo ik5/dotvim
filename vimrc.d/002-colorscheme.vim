@@ -61,6 +61,6 @@ else
 
   " colorscheme vscode
   "colorscheme monokai_soda
-  " colorscheme monokai
-  colorscheme material
+  colorscheme monokai
+  "colorscheme material
 endif
